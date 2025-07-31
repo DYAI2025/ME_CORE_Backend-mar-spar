@@ -85,8 +85,20 @@ class ServiceContainer:
         
         # Repository
         def create_marker_repository():
-            from ..repositories.marker_repository import MongoMarkerRepository
-            return MongoMarkerRepository()
+            # Check if MongoDB is available
+            if settings.DATABASE_URL == "mongodb://localhost:27017/test":
+                logger.warning("Using MockMarkerService - MongoDB not configured")
+                from ..services.mock_marker_service import mock_marker_service
+                return mock_marker_service
+            else:
+                try:
+                    from ..repositories.marker_repository import MongoMarkerRepository
+                    return MongoMarkerRepository()
+                except Exception as e:
+                    logger.error(f"Failed to create MongoMarkerRepository: {e}")
+                    logger.warning("Falling back to MockMarkerService")
+                    from ..services.mock_marker_service import mock_marker_service
+                    return mock_marker_service
         
         self.register(IMarkerRepository, create_marker_repository)
         

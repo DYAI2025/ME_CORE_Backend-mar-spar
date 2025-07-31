@@ -1,12 +1,13 @@
 import os
+from pathlib import Path
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from pydantic import Field, validator
 from typing import Optional
-import sys
+from core.exceptions import ConfigurationError
 
 class Settings(BaseSettings):
     # Database configuration
-    DATABASE_URL: str = Field(..., description="MongoDB connection string")
+    DATABASE_URL: str = Field(default="mongodb://localhost:27017/test", description="MongoDB connection string")
     MONGO_DB_NAME: str = Field(default="marker_engine", description="Database name")
     
     # API configuration
@@ -15,8 +16,8 @@ class Settings(BaseSettings):
     
     # Detector configuration
     DETECTOR_PATH: str = Field(
-        default="/Users/benjaminpoersch/Projekte/XEXPERIMENTE/Gemini_cli/gemini-cli/claude-flow/resources/",
-        description="Path to detector scripts"
+        default=None,
+        description="Path to detector scripts (defaults to ../resources relative to backend dir)"
     )
     
     # LLM API Keys (optional - will work without them but no interpretation)
@@ -85,18 +86,59 @@ class Settings(BaseSettings):
     @validator('DATABASE_URL')
     def validate_database_url(cls, v):
         """Validate that DATABASE_URL is set and not contains placeholder"""
-        if not v:
-            print("ERROR: DATABASE_URL environment variable is not set!")
-            print("Please create a .env file with your MongoDB connection string.")
-            print("See .env.example for the required format.")
-            sys.exit(1)
+        # Allow deployment without MongoDB for testing
+        if v == "mongodb://localhost:27017/test":
+            import logging
+            logging.warning("Using default test DATABASE_URL - MongoDB features will be limited")
+            return v
         
         if "<PASSWORD>" in v or "<DEIN_PASSWORT_HIER_EINFÜGEN>" in v:
-            print("ERROR: DATABASE_URL still contains placeholder password!")
-            print("Please replace <PASSWORD> with your actual MongoDB password in the .env file.")
-            sys.exit(1)
+            raise ConfigurationError(
+                "DATABASE_URL still contains placeholder password! "
+                "Please replace <PASSWORD> with your actual MongoDB password in the .env file.",
+                config_key="DATABASE_URL"
+            )
             
         return v
+    
+    @validator('DETECTOR_PATH', always=True)
+    def validate_detector_path(cls, v):
+        """Validate and set detector path with intelligent defaults"""
+        if v:
+            # Use provided path
+            path = Path(v)
+        else:
+            # Try to find resources directory relative to backend
+            backend_dir = Path(__file__).parent
+            
+            # Try multiple possible locations
+            possible_paths = [
+                backend_dir.parent / "resources",  # ../resources from backend
+                backend_dir / "resources",         # backend/resources
+                Path.cwd() / "resources",          # current working dir/resources
+            ]
+            
+            # Find first existing path
+            path = None
+            for p in possible_paths:
+                if p.exists() and p.is_dir():
+                    path = p
+                    break
+            
+            if not path:
+                # Create default path if none exists
+                path = backend_dir.parent / "resources"
+                path.mkdir(exist_ok=True)
+        
+        # Ensure path exists
+        if not path.exists():
+            raise ConfigurationError(
+                f"Detector path does not exist: {path}. "
+                "Please set DETECTOR_PATH environment variable or create the resources directory.",
+                config_key="DETECTOR_PATH"
+            )
+        
+        return str(path.absolute())
     
     @validator('KIMI_API_KEY', always=True)
     def set_kimi_api_key(cls, v, values):
@@ -105,10 +147,5 @@ class Settings(BaseSettings):
             return values['MOONSHOT_API_KEY']
         return v
 
-# Try to load settings with error handling
-try:
-    settings = Settings()
-except Exception as e:
-    print(f"ERROR: Failed to load configuration: {e}")
-    print("Please ensure .env file exists and contains valid configuration.")
-    sys.exit(1)
+# Create settings instance - let exceptions propagate to be handled by the application
+settings = Settings()

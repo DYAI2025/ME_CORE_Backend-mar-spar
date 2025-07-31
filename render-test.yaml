@@ -1,0 +1,57 @@
+# Render Blueprint for Testing without MongoDB
+# This version runs the backend with mock data for testing
+
+services:
+  # Backend API Service (Mock Mode)
+  - type: web
+    name: me-core-backend-test
+    runtime: docker
+    repo: https://github.com/DYAI2025/ME_CORE_Backend-mar-spar.git
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    envVars:
+      - key: PYTHON_ENV
+        value: production
+      - key: PORT
+        value: 8000
+      # Using default test DATABASE_URL - will use mock service
+      - key: DATABASE_URL
+        value: mongodb://localhost:27017/test
+      - key: CACHE_TYPE
+        value: memory  # Use in-memory cache for testing
+      - key: REDIS_URL
+        value: ""  # No Redis for testing
+      - key: API_KEY
+        generateValue: true
+      - key: JWT_SECRET
+        generateValue: true
+      - key: ENABLE_METRICS
+        value: true
+    healthCheckPath: /api/health/live
+    autoDeploy: true
+    plan: starter  # Use free tier for testing
+
+  # Monitoring Dashboard (Optional for testing)
+  - type: web
+    name: me-core-dashboard-test
+    runtime: docker
+    repo: https://github.com/DYAI2025/ME_CORE_Backend-mar-spar.git
+    dockerfilePath: ./dashboard/Dockerfile
+    dockerContext: ./dashboard
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        fromService:
+          name: me-core-backend-test
+          type: web
+          property: host
+      - key: NEXTAUTH_URL
+        fromService:
+          name: me-core-dashboard-test
+          type: web
+          property: host
+      - key: NEXTAUTH_SECRET
+        generateValue: true
+    buildCommand: npm run build
+    healthCheckPath: /api/health
+    autoDeploy: true
+    plan: starter  # Use free tier for testing

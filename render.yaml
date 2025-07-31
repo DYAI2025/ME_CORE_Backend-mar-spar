@@ -17,9 +17,7 @@ services:
       - key: PORT
         value: 8000
       - key: MONGODB_URI
-        fromDatabase:
-          name: me-core-mongodb
-          property: connectionString
+        sync: false  # Must be set in Render dashboard with MongoDB Atlas URI
       - key: REDIS_URL
         fromService:
           name: me-core-redis
@@ -128,9 +126,7 @@ services:
     schedule: "0 2 * * *"  # Daily at 2 AM
     envVars:
       - key: MONGODB_URI
-        fromDatabase:
-          name: me-core-mongodb
-          property: connectionString
+        sync: false  # Must be set in Render dashboard with MongoDB Atlas URI
       - key: S3_BUCKET
         value: me-core-backups
       - key: AWS_ACCESS_KEY_ID
@@ -138,9 +134,7 @@ services:
       - key: AWS_SECRET_ACCESS_KEY
         sync: false  # Must be set in Render dashboard
 
-databases:
-  # MongoDB Database
-  - name: me-core-mongodb
-    plan: starter
-    databaseName: markerengine
-    user: mecore
+# Note: Render doesn't support MongoDB as a managed database service.
+# You'll need to use MongoDB Atlas or another external MongoDB provider.
+# Set MONGODB_URI as an environment variable in the Render dashboard
+# with your external MongoDB connection string.

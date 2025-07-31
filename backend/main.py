@@ -1,21 +1,61 @@
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 from .routes import health, markers, analyze, analyze_v2, metrics
 from .api import dashboard
 from .core.logging import configure_logging, get_logger
 from .core.container import get_container
+from .core.exceptions import ConfigurationError, handle_markerengine_error, MarkerEngineError
 from .infrastructure.metrics import metrics as prom_metrics
-from .config import settings
 import time
+import sys
 
 # Configure structured logging
 configure_logging(level="INFO")
 logger = get_logger(__name__)
 
-# Initialize dependency injection container
-container = get_container()
-container.initialize()
+# Try to load configuration and initialize container
+try:
+    from .config import settings
+    
+    # Initialize dependency injection container
+    container = get_container()
+    container.initialize()
+    
+    logger.info("Configuration loaded successfully")
+    
+except ConfigurationError as e:
+    logger.error(f"Configuration error: {e.message}")
+    logger.error("Please check your environment configuration and try again.")
+    
+    # Create a minimal app that returns configuration error
+    app = FastAPI(
+        title="MarkerEngine Core API - Configuration Error",
+        description="Service is not properly configured.",
+        version="1.0.0"
+    )
+    
+    @app.get("/")
+    @app.get("/api/health/live")
+    @app.get("/api/health/ready")
+    async def configuration_error():
+        raise HTTPException(
+            status_code=500,
+            detail={
+                "error": "CONFIGURATION_ERROR",
+                "message": e.message,
+                "details": e.details
+            }
+        )
+    
+    # Exit early if configuration is invalid
+    sys.exit(1)
 
+except Exception as e:
+    logger.error(f"Unexpected error during initialization: {e}")
+    sys.exit(1)
+
+# If configuration is valid, create the full app
 app = FastAPI(
     title="MarkerEngine Core API",
     description="Zentrales Nervensystem der MarkerEngine zur Übersetzung von Sprache in strukturierte Marker.",
@@ -59,6 +99,14 @@ async def track_requests(request: Request, call_next):
     
     finally:
         prom_metrics.decrement_active_requests()
+
+# Add exception handler for MarkerEngine errors
+@app.exception_handler(MarkerEngineError)
+async def markerengine_exception_handler(request: Request, exc: MarkerEngineError):
+    return JSONResponse(
+        status_code=handle_markerengine_error(exc).status_code,
+        content=exc.to_dict()
+    )
 
 # Include routers
 app.include_router(health.router, tags=["Health"])

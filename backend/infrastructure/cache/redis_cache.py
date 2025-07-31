@@ -26,6 +26,8 @@ class RedisCache(ICacheProvider):
         self.redis_url = redis_url or settings.REDIS_URL
         self._client: Optional[aioredis.Redis] = None
         self._connected = False
+        self._health_check_failures = 0
+        self._max_health_failures = 3
     
     async def connect(self) -> None:
         """Establish Redis connection."""
@@ -203,3 +205,38 @@ class RedisCache(ICacheProvider):
             logger.debug(f"Redis cache mset for {len(serialized)} keys, TTL: {ttl}")
         except RedisError as e:
             logger.error(f"Redis mset error: {e}")
+    
+    async def health_check(self) -> bool:
+        """Check Redis health status."""
+        try:
+            if not self._connected:
+                await self.connect()
+            
+            # Perform ping
+            await self._client.ping()
+            
+            # Reset failure counter on success
+            self._health_check_failures = 0
+            return True
+            
+        except Exception as e:
+            self._health_check_failures += 1
+            logger.warning(f"Redis health check failed ({self._health_check_failures}/{self._max_health_failures}): {e}")
+            
+            # Disconnect if too many failures
+            if self._health_check_failures >= self._max_health_failures:
+                logger.error("Redis health check failures exceeded threshold, disconnecting")
+                self._connected = False
+                if self._client:
+                    try:
+                        await self._client.close()
+                    except:
+                        pass
+                self._client = None
+            
+            return False
+    
+    @property
+    def is_healthy(self) -> bool:
+        """Check if Redis connection is healthy."""
+        return self._connected and self._health_check_failures < self._max_health_failures
