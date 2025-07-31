@@ -1,0 +1,58 @@
+services:
+  # MarkerEngine Backend API Service
+  - type: web
+    name: markerengine-backend
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python -m uvicorn main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      # MongoDB - Set to test mode for mock functionality
+      - key: DATABASE_URL
+        value: mongodb://localhost:27017/test
+      
+      # Enable mock mode by default (no MongoDB required)
+      - key: MONGO_DB_NAME
+        value: marker_engine_mock
+      
+      # API Configuration
+      - key: API_HOST
+        value: 0.0.0.0
+      
+      # Port will be provided by Render
+      - key: API_PORT
+        fromGroup: PORT
+      
+      # Detector path configuration
+      - key: DETECTOR_PATH
+        value: /opt/render/project/src/resources
+      
+      # Environment setting
+      - key: ENVIRONMENT
+        value: production
+      
+      # Monitoring
+      - key: ENABLE_METRICS
+        value: "true"
+      
+      # Performance settings
+      - key: MAX_TEXT_LENGTH
+        value: "100000"
+      
+      - key: REQUEST_TIMEOUT
+        value: "300"
+      
+      # Python settings
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      
+      # Optional: Add LLM API keys via Render dashboard
+      # - key: MOONSHOT_API_KEY
+      #   sync: false
+      # - key: OPENAI_API_KEY
+      #   sync: false
+    
+    # Health check configuration
+    healthCheckPath: /api/health/live
+    
+    # Auto-deploy from main branch
+    autoDeploy: false
