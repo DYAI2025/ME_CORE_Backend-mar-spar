@@ -1,0 +1,25 @@
+# Optimized Dockerfile with embedded Spark NLP
+FROM python:3.10-slim
+
+# Install Java for Spark (lightweight OpenJDK)
+RUN apt-get update && apt-get install -y \
+    openjdk-11-jre-headless \
+    && rm -rf /var/lib/apt/lists/*
+
+ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+
+WORKDIR /app
+
+# Copy and install requirements
+COPY requirements.txt .
+# Install with optimization flags
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Pre-download Spark NLP models during build
+RUN python -c "import sparknlp; sparknlp.start()"
+
+# Copy application
+COPY . .
+
+# Multi-process server for better performance
+CMD ["gunicorn", "main:app", "-w", "2", "-k", "uvicorn.workers.UvicornWorker", "--bind", "0.0.0.0:8000", "--timeout", "120"]

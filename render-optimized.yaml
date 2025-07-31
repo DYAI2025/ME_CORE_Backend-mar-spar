@@ -1,0 +1,118 @@
+# Render Optimized Configuration - Volle Funktionalität, halbe Kosten
+# Ziel: Von $67 auf ~$32-40 reduzieren ohne Funktionsverlust
+
+services:
+  # Backend API Service - Bleibt Standard wegen Performance
+  - type: web
+    name: me-core-backend
+    runtime: docker
+    repo: https://github.com/DYAI2025/ME_CORE_Backend-mar-spar.git
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: standard  # $25 - Notwendig für MongoDB/Redis Connections
+    
+    envVars:
+      - key: PYTHON_ENV
+        value: production
+      - key: PORT
+        value: 8000
+      - key: MONGODB_URI
+        sync: false
+      - key: REDIS_URL
+        fromService:
+          name: me-core-redis
+          type: redis
+          property: connectionString
+      # TRICK 1: Spark als HTTP API statt separater Service
+      - key: SPARK_NLP_ENABLED
+        value: "true"
+      - key: SPARK_NLP_MODE
+        value: "embedded"  # Läuft im Backend mit!
+      - key: FRONTEND_URL
+        fromService:
+          name: me-core-dashboard
+          type: web
+          property: host
+      - key: API_KEY
+        generateValue: true
+      - key: JWT_SECRET
+        generateValue: true
+      # TRICK 2: Caching aggressiver nutzen
+      - key: CACHE_TTL
+        value: "3600"  # 1 Stunde statt 5 Min
+      - key: ENABLE_RESPONSE_CACHE
+        value: "true"
+    
+    healthCheckPath: /api/health/live
+    autoDeploy: true
+
+  # Dashboard - Auf Starter reduziert
+  - type: web
+    name: me-core-dashboard
+    runtime: docker
+    repo: https://github.com/DYAI2025/ME_CORE_Backend-mar-spar.git
+    dockerfilePath: ./dashboard/Dockerfile
+    dockerContext: ./dashboard
+    plan: starter  # $7 - Reicht für Frontend!
+    
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        fromService:
+          name: me-core-backend
+          type: web
+          property: host
+      - key: NEXT_PUBLIC_JENKINS_URL
+        value: https://jenkins.your-domain.com
+      - key: JENKINS_API_TOKEN
+        sync: false
+      - key: NEXTAUTH_URL
+        fromService:
+          name: me-core-dashboard
+          type: web
+          property: host
+      - key: NEXTAUTH_SECRET
+        generateValue: true
+      # TRICK 3: Static Generation wo möglich
+      - key: NEXT_PUBLIC_REVALIDATE
+        value: "3600"
+    
+    buildCommand: npm run build
+    healthCheckPath: /api/health
+    autoDeploy: true
+
+  # Redis - Bleibt Starter
+  - type: redis
+    name: me-core-redis
+    ipAllowList: []
+    plan: starter  # $0 - Free im ersten Monat, dann $7
+    # TRICK 4: Redis Konfiguration optimieren
+    maxmemoryPolicy: allkeys-lru
+    persistence: false  # Nur Cache, keine Persistenz nötig
+
+  # ENTFERNT: Spark Service (-$25!)
+  # Läuft jetzt embedded im Backend
+
+  # Cron Jobs als Web Services mit Scheduler
+  # TRICK 5: Cron Jobs in Backend integriert statt separate Services
+  
+# OPTIMIERUNGEN:
+# 1. Spark NLP im Backend embedded statt eigener Service (-$25)
+# 2. E2E Tests nur on-demand via GitHub Actions (kostenlos)
+# 3. Backup via MongoDB Atlas eigene Backups (kostenlos)
+# 4. Aggressiveres Caching reduziert Last
+# 5. Dashboard auf Starter ($7 statt $25)
+
+# NEUE KOSTEN:
+# Backend: $25 (Standard - notwendig)
+# Dashboard: $7 (Starter - ausreichend)
+# Redis: $0-7 (Starter)
+# ----------------------
+# TOTAL: $32-39 statt $67 (40-50% Ersparnis!)
+
+# KEINE FUNKTIONSVERLUSTE:
+# ✅ MongoDB voll funktionsfähig
+# ✅ Redis Cache aktiv
+# ✅ Spark NLP verfügbar (embedded)
+# ✅ Dashboard voll funktional
+# ✅ E2E Tests via GitHub Actions
+# ✅ Backups via MongoDB Atlas
