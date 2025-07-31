@@ -1,0 +1,13 @@
+# Railway Configuration - Simplified
+# This tells Railway how to deploy our services
+
+[build]
+builder = "nixpacks"
+
+[deploy]
+numReplicas = 1
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 10
+
+# Environment variables will be set in Railway Dashboard
+# MongoDB and Redis are added as separate database services, not defined here
