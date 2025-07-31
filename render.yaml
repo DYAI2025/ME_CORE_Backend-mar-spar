@@ -92,18 +92,8 @@ services:
     name: me-core-redis
     ipAllowList: []
     plan: starter
-    maxMemoryPolicy: allkeys-lru
 
-databases:
-  # MongoDB Database
-  - name: me-core-mongodb
-    plan: starter
-    databaseName: markerengine
-    user: mecore
-
-# Cron Jobs
-cronJobs:
-  # E2E Test Runner
+  # E2E Test Runner (Cron Job)
   - type: cron
     name: me-core-e2e-tests
     runtime: docker
@@ -125,7 +115,7 @@ cronJobs:
       - key: TEST_REPORT_URL
         value: https://your-test-reports.com
 
-  # Backup Job
+  # Backup Job (Cron)
   - type: cron
     name: me-core-backup
     runtime: docker
@@ -144,3 +134,10 @@ cronJobs:
         sync: false
       - key: AWS_SECRET_ACCESS_KEY
         sync: false
+
+databases:
+  # MongoDB Database
+  - name: me-core-mongodb
+    plan: starter
+    databaseName: markerengine
+    user: mecore
