@@ -8,11 +8,11 @@ import json
 import asyncio
 from pydantic import BaseModel
 
-from ..core.container import get_container
-from ..core.interfaces import IMarkerService, ICacheService
-from ..database import get_database
-from ..config import get_settings
-from ..detect.DETECT_registry import load_registry, save_registry, validate_registry_format
+from core.container import get_container
+from core.interfaces import IMarkerService, ICacheService
+from database import get_database
+from config import get_settings
+from detect.DETECT_registry import load_registry, save_registry, validate_registry_format
 
 router = APIRouter(prefix="/api/dashboard", tags=["dashboard"])
 settings = get_settings()
