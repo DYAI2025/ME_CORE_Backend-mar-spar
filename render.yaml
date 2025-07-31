@@ -69,7 +69,7 @@ services:
     plan: starter
 
   # Spark NLP Service (if needed)
-  - type: privateSiervice
+  - type: privateService
     name: me-core-spark
     runtime: docker
     repo: https://github.com/DYAI2025/ME_CORE_Backend-mar-spar.git
