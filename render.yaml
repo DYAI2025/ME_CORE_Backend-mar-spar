@@ -9,6 +9,8 @@ services:
     repo: https://github.com/DYAI2025/ME_CORE_Backend-mar-spar.git
     dockerfilePath: ./backend/Dockerfile
     dockerContext: ./backend
+    # IMPORTANT: In application code, construct full URLs with https://
+    # e.g., const frontendUrl = `https://${process.env.FRONTEND_URL}`
     envVars:
       - key: PYTHON_ENV
         value: production
@@ -29,7 +31,7 @@ services:
         fromService:
           name: me-core-dashboard
           type: web
-          property: url
+          property: host  # Changed from 'url' - Render only supports host
       - key: API_KEY
         generateValue: true
       - key: JWT_SECRET
@@ -50,7 +52,7 @@ services:
         fromService:
           name: me-core-backend
           type: web
-          property: url
+          property: host  # Changed from 'url' - Render only supports host
       - key: NEXT_PUBLIC_JENKINS_URL
         value: https://jenkins.your-domain.com
       - key: JENKINS_API_TOKEN
@@ -59,11 +61,12 @@ services:
         fromService:
           name: me-core-dashboard
           type: web
-          property: url
+          property: host  # Changed from 'url' - Render only supports host
       - key: NEXTAUTH_SECRET
         generateValue: true
+    # Docker runtime services don't use startCommand - CMD must be in Dockerfile
+    # buildCommand is still allowed for Docker services
     buildCommand: npm run build
-    startCommand: npm start
     healthCheckPath: /api/health
     autoDeploy: true
     plan: starter
@@ -90,7 +93,7 @@ services:
   # Redis Cache
   - type: redis
     name: me-core-redis
-    ipAllowList: []
+    ipAllowList: []  # Empty array allows all internal traffic
     plan: starter
 
   # E2E Test Runner (Cron Job)
@@ -106,12 +109,12 @@ services:
         fromService:
           name: me-core-backend
           type: web
-          property: url
+          property: host  # Changed from 'url' - Render only supports host
       - key: DASHBOARD_URL
         fromService:
           name: me-core-dashboard
           type: web
-          property: url
+          property: host  # Changed from 'url' - Render only supports host
       - key: TEST_REPORT_URL
         value: https://your-test-reports.com
 
@@ -131,9 +134,9 @@ services:
       - key: S3_BUCKET
         value: me-core-backups
       - key: AWS_ACCESS_KEY_ID
-        sync: false
+        sync: false  # Must be set in Render dashboard
       - key: AWS_SECRET_ACCESS_KEY
-        sync: false
+        sync: false  # Must be set in Render dashboard
 
 databases:
   # MongoDB Database
