@@ -1,0 +1,20 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für SILENT_TREATMENT_MARKER",
+    "examples": [
+      "Kommunikationsverweigerung, Mauern oder Ignorieren des Gegenübers als passiv-aggressive Manipulation oder Strafe."
+    ],
+    "id": "S_SILENT_TREATMENT",
+    "level": 2,
+    "name": "SILENT_TREATMENT",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_5BB5",
+    "semantic_tags": [
+      "silent-treatment-marker"
+    ]
+  },
+  "marker_name": "SILENT_TREATMENT_MARKER"
+}

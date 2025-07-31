@@ -1,0 +1,37 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für SUBTLE_TERRITORIAL_MARKER
+  examples:
+  - 'beschreibung: Verdecktes oder offenes Abstecken von persönlichen Grenzen und
+    Revieren durch Regeln, Rituale oder nonverbale Signale, die den Zugang zu bestimmten
+    Lebensbereichen regulieren oder verweh'
+  - 'dynamik_absicht: Dient der Wahrung von Identität und Autonomie. Kann gesund sein,
+    wird aber bei rigider oder misstrauischer Anwendung zu einem exklusiven, abweisenden
+    Signal („Ich lasse dich nicht gan'
+  - 'szenario: "Das Territorium wird nicht nur abgegrenzt, sondern die Beziehung selbst
+    als Bedrohung dafür dargestellt. Beispiel: ''Mein Hobby ist der einzige Ort, wo
+    ich nicht ständig diesen Beziehungskra'
+  - 'description: "Erkennt exkludierende Formulierungen, Besitzansprüche (''mein'')
+    und die explizite Trennung von Lebensbereichen."'
+  - 'pattern: "(Dieser Bereich|Diese Zeit) +(ist nur für|gehört nur) +(mich und die
+    Kinder|mich allein|uns)"'
+  id: S_SUBTLE_TERRITORIAL
+  level: 2
+  name: SUBTLE_TERRITORIAL
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_89C0
+  semantic_tags:
+  - subtle-territorial-marker
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.548543'
+  repair_version: '1.0'

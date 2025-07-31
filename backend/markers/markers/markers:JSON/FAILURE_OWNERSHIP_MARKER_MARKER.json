@@ -1,0 +1,22 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für FAILURE_OWNERSHIP_MARKER_MARKER",
+    "examples": [
+      "Verantwortung für eigenes Handeln und Fehler anerkennen, Konfliktbereitschaft.",
+      "description: \"Erkennt Muster für failure_ownership_marker\"",
+      "pattern: r\"(muster.*wird.*ergänzt)\""
+    ],
+    "id": "S_FAILURE_OWNERSHIP_MARKER",
+    "level": 2,
+    "name": "FAILURE_OWNERSHIP",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_383A",
+    "semantic_tags": [
+      "failure-ownership-marker-marker"
+    ]
+  },
+  "marker_name": "FAILURE_OWNERSHIP_MARKER_MARKER"
+}

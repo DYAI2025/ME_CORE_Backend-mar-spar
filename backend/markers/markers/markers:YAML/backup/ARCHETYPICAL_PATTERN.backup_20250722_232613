@@ -1,0 +1,29 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für ARCHETYPICAL_PATTERN
+  examples:
+  - 'id: "M_ARCHETYPAL_PATTERNS"'
+  - 'name: "ARCHETYPAL_PATTERNS"'
+  - 'level: "meta"'
+  - 'category: "Narrative Struktur"'
+  - 'semantic_tags: ["Archetyp", "Selbstdarstellung", "Mustererkennung", "Identität"]'
+  id: S_ARCHETYPICAL_PATTERN
+  level: 2
+  name: ARCHETYPICAL_PATTERN
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_AC0A
+  semantic_tags:
+  - archetypical-pattern
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.612215'
+  repair_version: '1.0'

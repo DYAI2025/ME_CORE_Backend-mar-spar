@@ -1,0 +1,54 @@
+marker_name: S_INITIATIVE_GEMEINSAME_ZUKUNFT_MARKER
+beschreibung: 'A proposal for a shared future activity that includes bonding language.
+
+  '
+beispiele:
+- Sollen wir zusammen unseren nächsten Urlaub planen?
+- Shall we plan our next vacation together?
+- Wie wärs, wenn wir beide am Wochenende wegfahren?
+- How about the two of us go away this weekend?
+- Lass uns gemeinsam überlegen, was wir im Sommer machen.
+- Let’s think together about what to do this summer.
+- Wollen wir am Freitag unsere Serie weiterschauen?
+- Want to continue our series on Friday?
+- Ich fänds schön, wenn wir zusammen das Konzert besuchen.
+- I’d love it if we went to the concert together.
+- Let’s book our train tickets as a team.
+- Shall we both start learning Spanish this fall?
+- How about we co-host a dinner for friends next month?
+- Let’s map out our fitness goals together.
+- Want us to volunteer at the shelter this weekend?
+- We could plan our joint birthday bash tonight.
+- Shall we design our living room layout on Saturday?
+- Let’s schedule bi-weekly date nights.
+- How about setting up a shared savings goal?
+- Let’s draft our travel bucket list together.
+- Want to sign up for the half-marathon as a duo?
+- We could cook through that recipe book as a challenge.
+- Let’s plan a surprise for your sister—our project!
+- Shall we start a tiny balcony garden together?
+- Let’s enroll in that dance course, just the two of us.
+- How about building a Lego set side-by-side?
+- Let’s brainstorm our holiday card photo ideas.
+- We could set aside Sundays for joint study sessions.
+- Want to co-write a short story this winter?
+- Let’s curate a gallery wall of our memories.
+semantische_grabber_id: SGR_JOINT_FUTURE_INITIATIVE_01
+metadata:
+  created_at: 2025-07-22 00:36:38.221378
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags:
+  - neu_erstellt
+  - needs_review
+  last_repaired: '2025-07-22T02:31:24.166950'
+  repair_version: '1.0'
+category: UNCATEGORIZED
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5

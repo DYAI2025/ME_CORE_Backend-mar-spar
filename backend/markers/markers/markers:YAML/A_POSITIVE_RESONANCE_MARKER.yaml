@@ -1,0 +1,56 @@
+marker_name: A_POSITIVE_RESONANCE_MARKER
+beschreibung: 'Explicit verbal signals of empathy, validation, or strong agreement.
+
+  '
+beispiele:
+- Ich verstehe dich vollkommen.
+- I completely understand you.
+- Wow, das geht mir genauso.
+- Wow, I feel the same.
+- Danke, dass du das mit mir teilst.
+- Thanks for sharing that with me.
+- Genau! Das ist der Punkt.
+- Exactly! That’s the point.
+- Wir sind da echt auf einer Wellenlänge.
+- We’re totally on the same wavelength.
+- That makes perfect sense to me.
+- I hear you, and I’m with you.
+- Same here—totally relate.
+- Absolutely, couldn’t agree more.
+- Thanks for putting that into words.
+- I get exactly what you mean.
+- Yes! That’s exactly how I feel.
+- I appreciate you saying that.
+- Right, I was thinking the same thing.
+- I can really feel where you’re coming from.
+- So true! Couldn’t have said it better.
+- 100 %, that resonates.
+- Glad I’m not the only one who thinks so.
+- That’s spot-on, thank you.
+- I totally vibe with that.
+- Big yes to everything you just said.
+- That hit home for me.
+- I value your honesty—it mirrors my thoughts.
+- Completely with you on this.
+- You read my mind!
+semantische_grabber_id: SGR_POSITIVE_RESONANCE_01
+metadata:
+  created_at: 2025-07-22 00:32:51.178748
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags:
+  - neu_erstellt
+  - needs_review
+  last_repaired: '2025-07-22T02:31:24.196014'
+  repair_version: '1.0'
+category: UNCATEGORIZED
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+
+kategorie: UNCATEGORIZED

@@ -1,0 +1,23 @@
+{
+  "kategorie": "ATOMIC",
+  "marker": {
+    "category": "Atomic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für enhanced_marker_config 2",
+    "examples": [
+      "Automatisch generierte Beschreibung für enhanced_marker_config 2"
+    ],
+    "id": "M_ENHANCED_MARKER_CONFIG2",
+    "level": 1,
+    "name": "enhanced_marker_config 2",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_80ED",
+    "semantic_tags": [
+      "enhanced-marker-config 2"
+    ]
+  },
+  "marker_name": "enhanced_marker_config 2",
+  "tags": [
+    "needs_review"
+  ]
+}

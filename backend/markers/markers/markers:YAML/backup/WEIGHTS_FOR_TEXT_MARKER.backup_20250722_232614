@@ -1,0 +1,43 @@
+Meta_Text:
+  self_ref:
+    weight: 0.8
+    patterns:
+    - \b(I|ich|meine?)\b
+  meta_comm:
+    weight: 0.9
+    patterns:
+    - chat
+    - gespräch
+    - dialog
+    - conversation
+  intent:
+    weight: 1.0
+    patterns:
+    - ich (will|möchte)
+    - my goal
+    - mein ziel
+  recall:
+    weight: 0.7
+    patterns:
+    - remember
+    - erinnere
+    - wie wir gesagt
+persona_switch:
+  weight: 1.0
+  patterns:
+  - \bPippi\b
+  - \bTyler\b
+  - \bPicard\b
+  - \bClarisse\b
+category: UNCATEGORIZED
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-21T21:32:11.853239'
+  repair_version: '1.0'

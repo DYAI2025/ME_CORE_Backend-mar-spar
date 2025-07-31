@@ -1,0 +1,31 @@
+# S_AVOIDANT_CHILDHOOD_REF_MARKER - Semantic Marker
+marker_name: S_AVOIDANT_CHILDHOOD_REF_MARKER
+beschreibung: >
+  Kombination aus ≥1 SELF_RELIANCE_EARLY und ≥1 NEGATIVE_CAREGIVER
+innerhalb von fünf Sätzen.
+beispiele:
+  - "Ich musste früh Verantwortung übernehmen, weil meine Eltern keine Zeit hatten."
+  - "Schon als Kind kochte ich allein, da zu Hause niemand da war."
+  - "Hausaufgaben machte ich selbstständig; Hilfe gab es nicht."
+  - "Ich verließ mich lieber auf mich, meine Eltern hörten selten zu."
+  - "Geburtstage organisierte ich, weil sie es vergaßen."
+  - "Ich lernte, Probleme alleine zu lösen, Aufmerksamkeit war rar."
+  - "Mit zwölf kümmerte ich mich um meine Schwester, Eltern arbeiteten."
+  - "Urlaub? Hatte keiner geplant, also blieb ich daheim."
+  - "Lob bekam ich kaum, also suchte ich es nicht mehr."
+  - "Ich installierte mir selbst das Fahrradlicht – Papa war beschäftigt."
+  - "Wenn ich krank war, machte ich mir Tee und ging zur Schule."
+  - "Ich war 'erstaunlich reif', sagte jeder – musste ich sein."
+  - "Schon als Teenie verdiente ich eigenes Geld, um unabhängig zu sein."
+  - "Freunde waren wichtiger als Familie; da gab es Halt."
+  - "Gefühle zeigen? Habe ich mir abgewöhnt, brachte ja nichts."
+
+semantische_grabber_id: SGR_AVOID_REF_01
+
+metadata:
+  created_at: 2025-07-22T00:08:58.423511
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

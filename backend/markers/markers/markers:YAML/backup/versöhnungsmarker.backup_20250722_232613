@@ -1,0 +1,35 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für versöhnungsmarker
+  examples:
+  - Ich will, dass wir das klären, Alter.
+  - Tut mir leid, lass uns wieder gut machen.
+  - Ich biete dir an, das hinter uns zu lassen.
+  - Lass uns einen Neuanfang starten.
+  - Ich hoffe, wir können uns wieder vertragen.
+  - Wie können wir das wieder kitten?
+  - Ich möchte das nicht unausgesprochen lassen.
+  - Lass uns das beilegen, okay?
+  - Ich suche den Frieden zwischen uns.
+  - Ich versuche, das Verhältnis zu reparieren.
+  - Ich hoffe, du kannst mir verzeihen.
+  id: S_VERSOHNUNGSMARKER
+  level: 2
+  name: versöhnungsmarker
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_626B
+  semantic_tags:
+  - needs_review
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.699748'
+  repair_version: '1.0'

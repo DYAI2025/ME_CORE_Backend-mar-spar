@@ -1,0 +1,177 @@
+pipeline {
+    agent any
+    
+    environment {
+        NODE_VERSION = '18'
+        NPM_CONFIG_CACHE = "${WORKSPACE}/.npm"
+        NEXT_TELEMETRY_DISABLED = '1'
+    }
+    
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+        
+        stage('Setup Node Environment') {
+            steps {
+                dir('frontend') {
+                    nodejs(nodeJSInstallationName: "NodeJS-${NODE_VERSION}") {
+                        sh '''
+                            node --version
+                            npm --version
+                            npm ci --prefer-offline --no-audit
+                        '''
+                    }
+                }
+            }
+        }
+        
+        stage('Lint & Type Check') {
+            parallel {
+                stage('ESLint') {
+                    steps {
+                        dir('frontend') {
+                            nodejs(nodeJSInstallationName: "NodeJS-${NODE_VERSION}") {
+                                sh 'npm run lint'
+                            }
+                        }
+                    }
+                }
+                stage('TypeScript') {
+                    steps {
+                        dir('frontend') {
+                            nodejs(nodeJSInstallationName: "NodeJS-${NODE_VERSION}") {
+                                sh 'npm run type-check'
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        stage('Unit Tests') {
+            steps {
+                dir('frontend') {
+                    nodejs(nodeJSInstallationName: "NodeJS-${NODE_VERSION}") {
+                        sh '''
+                            npm run test:unit -- --coverage --ci --reporters=default --reporters=jest-junit
+                        '''
+                    }
+                }
+            }
+            post {
+                always {
+                    junit 'frontend/junit.xml'
+                    publishHTML([
+                        allowMissing: false,
+                        alwaysLinkToLastBuild: true,
+                        keepAll: true,
+                        reportDir: 'frontend/coverage/lcov-report',
+                        reportFiles: 'index.html',
+                        reportName: 'Frontend Coverage Report'
+                    ])
+                }
+            }
+        }
+        
+        stage('Build') {
+            steps {
+                dir('frontend') {
+                    nodejs(nodeJSInstallationName: "NodeJS-${NODE_VERSION}") {
+                        sh '''
+                            npm run build
+                            # Verify build output
+                            test -d .next
+                        '''
+                    }
+                }
+            }
+        }
+        
+        stage('E2E Tests') {
+            when {
+                branch pattern: "(main|develop|release/.*)", comparator: "REGEXP"
+            }
+            steps {
+                dir('frontend') {
+                    nodejs(nodeJSInstallationName: "NodeJS-${NODE_VERSION}") {
+                        sh '''
+                            # Start backend mock server
+                            npx json-server --watch tests/mocks/db.json --port 3001 &
+                            SERVER_PID=$!
+                            
+                            # Run E2E tests
+                            npm run test:e2e:ci
+                            
+                            # Stop mock server
+                            kill $SERVER_PID
+                        '''
+                    }
+                }
+            }
+            post {
+                always {
+                    archiveArtifacts artifacts: 'frontend/cypress/screenshots/**/*.png', allowEmptyArchive: true
+                    archiveArtifacts artifacts: 'frontend/cypress/videos/**/*.mp4', allowEmptyArchive: true
+                }
+            }
+        }
+        
+        stage('Lighthouse CI') {
+            when {
+                branch pattern: "(main|develop)", comparator: "REGEXP"
+            }
+            steps {
+                dir('frontend') {
+                    nodejs(nodeJSInstallationName: "NodeJS-${NODE_VERSION}") {
+                        sh '''
+                            npm run build:export
+                            npx lhci autorun
+                        '''
+                    }
+                }
+            }
+        }
+        
+        stage('Build Docker Image') {
+            when {
+                branch pattern: "(main|develop|release/.*)", comparator: "REGEXP"
+            }
+            steps {
+                dir('frontend') {
+                    script {
+                        def image = docker.build("me-core-frontend:${env.BUILD_NUMBER}")
+                        docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
+                            image.push("${env.BRANCH_NAME}-${env.BUILD_NUMBER}")
+                            if (env.BRANCH_NAME == 'main') {
+                                image.push('latest')
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    post {
+        success {
+            echo 'Frontend pipeline completed successfully!'
+            slackSend(
+                color: 'good',
+                message: "Frontend Build Success: ${env.JOB_NAME} #${env.BUILD_NUMBER}"
+            )
+        }
+        failure {
+            echo 'Frontend pipeline failed!'
+            slackSend(
+                color: 'danger',
+                message: "Frontend Build Failed: ${env.JOB_NAME} #${env.BUILD_NUMBER}"
+            )
+        }
+        always {
+            cleanWs()
+        }
+    }
+}

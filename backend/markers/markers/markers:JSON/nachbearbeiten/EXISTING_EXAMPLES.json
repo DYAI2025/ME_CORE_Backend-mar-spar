@@ -1,0 +1,23 @@
+{
+  "kategorie": "ATOMIC",
+  "marker": {
+    "category": "Atomic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für EXISTING_EXAMPLES",
+    "examples": [
+      "Automatisch generierte Beschreibung für EXISTING_EXAMPLES"
+    ],
+    "id": "M_EXISTING_EXAMPLES",
+    "level": 1,
+    "name": "EXISTING_EXAMPLES",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_A763",
+    "semantic_tags": [
+      "existing-examples"
+    ]
+  },
+  "marker_name": "EXISTING_EXAMPLES",
+  "tags": [
+    "needs_review"
+  ]
+}

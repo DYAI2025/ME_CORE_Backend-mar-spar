@@ -1,0 +1,53 @@
+# A_KISS_KEYWORD_MARKER - Semantic Marker
+marker_name: A_KISS_KEYWORD_MARKER
+beschreibung: >
+  id: "A_KISS_KEYWORD"
+level: 1
+version: 1.1.0
+author: "auto_gpt"
+created_at: "2025-07-19"
+status: "draft"
+lang: "de"
+name: "Kuss-Thema"
+description: "Schlüsselbegriffe rund um Küssen."
+atomic_pattern:
+  - "kuss"
+  - "küssen"
+  - "geküsst"
+  - "kissing"
+regex_flags: ["i"]
+tags: ["thema", "intimität"]
+beispiele:
+  - "examples:"
+  - "- "Nach dem Kuss war alles anders.""
+  - "- "Wir haben uns endlich geküsst.""
+  - "- "Ich musste den ganzen Tag an unseren Kuss denken.""
+  - "- "Ich kann es kaum erwarten, dich wieder zu küssen.""
+  - "- "Wann haben wir uns eigentlich das erste Mal geküsst?""
+  - "- "War der Kuss gestern Abend komisch für dich?""
+  - "- "Ich stelle mir vor, wie unser erster Kuss sein wird, meine Königin.""
+  - "- "G vermisse deinen Kuss!""
+  - "- "Weißt du noch, wie wir uns im Regen geküsst haben?""
+  - "- "Schickst du mir einen virtuellen Kuss? :-*""
+  - "- "Es geht nicht nur um den Kuss, es geht darum, was danach passiert ist.""
+  - "- "Ein Kuss von dir würde jetzt alles besser machen.""
+  - "- "I'm dreaming of kissing you right now.""
+  - "- "Und dann hat er versucht, dich zu küssen? Krass!""
+  - "- "Gib mir einen Kuss.""
+  - "- "Schlaf gut, Kuss.""
+  - "- "Denk dran: Morgen gibt's einen Kuss von mir!""
+  - "- "Ich wünschte, wir hätten uns stattdessen einfach nur geküsst.""
+  - "- "Tell me more about kissing... I want to know everything.""
+  - "- "Seine Beförderung war der Kuss des Todes für das Team.""
+  - "- "Du hast da was... gibt einen Kuss auf die Wange.""
+  - "- "Ok. Kuss.""
+
+semantische_grabber_id: AUTO_SEM_20250719_A8E7
+
+metadata:
+  created_at: 2025-07-19T22:49:26.037267
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

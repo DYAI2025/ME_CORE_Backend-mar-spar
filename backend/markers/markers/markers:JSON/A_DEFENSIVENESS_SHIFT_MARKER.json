@@ -1,0 +1,62 @@
+# A_DEFENSIVENESS_SHIFT_MARKER - Semantic Marker
+marker_name: A_DEFENSIVENESS_SHIFT_MARKER
+beschreibung: >
+  id: A_DEFENSIVENESS_SHIFT
+level: 1
+version: "1.0.0"
+author: "Marker_Evaluator_v2"
+created_at: "2025-07-18"
+status: "draft"
+lang: "de"
+name: DEFENSIVENESS_SHIFT
+description: "Selbst-Opfer-Position oder Schuldumkehr als Reaktion auf Kritik."
+atomic_pattern:
+  - "Es ist nicht meine Schuld"
+  - "Du übertreibst doch"
+  - "Ich hab doch nur .*"
+  - "Das liegt an dir, nicht an mir"
+semantic_grabber_id: SGR_GOTTMAN_02
+tags: ["gottman","defensiveness","communication","origin_author:John_Gottman"]
+beispiele:
+  - "- "Ich hab alles falsch gemacht? Klar, wie immer. 👏"
+  - "- "Schön, wie du mich hinstellst – wieder mal."
+  - "- "Du behandelst mich wie einen Feind und erwartest Verständnis?"
+  - "- "Ich hab mich dir angepasst, aber scheinbar reicht das nicht."
+  - "- "Du kannst es eh nie akzeptieren, wenn ich mal was sage."
+  - "- "Witzig, dass du mir jetzt Vorwürfe machst – schau mal in den Spiegel."
+  - "- "Ich hab doch nur ehrlich meine Meinung gesagt 😕"
+  - "- "Und wer hört mir mal zu? Niemand."
+  - "- "Du bist doch die/der, die/der ständig Stress macht."
+  - "- "Als ob ich das absichtlich gemacht hätte…"
+  - "- "Ich geb mir Mühe, aber es ist nie gut genug für dich."
+  - "- "Du verdrehst jedes meiner Worte, das ist einfach unfair 😓"
+  - "- "Ich war halt müde, sorry dass ich nicht perfekt bin."
+  - "- "Du meckerst immer nur rum, statt mal zu sehen, was ich tue."
+  - "- "Immer bin ich der Depp, obwohl ich alles für dich mach."
+  - "- "Ich kann doch nichts dafür, dass du alles immer falsch verstehst."
+  - "- "Vielleicht solltest du mal über dein Verhalten nachdenken 🤷"
+  - "- "Ich hab versucht, ruhig zu bleiben, aber du bist komplett eskaliert."
+  - "- "Du suchst doch nur nen Grund, um sauer zu sein."
+  - "- "Wenn du nicht so überreagiert hättest, wär das gar nicht passiert."
+  - "- "Du hast doch gesehen, wie du mich behandelt hast!"
+  - "- "Ich wusste nicht, dass ich mich für alles rechtfertigen muss 😤"
+  - "- "Wow, jetzt bin ich plötzlich der Schuldige, ernsthaft?"
+  - "- "Klar, immer bin ich das Problem – nie du, ne?"
+  - "- "Ich hab doch gar nichts Schlimmes gesagt."
+  - "- "Und meine Gefühle zählen wohl wieder gar nicht?"
+  - "- "Du drehst halt wieder alles so, dass ich der Böse bin 🙄"
+  - "- "Wie soll ich bitte reagieren, wenn du mich so angehst?"
+  - "- "Sorry, aber DU hast das doch provoziert."
+  - "- "Ich hab echt nur versucht, dir zu helfen 😒"
+  - "examples:"
+  - "- "Es ist nicht meine Schuld, du hast doch angefangen!""
+
+semantische_grabber_id: AUTO_SEM_20250718_4F13
+
+metadata:
+  created_at: 2025-07-18T02:57:16.203557
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

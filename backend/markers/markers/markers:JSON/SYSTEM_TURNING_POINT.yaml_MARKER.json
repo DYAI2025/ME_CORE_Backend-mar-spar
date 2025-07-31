@@ -1,0 +1,39 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "description: >\n  System erreicht Kipppunkt bei Häufung von Instabilitäts- und Eskalationsmarkern, gleichzeitiger Abnahme positiver Marker.\n",
+    "examples": [
+      "SYSTEM_KIPPPUNKT:",
+      "preconditions:",
+      "- LATENT_INSTABILITY_MARKER > 3 in Folge",
+      "- ESCALATION_TENSION_MARKER im Verlauf steigend",
+      "- MICRO_CARE_MARKER stark rückläufig",
+      "trigger_threshold: Schwelle individuell anpassbar",
+      "visualisation: Kipppunkt (Farbwechsel, Warnsymbol)"
+    ],
+    "id": "S_SYSTEM_TURNING_POINTYAML",
+    "level": 2,
+    "name": "SYSTEM_TURNING_POINT.yaml",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_6077",
+    "semantic_tags": [
+      "system-turning-point.yaml-marker"
+    ]
+  },
+  "marker_name": "SYSTEM_TURNING_POINT.yaml_MARKER",
+  "semantic_grab": {
+    "description": "Erkennt Muster für system_turning_point.txt",
+    "patterns": [
+      {
+        "pattern": "r\"(muster.*wird.*ergänzt)\"",
+        "rule": "AUTO_PATTERN"
+      }
+    ]
+  },
+  "tags": [
+    "neu_erstellt",
+    "needs_review"
+  ]
+}

@@ -1,0 +1,32 @@
+# MM_DESTRUCTIVE_RELATIONAL_PATTERNS_MARKER - Semantic Marker
+marker_name: MM_DESTRUCTIVE_RELATIONAL_PATTERNS_MARKER
+beschreibung: >
+  Meta-Marker zur Erkennung rekursiv-destruktiver Beziehungsmuster, die auf 
+unbewussten Schutzstrategien beruhen. Diese Muster destabilisieren Bindung, 
+Kommunikation und Selbstwahrnehmung. Sie zeigen sich meist nicht direkt, 
+sondern über wiederholte semantische Driftkombinationen wie Schuldumkehr, 
+Vermeidung, Rückzug, widersprüchliche Nähe-/Distanzimpulse und emotionale Instabilität. 
+In der Regel sind sie Ausdruck eines älteren, dysfunktionalen Copingsystems.
+beispiele:
+  - "A: "Du übertreibst immer alles. Ich hab das gar nicht so gemeint."  
+B: "Aber du hast’s gesagt."  
+A: "Du interpretierst das nur falsch – wie immer.""
+  - "A: "Ich vermisse dich."  
+B (am selben Tag): "Lass uns Abstand halten, ich brauch meine Ruhe."  
+A (einen Tag später): "Warum meldest du dich nicht?!""
+  - "A: "Ich hab das Gefühl, du ziehst dich zurück."  
+B: "Du bildest dir das nur ein. Ich bin genau wie immer."  
+A: "Aber letzte Woche warst du noch ganz anders.""
+  - "A: "Du bist immer so emotional. Mit dir kann man nicht reden."  
+B: "Weil du mich triggerst mit deiner Art!"  
+A: "Siehst du? Genau das meine ich.""
+  - "A: "Ich bin verwirrt. Willst du Nähe oder nicht?"  
+B: "Ich weiß es selbst nicht. Ich fühl mich gleichzeitig angezogen und abgestoßen.""
+
+semantische_grabber_id: SGR_DESTRUCTIVE_PATTERNS_01
+
+metadata:
+  created_at: 2025-07-22T22:44:22.324942
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]

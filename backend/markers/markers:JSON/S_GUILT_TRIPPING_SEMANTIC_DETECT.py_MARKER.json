@@ -1,0 +1,23 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für GUILT_TRIPPING_SEMANTIC_DETECT.py_MARKER",
+    "examples": [
+      "marker_name: GUILT_TRIPPING_SEMANTIC_DETECT.py_MARKER",
+      "marker: GUILT_TRIPPING_SEMANTIC_DETECT.py_MARKER",
+      "description: \"Erkennt Muster für guilt_tripping_semantic_detect.py\"",
+      "pattern: r\"(muster.*wird.*ergänzt)\""
+    ],
+    "id": "S_GUILT_TRIPPING_SEMANTIC_DETECTPY",
+    "level": 2,
+    "name": "GUILT_TRIPPING_SEMANTIC_DETECT.py",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_123D",
+    "semantic_tags": [
+      "guilt-tripping-semantic-detect.py-marker"
+    ]
+  },
+  "marker_name": "GUILT_TRIPPING_SEMANTIC_DETECT.py_MARKER"
+}

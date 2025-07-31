@@ -1,0 +1,200 @@
+markers:
+  - id: A_CRITICISM_ATTACK
+    version: "1.0.0"
+    author: "MarkerRepairBot"
+    created_at: "2025-07-29T00:00:00Z"
+    status: "active"
+    lang: "de"
+    description: "Atomic marker für aggressive oder kritische Angriffe, oft in Form von Emojis und Angriffspatterns."
+    pattern:
+      - "😡"
+      - "😠"
+      - "😤"
+      - "🤬"
+      - "wie kann man nur"
+    examples:
+      - "😡 Du bist immer zu spät!"
+      - "Nie machst du, was ich sage!"
+      - "Wie kann man nur so nachlässig sein?"
+      - "🤬 Ich kann das nicht mehr hören!"
+      - "Das war echt das Letzte, was ich erwartet habe."
+
+  - id: A_DAILY_GREETING
+    version: "1.0.0"
+    author: "MarkerRepairBot"
+    created_at: "2025-07-29T00:00:00Z"
+    status: "active"
+    lang: "de"
+    description: "Atomic marker für tägliche Begrüßungs- und Verabschiedungsformeln."
+    pattern:
+      - "Guten Morgen"
+      - "Gute Nacht"
+      - "Schönen Abend"
+      - "Morgen"
+      - "Nacht"
+    examples:
+      - "Guten Morgen! Hoffe, du hast gut geschlafen."
+      - "Gute Nacht, schlaf schön."
+      - "Schönen Abend dir noch!"
+      - "Morgen 😊 Wie läuft’s?"
+      - "Nacht 🌙 Wir schreiben morgen."
+
+  - id: A_DEFENSIVE_JUSTIFICATION
+    version: "1.0.0"
+    author: "MarkerRepairBot"
+    created_at: "2025-07-29T00:00:00Z"
+    status: "active"
+    lang: "de"
+    description: "Atomic marker für Rechtfertigungsphrasen, die Kritik abwehren und Verantwortung wegschieben."
+    pattern:
+      - "ich bin nicht das Problem"
+      - "du übertreibst"
+      - "das siehst du nur so"
+      - "eigentlich geht es doch um was anderes"
+      - "das stimmt so nicht"
+    examples:
+      - "Ich bin nicht das Problem, du bist es!"
+      - "Du übertreibst total."
+      - "Das siehst du nur so, das ist gar nicht so gemeint."
+      - "Eigentlich geht es doch um was ganz anderes."
+      - "Das stimmt so nicht, wie du das darstellst."
+
+  - id: A_DEFENSIVENESS_SHIFT
+    version: "1.0.0"
+    author: "MarkerRepairBot"
+    created_at: "2025-07-29T00:00:00Z"
+    status: "active"
+    lang: "de"
+    description: "Atomic marker für defensive Abwehrmechanismen, die Kritik verstärken oder abwälzen."
+    pattern:
+      - "nicht meine Schuld"
+      - "wenn du"
+      - "wegen dir"
+      - "deine Schuld"
+      - "ist doch nicht so schlimm"
+    examples:
+      - "Nicht meine Schuld, du hättest mich informieren müssen."
+      - "Wenn du pünktlich wärst, müssten wir jetzt nicht diskutieren."
+      - "Wegen dir sind wir zu spät."
+      - "Deine Schuld, dass das so gelaufen ist."
+      - "Ist doch nicht so schlimm, reg dich ab."
+
+  - id: A_DEVALUING_STATEMENT
+    version: "1.0.0"
+    author: "MarkerRepairBot"
+    created_at: "2025-07-29T00:00:00Z"
+    status: "active"
+    lang: "de"
+    description: "Atomic marker für entwertende Aussagen, die die andere Person abwerten."
+    pattern:
+      - "du bist wertlos"
+      - "keiner mag dich"
+      - "du kannst nichts"
+      - "du schaffst nie"
+      - "machst alles falsch"
+    examples:
+      - "Du bist wertlos und niemand braucht dich."
+      - "Keiner mag dich hier."
+      - "Du kannst überhaupt nichts richtig machen."
+      - "Du schaffst nie, was du dir vornimmst."
+      - "Alles, was du machst, ist falsch."
+
+  - id: A_EMO_HIGH_VALENCE
+    version: "1.0.0"
+    author: "MarkerRepairBot"
+    created_at: "2025-07-29T00:00:00Z"
+    status: "active"
+    lang: "de"
+    description: "Atomic marker für stark positive Stimmungsausdrücke (Valence ≥ 0.6)."
+    pattern:
+      - "glücklich"
+      - "super"
+      - "freu mich"
+      - "fantastisch"
+      - "wundervoll"
+    examples:
+      - "Ich bin so glücklich heute!"
+      - "Das ist fantastisch gelaufen."
+      - "Freu mich riesig auf morgen."
+      - "Es fühlt sich super an."
+      - "Wundervoll, wie du das gemacht hast."
+
+  - id: A_EMO_LOW_VALENCE
+    version: "1.0.0"
+    author: "MarkerRepairBot"
+    created_at: "2025-07-29T00:00:00Z"
+    status: "active"
+    lang: "de"
+    description: "Atomic marker für stark negative Stimmungsausdrücke (Valence ≤ -0.6)."
+    pattern:
+      - "traurig"
+      - "schlecht"
+      - "furchtbar"
+      - "verzweifelt"
+      - "hoffnungslos"
+    examples:
+      - "Ich fühle mich heute so traurig."
+      - "Das war einfach furchtbar."
+      - "Ich bin total verzweifelt."
+      - "Mir geht es wirklich schlecht."
+      - "Fühle mich absolut hoffnungslos."
+
+  - id: A_EMOJI_SUPPORT
+    version: "1.0.0"
+    author: "MarkerRepairBot"
+    created_at: "2025-07-29T00:00:00Z"
+    status: "active"
+    lang: "de"
+    description: "Atomic marker für unterstützende Emojis, die Zuneigung oder Beistand ausdrücken."
+    pattern:
+      - "❤️"
+      - "🙂"
+      - "👍"
+      - "🤗"
+      - "💕"
+    examples:
+      - "Ich bin für dich da ❤️"
+      - "Alles wird gut 🙂"
+      - "Du schaffst das 👍"
+      - "Fühl dich gedrückt 🤗"
+      - "Liebe Grüße 💕"
+
+  - id: A_EMOTIONAL_INVALIDATION
+    version: "1.0.0"
+    author: "MarkerRepairBot"
+    created_at: "2025-07-29T00:00:00Z"
+    status: "active"
+    lang: "de"
+    description: "Atomic marker für Aussagen, die Gefühle abwerten oder im Nachhinein kleinreden."
+    pattern:
+      - "stell dich nicht so an"
+      - "reiß dich zusammen"
+      - "hör auf zu jammern"
+      - "ist doch nicht so schlimm"
+      - "mach kein Drama"
+    examples:
+      - "Stell dich nicht so an, das ist harmlos."
+      - "Reiß dich zusammen, du übertreibst."
+      - "Hör auf zu jammern, mach weiter."
+      - "Ist doch nicht so schlimm, beruhig dich."
+      - "Mach kein Drama deswegen."
+
+  - id: A_FEELING_CONNECTION
+    version: "1.0.0"
+    author: "MarkerRepairBot"
+    created_at: "2025-07-29T00:00:00Z"
+    status: "active"
+    lang: "de"
+    description: "Atomic marker für Ausdrücke, die emotionale Verbindung und Empathie signalisieren."
+    pattern:
+      - "fühle mich verbunden"
+      - "ich spüre dich"
+      - "wir sind eins"
+      - "ich fühle mit dir"
+      - "deine schmerzen spüre ich"
+    examples:
+      - "Ich fühle mich gerade so verbunden mit dir."
+      - "Ich spüre genau, wie es dir geht."
+      - "Wir sind irgendwie eins im Moment."
+      - "Ich fühle mit dir, das tut mir leid."
+      - "Deine Schmerzen spüre ich mit jedem Wort."

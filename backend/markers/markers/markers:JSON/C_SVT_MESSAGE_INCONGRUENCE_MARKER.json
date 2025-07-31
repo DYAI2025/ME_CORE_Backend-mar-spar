@@ -1,0 +1,40 @@
+# C_SVT_MESSAGE_INCONGRUENCE_MARKER - Semantic Marker
+marker_name: C_SVT_MESSAGE_INCONGRUENCE_MARKER
+beschreibung: >
+  id: "C_SVT_MESSAGE_INCONGRUENCE"
+level: 3
+version: "1.0.1"
+author: "Marker Evaluator & Generator v2"
+created_at: "2025-07-20"
+status: "draft"
+lang: "de"
+name: "SVT_MESSAGE_INCONGRUENCE"
+[cite_start]description: "Erkennt eine Inkongruenz in einer Nachricht, bei der sich die Signale auf den vier Kanälen (z.B. Sachebene und Beziehungsebene) widersprechen. Dies deutet auf einen verborgenen Konflikt oder eine hohe 'Systemtemperatur' hin. [cite: 292, 296]"
+composed_of:
+  - type: "atomic"
+    marker_ids: ["A_SVT_SACH_FAKTEN", "A_SVT_BEZIEHUNG_DU_BOTSCHAFT", "A_SVT_SELBST_ICH_BOTSCHAFT", "A_SVT_APPELL_DIREKT"]
+activation_logic: "(A_SVT_SACH_FAKTEN AND A_SVT_BEZIEHUNG_DU_BOTSCHAFT)"
+window:
+  messages: 1
+scoring:
+  impact: "high"
+  weight: 1.8
+tags: ["schulz_von_thun", "inkongruenz", "systemtemperatur", "konflikt", "origin_author:Schulz-von-Thun"]
+meta_marker: ["MM_SVT_TEUFELSKREIS"]
+beispiele:
+  - "examples:"
+  - "- "Die Ampel ist grün, aber du bist ja eine schlechte Fahrerin.""
+  - "- "Ihr Bericht ist sachlich korrekt, aber Sie sind einfach unzuverlässig.""
+  - "- "Die Zahlen stimmen, aber du bist einfach zu langsam.""
+  - "- "Es ist Fakt, dass die Deadline morgen ist, aber du hast ja eh keine Zeit.""
+  - "- "Es wurde beschlossen, dass dein Team die Führung übernimmt, obwohl du offensichtlich überfordert bist.""
+
+semantische_grabber_id: AUTO_SEM_20250720_39DC
+
+metadata:
+  created_at: 2025-07-20T11:46:39.613061
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

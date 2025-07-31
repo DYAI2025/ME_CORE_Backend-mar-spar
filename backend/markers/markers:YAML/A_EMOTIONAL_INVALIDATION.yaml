@@ -1,0 +1,86 @@
+marker_name: A_EMOTIONAL_INVALIDATION
+ id: "A_EMOTIONAL_INVALIDATION"
+  level: 1
+  version: "1.0.0"
+  author: "Marker_examples_generator"
+  created_at: "2025-07-22"
+  status: "released"
+  lang: "de"
+  name: "EMOTIONAL_INVALIDATION"
+  description: >
+    Detects communicative patterns of emotional invalidation, where a
+    speaker dismisses, belittles, or questions the other person’s feelings
+    to undermine their reality. :contentReference[oaicite:0]{index=0}
+  category: "ATOMIC"
+  atomic_pattern:
+    - "nur in deinem Kopf"
+    - "überreagierst"
+    - "zu empfindlich"
+    - "stell dich nicht so an"
+    - "alles persönlich"
+    - "Drama"
+    - "kein Grund"
+    - "bilde dir ein"
+    - "nicht so schlimm"
+    - "mach dich nicht lächerlich"
+  regex_flags: ["i"]
+  tags: [atomic, emotional_invalidation, gaslighting, manipulation]
+  semantic_grabber_id: "SGR_EMOTIONAL_INVALIDATION_01"
+
+  examples:
+    # ---- 20 DE / EN pairs ----
+    - de: "Das ist doch alles nur in deinem Kopf."
+      en: "It’s all just in your head."
+    - de: "Wieder mal überreagierst du total."
+      en: "There you go overreacting again."
+    - de: "Du bist einfach zu empfindlich."
+      en: "You’re just too sensitive."
+    - de: "So schlimm ist es doch gar nicht, stell dich nicht so an."
+      en: "It’s really not that bad, stop making a fuss."
+    - de: "Warum nimmst du immer alles persönlich?"
+      en: "Why do you always take everything so personally?"
+    - de: "Du machst aus allem ein Drama."
+      en: "You turn everything into a drama."
+    - de: "Du übertreibst maßlos, ehrlich."
+      en: "You’re exaggerating way too much, seriously."
+    - de: "Das bildest du dir bloß ein."
+      en: "You’re just imagining it."
+    - de: "Andere hätten längst damit abgeschlossen."
+      en: "Anybody else would have moved on by now."
+    - de: "Reiß dich zusammen, so schlimm ist das nicht."
+      en: "Pull yourself together; it’s not that bad."
+    - de: "Dafür gibt es wirklich keinen Grund zu weinen."
+      en: "There’s really no reason to cry about this."
+    - de: "Du hörst nur das, was du hören willst."
+      en: "You only hear what you want to hear."
+    - de: "Das ist doch kein Weltuntergang."
+      en: "It’s not the end of the world."
+    - de: "Du machst aus einer Mücke einen Elefanten."
+      en: "You’re making a mountain out of a molehill."
+    - de: "Sei doch nicht so hypersensibel."
+      en: "Don’t be so hypersensitive."
+    - de: "Ich glaube, du dramatisierst das Ganze nur."
+      en: "I think you’re just dramatizing the whole thing."
+    - de: "Du tust so, als wäre es schlimmer, als es ist."
+      en: "You’re acting like it’s worse than it is."
+    - de: "Ganz ehrlich, das ist doch albern."
+      en: "Honestly, that’s just silly."
+    - de: "Du suchst Probleme, wo keine sind."
+      en: "You’re looking for problems that aren’t there."
+    - de: "Das ist doch alles halb so wild."
+      en: "It’s really no big deal."
+
+  semantic_grab:
+    description: "Pattern definitions used by emotional_invalidation_marker.py"
+    patterns:
+      - rule: "AUTO_PATTERN"
+        pattern: r"(muster.*wird.*ergänzt)"
+    tags: [emotional_invalidierend, gaslighting, manipulativ, neu_erstellt, needs_review]
+
+
+
+
+
+
+
+kategorie: UNCATEGORIZED

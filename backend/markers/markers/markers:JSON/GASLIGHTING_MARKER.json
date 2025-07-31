@@ -1,0 +1,66 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Kommunikation, die das Gegenüber gezielt an seiner Wahrnehmung, Erinnerung oder Realität zweifeln lässt.\n",
+    "examples": [
+      "Ich habe dir nie versprochen, dass ich mitkomme. Das hast du dir in den Kopf gesetzt.",
+      "Du bist nicht wütend, du bist nur müde. Du weißt doch gar nicht, was du fühlst.",
+      "Dieser alte Brief? Der lag hier nie. Du musst ihn selbst verlegt haben.",
+      "Hör auf, so paranoid zu sein. Niemand redet hinter deinem Rücken über dich.",
+      "Es war nur ein harmloser Flirt. Dass du daraus so ein Drama machst, zeigt doch, dass das Problem bei dir liegt.",
+      "Erinnerst du dich? Wir haben darüber gesprochen und du warst einverstanden. Deine Erinnerung lässt dich wirklich im Stich in letzter Zeit.",
+      "Das war keine Kritik, das war konstruktives Feedback. Wenn du das nicht unterscheiden kannst, ist das nicht mein Fehler.",
+      "Vielleicht solltest du dir Hilfe suchen, du scheinst die Realität oft zu verdrehen.",
+      "Die Schlüssel lagen schon immer an diesem Haken. Du wirst wirklich vergesslich.",
+      "Natürlich habe ich dir zugehört. Du hast nur nichts von Bedeutung gesagt.",
+      "Du übertreibst mal wieder. Das war doch nur ein Scherz.",
+      "Ich habe dir doch gesagt, dass du das nicht so eng sehen sollst. Du bist einfach zu empfindlich.",
+      "Du hast das falsch verstanden. Ich habe nie gesagt, dass ich das mache. Du interpretierst zu viel hinein.",
+      "Warum bist du so empfindlich? Das war doch nur ein kleiner Kommentar. Du machst aus Mücken Elefanten.",
+      "Ich habe dir nie gesagt, dass du das nicht kannst. Du bist einfach zu sensibel und nimmst alles persönlich.",
+      "Du bist nicht objektiv. Du siehst die Dinge nur durch deine eigene, verzerrte Linse.",
+      "Das ist nicht so passiert, wie du es dir einredest. Du erinnerst dich falsch.",
+      "Du bist nicht in der Lage, die Realität klar zu sehen. Du solltest wirklich darüber nachdenken, dir Hilfe zu suchen.",
+      "Das war doch nur ein Scherz. Du nimmst alles viel zu ernst. Du bist einfach zu empfindlich."
+    ],
+    "id": "S_GASLIGHTING",
+    "level": 2,
+    "name": "GASLIGHTING",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_48B1",
+    "semantic_tags": [
+      "gaslighting-marker"
+    ]
+  },
+  "marker_name": "GASLIGHTING_MARKER",
+  "semantic_grab": {
+    "description": "Erkennt Muster, die darauf abzielen, die Wahrnehmung und Realität des Gegenübers zu manipulieren oder zu untergraben.",
+    "patterns": [
+      {
+        "example": "Das hast du dir nur eingebildet. Ich habe nie gesagt, dass ich mitkomme.",
+        "pattern": "r\"(habe ich nie gesagt|das hast du dir eingebildet|das ist nicht passiert|du erinnerst dich falsch)\"",
+        "rule": "DENY_REALITY"
+      },
+      {
+        "example": "Du bist nicht wütend, du bist nur müde. Du weißt doch gar nicht, was du fühlst.",
+        "pattern": "r\"(du bist nicht wütend|du bist nur müde|du übertreibst|du bist zu empfindlich)\"",
+        "rule": "MINIMIZE_EMOTION"
+      },
+      {
+        "example": "Das Problem liegt bei dir. Du machst aus Mücken Elefanten.",
+        "pattern": "r\"(das Problem liegt bei dir|du machst aus Mücken Elefanten|du bist paranoid|du verdrehst die Realität)\"",
+        "rule": "SHIFT_BLAME"
+      },
+      {
+        "example": "Du erinnerst dich falsch",
+        "pattern": "r\"(du hast das falsch verstanden|du erinnerst dich falsch|du bist wirklich vergesslich|du bist nicht objektiv)\"",
+        "rule": "QUESTION_MEMORY"
+      }
+    ]
+  },
+  "tags": [
+    "needs_review"
+  ]
+}

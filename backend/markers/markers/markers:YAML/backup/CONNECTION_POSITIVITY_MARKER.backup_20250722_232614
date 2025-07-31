@@ -1,0 +1,30 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für CONNECTION_POSITIVITY_MARKER
+  examples:
+  - 'name: "CONNECTION_POSITIVITY"'
+  - 'level: "atomic"'
+  - 'category: "Soziale Verbundenheit"'
+  - 'semantic_tags: ["Verbindung", "Wohlfühlen", "Wertschätzung", "Empathie"]'
+  - Erkennt sprachliche Marker für ein positives Miteinander, Wertschätzung, gegenseitiges
+    Wahrnehmen, Humor, Vertrauen und Feedback in der Beziehungsgestaltung.
+  id: S_CONNECTION_POSITIVITY
+  level: 2
+  name: CONNECTION_POSITIVITY
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_9DCD
+  semantic_tags:
+  - connection-positivity-marker
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.796527'
+  repair_version: '1.0'

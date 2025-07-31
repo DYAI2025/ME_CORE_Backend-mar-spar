@@ -1,0 +1,90 @@
+version: '3.8'
+
+services:
+  # Test database
+  test-mongodb:
+    image: mongo:6.0
+    container_name: test-mongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: test
+      MONGO_INITDB_ROOT_PASSWORD: test
+      MONGO_INITDB_DATABASE: test_marker_engine
+    networks:
+      - test-network
+
+  # Test Redis
+  test-redis:
+    image: redis:7-alpine
+    container_name: test-redis
+    networks:
+      - test-network
+
+  # Backend for testing
+  test-backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+      target: test
+    container_name: test-backend
+    environment:
+      DATABASE_URL: mongodb://test:test@test-mongodb:27017/test_marker_engine?authSource=admin
+      REDIS_URL: redis://test-redis:6379/0
+      SPARK_NLP_ENABLED: false
+      TESTING: true
+    depends_on:
+      - test-mongodb
+      - test-redis
+    networks:
+      - test-network
+    command: pytest tests/integration -v --no-cov
+
+  # Frontend for testing
+  test-frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      target: test
+    container_name: test-frontend
+    environment:
+      NEXT_PUBLIC_API_URL: http://test-backend:8000
+      NODE_ENV: test
+    depends_on:
+      - test-backend
+    networks:
+      - test-network
+    command: npm run test:e2e:ci
+
+  # Test runner
+  test-runner:
+    build:
+      context: .
+      dockerfile: Dockerfile.test
+    container_name: test-runner
+    environment:
+      API_URL: http://test-backend:8000
+      FRONTEND_URL: http://test-frontend:3000
+    depends_on:
+      - test-backend
+      - test-frontend
+    networks:
+      - test-network
+    volumes:
+      - ./test-results:/app/test-results
+    command: |
+      bash -c "
+        # Wait for services
+        ./tools/wait-for-services.sh
+        
+        # Run E2E tests
+        npm run test:e2e
+        
+        # Run API tests
+        npm run test:api
+        
+        # Generate report
+        npm run test:report
+      "
+
+networks:
+  test-network:
+    driver: bridge

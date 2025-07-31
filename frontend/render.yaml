@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: markerengine-frontend
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NEXT_PUBLIC_API_URL
+        value: https://your-backend-api.onrender.com/api
+      - key: NEXT_PUBLIC_WS_URL
+        value: wss://your-backend-api.onrender.com/ws
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /*

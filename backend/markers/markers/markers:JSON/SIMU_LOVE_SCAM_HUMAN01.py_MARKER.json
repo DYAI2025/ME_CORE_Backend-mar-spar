@@ -1,0 +1,24 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für SIMU_LOVE_SCAM_HUMAN01.py_MARKER",
+    "examples": [
+      "marker_name: SIMU_LOVE_SCAM_HUMAN01.py_MARKER",
+      "marker: SIMU_LOVE_SCAM_HUMAN01.py_MARKER",
+      "Was bräuchte diese semantische Erkennung?",
+      "Statt \"Ich liebe dich\" einfach nur zu matchen, würde sie prüfen:",
+      "Ist das Gespräch abrupt emotional intensiv ohne Kontext?"
+    ],
+    "id": "S_SIMU_LOVE_SCAM_HUMAN01PY",
+    "level": 2,
+    "name": "SIMU_LOVE_SCAM_HUMAN01.py",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_2E2D",
+    "semantic_tags": [
+      "simu-love-scam-human01.py-marker"
+    ]
+  },
+  "marker_name": "SIMU_LOVE_SCAM_HUMAN01.py_MARKER"
+}

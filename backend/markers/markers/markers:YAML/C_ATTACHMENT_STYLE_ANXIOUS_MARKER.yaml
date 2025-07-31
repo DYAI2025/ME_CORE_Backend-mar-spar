@@ -1,0 +1,31 @@
+# C_ATTACHMENT_STYLE_ANXIOUS_MARKER - Semantic Marker
+marker_name: C_ATTACHMENT_STYLE_ANXIOUS_MARKER
+beschreibung: >
+  Aktiv, wenn ANXIOUS_CHILDHOOD_REFERENCE ≥2‑mal
+im 20‑Nachrichten‑Fenster erscheint.
+beispiele:
+  - "Der Sprecher verwendet häufig Worte wie 'Angst', 'unsicher', 'nie gewusst'."
+  - "Erinnerungen zeigen große Stimmungsschwankungen der Eltern."
+  - "Zuneigung wird als unberechenbar beschrieben."
+  - "Versprechen wurden gegeben und gebrochen – Trauer folgt."
+  - "Der Sprecher erwartet instinktiv Ablehnung."
+  - "Emotionale Nähe wird ersehnt, aber zugleich gefürchtet."
+  - "Kleinste Zeichen von Distanz lösen Sorge aus."
+  - "Schlafprobleme werden mit elterlichen Streits verknüpft."
+  - "Erinnerungen an entschuldigungs­getriebenes Verhalten ('Es tut mir leid, dass ich existiere')."
+  - "Bindungen wirken abhängig und überbetont."
+  - "Körperliche Symptome (Bauchweh) vor familiären Ereignissen."
+  - "Vorfreude und Enttäuschung wechseln abrupt."
+  - "Erwachsenen­beziehungen spiegeln ängstliche Muster wider."
+  - "Eltern werden zugleich idealisiert und kritisiert."
+  - "Fazit: 'Ich brauche Nähe, aber traue ihr nicht.'"
+
+semantische_grabber_id: SGR_CL_ANX_01
+
+metadata:
+  created_at: 2025-07-22T00:10:28.738320
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

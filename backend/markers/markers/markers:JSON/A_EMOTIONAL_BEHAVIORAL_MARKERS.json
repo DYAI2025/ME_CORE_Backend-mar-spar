@@ -1,0 +1,23 @@
+{
+  "kategorie": "ATOMIC",
+  "marker": {
+    "category": "Atomic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für EMOTIONAL_BEHAVIORAL_MARKERS",
+    "examples": [
+      "Automatisch generierte Beschreibung für EMOTIONAL_BEHAVIORAL_MARKERS"
+    ],
+    "id": "M_EMOTIONAL_BEHAVIORAL_MARKERS",
+    "level": 1,
+    "name": "EMOTIONAL_BEHAVIORALS",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_726B",
+    "semantic_tags": [
+      "emotional-behavioral-markers"
+    ]
+  },
+  "marker_name": "EMOTIONAL_BEHAVIORAL_MARKERS",
+  "tags": [
+    "needs_review"
+  ]
+}

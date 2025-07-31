@@ -1,0 +1,23 @@
+{
+  "kategorie": "ATOMIC",
+  "marker": {
+    "category": "Atomic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für RECOPA_chunk_output_template",
+    "examples": [
+      "Automatisch generierte Beschreibung für RECOPA_chunk_output_template"
+    ],
+    "id": "M_RECOPA_CHUNK_OUTPUT_TEMPLATE",
+    "level": 1,
+    "name": "RECOPA_chunk_output_template",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_2456",
+    "semantic_tags": [
+      "recopa-chunk-output-template"
+    ]
+  },
+  "marker_name": "RECOPA_chunk_output_template",
+  "tags": [
+    "needs_review"
+  ]
+}

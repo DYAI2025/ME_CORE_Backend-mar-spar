@@ -1,0 +1,278 @@
+markers:
+  - id: A_ANTICIPATION_EXPRESSION
+    frame:
+      signal:
+        - "freue mich auf"
+        - "kann es kaum erwarten"
+        - "zähl schon die stunden"
+        - "hoffentlich ist bald"
+        - "wird sicher super mit dir"
+      concept: anticipation
+      pragmatics: future_expectation
+      narrative: shared_future
+    pattern:
+      - "freue mich auf"
+      - "kann es kaum erwarten"
+      - "zähl schon die stunden"
+      - "hoffentlich ist bald"
+      - "wird sicher super mit dir"
+    activation:
+      rule: "ANY 1 IN 1 messages"
+    scoring:
+      base: 1.0
+      weight: 1.2
+    examples:
+      - "Ich freue mich schon auf unser Treffen nächste Woche."
+      - "Kann es kaum erwarten, dich wiederzusehen."
+      - "Ich zähle schon die Stunden bis zum Urlaub."
+      - "Hoffentlich ist bald Freitag."
+      - "Wird sicher super mit dir im Kino."
+    tags:
+      - optimism
+      - anticipation
+
+  - id: A_APPEAL_TO_AUTHORITY
+    frame:
+      signal:
+        - "Laut einer Studie"
+        - "Dr."
+        - "Professor"
+        - "Die WHO"
+        - "Experten warnen"
+      concept: appeal_to_authority
+      pragmatics: justification
+      narrative: argumentation
+    pattern:
+      - "Laut einer Studie"
+      - "Dr. "
+      - "Professor "
+      - "Die WHO"
+      - "Experten warnen"
+    activation:
+      rule: "ANY 1 IN 1 messages"
+    scoring:
+      base: 1.0
+      weight: 1.0
+    examples:
+      - "Laut einer Studie ist das die beste Methode."
+      - "Dr. Müller bestätigt diese Vorgehensweise."
+      - "Professor Schmidt hat es nachgewiesen."
+      - "Die WHO empfiehlt das ausdrücklich."
+      - "Experten warnen vor langfristigen Folgen."
+    tags:
+      - argument
+      - authority
+
+  - id: A_AUSDRUCK_VORFREUDE
+    frame:
+      signal:
+        - "vorfreude"
+        - "jubel"
+        - "herzklopfen"
+        - "glücklich"
+        - "aufgeregt"
+      concept: anticipation
+      pragmatics: emotional_arousal
+      narrative: positive_expectation
+    pattern:
+      - "Vorfreude"
+      - "jubel"
+      - "Herzklopfen"
+      - "glücklich"
+      - "aufgeregt"
+    activation:
+      rule: "ANY 1 IN 1 messages"
+    scoring:
+      base: 1.0
+      weight: 1.1
+    examples:
+      - "Meine Vorfreude ist kaum in Worte zu fassen."
+      - "Jubel bei dem Gedanken an das Konzert."
+      - "Ich habe jetzt schon Herzklopfen."
+      - "Bin so aufgeregt vor dem Urlaub."
+      - "Fühle mich heute richtig glücklich."
+    tags:
+      - excitement
+      - anticipation
+
+  - id: A_BLAME_SHIFT
+    frame:
+      signal:
+        - "nicht meine Schuld"
+        - "wenn du"
+        - "wegen dir"
+        - "deine Schuld"
+      concept: blame_shift
+      pragmatics: deflection
+      narrative: defense
+    pattern:
+      - "nicht meine Schuld"
+      - "wenn du"
+      - "wegen dir"
+      - "deine Schuld"
+    activation:
+      rule: "ANY 1 IN 1 messages"
+    scoring:
+      base: 1.0
+      weight: 1.3
+    examples:
+      - "Nicht meine Schuld, du hättest mich informieren müssen."
+      - "Wenn du drückst, kann ich nicht schneller sein."
+      - "Wegen dir sind wir zu spät."
+      - "Deine Schuld, dass das schiefgegangen ist."
+      - "Du hast das falsch verstanden."
+    tags:
+      - conflict
+      - defensiveness
+
+  - id: A_BRO_LIKE_CALLING
+    frame:
+      signal:
+        - "Digga"
+        - "Brudi"
+        - "Alter"
+        - "Vogel"
+        - "Schatzi"
+      concept: friendship_address
+      pragmatics: solidarity
+      narrative: camaraderie
+    pattern:
+      - "Digga"
+      - "Brudi"
+      - "Alter"
+      - "Vogel"
+      - "Schatzi"
+    activation:
+      rule: "ANY 1 IN 1 messages"
+    scoring:
+      base: 1.0
+      weight: 1.0
+    examples:
+      - "Digga, was geht ab?"
+      - "Brudi, lass mal quatschen."
+      - "Alter, du bist der Hammer."
+      - "Ey Vogel, wie läuft's?"
+      - "Schatzi, kommst du später vorbei?"
+    tags:
+      - friendship
+      - slang
+
+  - id: A_CALL_TO_ACTION
+    frame:
+      signal:
+        - "lass uns"
+        - "geh hin"
+        - "probier"
+        - "tu das"
+        - "mach jetzt"
+      concept: call_to_action
+      pragmatics: directive
+      narrative: invitation
+    pattern:
+      - "lass uns"
+      - "geh hin"
+      - "probier"
+      - "tu das"
+      - "mach jetzt"
+    activation:
+      rule: "ANY 1 IN 1 messages"
+    scoring:
+      base: 1.0
+      weight: 1.2
+    examples:
+      - "Lass uns morgen früh joggen gehen."
+      - "Geh hin und sieh dir das an."
+      - "Probier das neue Restaurant aus."
+      - "Tu das jetzt, bevor es zu spät ist."
+      - "Mach jetzt deine Hausaufgaben."
+    tags:
+      - directive
+      - invitation
+
+  - id: A_CERTAINTY_PHRASE
+    frame:
+      signal:
+        - "auf jeden Fall"
+        - "ganz sicher"
+        - "definitiv"
+        - "absolut klar"
+        - "hundertprozentig"
+      concept: certainty
+      pragmatics: assurance
+      narrative: confirmation
+    pattern:
+      - "auf jeden Fall"
+      - "ganz sicher"
+      - "definitiv"
+      - "absolut klar"
+      - "hundertprozentig"
+    activation:
+      rule: "ANY 1 IN 1 messages"
+    scoring:
+      base: 1.0
+      weight: 1.1
+    examples:
+      - "Das ist auf jeden Fall richtig."
+      - "Ganz sicher machen wir das so."
+      - "Das ist definitiv der beste Weg."
+      - "Absolut klar, was wir brauchen."
+      - "Hundertprozentig bin ich dabei."
+    tags:
+      - assurance
+      - certainty
+
+  - id: A_CONTRAST_CONJUNCTION
+    frame:
+      signal:
+        - "aber"
+        - "jedoch"
+        - "dennoch"
+        - "hingegen"
+        - "allerdings"
+      concept: contrast
+      pragmatics: shift
+      narrative: opposition
+    pattern:
+      - "aber"
+      - "jedoch"
+      - "dennoch"
+      - "hingegen"
+      - "allerdings"
+    activation:
+      rule: "ANY 1 IN 1 messages"
+    scoring:
+      base: 1.0
+      weight: 1.0
+    examples:
+      - "Ich will kommen, aber es passt zeitlich nicht."
+      - "Das klingt gut, jedoch bin ich müde."
+      - "Dennoch werde ich es versuchen."
+      - "Er mag Pizza, hingegen bestelle ich Sushi."
+      - "Allerdings habe ich schon gegessen."
+    tags:
+      - contrast
+      - conjunction
+
+  - id: S_HIGH_LOC_DENSITY
+    frame:
+      signal:
+        - "Ortserwähnungen gehäuft"
+      concept: information_density
+      pragmatics: topic_richness
+      narrative: density
+    detect_class: HighLocDensityDetector
+    activation:
+      rule: "ANY 1 IN 10 messages"
+    scoring:
+      base: 1.0
+      weight: 1.5
+    examples:
+      - "Berlin, München, Hamburg, Köln, Frankfurt – und das alles in einem Satz."
+      - "Ich war in Paris, London, Rom und Madrid in einer Woche."
+      - "Zürich, Genf, Basel, Bern, Lausanne – eine ganze Städte-Tour."
+      - "Wir treffen uns in Zürich, gehen dann nach Luzern und danach nach Interlaken."
+      - "Erzähl mir von New York, Los Angeles, Chicago – es war so viel."
+    tags:
+      - density
+      - location
+      - semantic

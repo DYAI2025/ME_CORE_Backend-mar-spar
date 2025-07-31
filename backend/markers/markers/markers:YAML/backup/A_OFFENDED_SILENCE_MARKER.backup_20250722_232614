@@ -1,0 +1,30 @@
+marker_name: A_OFFENDED_SILENCE_MARKER
+beschreibung: 'Atomic Marker für nonverbale oder einsilbige Reaktionen, die Unmut
+  signalisieren, ohne den Konflikt direkt anzusprechen (Silent Treatment).
+
+  '
+beispiele:
+- 'A: ''Ist alles okay bei dir?'' B: ''...'''
+- 'A: ''Können wir reden?'' B: ''k.'''
+- 'A: ''Ich hab das Essen gemacht.'' B: ''aha'''
+- 'A: ''Ich liebe dich.'' B: ''mhm'''
+- Passt schon. *wendet sich ab*
+semantische_grabber_id: SGR_OFFENDED_SILENCE_01
+metadata:
+  created_at: 2025-07-21 12:51:49.023454
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags:
+  - neu_erstellt
+  - needs_review
+  last_repaired: '2025-07-21T14:03:13.494952'
+  repair_version: '1.0'
+category: UNCATEGORIZED
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5

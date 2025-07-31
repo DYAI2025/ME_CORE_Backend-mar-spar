@@ -1,0 +1,30 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für EMBOWERMENT_MARKER
+  examples:
+  - 'name: "Empowerment/Selbstbestimmung"'
+  - 'sem_id: "SGR_EMPOWERMENT_01"'
+  - Marker für Formulierungen, die Autonomie, Selbstbestimmung und Entscheidungsfreiheit
+    betonen.
+  - Erkennt Phrasen, die Wahlfreiheit signalisieren und die eigene Entscheidung unterstützen.
+  - 'category: "Beziehung/Meta"'
+  id: S_EMBOWERMENT
+  level: 2
+  name: EMBOWERMENT
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_6E8F
+  semantic_tags:
+  - embowerment-marker
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.615180'
+  repair_version: '1.0'

@@ -1,0 +1,45 @@
+marker_name: S_EMO_CONTRAST_DRIFT
+ id: "S_EMO_CONTRAST_DRIFT"
+  level: 2
+  version: "1.0.0"
+  author: "Marker_examples_generator"
+  created_at: "2025-07-21"
+  status: "released"
+  lang: "de"
+  name: "Emotionaler Kontrast-Drift"
+  description: "Semantischer Marker für einen schnellen Wechsel zwischen Sicherheit und Unsicherheit."
+  category: "SEMANTIC"
+  composed_of:
+    - type: atomic
+      marker_ids: ["A_CERTAINTY_PHRASE", "A_CONTRAST_CONJUNCTION", "A_UNCERTAINTY_PHRASE"]
+  rules:
+    - type: sequence
+      value: ["A_CERTAINTY_PHRASE", "A_CONTRAST_CONJUNCTION", "A_UNCERTAINTY_PHRASE"]
+      condition: "innerhalb_von"
+      scope: 1
+  scoring:
+    weight: 1.4
+    priority: "mid"
+  tags: ["semantisch", "ambivalenz", "konflikt", "emotion"]
+  examples:
+    - "I usually know what I want, but in relationships – I don't know."
+    - "Eigentlich bin ich stark, aber manchmal fühle ich mich total klein."
+    - "I feel confident, but sometimes I doubt myself."
+    - "Normalerweise bin ich sicher, aber heute bin ich unsicher."
+    - "Ich bin mir sicher, dass ich es schaffe, aber manchmal habe ich Zweifel."
+    - "I know what I want, but sometimes I feel lost."
+    - "Ich bin mir sicher, aber eigentlich weiß ich's doch nicht 😂."
+    - "I know what to do, but I'm not sure if it'll work."
+    - "Usually I have a plan, however I'm not sure this time."
+    - "Eigentlich hab ich das im Griff, aber keine Ahnung wie heute."
+    - "I am sure it's fine, but I'm not sure why I'm nervous."
+    - "Normalerweise weiß ich Bescheid, jedoch bin ich heute unsicher."
+
+
+
+
+
+
+ChatGPT fragen
+
+kategorie: UNCATEGORIZED

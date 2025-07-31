@@ -1,0 +1,28 @@
+id: A_SWAYING
+marker: SWAYING
+level: 1
+version: "1.0.0"
+status: draft
+author: "auto_gpt"
+created: "2025-07-25T21:17:00Z"
+tags: [atomic, indecision, hesitation]
+pattern:
+  - "(einerseits .+ andererseits)"
+  - "ich schwanke"
+  - "hin- und hergerissen"
+  - "ich kann mich nicht entscheiden"
+  - "mal .+, mal .+"
+  - "überlege hin und her"
+  - "unsicher, ob"
+  - "ich schwanke zwischen"
+  - "nicht festlegen"
+description: "Detects expressions of indecision, oscillation, and swaying between options."
+examples:
+  - "Einerseits will ich das Angebot annehmen, andererseits habe ich Angst vor Veränderung."
+  - "Ich kann mich nicht entscheiden, ist das jetzt gut oder schlecht?"
+  - "Ich schwanke zwischen ‚ok‘ und ‚total verrückt‘."
+  - "Ich überlege hin und her, was jetzt wirklich zählt."
+  - "Ich bin hin- und hergerissen, ich komme nicht klar."
+category: "ATOMIC"
+scoring:
+  weight: 1.0

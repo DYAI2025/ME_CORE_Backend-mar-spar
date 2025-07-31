@@ -1,0 +1,22 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für BLAME_SHIFTING",
+    "examples": [
+      "name: \"Blameshifting\"",
+      "The act of shifting responsibility for one's own mistakes, negative feelings, or problems onto another person to deflect blame and avoid accountability. This is a common defense mechanism in conflicts",
+      "category: \"Conflict & Defense Mechanisms\""
+    ],
+    "id": "S_BLAME_SHIFTING",
+    "level": 2,
+    "name": "BLAME_SHIFTING",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_6CFF",
+    "semantic_tags": [
+      "blame-shifting"
+    ]
+  },
+  "marker_name": "BLAME_SHIFTING"
+}

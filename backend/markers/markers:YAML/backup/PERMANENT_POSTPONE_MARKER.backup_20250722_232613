@@ -1,0 +1,35 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für PERMANENT_POSTPONE_MARKER
+  examples:
+  - 'beschreibung: Das wiederholte und oft vage Aufschieben von wichtigen Entscheidungen,
+    klärenden Gesprächen oder notwendigen Integrationsschritten.'
+  - 'dynamik_absicht: Die Absicht ist meist die Vermeidung von Konfrontation und der
+    damit verbundenen Angst. Es ist eine passive Strategie, um den Status quo zu erhalten.
+    Die Wirkung ist zermürbend und er'
+  - 'szenario: "Das Aufschieben wird mit dem Verhalten des anderen begründet. Beispiel:
+    ''Ich würde ja gerne mit dir reden, aber so wie du jetzt schon wieder geladen
+    bist, hat das keinen Sinn. Lass uns das '
+  - 'description: "Erkennt Phrasen des Aufschubs, der Vertagung und der Konditionierung
+    an unbestimmte zukünftige Ereignisse."'
+  - 'pattern: "(Lass uns) +(später|die Tage|irgendwann|bald) +(darüber reden|das klären)"'
+  id: S_PERMANENT_POSTPONE
+  level: 2
+  name: PERMANENT_POSTPONE
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_86CC
+  semantic_tags:
+  - permanent-postpone-marker
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.680792'
+  repair_version: '1.0'

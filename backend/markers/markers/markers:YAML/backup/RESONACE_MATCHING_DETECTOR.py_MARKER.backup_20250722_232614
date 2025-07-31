@@ -1,0 +1,29 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für RESONACE_MATCHING_DETECTOR.py_MARKER
+  examples:
+  - 'marker_name: RESONACE_MATCHING_DETECTOR.py_MARKER'
+  - 'marker: RESONACE_MATCHING_DETECTOR.py_MARKER'
+  - Semantic detection of too good to be true matching.
+  - 'description: "Erkennt Muster für resonace_matching_detector.py"'
+  - 'pattern: r"(muster.*wird.*ergänzt)"'
+  id: S_RESONACE_MATCHING_DETECTORPY
+  level: 2
+  name: RESONACE_MATCHING_DETECTOR.py
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_B718
+  semantic_tags:
+  - resonace-matching-detector.py-marker
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.891312'
+  repair_version: '1.0'

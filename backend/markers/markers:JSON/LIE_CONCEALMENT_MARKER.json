@@ -1,0 +1,24 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für LIE_CONCEALMENT_MARKER",
+    "examples": [
+      "Indikatoren für Lügen, Ausflüchte oder bewusste Verheimlichung. Erkennbar an widersprüchlichen Aussagen, ausweichenden, vagen oder deflektierenden Formulierungen – häufig kombiniert mit Ausreden und V",
+      "Auf die Frage \"Wo warst du?\"): \"Ich war nur kurz unterwegs, nichts Besonderes.\"",
+      "\"Das ist eine lange Geschichte für einen anderen Tag.\"",
+      "\"Warum ist das jetzt relevant für dich?\"",
+      "\"Ich bin mir nicht mehr ganz sicher, wie das genau war.\""
+    ],
+    "id": "S_LIE_CONCEALMENT",
+    "level": 2,
+    "name": "LIE_CONCEALMENT",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_A50B",
+    "semantic_tags": [
+      "lie-concealment-marker"
+    ]
+  },
+  "marker_name": "LIE_CONCEALMENT_MARKER"
+}

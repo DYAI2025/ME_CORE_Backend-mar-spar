@@ -1,0 +1,28 @@
+{
+  "marker_name": "S_DESTRUCTIVE_CRITICISM_MARKER",
+  "beschreibung": "Verallgemeinernder Vorwurf + Abwertung in einem Satz.\n",
+  "beispiele": [
+    "Immer machst du so ein Drama, das ist doch lächerlich.",
+    "Nie hörst du zu, stell dich nicht so an.",
+    "Ständig bist du am Jammern, das ist kindisch.",
+    "Jedes Mal das Gleiche, dein Problem, nicht meins.",
+    "Typisch für dich, sofort übertreiben.",
+    "Immer vergisst du was, echt peinlich.",
+    "Nie kannst du einfach funktionieren, hör auf zu heulen.",
+    "Ständig suchst du Ausreden, lächerlich.",
+    "Immer bist du chaotisch, das nervt.",
+    "Nie hast du Plan B, total kindisch.",
+    "Ständig willst du Sonderbehandlung, lächerlich.",
+    "Immer bringst du uns in Stress, stell dich nicht so an.",
+    "Nie checkst du das Offensichtliche, echt traurig.",
+    "Ständig verspätet, wie im Kindergarten.",
+    "Immer Drama, nie Lösung, nervt!",
+    "Nie kannst du Verantwortung übernehmen, kindisch.",
+    "Ständig Fehler, einfach lächerlich.",
+    "Immer das Opfer spielen, hör doch auf.",
+    "Nie zufrieden, immer Theater – dein Problem.",
+    "Typisch, alles emotional aufblasen, so kindisch."
+  ],
+  "semantische_grabber_id": "SGR_DESTRUCTIVE_CRITICISM_01",
+  "metadata": {
+    "created_at": 

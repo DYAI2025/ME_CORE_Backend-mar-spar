@@ -1,0 +1,44 @@
+marker_name: A_GENERALIZED_ACCUSATION_MARKER
+beschreibung: 'Absolute Vorwürfe mit ''immer'', ''nie'', ''ständig''.
+
+  '
+beispiele:
+- Immer machst du so ein Drama.
+- Nie hörst du richtig zu.
+- Ständig bist du am Handy.
+- Typisch für dich, alles zu spät zu erledigen.
+- Jedes Mal das Gleiche mit dir.
+- Immer vergisst du wichtige Details.
+- Nie kannst du dich entscheiden.
+- Ständig findest du Ausreden.
+- Typisch, dass du jetzt wieder abtauchst.
+- Jedes Mal musst du Recht haben.
+- Immer drehst du die Dinge, wie sie dir passen.
+- Nie sieht man von dir Eigeninitiative.
+- Ständig nörgelst du an allem herum.
+- Typisch für dich, anderen die Schuld zu geben.
+- Jedes Mal wenn's ernst wird, kneifst du.
+- Immer bist du der Letzte, der sich meldet.
+- Nie lässt du mich ausreden.
+- Ständig unterbrichst du mich.
+- Typisch, du übertreibst wieder maßlos.
+- Jedes Mal zerstörst du die Stimmung.
+semantische_grabber_id: SGR_GENERALIZED_ACCUSATION_01
+metadata:
+  created_at: 2025-07-22 00:17:42.002133
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags:
+  - neu_erstellt
+  - needs_review
+  last_repaired: '2025-07-22T02:31:24.204025'
+  repair_version: '1.0'
+category: UNCATEGORIZED
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5

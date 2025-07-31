@@ -1,0 +1,23 @@
+# Test dependencies
+-r requirements-base.txt
+
+# Testing frameworks
+pytest==7.4.4
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+pytest-timeout==2.2.0
+pytest-xdist==3.5.0
+
+# Test utilities
+httpx==0.26.0
+faker==22.1.0
+factory-boy==3.3.0
+
+# Performance testing
+locust==2.20.0
+pytest-benchmark==4.0.0
+
+# Security testing
+safety==3.0.1
+bandit==1.7.6

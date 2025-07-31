@@ -1,0 +1,24 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für SEMANTIC_FOG_MARKER",
+    "examples": [
+      "1. Marker-Beschreibung & Szenarien",
+      "Beschreibung: Dieser Marker erkennt eine spezifische Form der verbalen Abwehr, bei der emotionale Klarheit durch übermäßig komplexe, abstrakte, theoretische oder diffuse Sprache ersetzt wird. Anstatt ",
+      "Paarkonflikt: Auf die direkte Frage \"Liebst du mich noch?\" weicht eine Person aus, indem sie über das Konstrukt der Liebe philosophiert, anstatt eine klare emotionale Antwort zu geben.",
+      "Therapie & Coaching: Ein Klient, der Schwierigkeiten hat, seine Wut oder Verletzlichkeit zu spüren, analysiert stattdessen die \"Interaktionsmuster\" und \"systemischen Dynamiken\" mit seinem Partner, ans",
+      "Arbeitskontext: Ein Mitarbeiter, der mit Kritik überfordert ist, reagiert nicht emotional, sondern beginnt, über die \"paradigmatischen Verschiebungen in der Teamkultur\" zu referieren."
+    ],
+    "id": "S_SEMANTIC_FOG",
+    "level": 2,
+    "name": "SEMANTIC_FOG",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_0757",
+    "semantic_tags": [
+      "semantic-fog-marker"
+    ]
+  },
+  "marker_name": "SEMANTIC_FOG_MARKER"
+}

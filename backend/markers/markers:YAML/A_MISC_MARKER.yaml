@@ -1,0 +1,30 @@
+# A_MISC_MARKER - Semantic Marker
+marker_name: A_MISC_MARKER
+beschreibung: >
+  id: "A_MISC"
+  level: 1
+  version: "1.0.0"
+  author: "auto_gpt"
+  created_at: "2025-07-18"
+  status: "draft"
+  lang: "de"
+  name: "MISCELLANEOUS_ENTITY"
+  description: "Token wurde als sonstige Eigennamen-Entität (Produkt, Event, Werk o. Ä.) getaggt."
+beispiele:
+  - "examples:"
+  - "- "Meine Lieblingsserie ist **Game of Thrones**.""
+  - "- "Morgen ist **Weihnachten**.""
+  - "- "Hast du **Minecraft** gespielt?""
+  - "- "Ich höre gerade **Bohemian Rhapsody**.""
+  - "- "Er hat das neue **iPhone** gekauft.""
+  - "-"
+
+semantische_grabber_id: AUTO_SEM_20250718_E55D
+
+metadata:
+  created_at: 2025-07-18T03:23:19.234394
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

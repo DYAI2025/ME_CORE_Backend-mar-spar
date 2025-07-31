@@ -1,0 +1,39 @@
+{
+  "kategorie": "ATOMIC",
+  "marker": {
+    "category": "Atomic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für EMOTIONAL_WITHDRAW",
+    "examples": [
+      "Schon okay, ich hab verstanden, dass ich dir nicht so wichtig bin. Ich zieh mich dann mal zurück, bevor ich noch mehr nerve.",
+      "Mach dir keine Sorgen, ich komm schon allein klar. Ich bin’s ja gewohnt, dass ich auf mich selbst gestellt bin.",
+      "Ich hätte wissen müssen, dass ich wieder zu viel erwartet habe. Ich halte mich ab jetzt einfach raus.",
+      "Du musst dich nicht mehr bemühen, ich hab gemerkt, dass ich nur störe.",
+      "Ist schon in Ordnung, ich hab gelernt, dass ich nicht der Mensch bin, für den man sich Zeit nimmt. Ich meld mich dann einfach nicht mehr.",
+      "Keine Sorge, ich will dich nicht weiter belasten. Ich zieh mich zurück, dann hast du endlich deine Ruhe.",
+      "Ich seh schon, ich bin eher die Notlösung. Ich halte mich dann mal im Hintergrund auf.",
+      "Du brauchst dich nicht zu rechtfertigen, ich hab verstanden, dass ich nicht dazugehöre. Ich werd mich ab jetzt rar machen.",
+      "Ich weiß, ich bin nicht leicht zu ertragen. Ich verschwinde dann mal, damit du dich besser fühlst.",
+      "Schon okay, ich hab’s kapiert. Ich bin wohl der, den man am ehesten vergisst. Ich geh dann mal.",
+      "Ich will dich nicht weiter stören. Offenbar ist es besser, wenn ich mich zurückziehe.",
+      "Du musst dich nicht mehr um mich kümmern, ich hab’s ja eh nicht verdient.",
+      "Ich hab verstanden, dass meine Gefühle hier keinen Platz haben. Ich zieh mich zurück, dann ist es für alle leichter.",
+      "Ist schon gut, ich hab’s ja nicht anders verdient. Ich halte mich ab jetzt raus.",
+      "Ich seh schon, ich bin nur Ballast. Ich geh dann mal, damit du dich wieder frei fühlst.",
+      "Du brauchst dich nicht zu entschuldigen, ich bin’s ja gewohnt, dass ich nicht zähle.",
+      "Ich will dich nicht weiter aufhalten. Ich verschwinde einfach, dann musst du dich nicht mehr mit mir beschäftigen.",
+      "Schon klar, ich bin nicht die Priorität. Ich meld mich dann einfach nicht mehr.",
+      "Ich hab verstanden, dass ich zu viel bin. Ich zieh mich zurück, dann hast du weniger Stress.",
+      "Du musst dich nicht mehr bemühen, ich hab gemerkt, dass ich nicht gebraucht werde."
+    ],
+    "id": "M_EMOTIONAL_WITHDRAW",
+    "level": 1,
+    "name": "EMOTIONAL_WITHDRAW",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_25E8",
+    "semantic_tags": [
+      "needs_review"
+    ]
+  },
+  "marker_name": "EMOTIONAL_WITHDRAW"
+}

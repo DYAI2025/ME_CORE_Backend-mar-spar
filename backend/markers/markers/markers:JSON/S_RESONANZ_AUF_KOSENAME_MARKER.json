@@ -1,0 +1,67 @@
+# S_RESONANZ_AUF_KOSENAME_MARKER - Semantic Marker
+marker_name: S_RESONANZ_AUF_KOSENAME_MARKER
+beschreibung: >
+  A positive response immediately following the use of a pet name.
+beispiele:
+  - "A: "Gute Nacht, Schatz ❤️"
+B: "Du auch, das ist süß.""
+  - "A: "Good night, darling ❤️"
+B: "You too, that’s sweet.""
+  - "A: "Was macht meine Maus?"
+B: "Haha, deine Maus wartet auf dich.""
+  - "A: "How’s my little mouse?"
+B: "Haha, your mouse is waiting for you.""
+  - "A: "Keine Sorge, Hasi."
+B: "Danke, das beruhigt mich.""
+  - "A: "No worries, bunny."
+B: "Thanks, that calms me.""
+  - "A: "Sleep tight, pumpkin."
+B: "Aww, thanks, you too.""
+  - "A: "Morning, sunshine."
+B: "You just made my day!""
+  - "A: "Dinner’s ready, champ."
+B: "Yay, thanks chef!""
+  - "A: "Miss you, honeybee."
+B: "Miss you more, sweetie.""
+  - "A: "Great job, rockstar!"
+B: "Coming from you, that means a lot.""
+  - "A: "Take a break, braveheart."
+B: "Will do, thanks love.""
+  - "A: "Good luck today, tiger."
+B: "Rawr! Thanks for the boost.""
+  - "A: "See you later, cuddlebear."
+B: "Counting the minutes!""
+  - "A: "Congrats, superstar."
+B: "You’re the best cheerleader.""
+  - "A: "Rest up, sleepy-head."
+B: "Haha, will do, night night.""
+  - "A: "Let’s roll, partner."
+B: "Right behind you, buddy!""
+  - "A: "Thanks for the help, wizard."
+B: "Your apprentice is happy to serve.""
+  - "A: "Way to go, genius!"
+B: "Stop, you’ll make me blush.""
+  - "A: "Careful out there, hero."
+B: "I’ll be back safe, promise.""
+  - "A: "How’s my muffin today?"
+B: "Fluffy and sweet, apparently.""
+  - "A: "You’re amazing, angel."
+B: "So are you, darling.""
+  - "A: "Evening, my prince."
+B: "Evening, my queen.""
+  - "A: "Ready to conquer, teammate?"
+B: "Always with my co-captain.""
+  - "A: "Love you loads, honey."
+B: "Right back at you, sweetie.""
+  - "A: "Movie later, cookie?"
+B: "I’m dunking into that plan.""
+
+semantische_grabber_id: SGR_RESONANCE_ON_PET_NAME_01
+
+metadata:
+  created_at: 2025-07-22T00:36:48.643912
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

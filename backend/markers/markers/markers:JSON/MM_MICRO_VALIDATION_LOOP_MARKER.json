@@ -1,0 +1,27 @@
+# MM_MICRO_VALIDATION_LOOP_MARKER - Semantic Marker
+marker_name: MM_MICRO_VALIDATION_LOOP_MARKER
+beschreibung: >
+  Meta-Marker für mikro-symmetrisches Kontaktfeld: Symbolische
+Unterstützung (Emojis/Symbole) PLUS vorsichtige Validierung
+UND gleichzeitige Selbstdistanzierung. Aktiv, wenn beide
+Cluster C_SYMBOLIC_SUPPORT_FIELD und C_MICRO_VALIDATION_LOOP
+in einem 10-Nachrichten-Fenster auftreten.
+beispiele:
+  - "A sendet „Passt das? 😊“ + „Wenn nicht, sag’s offen.↔“
+→ beide Cluster aktiv → Meta feuert."
+  - "Wechsel aus ❤️-Emoji und „Stimmt das für dich?“,
+begleitet von „Wenn es zu viel ist, sag Stopp.“"
+  - "↔ + „Nur falls ok für dich …“ nach Boundary-Hinweis."
+  - "Kurzes 👍, dann „Gib Bescheid, falls du Distanz brauchst.“"
+  - "Gespräch: Emoji-Bestätigung, sofortige Nachfrage
+nach Komfortzone → Mikro-Validation-Loop."
+
+semantische_grabber_id: SGR_MICRO_VALID_LOOP_META_01
+
+metadata:
+  created_at: 2025-07-21T18:52:30.800223
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

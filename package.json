@@ -1,0 +1,50 @@
+{
+  "name": "me-core-backend-monorepo",
+  "version": "1.0.0",
+  "description": "MarkerEngine Core Backend Monorepo",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "tools"
+  ],
+  "scripts": {
+    "dev": "docker-compose up",
+    "dev:backend": "cd backend && uvicorn main:app --reload",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:spark": "cd spark-nlp && python src/main.py",
+    "build": "npm run build:frontend && npm run build:docker",
+    "build:frontend": "cd frontend && npm run build",
+    "build:docker": "docker-compose build",
+    "test": "npm run test:backend && npm run test:frontend && npm run test:spark",
+    "test:backend": "cd backend && pytest",
+    "test:frontend": "cd frontend && npm test",
+    "test:spark": "cd spark-nlp && pytest",
+    "test:e2e": "docker-compose -f docker-compose.test.yml up --abort-on-container-exit",
+    "lint": "npm run lint:backend && npm run lint:frontend",
+    "lint:backend": "cd backend && flake8 . && mypy .",
+    "lint:frontend": "cd frontend && npm run lint",
+    "sync-schemas": "node tools/sync-schema-version.js",
+    "migrate": "./tools/migrate-repos.sh",
+    "clean": "find . -name '__pycache__' -type d -exec rm -rf {} + && find . -name '*.pyc' -delete",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "docker:build": "docker-compose build --no-cache",
+    "monitoring:up": "docker-compose --profile monitoring up -d",
+    "spark:up": "docker-compose --profile spark up -d"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "concurrently": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DYAI2025/ME_CORE_Backend-mar-spar.git"
+  },
+  "author": "DYAI Team",
+  "license": "MIT"
+}

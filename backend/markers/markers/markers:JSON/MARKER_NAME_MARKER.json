@@ -1,0 +1,24 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Erkennt Muster des Unschuldigen: Vertrauen, Naivität, Harmoniebedürfnis, Vermeidung von Konflikt, kindlicher Glaube an das Gute.\n",
+    "examples": [
+      "Ich glaube, dass alles gut wird, wenn man nur daran glaubt.",
+      "Warum kann nicht alles einfach bleiben wie früher?",
+      "Ich verstehe nicht, warum Menschen böse sein sollten.",
+      "Das Leben ist schön, wenn man es einfach nimmt.",
+      "Ich will einfach nur glücklich sein."
+    ],
+    "id": "S_MARKER_NAME",
+    "level": 2,
+    "name": "MARKER_NAME",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_BE8B",
+    "semantic_tags": [
+      "marker-name"
+    ]
+  },
+  "marker_name": "MARKER_NAME_MARKER"
+}

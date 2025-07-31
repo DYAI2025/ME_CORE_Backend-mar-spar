@@ -1,0 +1,24 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für DYNAMIC_KNOTS",
+    "examples": [
+      "marker_name: DYNAMIC_KNOTS.yaml",
+      "name: \"Reactive Control Spiral\"",
+      "A dynamic knot that emerges when self-worth disruptions (e.g. shame, guilt) can't be regulated and shift into covert control dynamics.",
+      "The person loses perceived autonomy and compensates through indirect, reactive influence.",
+      "This creates a spiral of ambivalence, empathy-activation, and power asymmetry – often unconsciously."
+    ],
+    "id": "S_DYNAMIC_KNOTS",
+    "level": 2,
+    "name": "DYNAMIC_KNOTS",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_60ED",
+    "semantic_tags": [
+      "dynamic-knots"
+    ]
+  },
+  "marker_name": "DYNAMIC_KNOTS"
+}

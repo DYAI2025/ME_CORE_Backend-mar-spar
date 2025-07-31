@@ -1,0 +1,27 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für AMBIVALENCE_TOLERANCE_MARKER_MARKER
+  examples:
+  - Klarheit und Kommunikation eigener Grenzen, Selbstschutz.
+  - 'description: "Erkennt Muster für ambivalence_tolerance_marker"'
+  - 'pattern: r"(muster.*wird.*ergänzt)"'
+  id: S_AMBIVALENCE_TOLERANCE_MARKER
+  level: 2
+  name: AMBIVALENCE_TOLERANCE
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_7D8A
+  semantic_tags:
+  - ambivalence-tolerance-marker-marker
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.590844'
+  repair_version: '1.0'

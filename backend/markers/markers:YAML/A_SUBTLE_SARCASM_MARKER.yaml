@@ -1,0 +1,23 @@
+ID: A_SUBTLE_SARCASM_MARKER
+beschreibung: 'Atomic Marker für subtilen Sarkasmus oder Ironie, die oft zur verdeckten
+  Kritik genutzt wird.
+
+ Name: SUBTIL_SARCASM
+beispiele:
+- Na toll, dann mach ich das eben allein.
+- Schön für dich, dass du schon fertig bist.
+- War ja klar, dass du das wieder vergisst.
+- Wie nett von dir, dass du auch mal fragst.
+- Muss ja schön sein, wenn man so viel Zeit hat.
+semantische_grabber_id: SGR_SUBTLE_SARCASM_01
+metadata:
+  created_at: 2025-07-21 12:50:59.161105
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags:
+  - neu_erstellt
+  - needs_review
+  last_repaired: '2025-07-21T14:03:13.479661'
+  repair_version: '1.0'
+category: UNCATEGORIZED
+

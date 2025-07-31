@@ -1,0 +1,34 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Regelmäßige, kleine Akte der Fürsorge, Aufmerksamkeit und Unterstützung im Alltag.\n  Indikator für Beziehungsrobustheit und Bindungsqualität.\n",
+    "examples": [
+      "MICRO_CARE_MARKER:",
+      "beispiele: []"
+    ],
+    "id": "S_MICRO_CARE",
+    "level": 2,
+    "name": "MICRO_CARE",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_DC11",
+    "semantic_tags": [
+      "micro-care-marker"
+    ]
+  },
+  "marker_name": "MICRO_CARE_MARKER",
+  "semantic_grab": {
+    "description": "Erkennt Muster für micro_care",
+    "patterns": [
+      {
+        "pattern": "r\"(muster.*wird.*ergänzt)\"",
+        "rule": "AUTO_PATTERN"
+      }
+    ]
+  },
+  "tags": [
+    "neu_erstellt",
+    "needs_review"
+  ]
+}

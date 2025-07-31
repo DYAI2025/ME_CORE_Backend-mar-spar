@@ -1,0 +1,51 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Ein Gesprächsmuster, bei dem eine Person exzessiv persönliche Informationen vom Gegenüber abfragt, während sie selbst vage bleibt oder nur sehr wenig von sich preisgibt.",
+    "examples": [
+      "Das ist faszinierend. Erzähl mir mehr über deine Kindheit. Wo genau bist du aufgewachsen?",
+      "Du hast so eine beruhigende Stimme. Was arbeitest du genau? Und wie heißt deine Firma?",
+      "Ich möchte alles über dich wissen. Was ist der Mädchenname deiner Mutter?",
+      "Du bist so besonders. Was ist dein größter Traum und deine größte Angst?",
+      "(Nachdem er selbst nichts preisgibt) Was sind deine finanziellen Ziele für die nächsten fünf Jahre?",
+      "Ich möchte dir ein Geburtstagsgeschenk machen. Wann genau hast du Geburtstag und was ist dein Lieblingsparfüm?",
+      "Nur aus Neugier, bei welcher Bank bist du?",
+      "Wie hieß dein erstes Haustier? Ich liebe Tiere.",
+      "Deine Familie klingt toll. Wie viele Geschwister hast du und wie heißen sie?",
+      "Du bist so klug. Auf welcher Grundschule warst du?",
+      "Ich möchte dir vertrauen können. Kannst du mir deine genaue Adresse geben?",
+      "Ich versuche nur, dich besser zu verstehen. Was ist die größte Enttäuschung deines Lebens?",
+      "Welche Versicherungen hast du? Man muss ja für die Zukunft planen.",
+      "Du bist so interessant. Erzähl mir von deinen früheren Beziehungen.",
+      "Was ist dein Lieblingsfilm? Dein Lieblingsbuch? Dein Lieblingsessen? Ich will alles wissen.",
+      "(Antwortet auf eine persönliche Frage mit) Das ist eine lange Geschichte. Aber lass uns lieber über dich reden.",
+      "Welches Auto fährst du? Ich liebe Autos.",
+      "Ich möchte ein Gefühl für dein Leben bekommen. Wie sieht ein typischer Tag bei dir aus, von morgens bis abends?",
+      "Was sind die Namen deiner Kinder?",
+      "Ich frage das alles nur, weil ich mich wirklich für dich interessiere."
+    ],
+    "id": "S_ASYMMETRIC_INFO_MINING",
+    "level": 2,
+    "name": "ASYMMETRIC_INFO_MINING",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_7E4B",
+    "semantic_tags": [
+      "asymmetric-info-mining"
+    ]
+  },
+  "marker_name": "ASYMMETRIC_INFO_MINING",
+  "psychologischer_hintergrund": [
+    "Informationsbeschaffung für kriminelle Zwecke",
+    "Social Engineering-Techniken",
+    "Vortäuschung von Intimität durch Abfragen persönlicher Details"
+  ],
+  "tags": [
+    "fraud",
+    "social engineering",
+    "datenmining",
+    "informationsasymmetrie",
+    "phishing"
+  ]
+}

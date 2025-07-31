@@ -1,0 +1,21 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für SELF_VICTIMIZATION",
+    "examples": [
+      "description: \"Erkennt Muster für - marker_marker\"",
+      "pattern: r\"(muster.*wird.*ergänzt)\""
+    ],
+    "id": "S_SELF_VICTIMIZATION",
+    "level": 2,
+    "name": "SELF_VICTIMIZATION",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_7B6D",
+    "semantic_tags": [
+      "self-victimization"
+    ]
+  },
+  "marker_name": "SELF_VICTIMIZATION"
+}

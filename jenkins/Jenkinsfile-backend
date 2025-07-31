@@ -1,0 +1,151 @@
+pipeline {
+    agent any
+    
+    environment {
+        PYTHON_VERSION = '3.10'
+        VENV_PATH = "${WORKSPACE}/backend/venv"
+        DATABASE_URL = credentials('mongodb-test-url')
+    }
+    
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+        
+        stage('Setup Python Environment') {
+            steps {
+                dir('backend') {
+                    sh """
+                        python${PYTHON_VERSION} -m venv ${VENV_PATH}
+                        . ${VENV_PATH}/bin/activate
+                        pip install --upgrade pip
+                        pip install -r requirements.txt
+                        pip install pytest-cov flake8 black mypy
+                    """
+                }
+            }
+        }
+        
+        stage('Lint & Format Check') {
+            parallel {
+                stage('Black') {
+                    steps {
+                        dir('backend') {
+                            sh """
+                                . ${VENV_PATH}/bin/activate
+                                black --check app tests
+                            """
+                        }
+                    }
+                }
+                stage('Flake8') {
+                    steps {
+                        dir('backend') {
+                            sh """
+                                . ${VENV_PATH}/bin/activate
+                                flake8 app tests --max-line-length=100
+                            """
+                        }
+                    }
+                }
+                stage('MyPy') {
+                    steps {
+                        dir('backend') {
+                            sh """
+                                . ${VENV_PATH}/bin/activate
+                                mypy app --ignore-missing-imports
+                            """
+                        }
+                    }
+                }
+            }
+        }
+        
+        stage('Schema Validation') {
+            steps {
+                dir('backend') {
+                    sh """
+                        . ${VENV_PATH}/bin/activate
+                        python -m tools.validate_schemas
+                    """
+                }
+            }
+        }
+        
+        stage('Unit Tests') {
+            steps {
+                dir('backend') {
+                    sh """
+                        . ${VENV_PATH}/bin/activate
+                        pytest tests/unit -v --cov=app --cov-report=xml --junitxml=test-results/junit.xml
+                    """
+                }
+            }
+            post {
+                always {
+                    junit 'backend/test-results/*.xml'
+                    publishHTML([
+                        allowMissing: false,
+                        alwaysLinkToLastBuild: true,
+                        keepAll: true,
+                        reportDir: 'backend/htmlcov',
+                        reportFiles: 'index.html',
+                        reportName: 'Coverage Report'
+                    ])
+                }
+            }
+        }
+        
+        stage('Integration Tests') {
+            steps {
+                dir('backend') {
+                    sh """
+                        . ${VENV_PATH}/bin/activate
+                        pytest tests/integration -v --junitxml=test-results/integration-junit.xml
+                    """
+                }
+            }
+        }
+        
+        stage('Build Docker Image') {
+            when {
+                branch pattern: "(main|develop|release/.*)", comparator: "REGEXP"
+            }
+            steps {
+                dir('backend') {
+                    script {
+                        def image = docker.build("me-core-backend:${env.BUILD_NUMBER}")
+                        docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
+                            image.push("${env.BRANCH_NAME}-${env.BUILD_NUMBER}")
+                            if (env.BRANCH_NAME == 'main') {
+                                image.push('latest')
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    post {
+        success {
+            echo 'Backend pipeline completed successfully!'
+            slackSend(
+                color: 'good',
+                message: "Backend Build Success: ${env.JOB_NAME} #${env.BUILD_NUMBER}"
+            )
+        }
+        failure {
+            echo 'Backend pipeline failed!'
+            slackSend(
+                color: 'danger',
+                message: "Backend Build Failed: ${env.JOB_NAME} #${env.BUILD_NUMBER}"
+            )
+        }
+        always {
+            cleanWs()
+        }
+    }
+}

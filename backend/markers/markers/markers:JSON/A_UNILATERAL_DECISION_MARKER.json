@@ -1,0 +1,28 @@
+{
+  "marker_name": "A_UNILATERAL_DECISION_MARKER",
+  "beschreibung": "Einseitige Entscheidungen ohne Konsens.\n",
+  "beispiele": [
+    "Ich habe entschieden, dass wir am Wochenende zu meinen Eltern fahren.",
+    "Wir machen das jetzt so und fertig.",
+    "Das ist keine Diskussion mehr.",
+    "Ich habe das schon gebucht, Thema durch.",
+    "Da gibt es nichts zu reden, Plan steht.",
+    "Ich hab den Vertrag unterschrieben, passt.",
+    "Ab morgen ändern wir die Arbeitszeiten – entschieden.",
+    "Ich hab das Menü gewählt, Überraschung.",
+    "Wir ziehen um, Ende.",
+    "Ich hab das Meeting verlegt, steht fest.",
+    "Kostenlimit ist gestrichen, Deal.",
+    "Ich hab dein Ticket storniert, brauchst du nicht.",
+    "Brauch deine Zustimmung nicht, hab’s geregelt.",
+    "Urlaubsplanung ist fertig, check deine Mails.",
+    "Ich kündige den Vertrag, Punkt.",
+    "Wir setzen das neue Tool ein – Beschluss.",
+    "Ich hab schon zugesagt, du kommst mit.",
+    "Die Farben hab ich gewählt, passt perfekt.",
+    "Ich entscheide das hier, nicht du.",
+    "Wir fahren jetzt los – Diskussion beendet."
+  ],
+  "semantische_grabber_id": "SGR_UNILATERAL_DECISION_01",
+  "metadata": {
+    "created_at": 

@@ -1,0 +1,35 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für DRAMA_TRIANGLE_MARKER
+  examples:
+  - 'Typische Rollenrotationen nach dem Dramadreieck: Verfolger, Opfer, Retter – oft
+    im schnellen Wechsel, meist in Konflikten oder dysfunktionalen Beziehungen.'
+  - Schon wieder hast du es vergessen! (Verfolger) ... Naja, ist ja klar, ich bin
+    halt nicht wichtig genug. (Opfer)"
+  - '"Ich opfere meine ganze Freizeit für dieses Projekt! (Opfer) ... Und du lieferst
+    einfach nicht. Deine Schuld, wenn es scheitert! (Verfolger)"'
+  - '"Komm her, du Arme, lass mich das für dich regeln. (Retter) ... Aber wunder dich
+    nicht, wenn ich irgendwann auch nicht mehr kann, ich bin nämlich auch am Ende.
+    (Opfer)"'
+  - '"Niemand unterstützt mich hier! (Opfer) ... Okay, dann muss ich es eben selbst
+    machen, wie immer. (Retter)"'
+  id: S_DRAMA_TRIANGLE
+  level: 2
+  name: DRAMA_TRIANGLE
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_7E06
+  semantic_tags:
+  - drama-triangle-marker
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.760965'
+  repair_version: '1.0'

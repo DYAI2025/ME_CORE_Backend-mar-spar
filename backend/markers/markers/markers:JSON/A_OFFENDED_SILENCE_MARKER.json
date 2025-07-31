@@ -1,0 +1,28 @@
+{
+  "marker_name": "A_OFFENDED_SILENCE_MARKER",
+  "beschreibung": "Einsilbige/nonverbale Reaktionen, die Gekränktheit andeuten.\n",
+  "beispiele": [
+    "A: 'Alles okay?' – B: '...'",
+    "A: 'Danke fürs Bescheid sagen.' – B: 'k.'",
+    "A: 'Hast du den Fehler behoben?' – B: 'aha'",
+    "A: 'Ich liebe dich.' – B: 'mhm'",
+    "A: 'War nicht böse gemeint.' – B: 'passt schon'",
+    "*schweigt* und tippt nicht mehr.",
+    "Reaktion: '...   ' (drei Punkte, sonst nichts).",
+    "A: 'Kommst du mit?' – B: 'k.' und offline.",
+    "A: 'Magst du reden?' – B: '...' – Chat beendet.",
+    "A: 'Alles gut zwischen uns?' – B: 'mhm' – Status auf beschäftigt.",
+    "B sendet nur einen einzelnen Punkt '.'",
+    "A: 'War wichtig für mich.' – B reagiert mit 'aha'.",
+    "A: 'Brauche dein Feedback.' – B: '*schweigt*' seit Stunden.",
+    "'Okay.' – ohne Emoji, ohne Kontext.",
+    "'Schon gut.' – Konversation endet abrupt.",
+    "A: 'Kann ich helfen?' – B: '...' tippt, löscht, schweigt.",
+    "Auf ausführliche Nachricht folgt nur 'k.'",
+    "B reagiert nur mit einem GIF des Schulterzuckens.",
+    "'Passt.' – einziger Satz nach langem Streit.",
+    "A: 'Wie fühlst du dich?' – B: 'mhm' – kein weiteres Wort."
+  ],
+  "semantische_grabber_id": "SGR_OFFENDED_SILENCE_01",
+  "metadata": {
+    "created_at": 

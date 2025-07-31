@@ -1,0 +1,40 @@
+ID: TERMINATION
+level: '1'
+version: 0.1.0
+author: assistant
+created_at: '2025-07-22'
+status: draft
+lang: de
+name: ABBRUCHMARKER
+description: '|'
+category: general
+examples:
+
+- '"… egal, bin weg."'
+- '"Muss los. Tschau."'
+- '"Keine Zeit, später vielleicht."'
+- '"*geht offline*"'
+- '"Stop. Anderes Thema."'
+
+  - input: "Ey, Alter, das reicht jetzt. Ich bin hier raus."
+    output: "Abbruchmarker"
+  - input: "Ey, was soll das? Ich hab keinen Bock mehr, gute Nacht."
+    output: "Abbruchmarker"
+  - input: "Alter, hör auf damit, ich will nicht weiter drüber reden."
+    output: "Abbruchmarker"
+  - input: "Ey, jetzt ist Schluss. Mach mich nicht weiter fertig."
+    output: "Abbruchmarker"
+  - input: "Ey, ne, ich quatsche hier nicht weiter, peace."
+    output: "Abbruchmarker"
+  - input: "Sorry, Alter, aber ich beende das Gespräch jetzt."
+    output: "Abbruchmarker"
+  - input: "Ey, chill mal, ich geh jetzt offline."
+    output: "Abbruchmarker"
+  - input: "Alter, bringt doch alles nix, ich bin raus hier."
+    output: "Abbruchmarker"
+  - input: "Alter, so ist das echt nicht mein Ding. Ich bin raus."
+    output: "Abbruchmarker"
+  - input: "Ey, ich hab keinen Bock mehr, wir reden später, okay?"
+    output: "Abbruchmarker"
+  - input: "Ey, ok, ich mach hier Schluss, ciao."
+    output: "Abbruchmarker"

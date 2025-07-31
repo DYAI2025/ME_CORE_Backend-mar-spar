@@ -1,0 +1,60 @@
+# S_HIGH_PERSON_DENSIT_MARKER - Semantic Marker
+marker_name: S_HIGH_PERSON_DENSIT_MARKER
+beschreibung: >
+  id: "S_HIGH_PERSON_DENSITY"
+  level: 2
+  version: "1.0.0"
+  author: "auto_gpt"
+  created_at: "2025-07-18"
+  status: "draft"
+  lang: "de"
+  name: "HIGH_PERSON_DENSITY"
+  description: "Hohe Dichte an Personen-Entitäten in einem Textabschnitt."
+  composed_of:
+    - type: atomic
+      marker_ids: ["A_PER"]
+  rules:
+    - type: frequency
+      threshold: 5
+      scope: "token_window"
+      value: 100
+beispiele:
+  - "examples:"
+  - "- "John, Mary, Alex, Lisa und Kevin sind alle zur Party gekommen.""
+  - "- "Gestern sprach ich mit Sarah, Tom, Michael, Anna und Peter.""
+  - "- "Im Meeting waren Anna, Ben, Carl, Diana, Eric und Frank.""
+  - "- "Letzte Woche traff ich Paul, Claudia, Eva, Otto und Sabrina.""
+  - "- "Grüße an Julia, Markus, Nina, Jonas und Lena!""
+  - "- id: "S_HIGH_ORG_DENSITY""
+  - "level: 2"
+  - "version: "1.0.0""
+  - "author: "auto_gpt""
+  - "created_at: "2025-07-18""
+  - "status: "draft""
+  - "lang: "de""
+  - "name: "HIGH_ORG_DENSITY""
+  - "description: "Hohe Dichte an Organisations-Entitäten in einem Textabschnitt.""
+  - "composed_of:"
+  - "- type: atomic"
+  - "marker_ids: ["A_ORG"]"
+  - "rules:"
+  - "- type: frequency"
+  - "threshold: 4"
+  - "scope: "token_window""
+  - "value: 100"
+  - "examples:"
+  - "- "Google, Microsoft, IBM und Oracle konkurrieren um Marktanteile.""
+  - "- "WHO, UNESCO, UNICEF und WHO trafen sich in Genf.""
+  - "- "Goldman Sachs, JP Morgan, Morgan Stanley und Citi präsentierten Ergebnisse.""
+  - "- "Siemens, Bosch, Volkswagen und BMW organisierten die Messe.""
+  - "- "Netflix, Disney, Amazon Prime und Hulu bieten neue Serien.""
+
+semantische_grabber_id: AUTO_SEM_20250718_40BA
+
+metadata:
+  created_at: 2025-07-18T03:24:21.337751
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

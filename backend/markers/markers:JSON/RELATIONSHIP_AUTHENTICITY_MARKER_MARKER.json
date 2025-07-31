@@ -1,0 +1,24 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für RELATIONSHIP_AUTHENTICITY_MARKER_MARKER",
+    "examples": [
+      "bereits kennen (z. B. durch geteilte Erinnerungen, Insider, konkrete Bezugnahmen auf reale,",
+      "gemeinsam erlebte Situationen, Verwandte, Orte). Fehlen diese Ankerpunkte trotz hoher",
+      "emotionaler Resonanz, ist dies ein Risiko-Indikator für Scripting/Fake-Konstellation.",
+      "description: \"Erkennt Muster für relationship_authenticity_marker\"",
+      "pattern: r\"(muster.*wird.*ergänzt)\""
+    ],
+    "id": "S_RELATIONSHIP_AUTHENTICITY_MARKER",
+    "level": 2,
+    "name": "RELATIONSHIP_AUTHENTICITY",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_3425",
+    "semantic_tags": [
+      "relationship-authenticity-marker-marker"
+    ]
+  },
+  "marker_name": "RELATIONSHIP_AUTHENTICITY_MARKER_MARKER"
+}

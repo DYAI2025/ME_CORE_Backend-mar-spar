@@ -1,0 +1,29 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für PROCESS_STRUCTURE_MARKER
+  examples:
+  - 'name: "Prozess-Strukturmarker"'
+  - 'category: "Meta-Kommunikation"'
+  - 'semantic_grabber_id: "SGR_PROCESS_STRUCTURE_01"'
+  - 'created_at: 2025-07-12T05:19:45.151948'
+  - 'version: 1.0'
+  id: S_PROCESS_STRUCTURE
+  level: 2
+  name: PROCESS_STRUCTURE
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_57A4
+  semantic_tags:
+  - process-structure-marker
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.624945'
+  repair_version: '1.0'

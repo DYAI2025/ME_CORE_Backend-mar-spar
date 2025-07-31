@@ -1,0 +1,21 @@
+# C_DESTRUCTIVE_SELF_PROTECTION_MARKER - Semantic Marker
+marker_name: C_DESTRUCTIVE_SELF_PROTECTION_MARKER
+beschreibung: >
+  Cluster von Kommunikationsmustern, die auf Selbstschutzstrategien
+wie Schuldverschiebung, Verharmlosung und emotionale Abwehr hindeuten.
+Meist nicht böswillig gemeint, sondern aus alten, unbewussten 
+Überlebensmustern gespeist.
+beispiele:
+  - "Ich hab nie gesagt, dass ich das verspreche – du hast das einfach so angenommen."
+  - "Also wenn du denkst, dass das alles meine Schuld ist, dann… okay."
+  - "Du hast mich in diese Situation gebracht – ich hatte keine Wahl."
+  - "Jetzt verdrehst du mir wieder das Wort im Mund."
+  - "Du willst immer, dass ich perfekt bin – das ist nicht fair."
+
+semantische_grabber_id: SGR_SELF_PROTECTION_DEFENSE_01
+
+metadata:
+  created_at: 2025-07-22T22:45:21.847283
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]

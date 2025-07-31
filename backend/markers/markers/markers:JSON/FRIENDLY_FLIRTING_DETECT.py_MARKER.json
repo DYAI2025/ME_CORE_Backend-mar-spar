@@ -1,0 +1,24 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für FRIENDLY_FLIRTING_DETECT.py_MARKER",
+    "examples": [
+      "marker_name: FRIENDLY_FLIRTING_DETECT.py_MARKER",
+      "marker: FRIENDLY_FLIRTING_DETECT.py_MARKER",
+      "\"beschreibung\": (",
+      "\"Erkennt kommunikative Muster von freundlich-sympathischem Flirten ohne Grenzüberschreitung. \"",
+      "\"Typisch sind spielerische Komplimente, Humor, harmlose Wortspiele, kleine Grenztests, \""
+    ],
+    "id": "S_FRIENDLY_FLIRTING_DETECTPY",
+    "level": 2,
+    "name": "FRIENDLY_FLIRTING_DETECT.py",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_87D2",
+    "semantic_tags": [
+      "friendly-flirting-detect.py-marker"
+    ]
+  },
+  "marker_name": "FRIENDLY_FLIRTING_DETECT.py_MARKER"
+}

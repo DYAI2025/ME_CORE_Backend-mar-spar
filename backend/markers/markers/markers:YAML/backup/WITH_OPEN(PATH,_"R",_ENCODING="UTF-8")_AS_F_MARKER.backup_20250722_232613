@@ -1,0 +1,22 @@
+marker_name: WITH_OPEN_PATH___R___ENCODING__UTF_8___AS_F_MARKER
+beschreibung: ''
+beispiele: null
+semantische_grabber_id: AUTO_SEM_20250718_C535
+metadata:
+  created_at: 2025-07-18 02:41:07.030138
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags:
+  - neu_erstellt
+  - needs_review
+  last_repaired: '2025-07-22T02:31:24.133863'
+  repair_version: '1.0'
+category: UNCATEGORIZED
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5

@@ -1,0 +1,29 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: 'Unerwartete, kreative oder neuartige Beiträge im Chat; ungewöhnliche
+    Formulierungen, neue Ideen, Innovationssprünge.
+
+    '
+  examples:
+  - Unerwartete, kreative oder neuartige Beiträge im Chat; ungewöhnliche Formulierungen,
+    neue Ideen, Innovationssprünge
+  id: S_NOVELTY_BURST_SEM
+  level: 2
+  name: NOVELTY_BURST_SEM
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_241E
+  semantic_tags:
+  - novelty-burst-sem-marker
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.785394'
+  repair_version: '1.0'

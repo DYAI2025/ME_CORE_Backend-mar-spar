@@ -1,0 +1,21 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für RESPONSE_TIME_MARKER",
+    "examples": [
+      "description: \"Erkennt Muster für response_time\"",
+      "pattern: r\"(muster.*wird.*ergänzt)\""
+    ],
+    "id": "S_RESPONSE_TIME",
+    "level": 2,
+    "name": "RESPONSE_TIME",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_008F",
+    "semantic_tags": [
+      "response-time-marker"
+    ]
+  },
+  "marker_name": "RESPONSE_TIME_MARKER"
+}

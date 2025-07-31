@@ -1,0 +1,24 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für fraud_markers",
+    "examples": [
+      "description: \"Blitz-Romantik & inflationäre Zärtlichkeiten zur schnellen Abhängigkeit\"",
+      "description: \"Frühe Bitte, in einen privaten Messenger zu wechseln (WhatsApp/Telegram)\"",
+      "description: \"Dramatische Notlage + Bitte um Geld\"",
+      "description: \"Zeitdruck / Knappheit, um kritisches Denken abzuschalten\"",
+      "description: \"Vermeidung visueller Verifizierung\""
+    ],
+    "id": "S_FRAUD_MARKERS",
+    "level": 2,
+    "name": "fraud_markers",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_2D42",
+    "semantic_tags": [
+      "fraud-markers"
+    ]
+  },
+  "marker_name": "fraud_markers"
+}

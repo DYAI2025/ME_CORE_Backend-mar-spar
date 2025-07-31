@@ -1,0 +1,30 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für FLUCTUATION_MARKER",
+    "examples": [
+      "Ich weiß echt nicht, ob ich heute Abend weggehen soll oder lieber daheim bleibe.",
+      "Einerseits will ich das Angebot annehmen, andererseits habe ich Angst vor Veränderung.",
+      "Manchmal denke ich, so läuft es richtig, dann wieder, alles ist Mist.",
+      "Ich kann mich nicht entscheiden, ist das jetzt gut oder schlecht?",
+      "Ich schwanke zwischen ‚ok‘ und ‚total verrückt‘.",
+      "Mal gefällt es mir, mal denk ich, es war ein Fehler.",
+      "Ich bin mir unsicher, ob ich zustimmen oder ablehnen soll.",
+      "Einerseits bin ich glücklich, andererseits vermisse ich es.",
+      "Ich kann mich nicht festlegen, mein Kopf ist hin- und hergerissen.",
+      "Ich überlege hin und her, was jetzt wirklich zählt.",
+      "Ich bin hin- und hergerissen, ich komme nicht klar."
+    ],
+    "id": "S_FLUCTUATION",
+    "level": 2,
+    "name": "FLUCTUATION",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_5B7D",
+    "semantic_tags": [
+      "needs_review"
+    ]
+  },
+  "marker_name": "FLUCTUATION_MARKER"
+}

@@ -1,0 +1,24 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für M_RAPID_SELF_DISCLOSURE2_MARKER",
+    "examples": [
+      "name: \"Rapid Self Disclosure\"",
+      "category: \"relational_dynamics\"",
+      "cluster: [\"relationship_authenticity\"]",
+      "meta_marker: [\"MM_MANIPULATIVE_RELATIONSHIP_ENGINEERING\"]",
+      "semantic_grabber_id: \"SGR_RSD_01\""
+    ],
+    "id": "S_M_RAPID_SELF_DISCLOSURE2",
+    "level": 2,
+    "name": "M_RAPID_SELF_DISCLOSURE2",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_FCFA",
+    "semantic_tags": [
+      "m-rapid-self-disclosure2-marker"
+    ]
+  },
+  "marker_name": "M_RAPID_SELF_DISCLOSURE2_MARKER"
+}

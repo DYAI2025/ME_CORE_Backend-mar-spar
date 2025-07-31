@@ -1,0 +1,39 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für AMBIVALENCE_MARKER",
+    "examples": [
+      "Ich will wirklich, dass du bleibst, aber ein Teil von mir glaubt, dass eine Trennung besser für uns wäre.",
+      "Ich schätze Ihr Vertrauen in mich für diese Beförderung sehr, gleichzeitig habe ich Bedenken, ob ich den neuen Verantwortungen gerecht werden kann.",
+      "Klar hab ich Bock auf den Urlaub! 🏖️ Aber mein Kontostand schreit gerade ganz laut ‚Nein‘. 😭",
+      "Ja, Mama, ich komme an Weihnachten nach Hause. Ich freue mich, euch zu sehen, auch wenn es für mich immer purer Stress ist.",
+      "Ich bin so stolz darauf, wie unabhängig ich bin. Manchmal fühle ich mich dadurch aber auch schrecklich allein.",
+      "Ein interessanter Ansatz, der aber auch eine komplette Neuausrichtung unserer bisherigen Strategie bedeuten würde.",
+      "Klar, ich kann deine Schicht übernehmen. Macht mir überhaupt nichts aus, meinen einzigen freien Abend zu opfern.",
+      "Dieser Laden ist genial, aber die Musik ist die Hölle.",
+      "Das Produkt ist super verarbeitet und sieht toll aus, allerdings ist die Software eine absolute Katastrophe.",
+      "Love my job! ❤️‍🔥 … aber hasse ihn auch ein bisschen. #worklifebalance",
+      "Einerseits will ich dich unterstützen, aber andererseits bin ich mir nicht sicher, ob ich es schaffe.",
+      "Ich hab einerseits Lust auf das Abenteuer, andererseits macht mir der Gedanke auch Angst.",
+      "Ich verstehe deinen Standpunkt, doch gleichzeitig fühle ich mich überfordert.",
+      "Ich liebe den Job, aber gleichzeitig zweifle ich jeden Tag daran.",
+      "Ich bin hin- und hergerissen zwischen Bleiben und Gehen – ich weiß nicht mehr weiter.",
+      "Ich seh die Vorteile, doch die Unsicherheit hält mich zurück.",
+      "Ich hab Bock, aber ich hab Respekt vor der Herausforderung.",
+      "Ich fühle mich zu dem Projekt hingezogen, aber ich zweifle an meiner Fähigkeit.",
+      "Ich will vorankommen, aber ich habe Angst zu versagen.",
+      "Ich bin mir des Nutzens bewusst, aber die Unklarheit lässt mich zögern."
+    ],
+    "id": "S_AMBIVALENCE",
+    "level": 2,
+    "name": "AMBIVALENCE",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_BE62",
+    "semantic_tags": [
+      "needs_review"
+    ]
+  },
+  "marker_name": "AMBIVALENCE_MARKER"
+}

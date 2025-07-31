@@ -1,0 +1,15 @@
+# Spark NLP requirements for MarkerEngine v1.0
+# These are optional dependencies for advanced NLP features
+
+# Include all base requirements
+-r requirements-base.txt
+
+# Spark and PySpark
+pyspark==3.5.0
+
+# Spark NLP
+spark-nlp==5.1.4
+
+# Additional NLP utilities
+numpy==1.24.3
+pandas==2.0.3

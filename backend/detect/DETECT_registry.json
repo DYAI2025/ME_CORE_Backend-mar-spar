@@ -1,0 +1,82 @@
+[
+  {
+    "id": "DETECT_MANEUVER_COMPONENTS",
+    "description": "Semantische Hinhalte-Manöver-Komponenten (Zustimmung, Zeitplanung, Verbindlichkeit)",
+    "module": "regex",
+    "file_path": "sem_detec_py/DETECT_MANEUVER_COMPONENTS.py",
+    "fires_marker": "S_MANEUVER_COMPONENTS",
+    "last_updated": "2025-07-26T00:00:00Z",
+    "auto_generated": false,
+    "schema_version": "3.1"
+  },
+  {
+    "id": "FAMILIENDYNAMIK_MARKER",
+    "description": "Familiendynamik-Muster in Chattexten",
+    "module": "regex",
+    "file_path": "sem_detec_py/FAMILIENDYNAMIK_MARKER.py",
+    "fires_marker": "S_FAMILIENDYNAMIK",
+    "last_updated": "2025-07-26T00:00:00Z",
+    "auto_generated": false,
+    "schema_version": "3.1"
+  },
+  {
+    "id": "REACTIVE_CONTROL_SPIRAL",
+    "description": "Reactive Control Spiral – eskalative Gesprächsmuster",
+    "module": "regex",
+    "file_path": "sem_detec_py/REACTIVE_CONTROL_SPIRAL.py",
+    "fires_marker": "C_REACTIVE_CONTROL_SPIRAL",
+    "last_updated": "2025-07-26T00:00:00Z",
+    "auto_generated": false,
+    "schema_version": "3.1"
+  },
+  {
+    "id": "RESONANCE",
+    "description": "Resonanz-Ausdrücke empathischer Bestätigung",
+    "module": "regex",
+    "file_path": "sem_detec_py/RESONANCE.py",
+    "fires_marker": "S_RESONANCE",
+    "last_updated": "2025-07-26T00:00:00Z",
+    "auto_generated": false,
+    "schema_version": "3.1"
+  },
+  {
+    "id": "CO_REGULATION_COLLAPSE",
+    "description": "Co-Regulation Collapse – wechselseitiger Rückzug",
+    "module": "regex",
+    "file_path": "sem_detec_py/CO_REGULATION_COLLAPSE.py",
+    "fires_marker": "C_CO_REGULATION_COLLAPSE",
+    "last_updated": "2025-07-26T00:00:00Z",
+    "auto_generated": false,
+    "schema_version": "3.1"
+  },
+  {
+    "id": "AMBIVALENCE_KNOT",
+    "description": "Ambivalenz-Knoten – widersprüchliche Ich-Botschaften",
+    "module": "regex",
+    "file_path": "sem_detec_py/AMBIVALENCE_KNOT.py",
+    "fires_marker": "C_AMBIVALENCE_KNOT",
+    "last_updated": "2025-07-26T00:00:00Z",
+    "auto_generated": false,
+    "schema_version": "3.1"
+  },
+  {
+    "id": "SYMBOLIC_ROLE_SWAP",
+    "description": "Symbolischer Rollentausch – Objekt-Projektionen",
+    "module": "regex",
+    "file_path": "sem_detec_py/SYMBOLIC_ROLE_SWAP.py",
+    "fires_marker": "C_SYMBOLIC_ROLE_SWAP",
+    "last_updated": "2025-07-26T00:00:00Z",
+    "auto_generated": false,
+    "schema_version": "3.1"
+  },
+  {
+    "id": "COMPLEX_MARKER_PATTERNS",
+    "description": "Komplexe Metamarker-Patterns basierend auf Beispielen",
+    "module": "regex",
+    "file_path": "sem_detec_py/COMPLEX_MARKER_PATTERNS.py",
+    "fires_marker": "MM_COMPLEX_MARKER_PATTERNS",
+    "last_updated": "2025-07-26T00:00:00Z",
+    "auto_generated": false,
+    "schema_version": "3.1"
+  }
+]

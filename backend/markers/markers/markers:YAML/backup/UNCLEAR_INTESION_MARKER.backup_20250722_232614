@@ -1,0 +1,44 @@
+marker_name:
+  category: Atomic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für UNCLEAR_INTESION_MARKER
+  examples:
+  - Ich blick da nicht durch, keine Ahnung, was hier abgeht.
+  - Ich verstehe gar nicht, was du eigentlich willst.
+  - Alles wirkt so nebulös, ich kriege keinen klaren Eindruck.
+  - Ist das jetzt ernst gemeint oder nicht, ich check’s nicht.
+  - Ich hab keinen Plan, was hier gespielt wird.
+  - Mir fehlt der Durchblick, alles ist so undurchsichtig.
+  - Ich fühl mich lost, was soll ich jetzt tun?
+  - Ich hab keine klare Vorstellung, wie das enden soll.
+  - Das ist mir zu schwammig, sag mir bitte, was genau du meinst.
+  - Ich bin verwirrt, wo ist hier der rote Faden?
+  - Alles ist so chaoshaft, ich kann mich nicht orientieren.
+  - Kannst du das nochmal verständlich erklären?
+  - Worum geht’s hier eigentlich genau?
+  - Das ergibt für mich absolut keinen Sinn.
+  - Ich bin gerade total ratlos.
+  - Mir ist das zu nebulös, kannst du konkreter werden?
+  - Ich kapier die Logik dahinter nicht.
+  - Was soll ich daraus schließen?
+  - Das fühlt sich ziemlich wirr an.
+  - Ich finde kein klares Muster darin.
+  id: M_UNCLEAR_INTESION
+  level: 1
+  name: UNCLEAR_INTESION
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_6804
+  semantic_tags:
+  - needs_review
+category: ATOMIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.774919'
+  repair_version: '1.0'

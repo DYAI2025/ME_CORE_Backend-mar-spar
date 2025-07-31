@@ -1,0 +1,27 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Erkennt manipulative Verhaltensmuster aus Romance-Scam-Situationen.  Die Marker basieren auf semantischen Strategien wie Love Bombing, Future Faking, Schuldumkehr, Isolation und Krisenmanipulation. Diese Muster treten häufig in digitaler Kommunikation auf und lassen sich nicht auf einzelne Schlüsselwörter reduzieren.\n",
+    "examples": [
+      "Erkennt manipulative Verhaltensmuster aus Romance-Scam-Situationen",
+      "Die Marker basieren auf semantischen Strategien wie Love Bombing, Future Faking, Schuldumkehr, Isolation und Krisenmanipulation",
+      "Diese Muster treten häufig in digitaler Kommunikation auf und lassen sich nicht auf einzelne Schlüsselwörter reduzieren"
+    ],
+    "id": "S_SEMANTIC_BEHAVIOR",
+    "level": 2,
+    "name": "SEMANTIC_BEHAVIOR",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_AAEE",
+    "semantic_tags": [
+      "semantic-behavior-marker"
+    ]
+  },
+  "marker_name": "SEMANTIC_BEHAVIOR_MARKER",
+  "tags": [
+    "BEHAVIORAL_PATTERN",
+    "SCAM_SIMULATION",
+    "NEEDS_CONTEXT_ANALYSIS"
+  ]
+}

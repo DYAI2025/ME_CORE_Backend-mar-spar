@@ -1,0 +1,20 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Übereinstimmung zwischen den Ausgaben, Einschätzungen oder Bewertungen verschiedener KI-Modelle auf identischem Input.\n",
+    "examples": [
+      "Übereinstimmung zwischen den Ausgaben, Einschätzungen oder Bewertungen verschiedener KI-Modelle auf identischem Input"
+    ],
+    "id": "S_MODEL_CONVERGENCE_SEM",
+    "level": 2,
+    "name": "MODEL_CONVERGENCE_SEM",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_9D7A",
+    "semantic_tags": [
+      "model-convergence-sem-marker"
+    ]
+  },
+  "marker_name": "MODEL_CONVERGENCE_SEM_MARKER"
+}

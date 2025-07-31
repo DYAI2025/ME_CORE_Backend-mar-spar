@@ -1,0 +1,35 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für CONNECTION_MARKER
+  examples:
+  - Ich fühl mich echt verbunden mit dir.
+  - Wir hängen irgendwie zusammen, Alter.
+  - Unsere Freundschaft bedeutet mir viel.
+  - Ich brauch das Band, das uns verbindet.
+  - Ich merke, wir sind auf einer Wellenlänge.
+  - Ich spüre unsere gemeinsame Energie.
+  - Ich mag es, wenn wir uns so verstehen.
+  - Ich schätze unsere Verbindung sehr.
+  - Du bist mir wichtig und ich fühl das.
+  - Ich brauch dich an meiner Seite.
+  - Ich weiß, wir sind ein Team.
+  id: S_CONNECTION
+  level: 2
+  name: CONNECTION
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_1B32
+  semantic_tags:
+  - needs_review
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.790546'
+  repair_version: '1.0'

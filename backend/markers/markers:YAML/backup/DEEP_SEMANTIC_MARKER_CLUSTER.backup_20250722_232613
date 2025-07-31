@@ -1,0 +1,25 @@
+marker_name:
+  category: Atomic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für DEEP_SEMANTIC_MARKER_CLUSTER
+  examples:
+  - Automatisch generierte Beschreibung für DEEP_SEMANTIC_MARKER_CLUSTER
+  id: M_DEEP_SEMANTIC_MARKER_CLUSTER
+  level: 1
+  name: DEEP_SEMANTIC_CLUSTER
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_F2A1
+  semantic_tags:
+  - deep-semantic-marker-cluster
+tags:
+- needs_review
+category: ATOMIC
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.562669'
+  repair_version: '1.0'

@@ -1,0 +1,28 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für MIRRORED_STYLE_MARKER
+  examples:
+  - 'beschreibung: > Paare spiegeln mit der Zeit ihre Verhalten -und Ausdrucksweisen,
+    sowie den Schreibstil. Wird dieses entdeckt, erstaunt es manchmal'
+  - 'created_at: 2025-07-03T11:58:49.993091'
+  - 'version: 1.0'
+  id: S_MIRRORED_STYLE
+  level: 2
+  name: MIRRORED_STYLE
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_2255
+  semantic_tags:
+  - mirrored-style-marker
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.702647'
+  repair_version: '1.0'

@@ -1,0 +1,30 @@
+id: S_HELPLESSNESS
+marker: HELPLESSNESS
+level: 2
+version: "1.0.0"
+status: draft
+author: "auto_gpt"
+created: "2025-07-25T21:17:00Z"
+tags: [semantic, helplessness, emotion]
+pattern:
+  - "(ich kann nichts tun)"
+  - "(mir sind die Hände gebunden)"
+  - "(ich weiß nicht mehr weiter)"
+  - "(ich bin verloren)"
+  - "(es gibt keinen Ausweg)"
+description: "Detects expressions of helplessness, lack of agency, or giving up."
+examples:
+  - "Ich weiß nicht mehr weiter, ich kann einfach nichts tun."
+  - "Mir sind die Hände gebunden, ich bin machtlos."
+  - "Es gibt keinen Ausweg, alles ist verloren."
+  - "Ich bin hilflos, ich weiß nicht, was ich tun soll."
+  - "Ich habe das Gefühl, ich kann das nicht ändern."
+category: "SEMANTIC"
+scoring:
+  weight: 1.5
+semantic_rules:
+  - "Detects verbal helplessness and resignation."
+composed_of:
+  - "A_GIVING_UP"
+  - "A_LOSS_OF_CONTROL"
+activation_logic: "A_GIVING_UP OR A_LOSS_OF_CONTROL"

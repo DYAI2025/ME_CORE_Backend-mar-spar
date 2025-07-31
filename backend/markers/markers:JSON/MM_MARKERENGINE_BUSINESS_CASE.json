@@ -1,0 +1,23 @@
+id: MARKERENGINE_BUSINESS_CASE
+version: 1.0.0
+author: senior_fullstack_lead
+created_at: '2025-07-26'
+description: '>'
+tam_estimates_usd: ''
+enterprise_compliance_risk: '6000000000   # 6 B'
+customer_care_quality: '3000000000   # 3 B'
+digital_mental_health: '1000000000   # 1 B'
+pricing_model: ''
+pay_go_cents_per_msg: 0.02-0.05
+enterprise_flat_per_year: ''
+seats: '1000'
+price_range_usd: 25k-50k
+revenue_projection: ''
+scenario: Top-20 global tech firms adopt
+seats_total: '1000000'
+arr_low_usd: '40000000      # 40 M'
+arr_high_usd: '80000000     # 80 M'
+five_year_total_usd: 150-250 M
+value_proposition: ''
+level: 1
+category: general

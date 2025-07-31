@@ -1,0 +1,24 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für EMOTIONAL_INTERACTION_REACTION_CLUSTER",
+    "examples": [
+      "name: \"Wut ausdrücken\"",
+      "category: \"Emotion\"",
+      "semantic_grabber_id: \"SGR_WUT_01\"",
+      "example: \"Ich raste aus, wenn du das nochmal machst.\"",
+      "name: \"Zweifel äußern\""
+    ],
+    "id": "S_EMOTIONAL_INTERACTION_REACTION_CLUSTER",
+    "level": 2,
+    "name": "EMOTIONAL_INTERACTION_REACTION_CLUSTER",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_08DE",
+    "semantic_tags": [
+      "emotional-interaction-reaction-cluster"
+    ]
+  },
+  "marker_name": "EMOTIONAL_INTERACTION_REACTION_CLUSTER"
+}

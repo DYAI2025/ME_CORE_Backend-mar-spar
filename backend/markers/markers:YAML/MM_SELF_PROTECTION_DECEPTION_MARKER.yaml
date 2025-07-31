@@ -1,0 +1,40 @@
+# MM_SELF_PROTECTION_DECEPTION_MARKER - Semantic Marker
+marker_name: MM_SELF_PROTECTION_DECEPTION_MARKER
+beschreibung: >
+  Meta-Marker für das übergeordnete Muster einer erlernten
+Selbstschutzstrategie, die auf Teilwahrheiten, Verharmlosung und
+Gaslighting basiert, um Verantwortung zu vermeiden.
+beispiele:
+  - "A: "Ich verstehe nicht, warum du immer ausweichst."
+B: "Teilweise hast du recht, aber du dramatisierst das 🙄"
+(Mehrere ähnliche Situationen über Wochen hinweg.)"
+  - "In zahlreichen Gesprächen weicht Person B konkreten Fragen aus,
+spielt Probleme herunter und wirft Person A vor, die Lage falsch
+darzustellen."
+  - "Eine chronische Kombination aus Teilwahrheiten, Verharmlosung und
+Augenrollen führt dazu, dass Person A zunehmend an ihrer Wahrnehmung
+zweifelt."
+  - "Das Muster zeigt sich konsequent, sobald Person A belastbare Beweise
+noch nicht direkt vorlegen kann."
+  - "Die Dynamik gipfelt darin, dass Person B jede Verantwortung ablehnt
+und Person A in eine Verteidigungsposition zwingt."
+  - "Über Monate hinweg reagiert Person B stets mit Teiloffenbarungen und
+Verharmlosungen, wenn sie auf Fehler angesprochen wird."
+  - "Bei jeder Kritik folgt zunächst „ein bisschen hast du wohl recht“,
+dann ein Rundumschlag, warum alles gar nicht so schlimm sei."
+  - "Person B rollt regelmäßig mit den Augen und behauptet, Person A
+interpretiere alles falsch, um unangenehme Fragen zu umgehen."
+  - "Egal welches Thema angesprochen wird, Person B lenkt ab, spielt es
+herunter und weist alle Vorwürfe von sich."
+  - "Wenn konkrete Belege vorgelegt werden, erklärt Person B, dass es
+"nicht so passiert" sei und dass Person A übertreibe."
+
+semantische_grabber_id: SGR_SELF_PROTECTION_DECEPTION_01
+
+metadata:
+  created_at: 2025-07-21T13:38:11.092244
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

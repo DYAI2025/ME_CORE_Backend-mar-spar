@@ -1,0 +1,33 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für marker_emotionaler_rueckzugsdruck
+  examples:
+  - 'beschreibung: Eine manipulative Kommunikationsform, die Selbstabwertung, einen
+    latenten Vorwurf und eine Rückzugsandrohung kombiniert, um beim Gegenüber Schuldgefühle
+    und Verlustangst zu erzeugen und '
+  - 'dynamik_absicht: Es ist eine passiv-aggressive Taktik, um Aufmerksamkeit, Bestätigung
+    oder eine Verhaltensänderung zu erzwingen, ohne die eigenen Bedürfnisse direkt
+    zu äußern. Die Verantwortung für da'
+  - 'Selbstabwertung: 0.9'
+  - 'emotionale Manipulation: 0.85'
+  - 'soziale Eskalation: 0.75'
+  id: S_MARKER_EMOTIONALER_RUECKZUGSDRUCK
+  level: 2
+  name: marker_emotionaler_rueckzugsdruck
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_2600
+  semantic_tags:
+  - marker-emotionaler-rueckzugsdruck
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.814186'
+  repair_version: '1.0'

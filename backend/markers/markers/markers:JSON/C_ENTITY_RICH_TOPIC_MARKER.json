@@ -1,0 +1,38 @@
+# C_ENTITY_RICH_TOPIC_MARKER - Semantic Marker
+marker_name: C_ENTITY_RICH_TOPIC_MARKER
+beschreibung: >
+  - id: "C_ENTITY_RICH_TOPIC"
+  level: 3
+  version: "1.0.0"
+  author: "auto_gpt"
+  created_at: "2025-07-18"
+  status: "draft"
+  lang: "de"
+  name: "ENTITY_RICH_TOPIC"
+  description: |
+    Erfasst Texte, in denen verschiedene Entity-Typen (Person, Organisation, Ort)
+    in hoher Dichte gemischt auftreten.
+  composed_of:
+    - type: semantic
+      marker_ids:
+        - "S_HIGH_PERSON_DENSITY"
+        - "S_HIGH_ORG_DENSITY"
+        - "S_HIGH_LOC_DENSITY"
+  activation_logic: "any"
+beispiele:
+  - "examples:"
+  - "- "Google, Microsoft und IBM eröffneten neue Büros in Berlin, Paris und London.""
+  - "- "Angela Merkel traf sich mit Barack Obama und Emmanuel Macron in Brüssel.""
+  - "- "Tesla, SpaceX und Neuralink organisierten eine Konferenz in San Francisco.""
+  - "- "Netflix kündigte in Los Angeles neue Serien mit Warner Bros und Disney an.""
+  - "- "G7-Gipfel in Tokyo vereinte Joe Biden, Xi Jinping und Boris Johnson.""
+
+semantische_grabber_id: AUTO_SEM_20250718_B7A7
+
+metadata:
+  created_at: 2025-07-18T03:25:24.953786
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

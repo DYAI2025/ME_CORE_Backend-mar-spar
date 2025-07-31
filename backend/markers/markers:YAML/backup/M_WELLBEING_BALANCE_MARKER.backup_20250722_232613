@@ -1,0 +1,29 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für M_WELLBEING_BALANCE_MARKER
+  examples:
+  - 'id: "M_WELLBEING_BALANCE"'
+  - 'name: "WELLBEING_BALANCE"'
+  - 'level: "atomic"'
+  - 'category: "Emotionale Stabilität"'
+  - 'semantic_tags: ["Wohlbefinden", "Zufriedenheit", "Ausgeglichenheit", "Selbstwirksamkeit"]'
+  id: S_M_WELLBEING_BALANCE
+  level: 2
+  name: M_WELLBEING_BALANCE
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_0BB6
+  semantic_tags:
+  - m-wellbeing-balance-marker
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.653583'
+  repair_version: '1.0'

@@ -1,0 +1,90 @@
+# S_INTERACTIVE_STONEWALLING_MARKER - Semantic Marker
+marker_name: S_INTERACTIVE_STONEWALLING_MARKER
+beschreibung: >
+  id: S_INTERACTIVE_STONEWALLING
+level: 2
+version: 1.1.1
+author: Schema-Engineer_fo_syst./psych./_markerweights
+created_at: '2025-07-18'
+status: draft
+lang: de
+name: INTERAKTIVES_MAUERN
+description: Erkennt eine Reaktion, die unverhältnismässig kurz ist im Vergleich
+  zum vorherigen Beitrag eines anderen Sprechers, was auf einen kommunikativen Rückzug
+  (Stonewalling) hindeutet.
+composed_of:
+- type: atomic
+  marker_ids:
+  - A_MINIMAL_RESPONSE
+rules:
+- type: co_occurrence
+  condition: unmittelbar_nach
+  value: 1
+  scope: conversation_turn
+- type: context_condition
+  feature: speaker_change
+  operator: eq
+  value: true
+  scope: previous_unit
+- type: context_condition
+  feature: length_ratio
+  operator: lt
+  value: 0.1
+  scope: previous_unit
+semantic_grabber_id: SGR_GOTTMAN_04
+cluster:
+- C_DESTRUCTIVE_CYCLE_GOTTMAN
+tags:
+- gottman
+- stonewalling
+- conflict
+- relationship
+- origin_author:John_Gottman
+beispiele:
+  - "Sprecher B: "Vielleicht."
+  - "ohne Handys, nur wir beide?"
+  - "Wie wäre es, wenn wir einmal pro Woche einen festen Date-Abend einführen –"
+  - "Jeden Abend sitzen wir nur noch vor unseren Bildschirmen."
+  - "Sprecher A: "Mir fällt auf, dass wir kaum noch Zeit zu zweit haben."
+  - "Sprecher B: "Weiß nicht."
+  - "Wäre super, wenn du sagst, ob du dabei bist, damit ich final buchen kann."
+  - "sogar Aktivitäten wie Kajakfahren und eine Weinprobe."
+  - "Sprecher A: "Ich habe über Pfingsten einen Roadtrip geplant: Route, Unterkünfte,"
+  - "Sprecher B: "Mal schauen."
+  - "damit sie sich nicht so allein fühlt. Das würde mir enorm viel bedeuten."
+  - "Ich dachte, vielleicht könntest du mich begleiten oder zumindest danach bei ihr vorbeischauen,"
+  - "Sprecher A: "Meine Mutter hat nächste Woche diese Operation, und ich bin ziemlich nervös."
+  - "Sprecher B: "Später."
+  - "Kannst du dir das bitte ansehen und Feedback geben, bevor ich es einreiche?"
+  - "und eine Präsentation gebaut, damit das Management die Risiken sofort sieht."
+  - "Sprecher A: "Ich habe den Quartalsbericht komplett überarbeitet, alle KPIs neu aufbereitet"
+  - "Sprecher B: "Wenn’s sein muss."
+  - "Könnten wir bitte gemeinsam einen konkreten Plan machen, wie wir die Aufgaben besser verteilen?"
+  - "Mir fehlt deine Unterstützung, besonders wenn es um die Kinder geht."
+  - "Sprecher A: "Ich habe letzte Nacht kaum geschlafen, weil mich unsere Situation echt belastet."
+  - "examples:"
+  - "- |-"
+  - "Sprecher A: "Ich habe mir wirklich viele Gedanken gemacht und fühle mich in letzter Zeit einfach ignoriert. Es verletzt mich, dass du nie darauf eingehst, wenn ich über meine Gefühle spreche.""
+  - "Sprecher B: "Ok.""
+  - "- |-"
+  - "Sprecher A: "Ich habe dein Konzept angesehen. Die Grundidee ist gut, aber die Budgetplanung ist unrealistisch und die Timeline für Phase 2 müssen wir komplett überarbeiten.""
+  - "Sprecher B: "Aha.""
+  - "- |-"
+  - "Sprecher A: "Es tut mir wirklich unendlich leid, wie ich gestern reagiert habe. Das war nicht fair dir gegenüber und ich war einfach total gestresst.""
+  - "Sprecher B: "Passt schon.""
+  - "- |-"
+  - "Sprecher A: "Ich habe die Zusage für den Job in München bekommen! Das ist die Chance, auf die ich so lange gewartet habe!""
+  - "Sprecher B: "Hm.""
+  - "- |-"
+  - "Sprecher A: "Ich weiß im Moment einfach nicht weiter mit dem Projekt, die Daten sind inkonsistent und der Kunde macht Druck. Ich könnte wirklich deine Hilfe gebrauchen.""
+  - "Sprecher B: "Verstehe.""
+
+semantische_grabber_id: AUTO_SEM_20250718_66CE
+
+metadata:
+  created_at: 2025-07-18T03:14:00.447174
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

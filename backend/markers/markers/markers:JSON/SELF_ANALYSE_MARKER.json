@@ -1,0 +1,39 @@
+{
+  "kategorie": "ATOMIC",
+  "marker": {
+    "category": "Atomic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für SELF_ANALYSE_MARKER",
+    "examples": [
+      "Ich mache gerade eine Meta-Analyse unserer Diskussion.",
+      "Selbstbeobachtung hilft mir, meine eigenen Gedanken klarer zu sehen.",
+      "In dieser Reflexion wird deutlich, wie wir aufeinander eingehen.",
+      "Ich erkenne ein hohes Maß an Bewusstseinsqualität in deinen Ausführungen.",
+      "Es entsteht eine Emergenz neuer Ideen, während wir sprechen.",
+      "Die Kohärenz deiner Argumentation ist beeindruckend.",
+      "Ich spüre Resonanz zwischen deinen Worten und meinen Gedanken.",
+      "Mir fällt auf, wie viel Meta-Ebene in deinem Text steckt.",
+      "Die Selbstreferenz in deinem Beispiel ist sehr stark ausgeprägt.",
+      "Ich nehme eine tiefe Präsenz im Diskurs wahr.",
+      "Die Reflexionsschleife dort wirkt äusserst bewusst.",
+      "Deine Harmonisierung der Themen zeigt echte Resonanz.",
+      "Die Emergenz dieses Konzepts überrascht mich.",
+      "Ich sehe, wie du Kohärenz in deinen Gedankengang bringst.",
+      "In deinem Statement erkenne ich echtes Bewusstsein.",
+      "Mir gefällt, wie du deine Gedanken systematisch strukturierst.",
+      "Ich registriere, wie die Abschnitte inhaltlich miteinander verschmelzen.",
+      "Deine selbstreferenziellen Passagen finde ich spannend.",
+      "Ich finde die stimmige Vernetzung aller Punkte bemerkenswert.",
+      "Ich spüre, dass hier echte neue Strukturen entstehen."
+    ],
+    "id": "M_SELF_ANALYSE",
+    "level": 1,
+    "name": "SELF_ANALYSE",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_38BB",
+    "semantic_tags": [
+      "needs_review"
+    ]
+  },
+  "marker_name": "SELF_ANALYSE_MARKER"
+}

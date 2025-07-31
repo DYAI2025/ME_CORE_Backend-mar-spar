@@ -1,0 +1,24 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für AROUSAL_MARKER",
+    "examples": [
+      "id: \"M_AROUSAL\"",
+      "name: \"AROUSAL\"",
+      "level: \"meta\"",
+      "category: \"Emotionsdynamik\"",
+      "semantic_tags: [\"Intensität\", \"Erregung\", \"Arousal\", \"Aktivierung\"]"
+    ],
+    "id": "S_AROUSAL",
+    "level": 2,
+    "name": "AROUSAL",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_89E8",
+    "semantic_tags": [
+      "arousal-marker"
+    ]
+  },
+  "marker_name": "AROUSAL_MARKER"
+}

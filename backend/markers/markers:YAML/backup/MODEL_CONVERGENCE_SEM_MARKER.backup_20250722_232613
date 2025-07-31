@@ -1,0 +1,29 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: 'Übereinstimmung zwischen den Ausgaben, Einschätzungen oder Bewertungen
+    verschiedener KI-Modelle auf identischem Input.
+
+    '
+  examples:
+  - Übereinstimmung zwischen den Ausgaben, Einschätzungen oder Bewertungen verschiedener
+    KI-Modelle auf identischem Input
+  id: S_MODEL_CONVERGENCE_SEM
+  level: 2
+  name: MODEL_CONVERGENCE_SEM
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_9D7A
+  semantic_tags:
+  - model-convergence-sem-marker
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.551584'
+  repair_version: '1.0'

@@ -1,0 +1,68 @@
+"$id": "https://example.org/schemas/marker/master/2.0",
+"title": "Marker Master Schema",
+"version": "2.0"
+
+files_review:
+  - file: "beziehungsanalyse_schema.json"            # :contentReference[oaicite:6]{index=6}
+    role: "Beispiel-Analyse-Output"
+    keep: true
+    used_for:
+      - "Context-Demo für spätere Visualisierung"
+    required_fixes: []
+
+  - file: "schema_builder_app.jsx"                   # :contentReference[oaicite:7]{index=7}
+    role: "GUI-Prototype (React)"
+    keep: true
+    used_for:
+      - "Vorlage → GUI-Core"
+    required_fixes:
+      - "YAML-Parsing durch `yaml` / `ruamel.yaml` ergänzen"
+      - "AJV-Validation gegen `marker.schema.v2.json` integrieren"
+      - "Präfix-Migration (`slugify`) & pattern→array-Normalisierung"
+      - "Dual-Export (JSON+YAML), Backup-Ordner"
+      - "Plugin-Hook (`plugins/*.js`) einhängen"
+      - "Remove dummy-validator → echte Fehlerliste"
+
+  - file: "json_overview.md"                         # :contentReference[oaicite:8]{index=8}
+    role: "Bestands-Snapshot"
+    keep: true
+    used_for:
+      - "QA-Referenz (Dateigrößen, Keys-Check)"
+    required_fixes: []
+
+  - file: "DETECT_default_marker_schema.yaml"        # :contentReference[oaicite:9]{index=9}
+    role: "Altes Marker-Schema"
+    keep: ❌
+    used_for: []
+    required_fixes:
+      - "Veraltet – NICHT verwenden. Ersetzen durch `marker.schema.v2.json`"
+
+  - file: "YAML_TO_JSON_FEATURE.md"                  # :contentReference[oaicite:10]{index=10}
+    role: "Funktions-Spezifikation"
+    keep: true
+    used_for:
+      - "GUI-Feature-Checklist (Konverter)"
+    required_fixes: []
+
+  - file: "GRABBER_FLOW_EXPLAINED.md"                # :contentReference[oaicite:11]{index=11}
+    role: "Grabber-Logik Doku"
+    keep: true
+    used_for:
+      - "Grundlage Plugin »Semantic Grabber Suggest«"
+    required_fixes: []
+
+required_templates:
+  - "schemas/marker.schema.v2.json"          # Vollschema – Draft-07
+  - "schemas/fraud-markers.schema.json"      # Tag-Subset
+  - "templates/ATOMIC.yaml"
+  - "templates/SEMANTIC.yaml"
+  - "templates/CLUSTER.yaml"
+  - "templates/META.yaml"
+  - "examples/good/*.yaml|json"              # 5 valide Beispiele
+  - "examples/bad/*.yaml|json"               # 5 Fehler-Beispiele
+  - "config/marker-tool.default.json"        # Default-Pfad-Config
+  - "plugins/sample-plugin.js"               # API-Stub für Erweiterungen
+next_steps_for_claude:
+  1: "Iteration 0 → Reuse-Scan (obige Dateien + Templates). Ergebnis: iter-Plan."
+  2: "Warte auf Go!"
+  3: "Danach Iteration 1 gemäß Plan ausführen, dann erneut Go ab­warten."

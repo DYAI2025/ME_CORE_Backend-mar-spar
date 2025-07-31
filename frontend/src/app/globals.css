@@ -1,0 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Markerengine Custom Styles */
+@layer components {
+  .marker-input-card {
+    @apply rounded-lg border bg-card text-card-foreground shadow-sm transition-all duration-200 hover:shadow-md;
+  }
+  
+  .marker-result-grid {
+    @apply grid gap-4 md:grid-cols-2 lg:grid-cols-3;
+  }
+  
+  .marker-risk-gauge {
+    @apply relative overflow-hidden rounded-full;
+  }
+  
+  .marker-chip {
+    @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-all duration-200 hover:scale-105;
+  }
+  
+  .marker-chip-primary {
+    @apply bg-marker-chip-primary/10 text-marker-chip-primary border border-marker-chip-primary/20;
+  }
+  
+  .marker-chip-secondary {
+    @apply bg-marker-chip-secondary/10 text-marker-chip-secondary border border-marker-chip-secondary/20;
+  }
+  
+  .marker-chip-warning {
+    @apply bg-marker-chip-warning/10 text-marker-chip-warning border border-marker-chip-warning/20;
+  }
+  
+  .marker-chip-success {
+    @apply bg-marker-chip-success/10 text-marker-chip-success border border-marker-chip-success/20;
+  }
+  
+  .marker-highlighted-text {
+    @apply bg-yellow-200 dark:bg-yellow-800/30 px-1 py-0.5 rounded;
+  }
+  
+  .live-log-drawer {
+    @apply fixed inset-y-0 right-0 z-50 w-full max-w-md transform transition-transform duration-300 ease-in-out;
+  }
+  
+  .live-log-entry {
+    @apply border-l-2 pl-3 py-2 text-sm font-mono;
+  }
+  
+  .live-log-entry-info {
+    @apply border-l-blue-500 bg-blue-50 dark:bg-blue-950/50;
+  }
+  
+  .live-log-entry-success {
+    @apply border-l-green-500 bg-green-50 dark:bg-green-950/50;
+  }
+  
+  .live-log-entry-warning {
+    @apply border-l-yellow-500 bg-yellow-50 dark:bg-yellow-950/50;
+  }
+  
+  .live-log-entry-error {
+    @apply border-l-red-500 bg-red-50 dark:bg-red-950/50;
+  }
+  
+  .rate-limit-indicator {
+    @apply inline-flex items-center gap-2 rounded-md border px-3 py-1 text-xs font-medium;
+  }
+  
+  .rate-limit-low {
+    @apply border-green-200 bg-green-50 text-green-700 dark:border-green-800 dark:bg-green-950 dark:text-green-400;
+  }
+  
+  .rate-limit-medium {
+    @apply border-yellow-200 bg-yellow-50 text-yellow-700 dark:border-yellow-800 dark:bg-yellow-950 dark:text-yellow-400;
+  }
+  
+  .rate-limit-high {
+    @apply border-red-200 bg-red-50 text-red-700 dark:border-red-800 dark:bg-red-950 dark:text-red-400;
+  }
+}
+
+/* Smooth transitions for theme switching */
+@layer utilities {
+  .theme-transition {
+    @apply transition-colors duration-300 ease-in-out;
+  }
+}
+
+/* Custom scrollbar */
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-track {
+    @apply bg-muted/50;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/30 rounded-full;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
+  }
+}
+
+/* Animation classes */
+@layer utilities {
+  .animate-in {
+    animation: animateIn 0.3s ease-out;
+  }
+  
+  .animate-out {
+    animation: animateOut 0.3s ease-in;
+  }
+  
+  @keyframes animateIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes animateOut {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  }
+} 

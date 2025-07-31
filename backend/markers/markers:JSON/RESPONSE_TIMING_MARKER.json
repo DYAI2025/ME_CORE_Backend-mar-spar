@@ -1,0 +1,20 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Synchronisierte oder adaptierte Antwortzeiten, bemerkte Gleichzeitigkeit, bewusste Pausen oder Gleichklang im Chat-Tempo.\n",
+    "examples": [
+      "Synchronisierte oder adaptierte Antwortzeiten, bemerkte Gleichzeitigkeit, bewusste Pausen oder Gleichklang im Chat-Tempo"
+    ],
+    "id": "S_RESPONSE_TIMING",
+    "level": 2,
+    "name": "RESPONSE_TIMING",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_41DD",
+    "semantic_tags": [
+      "response-timing-marker"
+    ]
+  },
+  "marker_name": "RESPONSE_TIMING_MARKER"
+}

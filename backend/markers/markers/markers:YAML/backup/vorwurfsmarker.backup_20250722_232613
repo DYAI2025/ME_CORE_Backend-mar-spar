@@ -1,0 +1,35 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für vorwurfsmarker
+  examples:
+  - Ey, warum lässt du mich immer hängen, Alter?
+  - Du hast mir versprochen zu helfen, und jetzt bist du einfach weg.
+  - Wie kannst du so egoistisch sein und mich so im Regen stehen lassen?
+  - Immer wenn ich dich brauche, bist du nicht da!
+  - Du schuldest mir eine Erklärung, Alter!
+  - Warum übernimmst du nie Verantwortung für deinen Mist?
+  - Du wirfst mir andauernd Sachen vor, die ich nie gemacht habe!
+  - Ey, du nimmst mich einfach nicht ernst – was soll das?
+  - Du hast mich angelogen und dich nichtmal entschuldigt!
+  - Immer dieses Ausweichen – hast du Angst, mir die Wahrheit zu sagen?
+  - Wie kannst du es wagen, mich so vor allen bloßzustellen?
+  id: S_VORWURFSMARKER
+  level: 2
+  name: vorwurfsmarker
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_8139
+  semantic_tags:
+  - needs_review
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.643988'
+  repair_version: '1.0'

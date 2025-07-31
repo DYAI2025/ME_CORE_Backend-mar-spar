@@ -1,0 +1,28 @@
+{
+  "marker_name": "A_SUBTLE_SARCASM_MARKER",
+  "beschreibung": "Subtiler Sarkasmus/Ironie zur verdeckten Abwertung.\n",
+  "beispiele": [
+    "Na toll, der Drucker streikt wieder – danke für nichts.",
+    "Schön für dich, dass du Urlaub machen kannst, während wir schuften.",
+    "War ja klar, dass du das letzte Stück Kuchen nimmst.",
+    "Wie nett von dir, heute mal pünktlich zu erscheinen.",
+    "Muss ja schön sein, den Luxus einer Pause zu haben.",
+    "Na super, schon wieder ein Update mitten im Meeting.",
+    "Schön, dass du Zeit hattest, meine Nachricht zu ignorieren.",
+    "War ja klar, dass der Held des Tages du bist.",
+    "Wie nett von dir, mich *nachträglich* einzuladen.",
+    "Muss ja schön sein, wenn alles immer nach Plan läuft – deinem Plan.",
+    "Na toll, jetzt ist der Kaffee auch noch leer. Fantastisch.",
+    "Schön für dich, dass dein Projekt fertig ist. Wir anderen lieben Deadlines.",
+    "War ja klar, dass genau *dein* Thema Überlänge bekommt.",
+    "Wie nett von dir, mir erst nach drei Erinnerungen zu antworten.",
+    "Muss ja schön sein, immer recht zu haben.",
+    "Na super, stromert mein Laptop – bestens organisiert, wie immer.",
+    "Schön, dass du die Regeln machst, wir folgen gerne.",
+    "War ja klar, dass der Fehler im System und nie bei dir liegt.",
+    "Wie nett, dass du auch mal kurz reinschaust – Prominenz im Chat!",
+    "Muss ja schön sein, wenn Probleme sich vor dir selbst lösen."
+  ],
+  "semantische_grabber_id": "SGR_SUBTLE_SARCASM_01",
+  "metadata": {
+    "created_at": 

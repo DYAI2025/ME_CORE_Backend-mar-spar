@@ -1,0 +1,22 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für BOUNDARY_SHIFT",
+    "examples": [
+      "name: \"Boundary Shift\"",
+      "Identifies communicative patterns where a person is implicitly treated as part of an inner circle, team, or co-creation context without this having been formally agreed upon. These statements create a",
+      "category: \"Subtle Role Integration\""
+    ],
+    "id": "S_BOUNDARY_SHIFT",
+    "level": 2,
+    "name": "BOUNDARY_SHIFT",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_2671",
+    "semantic_tags": [
+      "boundary-shift"
+    ]
+  },
+  "marker_name": "BOUNDARY_SHIFT"
+}

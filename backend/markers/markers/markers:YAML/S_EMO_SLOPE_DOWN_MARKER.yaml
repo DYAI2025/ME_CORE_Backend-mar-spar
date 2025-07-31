@@ -1,0 +1,21 @@
+# S_EMO_SLOPE_DOWN_MARKER - Semantic Marker
+marker_name: S_EMO_SLOPE_DOWN_MARKER
+beschreibung: >
+  Semantic marker for a consistently falling valence (slope ≤ -0.10)
+across three consecutive messages within a 15-message window.
+beispiele:
+  - "0.50 → 0.25 → -0.05: enthusiastic to flat to gloomy."
+  - "B: “Feeling great!” → “Bit tired.” → “Actually, awful now.”"
+  - "Meeting log shows morale sliding each status update."
+  - "Valence tumbles from 0.3 to -0.4 in three texts."
+  - "Voice notes: cheerful, then neutral, then defeated tone."
+
+semantische_grabber_id: SGR_EMO_SLOPE_DOWN_01
+
+metadata:
+  created_at: 2025-07-21T19:42:27.521517
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

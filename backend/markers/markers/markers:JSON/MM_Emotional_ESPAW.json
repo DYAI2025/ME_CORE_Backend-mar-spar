@@ -1,0 +1,17 @@
+kategorie: ATOMIC
+marker:
+  category: Atomic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für MM_Emotional_ESPAW
+  examples:
+  - Automatisch generierte Beschreibung für MM_Emotional_ESPAW
+  id: M_MM_EMOTIONAL_ESPAW
+  level: 1
+  name: MM_Emotional_ESPAW
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_CF9F
+  semantic_tags:
+  - mm-emotional-espaw
+marker_name: MM_Emotional_ESPAW
+tags:
+- needs_review

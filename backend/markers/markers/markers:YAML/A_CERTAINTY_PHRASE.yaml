@@ -1,0 +1,28 @@
+marker_name: A_CERTAINTY_PHRASE
+id: "A_CERTAINTY_PHRASE"
+  level: 1
+  version: "1.0.0"
+  author: "Marker_examples_generator"
+  created_at: "2025-07-21"
+  status: "released"
+  lang: "de"
+  name: "Sicherheits-Phrase"
+  description: "Ausdrücke, die Wissen, Kontrolle oder Sicherheit signalisieren."
+  atomic_pattern:
+    - "ich weiß"
+    - "ich bin mir sicher"
+    - "normalerweise"
+    - "eigentlich"
+    - "I know"
+    - "I am sure"
+    - "usually"
+  tags: ["sicherheit", "kontrolle", "kognition"]
+  examples:
+    - "I usually know what I want."
+    - "Ich bin mir echt sicher, dass das klappt 💪."
+    - "I know exactly how this will go 🔥."
+    - "Normalerweise hab ich das im Griff 😉."
+    - "Eigentlich weiß ich ganz genau, was los ist."
+    - "Usually I’m totally on top of things 👍."
+    - "Eigentlich weiß ich’s 😏"
+kategorie: UNCATEGORIZED

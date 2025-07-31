@@ -1,0 +1,23 @@
+{
+  "kategorie": "ATOMIC",
+  "marker": {
+    "category": "Atomic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für ANALYSIS_CONFIGURATION",
+    "examples": [
+      "Automatisch generierte Beschreibung für ANALYSIS_CONFIGURATION"
+    ],
+    "id": "M_ANALYSIS_CONFIGURATION",
+    "level": 1,
+    "name": "ANALYSIS_CONFIGURATION",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_606D",
+    "semantic_tags": [
+      "analysis-configuration"
+    ]
+  },
+  "marker_name": "ANALYSIS_CONFIGURATION",
+  "tags": [
+    "needs_review"
+  ]
+}

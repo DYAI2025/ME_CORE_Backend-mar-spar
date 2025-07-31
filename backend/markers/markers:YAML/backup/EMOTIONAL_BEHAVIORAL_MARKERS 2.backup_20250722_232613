@@ -1,0 +1,26 @@
+marker_name:
+  category: Atomic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für EMOTIONAL_BEHAVIORAL_MARKERS
+    2
+  examples:
+  - Automatisch generierte Beschreibung für EMOTIONAL_BEHAVIORAL_MARKERS 2
+  id: M_EMOTIONAL_BEHAVIORAL_MARKERS2
+  level: 1
+  name: EMOTIONAL_BEHAVIORALS 2
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_46CC
+  semantic_tags:
+  - emotional-behavioral-markers 2
+tags:
+- needs_review
+category: ATOMIC
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.527017'
+  repair_version: '1.0'

@@ -1,0 +1,46 @@
+marker_name: S_POWER_PLAY_MARKER
+beschreibung: 'Einseitige Entscheidung + gleichzeitige Abwertung.
+
+  '
+beispiele:
+- Ich habe entschieden, dass wir das Geld investieren. Deine Zweifel sind doch lächerlich.
+- Wir machen das jetzt so. Stell dich nicht so an.
+- Das ist keine Diskussion, dein Problem, wenn du’s nicht checkst.
+- Ich hab das schon gebucht. Übertreib mal nicht mit deinen Bedenken.
+- Da gibt’s nichts zu reden, das ist doch kindisch.
+- Ich habe entschieden, dass wir umziehen. Deine Sorge ist lächerlich.
+- Wir fahren morgen früh, stell dich nicht so an.
+- Ich hab das gekündigt. Dein Drama ist überflüssig.
+- Thema erledigt, kindisch, dass du nachhakst.
+- Plan steht. Hör auf zu jammern.
+- Ich hab den Termin gesetzt. Deine Einwände? Kindisch.
+- Wir ändern die Strategie. Lächerlich, dass du jetzt Panik schiebst.
+- Ich hab schon unterschrieben. Stell dich nicht so an.
+- Diskussion beendet, deine Emotionen sind peinlich.
+- Ich setz das so um. Wenn du Angst hast, ist das dein Problem.
+- Entschieden. Kindisch, dass du Widerstand leistest.
+- Ich regel das alleine. Lächerlich, wie du dich aufregst.
+- Wir nutzen das Tool. Deine Skepsis ist kindisch.
+- Vertrag ist fix. Hör auf zu übertreiben.
+- Ich hab alles arrangiert. Deine Bedenken sind Drama.
+semantische_grabber_id: SGR_POWER_PLAY_01
+metadata:
+  created_at: 2025-07-22 00:20:07.051016
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags:
+  - neu_erstellt
+  - needs_review
+  last_repaired: '2025-07-22T02:31:24.224364'
+  repair_version: '1.0'
+category: UNCATEGORIZED
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+
+kategorie: UNCATEGORIZED

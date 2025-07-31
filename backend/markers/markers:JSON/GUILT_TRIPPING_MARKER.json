@@ -1,0 +1,20 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für GUILT_TRIPPING_MARKER",
+    "examples": [
+      "Aussagen, die gezielt Schuldgefühle erzeugen oder verstärken, meist durch subtile oder offene Vorwürfe."
+    ],
+    "id": "S_GUILT_TRIPPING",
+    "level": 2,
+    "name": "GUILT_TRIPPING",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_9BBE",
+    "semantic_tags": [
+      "guilt-tripping-marker"
+    ]
+  },
+  "marker_name": "GUILT_TRIPPING_MARKER"
+}

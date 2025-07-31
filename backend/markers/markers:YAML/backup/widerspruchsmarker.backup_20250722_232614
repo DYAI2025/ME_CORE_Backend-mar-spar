@@ -1,0 +1,35 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für widerspruchsmarker
+  examples:
+  - Einerseits will ich dir helfen, andererseits habe ich selber genug Sorgen.
+  - Ich liebe es hier, aber gleichzeitig macht es mich fertig.
+  - Ich möchte da hin, doch ich hab einfach keine Zeit.
+  - Ich unterstütze dich, aber ich kann nicht alles tragen.
+  - Ich freue mich auf den Urlaub, doch irgendwie hab ich Bedenken.
+  - Ich glaube an das Projekt, aber ich sehe Risiken.
+  - Ich vertraue dir, und doch sorgt mich dein Verhalten.
+  - Ich schätze dein Feedback, aber ich bin nicht überzeugt.
+  - Ich sage Ja, aber mein Bauch sagt Nein.
+  - Ich bin dafür, ich bin dagegen, was ist richtig?
+  - Ich will mitmachen, aber ich habe Zweifel.
+  id: S_WIDERSPRUCHSMARKER
+  level: 2
+  name: widerspruchsmarker
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_FF34
+  semantic_tags:
+  - needs_review
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.793555'
+  repair_version: '1.0'

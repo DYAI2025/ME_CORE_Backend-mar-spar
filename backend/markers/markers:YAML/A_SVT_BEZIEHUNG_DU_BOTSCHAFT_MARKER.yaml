@@ -1,0 +1,67 @@
+marker_name: A_SVT_BEZIEHUNG_DU_BOTSCHAFT_MARKER
+beschreibung: 'Identifiziert ''Du-Botschaften'', die dem Empfänger Eigenschaften oder
+  Schuld zuweisen und somit die Beziehungsebene stark belasten.
+
+  '
+beispiele:
+- Du bist immer so unzuverlässig, wenn’s drauf ankommt.
+- Du hast doch nie richtig zugehört, das ist typisch für dich.
+- Warum hast du den Müll wieder nicht rausgebracht?
+- Dein Verhalten gestern Abend war echt daneben.
+- Du bist echt anstrengend in letzter Zeit.
+- Du hast schon wieder vergessen, was wir besprochen hatten.
+- Du bist überhaupt nicht kritikfähig.
+- Warum hast du mir das nicht einfach gesagt?
+- Sie kommen schon wieder zu spät, das ist respektlos.
+- Du bist immer derjenige, der Streit anfängt.
+- Dein Verhalten macht mich wirklich wahnsinnig.
+- Du denkst doch nur an dich.
+- Warum hast du das nicht gleich geklärt?
+- Du hast einfach kein Gespür für den richtigen Moment.
+- Du bist so unfähig, das einfach mal durchzuziehen.
+- Du hast mich schon wieder enttäuscht.
+- Du bist immer so überempfindlich.
+- Dein Verhalten ist mal wieder typisch.
+- Warum hast du nicht wenigstens kurz Bescheid gesagt?
+- Du bist schuld, dass das jetzt alles schiefgelaufen ist.
+- Du bist echt wieder komplett übertrieben.
+- Warum hast du nie Zeit, wenn’s wichtig ist?
+- Du denkst auch wirklich immer nur an dich.
+- Dein Verhalten gestern war einfach nur peinlich.
+- Du bist immer sofort genervt – das ist anstrengend.
+- Du hast mich total bloßgestellt vor allen.
+- Sie kommen schon wieder zu spät – wie immer.
+- Warum hast du mir nicht vorher Bescheid gesagt?
+- Du bist so unzuverlässig, das nervt richtig.
+- Deine Art, mit Konflikten umzugehen, ist toxisch.
+- Du hast kein Gefühl dafür, wann du zu weit gehst.
+- Dein Verhalten zerstört alles, was wir aufgebaut haben.
+- Du bist nie da, wenn man dich braucht.
+- Warum hast du mich ignoriert, als ich dich gebraucht hab?
+- Du hast keine Ahnung, wie sehr du mich verletzt hast.
+- Dein ständiges Schweigen sagt alles.
+- Du bist einfach nicht in der Lage, Verantwortung zu übernehmen.
+- Warum hast du wieder nur an dich gedacht?
+- Du hast es komplett vermasselt – danke dafür.
+- Dein Verhalten macht alles nur noch schlimmer.
+semantische_grabber_id: SGR_SVT_RELATION_ACCUSATION_01
+metadata:
+  created_at: 2025-07-20 22:36:23.231861
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags:
+  - neu_erstellt
+  - needs_review
+  last_repaired: '2025-07-22T02:31:24.170431'
+  repair_version: '1.0'
+category: UNCATEGORIZED
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+
+kategorie: UNCATEGORIZED

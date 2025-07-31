@@ -1,0 +1,54 @@
+marker_name: MM_DESTRUCTIVE_CONFLICT_DYNAMICS_MARKER
+beschreibung: 'Meta‑Syndrom aus indirekter Konfliktvermeidung oder Dominanzmustern.
+
+  '
+beispiele:
+- Person A feuert binnen zwei Tagen sieben passive Aggressions‑Marker, Person B reagiert
+  defensiv → Cluster C_INDIRECT_CONFLICT_AVOIDANCE aktiv, Meta löst aus.
+- Dauerhaft destruktive Kritik und Machtbeschlüsse von A → C_DOMINANCE_BEHAVIOR_PATTERN
+  aktiv → Meta meldet hochriskante Dynamik.
+- 'Wechsel: Schuldumkehr‑Schleife + Abwertung, dann Schweigen → beide Cluster aktiv,
+  Meta >1.'
+- Chat‑Analyse zeigt 4 Guilt‑Twists, 3 Unilateral Decisions im Fenster → Meta.
+- 'Sprint‑Retro eskaliert: Attack, Withdrawal, Power Play – offene Diskussion unmöglich →
+  Meta.'
+- 'Domestic Chat: tägliche ''Immer …''‑Vorwürfe + ''Ich habe entschieden …'' → destruktive
+  Beziehungsstruktur erkannt.'
+- 'Arbeits‑Thread: Passiv‑Aggressive Kommentare, Schweigen, Verdrehung → Konflikt
+  stagniert → Meta.'
+- 'Freundschafts‑DMs: ständige Ironie + Rückzug, dann Schuldumkehr → Meta warnt, Bindung
+  brüchig.'
+- 'Projekt‑Gruppe: Chef macht Alleingänge, wertet Team ab; Team reagiert mit Offended
+  Silence → Meta.'
+- Paartherapie‑Log zeigt beide Cluster alternierend → höchste Eskalationsstufe erkannt.
+- 'Longitudinale Analyse: 8 Wochen destruktive Muster, kein offener Dialog.'
+- 'Warn‑Dashboard: rotes Blinken bei MM_DESTRUCTIVE_CONFLICT_DYNAMICS.'
+- System schlägt De‑Escalation‑Prompt vor.
+- Meta‑Score 0.92 → akute Gefahr der Beziehungsabbrüche.
+- 'Bericht: gestaute Konflikte, Machtgefälle, Gaslighting – Meta bestätigt.'
+- Kombi aus Dominanz + Schuldumkehr – systemische Dysbalance.
+- Indirekte Angriffe führen zu Rückzug, dann Power Play – Kreislauf.
+- Coach‑Interface zeigt line chart der Cluster‑Aktivierungen mit Peaks.
+- Meta aktiviert Notfall‑Intervention im Chat‑Bot.
+- 'Fallbeispiel im Seminar: Live‑Analyse demonstriert Meta‑Marker.'
+semantische_grabber_id: SGR_DESTRUCTIVE_DYNAMICS_01
+metadata:
+  created_at: 2025-07-22 00:21:03.701813
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags:
+  - neu_erstellt
+  - needs_review
+  last_repaired: '2025-07-22T02:31:24.179767'
+  repair_version: '1.0'
+category: UNCATEGORIZED
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+
+kategorie: UNCATEGORIZED

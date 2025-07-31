@@ -1,0 +1,29 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für META_MODERATION_MARKER
+  examples:
+  - 'name: "Meta-Moderation"'
+  - 'category: "Meta-Kommunikation"'
+  - 'semantic_grabber_id: "SGR_META_MOD_01"'
+  - 'created_at: 2025-07-12T05:19:00.236364'
+  - 'version: 1.0'
+  id: S_META_MODERATION
+  level: 2
+  name: META_MODERATION
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_05E9
+  semantic_tags:
+  - meta-moderation-marker
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.726647'
+  repair_version: '1.0'

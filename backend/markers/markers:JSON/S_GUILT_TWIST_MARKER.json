@@ -1,0 +1,28 @@
+{
+  "marker_name": "S_GUILT_TWIST_MARKER",
+  "beschreibung": "Rechtfertigung + sofortige Schuldumkehr an Empfänger.\n",
+  "beispiele": [
+    "Ich wollte doch nur helfen, aber wenn du immer so empfindlich bist, kann man ja gar nichts sagen.",
+    "Das war nicht meine Absicht, aber du hast das Ganze doch provoziert.",
+    "Ich hab es nur gut gemeint. Wegen dir ist es jetzt kompliziert.",
+    "Ich dachte, ich helfe. Selber schuld, wenn du das falsch verstehst.",
+    "Ich wollte dich entlasten, doch du lässt mich nicht.",
+    "Ich hatte es gut gemeint, aber du stellst dich quer.",
+    "Ich dachte, das wäre nett. Weil du aber gleich explodierst, geht alles schief.",
+    "Ich wollte nur das Beste. Du machst es mit deiner Kritik kaputt.",
+    "War doch gut gemeint, aber wenn du immer dagegen bist...",
+    "Meine Absicht war positiv. Du übertreibst und drehst alles um.",
+    "Ich versuche zu helfen; du reagierst unnötig aggressiv.",
+    "Eigentlich wollt ich stressfreie Lösung, doch du ziehst Drama auf.",
+    "Ich mein's gut, du siehst nur Negatives.",
+    "Hab nur dein Wohl im Sinn – du sabotierst dich selbst.",
+    "Ich versuch, Ordnung zu schaffen. Du bringst Chaos rein.",
+    "Dachte, das erleichtert dir was, aber du meckerst.",
+    "Ich handle aus Liebe, du aus Misstrauen.",
+    "Meine Intention klar, dein Verhalten unklar.",
+    "Will was Gutes, du siehst Angriff.",
+    "Hab nur reagiert, weil du vorher so ungenau warst."
+  ],
+  "semantische_grabber_id": "SGR_GUILT_TWIST_01",
+  "metadata": {
+    "created_at": 

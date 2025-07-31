@@ -1,0 +1,30 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Erkennt Synchronisation von Kommunikationsstilen zwischen Gesprächspartnern
+  examples: null
+  id: S_STYLE_SYNC
+  level: 2
+  name: STYLE_SYNC
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250703_E381
+  semantic_tags:
+  - style-sync-marker
+metadata:
+  created_at: '2025-07-03T10:17:04.804614'
+  created_by: FRAUSAR_GUI_v2
+  tags:
+  - neu_erstellt
+  - needs_review
+  version: 1.0
+  last_repaired: '2025-07-19T05:25:21.854800'
+  repair_version: '1.0'
+category: UNCATEGORIZED
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5

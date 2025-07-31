@@ -1,0 +1,15 @@
+marker_name:
+  beispiele: []
+  beschreibung: ''
+tags:
+- needs_review
+category: UNCATEGORIZED
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.529639'
+  repair_version: '1.0'

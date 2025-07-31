@@ -1,0 +1,35 @@
+marker_name: C_GROWING_CONNECTION_CLUSTER
+- id: "C_GROWING_CONNECTION_CLUSTER"
+  level: 3
+  version: "1.2.0"
+  author: "Marker_examples_generator"
+  created_at: "2025-07-22"
+  status: "released"
+  lang: "de"
+  name: "GROWING_CONNECTION_CLUSTER"
+  description: "Pattern of joint planning plus expressed anticipation."
+  composed_of:
+    - type: semantic
+      marker_ids: ["S_JOINT_FUTURE_INITIATIVE"]
+    - type: atomic
+      marker_ids: ["A_ANTICIPATION_EXPRESSION"]
+  activation_logic: "S_JOINT_FUTURE_INITIATIVE AND A_ANTICIPATION_EXPRESSION"
+  window: {messages: 3}
+  scoring: {weight: 1.5, priority: "mid"}
+  tags: ["cluster","bonding","commitment"]
+  semantic_grabber_id: "SGR_GROWING_CONNECTION_01"
+  examples:
+    # …alte 20…
+    # +5 NEW
+    - de: "Lass uns zusammen einen Roadtrip planen. Ich kann es schon kaum erwarten!"
+      en: "Let’s plan a road trip together. I can’t wait already!"
+    - de: "Wollen wir unser Hobby-Projekt starten? Ich freue mich riesig darauf."
+      en: "Shall we launch our hobby project? I’m super excited about it."
+    - de: "Wie wär's mit einem gemeinsamen Kochabend? Zähle die Tage!"
+      en: "How about a cooking night together? Counting the days!"
+    - de: "Planen wir unser Gartenprojekt? Ich spüre das Potenzial."
+      en: "Shall we plan our garden project? I feel the potential."
+    - de: "Wir beide könnten im Herbst verreisen – das wird genial!"
+      en: "The two of us could travel in autumn – it’s going to be great!"
+
+kategorie: UNCATEGORIZED

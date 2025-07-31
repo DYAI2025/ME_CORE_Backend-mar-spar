@@ -1,0 +1,23 @@
+{
+  "kategorie": "ATOMIC",
+  "marker": {
+    "category": "Atomic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für TOMS_Erweiterte_Marker",
+    "examples": [
+      "Automatisch generierte Beschreibung für TOMS_Erweiterte_Marker"
+    ],
+    "id": "M_TOMS_ERWEITERTE",
+    "level": 1,
+    "name": "TOMS_Erweiterte_Marker",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_76E3",
+    "semantic_tags": [
+      "toms-erweiterte-marker"
+    ]
+  },
+  "marker_name": "TOMS_Erweiterte_Marker",
+  "tags": [
+    "needs_review"
+  ]
+}

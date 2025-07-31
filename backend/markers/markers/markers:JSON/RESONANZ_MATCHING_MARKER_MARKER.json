@@ -1,0 +1,24 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für RESONANZ_MATCHING_MARKER_MARKER",
+    "examples": [
+      "gemeinsamer Erfahrungshintergrund sichtbar wird. Typisch sind nahtlose",
+      "statistisch unplausibel erscheinen. Dies ist ein Indikator für KI-gestützte",
+      "Gesprächsoptimierung oder gezielte manipulative Strategie.",
+      "description: \"Erkennt Muster für resonanz_matching_marker\"",
+      "pattern: r\"(muster.*wird.*ergänzt)\""
+    ],
+    "id": "S_RESONANZ_MATCHING_MARKER",
+    "level": 2,
+    "name": "RESONANZ_MATCHING",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_29F5",
+    "semantic_tags": [
+      "resonanz-matching-marker-marker"
+    ]
+  },
+  "marker_name": "RESONANZ_MATCHING_MARKER_MARKER"
+}

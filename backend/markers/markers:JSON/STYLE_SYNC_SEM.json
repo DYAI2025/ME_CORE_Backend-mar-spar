@@ -1,0 +1,21 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für STYLE_SYNC_SEM",
+    "examples": [
+      "cat > STYLE_SYNC_SEM.yaml <<EOF",
+      "Synchroner oder adaptierter Schreibstil im Dialog; auffallend ähnliche Wortwahl, gleiche Satzstruktur, Wiederholung typischer Formulierungen."
+    ],
+    "id": "S_STYLE_SYNC_SEM",
+    "level": 2,
+    "name": "STYLE_SYNC_SEM",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_5AD4",
+    "semantic_tags": [
+      "style-sync-sem"
+    ]
+  },
+  "marker_name": "STYLE_SYNC_SEM"
+}

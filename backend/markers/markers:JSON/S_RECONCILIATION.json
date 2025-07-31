@@ -1,0 +1,29 @@
+id: S_RECONCILIATION
+marker: RECONCILIATION
+level: 2
+version: "1.0.0"
+status: draft
+author: "auto_gpt"
+created: "2025-07-25T21:17:00Z"
+tags: [semantic, reconciliation, forgiveness]
+pattern:
+  - "(lass uns das klären)"
+  - "(können wir uns wieder vertragen)"
+  - "(es tut mir leid, können wir das vergessen)"
+  - "(ich will Frieden)"
+description: "Detects reconciliation language and peace offerings in dialogue."
+examples:
+  - "Lass uns das klären und wieder Freunde sein."
+  - "Es tut mir leid, können wir uns wieder vertragen?"
+  - "Ich möchte Frieden, lass uns das vergessen."
+  - "Ich will nicht mehr streiten, lass uns versöhnen."
+  - "Können wir bitte einen Neuanfang machen?"
+category: "SEMANTIC"
+scoring:
+  weight: 1.5
+semantic_rules:
+  - "Detects attempts to restore harmony after conflict."
+composed_of:
+  - "A_PEACE_OFFER"
+  - "A_FORGIVENESS"
+activation_logic: "A_PEACE_OFFER OR A_FORGIVENESS"

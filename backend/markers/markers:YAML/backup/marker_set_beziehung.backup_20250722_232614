@@ -1,0 +1,23 @@
+marker_set:
+  beschreibung: 'Enthält Marker rund um emotionale Dynamiken in Beziehungen: Manipulation,
+    Rückzug, Sarkasmus.'
+  marker:
+  - name: antizipierte Manipulation
+    quelle: marker_dynamic_knot_beispiele.yaml
+  - name: emotionaler Rückzugsdruck
+    quelle: marker_emotionaler_rueckzugsdruck.yaml
+  - name: Sarkasmus
+    quelle: marker_sarkasmus.yaml
+  name: Beziehungsdynamik
+category: UNCATEGORIZED
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-21T21:32:11.848265'
+  repair_version: '1.0'

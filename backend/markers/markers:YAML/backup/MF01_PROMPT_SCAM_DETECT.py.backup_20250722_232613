@@ -1,0 +1,31 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für MF01_PROMPT_SCAM_DETECT.py
+  examples:
+  - 'marker_name: MF01_PROMPT_SCAM_DETECT.py'
+  - You are a risk detection assistant trained to identify early signs of online romance
+    scams.
+  - You have access to a set of behavioral markers, each associated with a category,
+    example phrase, and a risk score.
+  - 1. Which markers are matched or closely related.
+  - 2. The matched example(s).
+  id: S_MF01_PROMPT_SCAM_DETECTPY
+  level: 2
+  name: MF01_PROMPT_SCAM_DETECT.py
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_953A
+  semantic_tags:
+  - mf01-prompt-scam-detect.py
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.557168'
+  repair_version: '1.0'

@@ -1,0 +1,24 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für AMBIVALENT_STALLING_MANEUVER",
+    "examples": [
+      "Eine Kommunikationsstrategie, die durch vage, unverbindliche oder ausweichende Aussagen gekennzeichnet ist. Ziel ist es, eine andere Person emotional verfügbar und als Option offenzuhalten, ohne eine ",
+      "Die hinhaltende Person maximiert ihre eigene Freiheit und Optionen (z.B. auf eine \"bessere\" Gelegenheit zu warten), während sie das emotionale Risiko und die Verantwortung für Entscheidungen minimiert",
+      "A: \"In welches Restaurant gehen wir denn heute Abend?\"",
+      "B: \"Ach, such du aus. Mir ist wirklich alles recht, Hauptsache, du bist glücklich.\"",
+      "Klingt zunächst zuvorkommend, ist aber eine komplette Abgabe der Verantwortung. Person B muss keine Initiative zeigen und kann sich bei einer falschen Wahl des Restaurants darauf berufen, dass es ja d"
+    ],
+    "id": "S_AMBIVALENT_STALLING_MANEUVER",
+    "level": 2,
+    "name": "AMBIVALENT_STALLING_MANEUVER",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_F1CB",
+    "semantic_tags": [
+      "ambivalent-stalling-maneuver"
+    ]
+  },
+  "marker_name": "AMBIVALENT_STALLING_MANEUVER"
+}

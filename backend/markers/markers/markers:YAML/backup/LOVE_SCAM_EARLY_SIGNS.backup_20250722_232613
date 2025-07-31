@@ -1,0 +1,32 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: 'Sätze, in denen subtil, aber gezielt der Wechsel von einer Dating-
+    oder Social-App auf einen privateren Kanal (z.B. WhatsApp, Signal, Telegram, E-Mail)
+    betrieben wird. Typisches Frühwarnsignal für Romance Scamming oder Social Engineering.
+
+    '
+  examples:
+  - Sätze, in denen subtil, aber gezielt der Wechsel von einer Dating- oder Social-App
+    auf einen privateren Kanal (z
+  - WhatsApp, Signal, Telegram, E-Mail) betrieben wird
+  - Typisches Frühwarnsignal für Romance Scamming oder Social Engineering
+  id: S_LOVE_SCAM_EARLY_SIGNS
+  level: 2
+  name: LOVE_SCAM_EARLY_SIGNS
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_52AD
+  semantic_tags:
+  - love-scam-early-signs
+tags:
+- needs_review
+category: SEMANTIC
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.677785'
+  repair_version: '1.0'

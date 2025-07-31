@@ -1,0 +1,39 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Anzeichen von nachhaltiger Widerstandsfähigkeit, System-Offenheit, Fähigkeit zur schnellen Regeneration\n  und zur Integration von Wandel.\n",
+    "examples": [
+      "Ja, es war hart, aber wir haben daraus gelernt und sind jetzt besser vorbereitet als zuvor.",
+      "Es beeindruckt mich, wie ruhig du trotz all der Schwierigkeiten bleibst. Das gibt mir auch Kraft.",
+      "Die Kündigung trifft mich, klar. Aber das ist vielleicht genau der Anstoß, um etwas Neues anzufangen.",
+      "Wir haben immer einen Weg gefunden – und genau deshalb glaube ich, dass wir es auch diesmal schaffen.",
+      "Hey, ich sehe, dass du versuchst, dich nicht runterziehen zu lassen. Das bedeutet mir echt viel.",
+      "Ich hatte heute einen Rückfall, aber morgen starte ich neu. Das ist kein Scheitern, das gehört zum Prozess.",
+      "Es ist schwer, aber wir reden offen darüber – das zeigt, dass wir inzwischen wirklich stark geworden sind.",
+      "Auch wenn wir gerade nicht weiterwissen, wir wissen immerhin, dass wir uns gegenseitig haben.",
+      "Ich bewundere, wie du nach Rückschlägen immer wieder neu ansetzt. Davon können wir alle lernen.",
+      "Die letzten Monate haben uns gezeigt, dass wir viel robuster sind, als wir je gedacht hätten.",
+      "Klar bin ich enttäuscht, aber ich weiß, es gibt immer noch Optionen. Lass uns die jetzt suchen.",
+      "Früher wären wir an so etwas verzweifelt. Heute nutzen wir das als Chance, um zusammenzuhalten.",
+      "Lass uns heute Abend einfach mal Pause machen und Kraft tanken – morgen starten wir frisch.",
+      "Wir verlieren gerade etwas Wichtiges, aber lass uns jetzt überlegen, wie wir daraus trotzdem was Gutes machen.",
+      "Vielleicht ist genau das die Gelegenheit, um endlich mal zu zeigen, was wirklich in uns steckt.",
+      "Ich merke, dass wir immer besser darin werden, unsere Fehler anzunehmen, ohne uns gegenseitig fertigzumachen.",
+      "Lass uns nicht nur darauf schauen, was schieflief, sondern vor allem darauf, was wir daraus lernen können.",
+      "Dass du trotz allem immer wieder an unsere Freundschaft glaubst, gibt mir echt Hoffnung.",
+      "Ich hatte Angst, dass uns das auseinanderbringt, aber es fühlt sich so an, als wären wir dadurch sogar enger zusammengerückt.",
+      "Heute tut’s weh, aber wir haben gelernt, Schmerzen nicht mehr zu vermeiden, sondern gemeinsam durchzugehen."
+    ],
+    "id": "S_MARKER",
+    "level": 2,
+    "name": "MARKER",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_F2C6",
+    "semantic_tags": [
+      "marker"
+    ]
+  },
+  "marker_name": "MARKER_MARKER"
+}

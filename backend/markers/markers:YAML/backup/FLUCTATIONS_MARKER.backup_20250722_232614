@@ -1,0 +1,29 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für FLUCTATIONS_MARKER
+  examples:
+  - 'id: "M_FLUCTUATION"'
+  - 'name: "FLUCTUATION"'
+  - 'level: "meta"'
+  - 'category: "Emotionsdynamik"'
+  - 'semantic_tags: ["Schwankung", "Instabilität", "Polarity", "Ambivalenz", "Regulation"]'
+  id: S_FLUCTATIONS
+  level: 2
+  name: FLUCTATIONS
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_76CF
+  semantic_tags:
+  - fluctations-marker
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.888505'
+  repair_version: '1.0'

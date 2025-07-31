@@ -1,0 +1,143 @@
+pipeline {
+    agent any
+    
+    environment {
+        SPARK_VERSION = '3.4.1'
+        JAVA_HOME = '/usr/lib/jvm/java-11-openjdk'
+        SPARK_HOME = "${WORKSPACE}/spark-${SPARK_VERSION}"
+        PYTHON_VERSION = '3.10'
+    }
+    
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+        
+        stage('Setup Spark Environment') {
+            steps {
+                dir('spark-nlp') {
+                    sh """
+                        # Download Spark if not exists
+                        if [ ! -d "${SPARK_HOME}" ]; then
+                            wget -q https://dlcdn.apache.org/spark/spark-${SPARK_VERSION}/spark-${SPARK_VERSION}-bin-hadoop3.tgz
+                            tar -xzf spark-${SPARK_VERSION}-bin-hadoop3.tgz
+                            mv spark-${SPARK_VERSION}-bin-hadoop3 ${SPARK_HOME}
+                        fi
+                        
+                        # Setup Python environment
+                        python${PYTHON_VERSION} -m venv venv
+                        . venv/bin/activate
+                        pip install --upgrade pip
+                        pip install -r requirements-spark.txt
+                        pip install pytest pytest-spark
+                    """
+                }
+            }
+        }
+        
+        stage('Lint Spark Code') {
+            steps {
+                dir('spark-nlp') {
+                    sh """
+                        . venv/bin/activate
+                        flake8 src tests --max-line-length=100
+                        mypy src --ignore-missing-imports
+                    """
+                }
+            }
+        }
+        
+        stage('Test UDFs') {
+            steps {
+                dir('spark-nlp') {
+                    sh """
+                        . venv/bin/activate
+                        export PYTHONPATH="${WORKSPACE}/spark-nlp/src:${PYTHONPATH}"
+                        pytest tests/test_udfs.py -v --junitxml=test-results/udf-junit.xml
+                    """
+                }
+            }
+        }
+        
+        stage('Integration Tests') {
+            steps {
+                dir('spark-nlp') {
+                    sh """
+                        . venv/bin/activate
+                        export SPARK_HOME=${SPARK_HOME}
+                        export PATH=${SPARK_HOME}/bin:${PATH}
+                        pytest tests/test_integration.py -v --junitxml=test-results/integration-junit.xml
+                    """
+                }
+            }
+            post {
+                always {
+                    junit 'spark-nlp/test-results/*.xml'
+                }
+            }
+        }
+        
+        stage('Performance Tests') {
+            when {
+                branch pattern: "(main|release/.*)", comparator: "REGEXP"
+            }
+            steps {
+                dir('spark-nlp') {
+                    sh """
+                        . venv/bin/activate
+                        python tests/performance/benchmark.py
+                    """
+                    publishHTML([
+                        allowMissing: false,
+                        alwaysLinkToLastBuild: true,
+                        keepAll: true,
+                        reportDir: 'spark-nlp/performance-reports',
+                        reportFiles: 'benchmark.html',
+                        reportName: 'Performance Report'
+                    ])
+                }
+            }
+        }
+        
+        stage('Build Docker Image') {
+            when {
+                branch pattern: "(main|develop|release/.*)", comparator: "REGEXP"
+            }
+            steps {
+                dir('spark-nlp') {
+                    script {
+                        def image = docker.build("me-core-spark:${env.BUILD_NUMBER}", "-f docker/Dockerfile .")
+                        docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
+                            image.push("${env.BRANCH_NAME}-${env.BUILD_NUMBER}")
+                            if (env.BRANCH_NAME == 'main') {
+                                image.push('latest')
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    post {
+        success {
+            echo 'Spark NLP pipeline completed successfully!'
+            slackSend(
+                color: 'good',
+                message: "Spark Build Success: ${env.JOB_NAME} #${env.BUILD_NUMBER}"
+            )
+        }
+        failure {
+            echo 'Spark NLP pipeline failed!'
+            slackSend(
+                color: 'danger',
+                message: "Spark Build Failed: ${env.JOB_NAME} #${env.BUILD_NUMBER}"
+            )
+        }
+        always {
+            cleanWs()
+        }
+    }
+}

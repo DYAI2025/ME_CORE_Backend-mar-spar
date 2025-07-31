@@ -1,0 +1,21 @@
+beispiele: null
+beschreibung: Definiert Regeln und Muster für semantische Marker-Erkennung
+marker_name: SEMANTIC_MARKER_RULES_MARKER
+semantic_grab:
+  description: Erkennt Muster für semantic_marker_rules_marker
+  patterns:
+  - pattern: r"(muster.*wird.*ergänzt)"
+    rule: AUTO_PATTERN
+tags:
+- neu_erstellt
+- needs_review
+category: UNCATEGORIZED
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.857420'
+  repair_version: '1.0'

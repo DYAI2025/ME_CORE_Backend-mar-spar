@@ -1,0 +1,23 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für SIMU_LAVE_SCAM_SEMANTIC_MARKER",
+    "examples": [
+      "marker_name: SIMU_LAVE_SCAM_SEMANTIC.yaml_MARKER",
+      "marker: SIMU_LAVE_SCAM_SEMANTIC.yaml_MARKER",
+      "description: \"Erkennt Muster für simu_lave_scam_semantic.yaml\"",
+      "pattern: r\"(muster.*wird.*ergänzt)\""
+    ],
+    "id": "S_SIMU_LAVE_SCAM_SEMANTIC",
+    "level": 2,
+    "name": "SIMU_LAVE_SCAM_SEMANTIC",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_08B0",
+    "semantic_tags": [
+      "simu-lave-scam-semantic-marker"
+    ]
+  },
+  "marker_name": "SIMU_LAVE_SCAM_SEMANTIC_MARKER"
+}

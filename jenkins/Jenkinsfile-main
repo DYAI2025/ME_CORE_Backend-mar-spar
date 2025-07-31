@@ -1,0 +1,238 @@
+pipeline {
+    agent any
+    
+    parameters {
+        choice(
+            name: 'DEPLOY_TARGET',
+            choices: ['none', 'staging', 'production'],
+            description: 'Deployment target after successful build'
+        )
+        booleanParam(
+            name: 'RUN_E2E_TESTS',
+            defaultValue: true,
+            description: 'Run end-to-end tests'
+        )
+    }
+    
+    environment {
+        DOCKER_REGISTRY = 'registry.hub.docker.com'
+        DOCKER_CREDENTIALS = 'docker-hub-credentials'
+        SLACK_CHANNEL = '#me-core-builds'
+    }
+    
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+                script {
+                    env.GIT_COMMIT_SHORT = sh(
+                        script: "git rev-parse --short HEAD",
+                        returnStdout: true
+                    ).trim()
+                    env.VERSION = sh(
+                        script: "git describe --tags --always",
+                        returnStdout: true
+                    ).trim()
+                }
+            }
+        }
+        
+        stage('Parallel Component Builds') {
+            parallel {
+                stage('Backend Pipeline') {
+                    steps {
+                        build job: 'ME_CORE_Backend-mar-spar/backend-pipeline',
+                            parameters: [
+                                string(name: 'BRANCH_NAME', value: env.BRANCH_NAME),
+                                string(name: 'BUILD_NUMBER', value: env.BUILD_NUMBER)
+                            ]
+                    }
+                }
+                
+                stage('Spark NLP Pipeline') {
+                    steps {
+                        build job: 'ME_CORE_Backend-mar-spar/spark-pipeline',
+                            parameters: [
+                                string(name: 'BRANCH_NAME', value: env.BRANCH_NAME),
+                                string(name: 'BUILD_NUMBER', value: env.BUILD_NUMBER)
+                            ]
+                    }
+                }
+                
+                stage('Frontend Pipeline') {
+                    steps {
+                        build job: 'ME_CORE_Backend-mar-spar/frontend-pipeline',
+                            parameters: [
+                                string(name: 'BRANCH_NAME', value: env.BRANCH_NAME),
+                                string(name: 'BUILD_NUMBER', value: env.BUILD_NUMBER)
+                            ]
+                    }
+                }
+            }
+        }
+        
+        stage('Integration Tests') {
+            when {
+                expression { params.RUN_E2E_TESTS == true }
+            }
+            steps {
+                script {
+                    // Start all services with docker-compose
+                    sh '''
+                        docker-compose -f docker-compose.test.yml up -d
+                        
+                        # Wait for services to be ready
+                        ./tools/wait-for-services.sh
+                    '''
+                    
+                    // Run integration tests
+                    sh '''
+                        docker-compose -f docker-compose.test.yml \
+                            run --rm test-runner npm run test:integration
+                    '''
+                }
+            }
+            post {
+                always {
+                    sh 'docker-compose -f docker-compose.test.yml down'
+                    junit '**/test-results/*.xml'
+                }
+            }
+        }
+        
+        stage('Security Scan') {
+            parallel {
+                stage('Backend Security') {
+                    steps {
+                        sh '''
+                            cd backend
+                            pip install safety bandit
+                            safety check
+                            bandit -r app -f json -o security-report.json
+                        '''
+                    }
+                }
+                stage('Frontend Security') {
+                    steps {
+                        sh '''
+                            cd frontend
+                            npm audit --production
+                            npx snyk test
+                        '''
+                    }
+                }
+                stage('Container Scan') {
+                    steps {
+                        sh '''
+                            trivy image me-core-backend:${BUILD_NUMBER}
+                            trivy image me-core-spark:${BUILD_NUMBER}
+                            trivy image me-core-frontend:${BUILD_NUMBER}
+                        '''
+                    }
+                }
+            }
+        }
+        
+        stage('Tag Images') {
+            when {
+                branch 'main'
+            }
+            steps {
+                script {
+                    docker.withRegistry("https://${DOCKER_REGISTRY}", DOCKER_CREDENTIALS) {
+                        sh """
+                            docker tag me-core-backend:${BUILD_NUMBER} ${DOCKER_REGISTRY}/me-core-backend:${VERSION}
+                            docker tag me-core-spark:${BUILD_NUMBER} ${DOCKER_REGISTRY}/me-core-spark:${VERSION}
+                            docker tag me-core-frontend:${BUILD_NUMBER} ${DOCKER_REGISTRY}/me-core-frontend:${VERSION}
+                            
+                            docker push ${DOCKER_REGISTRY}/me-core-backend:${VERSION}
+                            docker push ${DOCKER_REGISTRY}/me-core-spark:${VERSION}
+                            docker push ${DOCKER_REGISTRY}/me-core-frontend:${VERSION}
+                        """
+                    }
+                }
+            }
+        }
+        
+        stage('Deploy to Staging') {
+            when {
+                expression { params.DEPLOY_TARGET == 'staging' }
+            }
+            steps {
+                script {
+                    build job: 'ME_CORE_Backend-mar-spar/deploy-staging',
+                        parameters: [
+                            string(name: 'VERSION', value: env.VERSION),
+                            string(name: 'GIT_COMMIT', value: env.GIT_COMMIT_SHORT)
+                        ]
+                }
+            }
+        }
+        
+        stage('Deploy to Production') {
+            when {
+                allOf {
+                    branch 'main'
+                    expression { params.DEPLOY_TARGET == 'production' }
+                }
+            }
+            steps {
+                input message: 'Deploy to Production?', ok: 'Deploy'
+                script {
+                    build job: 'ME_CORE_Backend-mar-spar/deploy-production',
+                        parameters: [
+                            string(name: 'VERSION', value: env.VERSION),
+                            string(name: 'GIT_COMMIT', value: env.GIT_COMMIT_SHORT)
+                        ]
+                }
+            }
+        }
+    }
+    
+    post {
+        success {
+            script {
+                def message = """
+                ✅ *Build Successful*
+                Job: ${env.JOB_NAME}
+                Build: #${env.BUILD_NUMBER}
+                Version: ${env.VERSION}
+                Branch: ${env.BRANCH_NAME}
+                Commit: ${env.GIT_COMMIT_SHORT}
+                """
+                
+                if (params.DEPLOY_TARGET != 'none') {
+                    message += "\nDeployed to: ${params.DEPLOY_TARGET}"
+                }
+                
+                slackSend(
+                    channel: env.SLACK_CHANNEL,
+                    color: 'good',
+                    message: message
+                )
+            }
+        }
+        failure {
+            slackSend(
+                channel: env.SLACK_CHANNEL,
+                color: 'danger',
+                message: """
+                ❌ *Build Failed*
+                Job: ${env.JOB_NAME}
+                Build: #${env.BUILD_NUMBER}
+                Branch: ${env.BRANCH_NAME}
+                Check: ${env.BUILD_URL}
+                """
+            )
+        }
+        always {
+            // Archive important artifacts
+            archiveArtifacts artifacts: '**/test-results/*.xml', allowEmptyArchive: true
+            archiveArtifacts artifacts: '**/coverage-reports/**', allowEmptyArchive: true
+            archiveArtifacts artifacts: '**/security-report.json', allowEmptyArchive: true
+            
+            // Clean workspace
+            cleanWs()
+        }
+    }
+}

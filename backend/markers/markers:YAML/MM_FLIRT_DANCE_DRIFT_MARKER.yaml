@@ -1,0 +1,137 @@
+ID:MM_FLIRT_DANCE_DRIFT_MARKER
+marker_name: MM_FLIRT_DANCE_DRIFT_MARKER
+
+beschreibung: 'Verdichtete Sequenz aus Flirt-, Ambivalenz-, Rapid-Disclosure- und
+  Soft-Commitment-Mustern mit wachsender Intensität bei fehlender Definition.
+
+  '
+Examples:
+  - "- "Beide führen eine Art 'emotionale Zweitbeziehung' im Chat, die durch Geheimhaltung und extreme Stimmungsschwankungen zwischen Euphorie und Panik gekennzeichnet ist."
+  - "- "Der Chatverlauf zeigt ein klares Muster: Phase der Annäherung -> Höhepunkt der Intimität/Verletzlichkeit -> plötzlicher Abbruch/Distanzierung -> erneute Annäherung mit einer Geste der Exklusivität ('nur für dich')."
+  - "- "Eine Woche voller intensiver Komplimente und Zukunftspläne, gefolgt von einer Woche fast vollständiger Funkstille, die mit einer einzigen Nachricht beendet wird: 'Sorry. Nur du würdest das verstehen'."
+  - "- "Die Beziehungsdefinition wird bewusst vermieden ('Lass uns schauen, was passiert'), während die emotionale Intimität und die Kontakthäufigkeit die einer festen Beziehung übersteigen (SUSTAINED_CONTACT)."
+  - "- "Sie teilt sehr intime Details (RAPID_SELF_DISCLOSURE), aber sobald er darauf emotional eingeht, macht sie einen Witz und lenkt ab (ADAPTIVE_POLARIZATION)."
+  - "- "Er schlägt vor, zusammen wegzufahren (SOFT_COMMITMENT), sagt aber im gleichen Satz, er sei 'nicht gut in sowas' (AMBIVALENCE) und dass 'niemand davon erfahren darf' (SECRET_BONDING)."
+  - "- "Innerhalb einer Woche von 'Du bist der witzigste Mensch' zu 'Ich hab noch nie über meine Kindheit gesprochen' und dann zu 'Ich bin überfordert, lass uns das Thema wechseln'."
+  - "- "Die Konversation fühlt sich an wie eine exklusive, geheime Welt (SECRET_BONDING), in der die Regeln (Nähe/Distanz) ständig neu verhandelt werden (ADAPTIVE_POLARIZATION)."
+  - "- "Erst wochenlanges Love-Bombing, dann ein plötzlicher Rückzug mit der Begründung 'Ich habe Angst', gefolgt von der Beteuerung, dass 'nur du mich verstehst'."
+  - "- "Ständige Wechsel zwischen 'Ich will dich unbedingt sehen' und 'Ich weiß nicht, ob das eine gute Idee ist', gepaart mit täglichem Kontakt und der Bitte, 'niemandem davon zu erzählen'."
+  - "- Donnerstag: "Ich musste gestern viel nachdenken. Niemand bringt mich so durcheinander wie du."
+  - "- Mittwoch: Kurze, witzige Meme-Antwort."
+  - "- Dienstag: Keine Reaktion."
+  - "- Montag: 10-Minuten-Voicenote mit tiefen Geständnissen."
+  - "*Dynamik in Voicenotes:*"
+  - "- |"
+  - "A: "Ich hab dich vermisst. Das ist unser Geheimnis, ok?"
+  - "*Dann*"
+  - "A: *keine Antwort für einen Tag*"
+  - "B: "Was kannst du nicht?"
+  - "A: "Ich glaube, ich kann das nicht."
+  - "*Später*"
+  - "B: "Findest du? Ich finde es perfekt."
+  - "A: "Wir verstehen uns fast zu gut."
+  - "*Dialog über eine Woche:*"
+  - "- |"
+  - "Tag 3: "Sorry für gestern. Hab an dich gedacht. Sag das bloß niemandem." (SECRET_BONDING + SOFT_FLIRT)"
+  - "Tag 2: "Ich glaub, ich brauch mal einen Tag für mich." (ADAPTIVE_POLARIZATION)"
+  - "Tag 1: "Ich kann mit dir über alles reden." (RAPID_SELF_DISCLOSURE)"
+  - "*Komprimiertes Beispiel über 3 Tage:*"
+  - "- |"
+  - "B: "Ich glaub, wir sollten weniger schreiben." (ADAPTIVE_POLARIZATION)"
+  - "*Am Folgetag...*"
+  - "B: "Vielleicht. Aber ich mag einfach unsere Gespräche."
+  - "A: "Macht es das aufregender?" (SOFT_FLIRT)"
+  - "B: "Niemand weiß, dass ich dir schreibe." (SECRET_BONDING)"
+  - "- |"
+  - "B: "Ja, nur Stress. Reden wir später." (ADAPTIVE_POLARIZATION)"
+  - "A: "Alles okay?"
+  - "*Am nächsten Tag ist B kurz angebunden.*"
+  - "B: "Wow. Danke für dein Vertrauen."
+  - "A: "Ich erzähl dir das jetzt einfach: Ich schäme mich für..." (RAPID_SELF_DISCLOSURE)"
+  - "*Zwei Tage später...*"
+  - "A: "Du bringst mich echt zum Lachen." (SOFT_FLIRT)"
+  - "- |"
+  - "- Zwei Tage später: "Alles ok? Vermisse unsere Chats. Das bleibt unter uns." (SUSTAINED_CONTACT + SECRET_BONDING)."
+  - "- Kurz davor der Rückzug: "Ich glaub, das wird mir zu viel." (ADAPTIVE_POLARIZATION)."
+  - "- Vorschlag für ein Treffen (SOFT_COMMITMENT)."
+  - "- Intensive, tagelange Chats mit viel Humor und Offenheit (SUSTAINED_CONTACT, RAPID_SELF_DISCLOSURE)."
+  - "*Szenario "Vermeidender Bindungsstil":*"
+  - "- |"
+  - "B: "Pass auf, was du sagst ;) Aber lösch den Chat später." (ADAPTIVE_POLARIZATION + SECRET_BONDING)"
+  - "A: "Du verstehst mich besser als jeder andere." (SOFT_FLIRT)"
+  - "A & B (beide in Beziehungen) schreiben täglich (SUSTAINED_CONTACT)."
+  - "*Szenario "Affären-Anbahnung":*"
+  - "- |"
+  - "- Dann eine Nachricht: "Sorry, war nur viel los. Das mit uns ist besonders, das weiß keiner." (SECRET_BONDING)."
+  - "- Darauf folgt ein Tag Funkstille (ADAPTIVE_POLARIZATION)."
+  - "- Ein tiefes Geständnis über eine vergangene Verletzung (RAPID_SELF_DISCLOSURE)."
+  - "- Tägliche Guten-Morgen-Nachrichten (SUSTAINED_CONTACT)."
+  - "*Szenario über 2 Wochen:*"
+  - "- |"
+  - "B: "Ja, irgendwann. Aber sag bloß niemandem, dass wir uns treffen wollen." (SECRET_BONDING)"
+  - "A: "Wir sollten das mal persönlich besprechen." (SOFT_COMMITMENT)"
+  - "*Woche 2: Ein Treffen wird vage in Aussicht gestellt, aber nie fixiert.*"
+  - "- |"
+  - "B: "Ich mag dich echt... aber lass uns langsam machen." (ADAPTIVE_POLARIZATION)"
+  - "A: "Ich hab das noch nie jemandem erzählt, aber ich hab Angst vor..." (RAPID_SELF_DISCLOSURE)"
+  - "*Woche 1: Tägliches, intensives Schreiben.*"
+  - "- |"
+  - "B: "Vielleicht ist das unser Geheimrezept."
+  - "A: "Crazy, wir schreiben täglich, aber niemand weiß davon."
+  - "Tag 24"
+  - "- |"
+  - "*Funkstille → plötzlich 15-Minuten-Voicenote voller Sehnsucht* B: "Ich hab dich vermisst, red mit mir."
+  - "Tag 17"
+  - "- |"
+  - "B: "Nenn es den Tanz."
+  - "A: "Ich fühl mich bei dir sicher … und unruhig zugleich. Weird?"
+  - "Tag 10, nachts"
+  - "- |"
+  - "B: "Hab Karten besorgt, sag niemandem, dass du mit mir gehst."
+  - "Tag 9"
+  - "- |"
+  - "B: "Brauche Luft. Heißt nicht, dass ich weg bin."
+  - "A: "Warum ziehst du dich zurück, wenn’s grad intensiv wird?"
+  - "Tag 8"
+  - "- |"
+  - "*gleicher Tag, spät abends* B: "Foto von meinem Balkonblick, geheim exklusiv für dich."
+  - "- |"
+  - "B: "Can't promise – aber vielleicht tauch ich auf."
+  - "A: "Wär schön, dich morgen zu sehen."
+  - "Tag 6"
+  - "- |"
+  - "A: "Keine Eile … lass es tanzen."
+  - "B: "Wie definierst du ›wir‹ eigentlich?"
+  - "Tag 5"
+  - "- |"
+  - "A: "Fun-Fact: Ich erzähl dir grad Dinge, die nicht mal meine beste Freundin weiß."
+  - "Tag 3"
+  - "- |"
+  - "B: "Warte ab, ich fang grade erst an 😉"
+  - "A: "Haha, Wetter small-talk? Du kannst besser flirten."
+  - Category: 1"
+  - "- |"
+- Täglicher Meme-Ping, nächtliche Tief-Voicenote, heimliches Treffen – aber 'wir lassen
+  es offen'.
+- Viermal Deep Talk in acht Tagen, dann Funkstille, dann 'Du fehlst mir' – alles im
+  Hidden-Chat.
+- Soft-Date im Park, Insta-Story ohne Tag, nachts 3 h Call, am Morgen 'Mal sehen,
+  wohin das führt'.
+- Beide vergeben, tauschen aber intime Details auf Signal, Frequenz steigt, Definition
+  bleibt tabu.
+- Rapid Geständnis, danach ironische Distanz, gefolgt von Pillow-Talk-Sticker – alles
+  wiederholt sich.
+- ‘Nur Freunde’, aber Good-Night-Routine + Geheimnisklausel + zweideutige Komplimente.
+- Alle 2 Tage Self-Disclosure (Kindheitsstory), dazwischen ‘Haha, don’t catch feelings’.
+  Secret Treffen.
+- '3-Tage-Ghost → 40-Min-Voicenote; Offenheit ⬆; Beziehungsthema: ''Noch nicht drüber
+  reden''.'
+- Öffentlich cool, privat Herz-Emoji-Dauerbeschuss – trotzdem ‘kein Label’.
+- Gemeinsame Playlist namens ‘Nobody knows’, tägliche Updates, aber kein offizieller
+  Status.
+semantische_grabber_id: AUTO_SEM_20250720_FFE9
+metadata:
+  created_at: 2025-07-20 12:00:23.464588
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags:

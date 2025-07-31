@@ -1,0 +1,35 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für wutmarker
+  examples:
+  - Ey, Alter, was soll der Scheiß? Ich bin richtig pissig gerade.
+  - Ich bin so wütend, dass mir die Worte fehlen.
+  - Weißt du, wie sehr mich das ankotzt?
+  - Ich raste aus, wenn du das nochmal machst.
+  - Ich koche gleich vor Wut, Alter!
+  - Du gehst mir so dermaßen auf den Keks!
+  - Ich hasse es, wenn du mich so behandelst.
+  - Ich platze gleich, so sauer bin ich.
+  - Verpiss dich, ich will dich nicht mehr sehen!
+  - Mir platzt echt der Kragen, verdammt!
+  - Ich bin so stinksauer auf dich, ey.
+  id: S_WUTMARKER
+  level: 2
+  name: wutmarker
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_28B6
+  semantic_tags:
+  - needs_review
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.755177'
+  repair_version: '1.0'

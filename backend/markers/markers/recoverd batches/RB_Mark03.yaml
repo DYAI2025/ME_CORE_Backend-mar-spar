@@ -1,0 +1,296 @@
+markers:
+  - id: A_REPETITIVE_COMPLAINT_MARKER
+    frame:
+      signal:
+        - "immer wieder"
+        - "schon wieder"
+        - "jedes Mal"
+        - "wir hatten das doch schon"
+        - "das gleiche"
+      concept: repetition_complaint
+      pragmatics: relational_frustration
+      narrative: stuck_loop
+    pattern:
+      - "immer wieder"
+      - "schon wieder"
+      - "jedes Mal"
+      - "wir hatten das doch schon"
+      - "das gleiche"
+    activation:
+      rule: "ANY 1 IN 1 messages"
+    scoring:
+      base: 1.0
+      weight: 1.2
+    examples:
+      - "Es ist immer wieder das gleiche mit dir und deiner Unpünktlichkeit."
+      - "Schon wieder dieses Thema – ich dachte, wir hätten es längst geklärt."
+      - "Nicht schon wieder musst du mich daran erinnern, ich weiß es doch."
+      - "Jedes Mal dasselbe Drama, wenn du zu spät bist."
+      - "Wir hatten das doch schon besprochen, warum redest du immer noch davon?"
+    tags: [complaint, repetition]
+
+  - id: A_UNRESOLVED_ISSUE_MARKER
+    frame:
+      signal:
+        - "drehen uns im Kreis"
+        - "kommen nicht weiter"
+        - "führt zu nichts"
+        - "stecken fest"
+        - "keine Lösung"
+      concept: unresolved_issue
+      pragmatics: stalemate
+      narrative: problem_persistence
+    pattern:
+      - "drehen uns im Kreis"
+      - "kommen nicht weiter"
+      - "führt zu nichts"
+      - "stecken fest"
+      - "keine Lösung"
+    activation:
+      rule: "ANY 1 IN 1 messages"
+    scoring:
+      base: 1.0
+      weight: 1.2
+    examples:
+      - "Ganz ehrlich, wir drehen uns im Kreis und finden einfach keine Lösung."
+      - "Wir kommen hier einfach nicht weiter mit dieser Entscheidung."
+      - "Das führt zu nichts, wenn wir so weiter diskutieren."
+      - "Es gibt keine Lösung für dieses Problem, oder?"
+      - "Wir stecken fest und wissen nicht, wie es weitergehen soll."
+    tags: [stalemate, conflict]
+
+  - id: S_AFFILIATION_INCENTIVE
+    frame:
+      signal:
+        - "anschließen"
+        - "Gemeinschaft"
+        - "unsere Community"
+        - "bleib dabei"
+        - "Teil unseres Teams"
+      concept: affiliation_incentive
+      pragmatics: loyalty_motivation
+      narrative: bonding_future
+    pattern:
+      - "schließ dich uns an"
+      - "Teil unserer"
+      - "bleib bei uns"
+      - "nur für Mitglieder"
+      - "gemeinsam wachsen"
+    activation:
+      rule: "ANY 1 IN 1 messages"
+    scoring:
+      base: 1.0
+      weight: 1.1
+    examples:
+      - "Wenn du dich uns anschließt, genießen wir alle Extrabonus."
+      - "Bleib dabei, wir wachsen gemeinsam."
+      - "Nur unsere Community bekommt die Insider-Tipps."
+      - "Werde Teil unseres Teams und lass uns zusammen groß werden."
+      - "Mit dir an Bord schaffen wir eine starke Zukunft."
+    tags: [affiliation, incentive]
+
+  - id: S_AMBIVALENT_STALLING_MANEUVER
+    frame:
+      signal:
+        - "mir ist alles recht"
+        - "such du aus"
+        - "später entscheiden"
+        - "vielleicht mal sehen"
+        - "ich bin flexibel"
+      concept: ambivalent_stalling
+      pragmatics: decision_avoidance
+      narrative: keep_options_open
+    pattern:
+      - "mir ist alles recht"
+      - "such du aus"
+      - "entscheide du"
+      - "lass uns später"
+      - "mal sehen"
+    activation:
+      rule: "ANY 1 IN 1 messages"
+    scoring:
+      base: 1.0
+      weight: 1.1
+    examples:
+      - "Such du einfach was aus, ich bin für alles offen."
+      - "Lass uns das später entscheiden, wenn es passt."
+      - "Eigentlich egal, entscheide du, ich passe mich an."
+      - "Vielleicht, mal sehen, kommt drauf an, wie ich mich fühle."
+      - "Wir können ja schauen, ob es sich ergibt."
+    tags: [ambiguity, stalling]
+
+  - id: A_ANALYSIS_CONFIGURATION
+    frame:
+      signal:
+        - "analysis configuration"
+        - "analysis_config"
+        - "analyse-konfiguration"
+        - "config.yaml"
+        - "analysis setup"
+      concept: tech_reference
+      pragmatics: configuration_notice
+      narrative: procedural
+    pattern:
+      - "analysis configuration"
+      - "analysis_config"
+      - "analyse-konfiguration"
+      - "config.yaml"
+      - "analysis setup"
+    activation:
+      rule: "ANY 1 IN 1 messages"
+    scoring:
+      base: 1.0
+      weight: 1.0
+    examples:
+      - "Bitte check die analysis configuration nochmal."
+      - "Die analysis configuration ist falsch eingestellt."
+      - "Ich lade gleich die neue analysis configuration hoch."
+      - "Kannst du mir die analysis configuration schicken?"
+      - "Ohne die richtige analysis configuration startet der Prozess nicht."
+    tags: [tech, configuration]
+
+  - id: A_ANALYSIS_CONFIGURATION2
+    frame:
+      signal:
+        - "analysis configuration 2"
+        - "analysis_config2"
+        - "Analyse-Konfiguration 2"
+        - "config2.yaml"
+        - "setup 2"
+      concept: tech_reference
+      pragmatics: configuration_notice
+      narrative: procedural
+    pattern:
+      - "analysis configuration 2"
+      - "analysis_config2"
+      - "Analyse-Konfiguration 2"
+      - "config2.yaml"
+      - "setup 2"
+    activation:
+      rule: "ANY 1 IN 1 messages"
+    scoring:
+      base: 1.0
+      weight: 1.0
+    examples:
+      - "Die analysis configuration 2 muss angepasst werden."
+      - "analysis_config2.yaml fehlt im Repo."
+      - "Ich finde die Analyse-Konfiguration 2 nicht."
+      - "Nutze die analysis configuration 2 für das Experiment."
+      - "Wir deployen gleich mit analysis configuration 2."
+    tags: [tech, configuration]
+
+  - id: S_ASYMMETRIC_INFO_MINING
+    frame:
+      signal:
+        - "Erzähl mir mehr"
+        - "Was ist dein"
+        - "Wie heißt"
+        - "Kannst du mir deine"
+        - "Ich möchte alles über dich wissen"
+      concept: asymmetric_info_mining
+      pragmatics: personal_data_probe
+      narrative: exploitation
+    pattern:
+      - "Erzähl mir mehr über"
+      - "Was ist dein"
+      - "Wie heißt"
+      - "Kannst du mir deine"
+      - "Ich möchte alles über dich wissen"
+    activation:
+      rule: "ANY 1 IN 1 messages"
+    scoring:
+      base: 1.0
+      weight: 1.3
+    examples:
+      - "Das ist faszinierend. Erzähl mir mehr über deine Kindheit. Wo genau bist du aufgewachsen?"
+      - "Du hast so eine beruhigende Stimme. Was arbeitest du genau? Und wie heißt deine Firma?"
+      - "Ich möchte alles über dich wissen. Was ist der Mädchenname deiner Mutter?"
+      - "Welche Versicherungen hast du? Man muss ja für die Zukunft planen."
+      - "Ich frage das alles nur, weil ich mich wirklich für dich interessiere."
+    tags: [data_mining, social_engineering]
+
+  - id: S_BLAME_SHIFTING
+    frame:
+      signal:
+        - "nicht meine Schuld"
+        - "wegen dir"
+        - "wenn du"
+        - "deine Schuld"
+        - "du hast"
+      concept: blame_shift
+      pragmatics: responsibility_deflection
+      narrative: conflict
+    pattern:
+      - "nicht meine Schuld"
+      - "wegen dir"
+      - "wenn du"
+      - "deine Schuld"
+      - "du hast"
+    activation:
+      rule: "ANY 1 IN 1 messages"
+    scoring:
+      base: 1.0
+      weight: 1.2
+    examples:
+      - "Nicht meine Schuld, du hast mich nicht informiert."
+      - "Wärst du früher dran gewesen, gäb’s das Problem nicht."
+      - "Wenn du pünktlich wärst, müssten wir jetzt nicht diskutieren."
+      - "Wegen dir haben wir Verspätung."
+      - "Du hast das komplett falsch vorbereitet."
+    tags: [conflict, blame]
+
+  - id: S_BOUNDARY_SHIFT
+    frame:
+      signal:
+        - "unser"
+        - "wir"
+        - "dein Part"
+        - "unsere Roadmap"
+        - "Team-Channel"
+      concept: boundary_shift
+      pragmatics: role_expansion
+      narrative: implicit_inclusion
+    pattern:
+      - "unser"
+      - "wir"
+      - "lass uns"
+      - "dein Part"
+      - "unser Team"
+    activation:
+      rule: "ANY 1 IN 1 messages"
+    scoring:
+      base: 1.0
+      weight: 1.1
+    examples:
+      - "Klar, unser Projektplan sieht vor, dass du die Präsentation machst."
+      - "Wir veröffentlichen nächste Woche unsere App – du bist doch dabei, oder?"
+      - "Ich habe schon mal deine Slides in unser Deck gepackt."
+      - "Lass uns unsere Roadmap finalisieren, ich hab dir schon Aufgaben zugewiesen."
+      - "Unser Team-Channel wartet auf deine Updates."
+    tags: [role_shift, inclusion]
+
+  - id: C_PERSISTENT_TENSION_MARKER
+    frame:
+      signal:
+        - "festgefahrene Spannung"
+        - "wiederkehrender Konflikt"
+      concept: persistent_tension
+      pragmatics: chronic_conflict
+      narrative: deadlock
+    composed_of:
+      - type: atomic
+        marker_ids:
+          - "A_REPETITIVE_COMPLAINT_MARKER"
+          - "A_UNRESOLVED_ISSUE_MARKER"
+    activation:
+      rule: "ANY 2 IN 10 messages"
+    scoring:
+      base: 2.0
+      weight: 1.4
+    examples:
+      - "Jedes Mal dasselbe, wir drehen uns nur im Kreis. Das führt doch zu nichts und macht alles nur noch schlimmer."
+      - "Immer wieder Streit über dasselbe Thema, und wir schaffen es einfach nicht, es zu lösen."
+      - "Es ist schon wieder dieses Problem, und wir stecken weiterhin fest."
+      - "Wir kommen nicht weiter – immer dieselben Vorwürfe und keine Abwechslung."
+      - "Jedes Mal, wenn wir darüber reden, endet es im Konflikt und nichts ändert sich."
+    tags: [cluster, chronic_conflict]

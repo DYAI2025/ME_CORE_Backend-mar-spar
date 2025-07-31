@@ -1,0 +1,34 @@
+# C_THERAPEUTIC_MIRRORING_MARKER - Semantic Marker
+marker_name: C_THERAPEUTIC_MIRRORING_MARKER
+beschreibung: >
+  Cluster-Marker für Prozesse, bei denen emotionale Entwicklung
+nicht in direkter Beziehung, sondern durch reflektierte Distanz
+und externe Spiegelung entsteht. Kennzeichnend sind ausgeprägte
+therapeutische Selbstreflexion in Kombination mit aktiver
+Grenzverhandlung.
+beispiele:
+  - "A beschreibt distanziert eigene Gefühle („Wenn ich das von außen
+betrachte, sehe ich …“) und setzt dabei klare Grenzen
+(„Ich möchte keine Ratschläge, nur Feedback, wie das wirkt“)."
+  - "B reflektiert vergangene Reaktionen analytisch und fragt: „Spiegelt
+das, was ich sage, meine Verantwortung oder projiziere ich?“ —
+gleichzeitig legt er fest, was er teilen möchte."
+  - "Im Chat mit Coach: detaillierte Selbstanalyse, gefolgt von Bitten
+um neutrales Spiegeln anstatt emotionaler Unterstützung; B betont
+persönliche Autonomiegrenzen."
+  - "Sitzungstranskript: Klient formuliert Beobachtung über das eigene
+Verhalten, bittet Therapeuten um Spiegelung, lehnt aber
+Beziehungsangebote („Ich brauche Abstand, keine Nähe“) ab."
+  - "Diskurs: „Ich erkenne, dass ich hier Angst projiziere; bestätige
+mir bitte, ob das nachvollziehbar klingt.“ Gleichzeitig verhandelt
+A, wie viel Tiefe das Gespräch haben darf."
+
+semantische_grabber_id: SGR_THERAPEUTIC_MIRRORING_01
+
+metadata:
+  created_at: 2025-07-21T19:39:49.657542
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

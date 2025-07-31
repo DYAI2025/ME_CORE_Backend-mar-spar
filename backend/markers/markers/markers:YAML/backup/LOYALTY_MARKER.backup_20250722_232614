@@ -1,0 +1,28 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für LOYALTY_MARKER
+  examples:
+  - 'category: "Loyalty"'
+  - gegenüber Person oder Organisation ausdrücken.
+  - 'created_at: 2025-07-12T10:38:50.264861'
+  - 'version: 1.0'
+  id: S_LOYALTY
+  level: 2
+  name: LOYALTY
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_02E4
+  semantic_tags:
+  - loyalty-marker
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.740703'
+  repair_version: '1.0'

@@ -1,0 +1,30 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für TERMINATION_MARKER",
+    "examples": [
+      "Ey, Alter, das reicht jetzt. Ich bin hier raus.",
+      "Ey, was soll das? Ich hab keinen Bock mehr, gute Nacht.",
+      "Alter, hör auf damit, ich will nicht weiter drüber reden.",
+      "Ey, jetzt ist Schluss. Mach mich nicht weiter fertig.",
+      "Ey, ne, ich quatsche hier nicht weiter, peace.",
+      "Sorry, Alter, aber ich beende das Gespräch jetzt.",
+      "Ey, chill mal, ich geh jetzt offline.",
+      "Alter, bringt doch alles nix, ich bin raus hier.",
+      "Alter, so ist das echt nicht mein Ding. Ich bin raus.",
+      "Ey, ich hab keinen Bock mehr, wir reden später, okay?",
+      "Ey, ok, ich mach hier Schluss, ciao."
+    ],
+    "id": "S_TERMINATION",
+    "level": 2,
+    "name": "TERMINATION",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_0F3A",
+    "semantic_tags": [
+      "needs_review"
+    ]
+  },
+  "marker_name": "TERMINATION_MARKER"
+}

@@ -1,0 +1,22 @@
+# C_EMO_INSTABILITY_MARKER - Semantic Marker
+marker_name: C_EMO_INSTABILITY_MARKER
+beschreibung: >
+  Cluster marker for emotional turbulence, triggered when any volatile
+or polarity-flip semantic marker occurs within a 12-message window.
+beispiele:
+  - "A’s chat: wild swings (0.7 → -0.6 → 0.65) and polarity flip detected
+inside ten lines – cluster fires."
+  - "Rapid switches + high variance during team retro → instability."
+  - "Voice journal day: extreme mood hops in short span."
+  - "Group DM: laughter then anger then euphoria – one speaker."
+  - "Customer support ticket shows drastic tone oscillations."
+
+semantische_grabber_id: SGR_EMO_INSTABILITY_01
+
+metadata:
+  created_at: 2025-07-21T19:43:47.470222
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

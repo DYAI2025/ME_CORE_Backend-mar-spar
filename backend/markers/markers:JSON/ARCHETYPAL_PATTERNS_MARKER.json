@@ -1,0 +1,24 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für ARCHETYPAL_PATTERNS_MARKER",
+    "examples": [
+      "id: \"M_ARCHETYPAL_PATTERNS\"",
+      "name: \"ARCHETYPAL_PATTERNS\"",
+      "level: \"meta\"",
+      "category: \"Narrative Struktur\"",
+      "semantic_tags: [\"Archetyp\", \"Selbstdarstellung\", \"Mustererkennung\", \"Identität\"]"
+    ],
+    "id": "S_ARCHETYPAL_PATTERNS",
+    "level": 2,
+    "name": "ARCHETYPAL_PATTERNS",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_46CA",
+    "semantic_tags": [
+      "archetypal-patterns-marker"
+    ]
+  },
+  "marker_name": "ARCHETYPAL_PATTERNS_MARKER"
+}

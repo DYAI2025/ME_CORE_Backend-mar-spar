@@ -1,0 +1,23 @@
+id: A_UNDERSTANDING
+marker: UNDERSTANDING
+level: 1
+version: "1.0.0"
+status: draft
+author: "auto_gpt"
+created: "2025-07-25T21:17:00Z"
+tags: [atomic, understanding, empathy]
+pattern:
+  - "(ich verstehe dich)"
+  - "(ich kann dich nachvollziehen)"
+  - "(das ist nachvollziehbar)"
+  - "(ich weiß, wie du dich fühlst)"
+description: "Detects simple expressions of understanding and empathy."
+examples:
+  - "Ich verstehe dich, das ist echt schwer."
+  - "Ich kann dich nachvollziehen."
+  - "Das ist nachvollziehbar, ich verstehe das."
+  - "Ich weiß, wie du dich fühlst."
+  - "Ich habe Verständnis für deine Situation."
+category: "ATOMIC"
+scoring:
+  weight: 1.0

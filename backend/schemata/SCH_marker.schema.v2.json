@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Lean-Deep 3.1 Marker",
+  "type": "object",
+  "required": ["id", "frame", "scoring", "examples"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^(A|S|C|MM)_[A-Z0-9_]+$"
+    },
+    "frame": {
+      "type": "object",
+      "required": ["signal", "concept", "pragmatics", "narrative"],
+      "properties": {
+        "signal": {
+          "type": ["string", "array"],
+          "minItems": 1
+        },
+        "concept": { "type": "string" },
+        "pragmatics": { "type": "string" },
+        "narrative": { "type": "string" }
+      }
+    },
+    "pattern": {
+      "type": ["string", "array"],
+      "minItems": 1
+    },
+    "composed_of": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "detect_class": { "type": "string" },
+    "activation": { "type": "object" },
+    "scoring": { "type": "object" },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "examples": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 5
+    }
+  },
+  "oneOf": [
+    { "required": ["pattern"] },
+    { "required": ["composed_of"] },
+    { "required": ["detect_class"] }
+  ]
+}

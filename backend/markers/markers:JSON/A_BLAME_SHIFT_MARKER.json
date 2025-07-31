@@ -1,0 +1,46 @@
+# A_BLAME_SHIFT_MARKER - Semantic Marker
+marker_name: A_BLAME_SHIFT_MARKER
+beschreibung: >
+  Atomic Marker für Schuldumkehr-Formulierungen (Blame Shifting),
+die Verantwortung abweisen und auf das Gegenüber projizieren.
+beispiele:
+  - "- "Du legst alles auf die Goldwaage, deswegen knallt's."
+  - "- "Wenn du nicht widersprechen würdest, gäbe es keinen Streit."
+  - "- "Mit deiner Hektik bringst du alle durcheinander."
+  - "- "Du stellst dich an, nicht ich."
+  - "- "Hättest du früher was gesagt, wäre es anders gelaufen."
+  - "- "Du hast doch selbst drum gebeten, also beschwer dich nicht."
+  - "- "Deine Fehler kosten uns jede Menge Zeit."
+  - "- "Wenn du nicht dauernd nörgeln würdest, wär es entspannt."
+  - "- "Du regst dich sinnlos auf, darum eskaliert das."
+  - "- "Dein Desinteresse zieht das ganze Team runter."
+  - "- "Weil du gestern nicht geantwortet hast, ist alles liegengeblieben."
+  - "- "Wäre deine Mail klar gewesen, gäbe es keine Fragen."
+  - "- "Deine schlechte Planung bringt uns immer in Zeitnot."
+  - "- "Du hast das Chaos verursacht, nicht ich."
+  - "- "Hättest du richtig zugehört, müsste ich das nicht erklären."
+  - "- "Selber schuld, wenn du so empfindlich bist."
+  - "- "Du provozierst das ja mit deiner Art."
+  - "- "Wegen dir ist das Projekt ins Stocken geraten."
+  - "- "Du bist doch derjenige, der ständig Termine verschiebt."
+  - "Wenn du nicht immer so spät wärst, hätten wir das Problem nicht."
+  - "Nicht meine Schuld, du hast mich nicht informiert."
+  - "Wärst du früher dran gewesen, gäb’s das Problem nicht."
+  - "Wenn du pünktlich wärst, müssten wir jetzt nicht diskutieren."
+  - "Wegen dir haben wir Verspätung."
+  - "Du hast das komplett falsch vorbereitet."
+  - "Nicht ich bin schuld, du hast das falsch verstanden."
+  - "Du hast mir nie gesagt, wie das geht."
+  - "Wenn du besser aufgepasst hättest…"
+  - "Wärst du nicht so unaufmerksam, wären wir fertig."
+  - "Du hast den Termin verpasst, nicht ich."
+
+semantische_grabber_id: SGR_BLAME_SHIFT_01
+
+metadata:
+  created_at: 2025-07-21T13:34:09.073218
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

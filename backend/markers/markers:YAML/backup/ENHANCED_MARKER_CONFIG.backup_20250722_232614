@@ -1,0 +1,25 @@
+marker_name:
+  category: Atomic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für ENHANCED_MARKER_CONFIG
+  examples:
+  - Automatisch generierte Beschreibung für ENHANCED_MARKER_CONFIG
+  id: M_ENHANCED_MARKER_CONFIG
+  level: 1
+  name: ENHANCED_CONFIG
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_9C3B
+  semantic_tags:
+  - enhanced-marker-config
+tags:
+- needs_review
+category: ATOMIC
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.780495'
+  repair_version: '1.0'

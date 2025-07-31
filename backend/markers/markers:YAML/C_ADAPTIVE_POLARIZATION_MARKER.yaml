@@ -1,0 +1,76 @@
+marker_name: C_ADAPTIVE_POLARIZATION_MARKER
+beschreibung: 'Annäherung ↔ Distanz in schneller Folge.
+
+  '
+beispiele:
+  - "- "Will Beziehung. – Panik lol."
+  - "- "Bin offen für alles. – Heute nicht."
+  - "- "Ich öffne mich dir. – Close window."
+  - "- "War schön mit dir. – War’s das jetzt?"
+  - "- "Komm in meine Nähe. – Du bist zu nah."
+  - "- "So ein schönes Gespräch gerade. – Ich ghoste dich dann mal."
+  - "- "Ich lieb deine Stimme. – Schreib lieber nur."
+  - "- "Könnte ewig mit dir schreiben… bin müde, bye."
+  - "- "Schick mir ein Bild von dir. – Nein, lieber nicht."
+  - "- "Will dich hören. – Aber nicht jetzt. 🙃"
+  - "- "So schön gestern. – Heute fühl ich nichts."
+  - "- "Ich brauch dich gerade. – Aber lass mich in Ruhe."
+  - "- "Komm vorbei! – Oder bleib lieber weg."
+  - "- "Bin so froh, dass es dich gibt. – Nur heute nervst du."
+  - "- "Ich will ehrlich sein… Ach egal, vergiss es."
+  - "- "Schreib mir bitte! – Oder auch lieber nicht."
+  - "- "Wär schön, wenn du hier wärst… oder auch nicht."
+  - "- "Du bist mir wichtig. – Also manchmal."
+  - "- "Lass uns reden. – Nee, doch keine Lust."
+  - "- "Vermisse dich gerade total… aber whatever."
+  - "- "Erzähl mir deine Geheimnisse. — Halt, das ist unheimlich."
+  - "- "Ich vertraue dir. — Warte, nein!"
+  - "- "Schick mir ein Foto. — Nein danke."
+  - "- "Ich möchte mit dir reden. — Lieber schweigen."
+  - "- "Du bist der Beste! — Hör auf damit."
+  - "- "Ich plane unser nächstes Date. — Ach, vielleicht nicht."
+  - "- "Erzähl mir deine Wünsche. — Stopp, zu viel."
+  - "- "Ruf mich doch an! — Oder lieber nicht."
+  - "- "Komm her zu mir! — Nee, doch nicht."
+  - "- "Ich liebe unseren Kontakt… — Aber versteh das nicht falsch."
+  - "- "Will kuscheln. — War nur Spaß, bleib cool."
+  - "- "FaceTime? — Sorry, busy."
+  - "- "Nähe okay? — Abstand besser."
+  - "- "Mein Tag ohne dich: langweilig. — Funkstille 24 h."
+  - "- "Schicke dir ein ❤️, lösche es wieder."
+  - "- "Deep Talk? Bin müde, ciao."
+  - "- "Will dich heute sehen! — Vielleicht nächste Woche."
+  - "- "Erzähl mir alles von dir. — Später, zu viel Info."
+  - "- "Mega cute! – Okay, genug Komplimente."
+  - "- "Du fehlst mir so sehr… Ach, vergiss es."
+- Du fehlst mir… Ach, vergiss es.
+- Mega cute! – Okay, genug Komplimente.
+- Erzähl mir alles. — Später, zu viel Info.
+- Will dich sehen! — Maybe nächste Woche.
+- Deep Talk? Bin müde, ciao.
+- Schicke dir Herz-Emoji, lösche es wieder.
+- 'Mein Tag ohne dich: langweilig. — Funkstille 24 h.'
+- Nähe okay? — Abstand besser.
+- FaceTime — Sorry, busy.
+- Will kuscheln. — Joke, bleib cool.
+semantische_grabber_id: AUTO_SEM_20250720_1C5D
+metadata:
+  created_at: 2025-07-20 11:59:25.374130
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags:
+  - neu_erstellt
+  - needs_review
+  last_repaired: '2025-07-20T12:07:43.695572'
+  repair_version: '1.0'
+category: UNCATEGORIZED
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+
+kategorie: UNCATEGORIZED

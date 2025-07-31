@@ -1,0 +1,30 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für RADICAL_OWNERSHIP_MARKER
+  examples:
+  - Detects statements where a person takes full, proactive, and unconditional responsibility
+    for a mistake, delay, or negative outcome — and expresses a commitment to correction
+    without excuses or blame-
+  - 'category: "Responsibility & Integrity"'
+  - 'created_at: 2025-07-09T20:39:04.648066'
+  - 'version: 1.0'
+  id: S_RADICAL_OWNERSHIP
+  level: 2
+  name: RADICAL_OWNERSHIP
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_7C62
+  semantic_tags:
+  - radical-ownership-marker
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.841280'
+  repair_version: '1.0'

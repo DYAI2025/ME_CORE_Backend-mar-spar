@@ -1,0 +1,17 @@
+# S_PASSIVE_AGGRESSIVE_WITHDRAWAL_MARKER - Semantic Marker
+marker_name: S_PASSIVE_AGGRESSIVE_WITHDRAWAL_MARKER
+beschreibung: >
+  Semantische Kombination aus einer Ausrede (scheinbares Vergessen) und anschließendem Schweigen, um einen Konflikt zu vermeiden und gleichzeitig Missbilligung zu signalisieren.
+beispiele:
+  - "A: "Hast du daran gedacht, die Tickets zu buchen?"
+B: "Oh, hab ich total vergessen."
+A: "Okay, nicht schlimm. Machen wir es jetzt?"
+B: "...""
+
+semantische_grabber_id: SGR_PASSIVE_AGGRESSIVE_WITHDRAWAL_01
+
+metadata:
+  created_at: 2025-07-21T12:53:00.331189
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]

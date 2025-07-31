@@ -1,0 +1,24 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für FRIENDLY_FLIRTING_MARKER",
+    "examples": [
+      "\"marker\": \"FRIENDLY_FLIRTING_MARKER\",",
+      "\"beschreibung\": \"Erkennt kommunikative Muster von freundlich-sympathischem Flirten ohne Grenzüberschreitung. \"",
+      "\"Typisch sind spielerische Komplimente, Humor, harmlose Wortspiele, kleine Grenztests, \"",
+      "\"bei denen Rückzug akzeptiert wird. Kein Drängen, keine Pseudo-Intimität.\",",
+      "\"beispiele\": ["
+    ],
+    "id": "S_FRIENDLY_FLIRTING",
+    "level": 2,
+    "name": "FRIENDLY_FLIRTING",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_0837",
+    "semantic_tags": [
+      "friendly-flirting-marker"
+    ]
+  },
+  "marker_name": "FRIENDLY_FLIRTING_MARKER"
+}

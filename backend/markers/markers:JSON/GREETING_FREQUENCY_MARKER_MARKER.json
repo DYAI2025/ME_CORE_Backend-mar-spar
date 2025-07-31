@@ -1,0 +1,22 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für GREETING_FREQUENCY_MARKER_MARKER",
+    "examples": [
+      "Häufigkeit von Begrüßungen und Verabschiedungen, Ausdruck von Nähe und Kommunikationsnorm.",
+      "description: \"Erkennt Muster für greeting_frequency_marker\"",
+      "pattern: r\"(muster.*wird.*ergänzt)\""
+    ],
+    "id": "S_GREETING_FREQUENCY_MARKER",
+    "level": 2,
+    "name": "GREETING_FREQUENCY",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_CB4F",
+    "semantic_tags": [
+      "greeting-frequency-marker-marker"
+    ]
+  },
+  "marker_name": "GREETING_FREQUENCY_MARKER_MARKER"
+}

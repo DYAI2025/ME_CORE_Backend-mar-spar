@@ -1,0 +1,22 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für SOCIAL_BORDERLINES_MARKER_MIX_MARKER",
+    "examples": [
+      "marker_name: SOCIAL_BORDERLINES_MARKER_MIX.yaml_MARKER",
+      "description: \"Erkennt Muster für social_borderlines_marker_mix.txt\"",
+      "pattern: r\"(muster.*wird.*ergänzt)\""
+    ],
+    "id": "S_SOCIAL_BORDERLINES_MARKER_MIX",
+    "level": 2,
+    "name": "SOCIAL_BORDERLINES_MIX",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_B244",
+    "semantic_tags": [
+      "social-borderlines-marker-mix-marker"
+    ]
+  },
+  "marker_name": "SOCIAL_BORDERLINES_MARKER_MIX_MARKER"
+}

@@ -1,0 +1,27 @@
+{
+  "kategorie": "UNCATEGORIZED",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Misst Verschiebungen in der Selbstoffenbarung entlang verschiedener Achsen",
+    "examples": null,
+    "id": "S_SELF_DISCLOSURE_DRIFT_AXES",
+    "level": 2,
+    "name": "SELF_DISCLOSURE_DRIFT_AXES",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250713_59FC",
+    "semantic_tags": [
+      "self-disclosure-drift-axes-marker"
+    ]
+  },
+  "marker_name": "SELF_DISCLOSURE_DRIFT_AXES_MARKER",
+  "metadata": {
+    "created_at": "2025-07-13T00:58:43.634045",
+    "created_by": "FRAUSAR_GUI_v2",
+    "tags": [
+      "neu_erstellt",
+      "needs_review"
+    ],
+    "version": 1.0
+  }
+}

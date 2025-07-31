@@ -1,0 +1,46 @@
+marker_name: S_DESTRUCTIVE_CRITICISM_MARKER
+beschreibung: 'Verallgemeinernder Vorwurf + Abwertung in einem Satz.
+
+  '
+beispiele:
+- Immer machst du so ein Drama, das ist doch lächerlich.
+- Nie hörst du zu, stell dich nicht so an.
+- Ständig bist du am Jammern, das ist kindisch.
+- Jedes Mal das Gleiche, dein Problem, nicht meins.
+- Typisch für dich, sofort übertreiben.
+- Immer vergisst du was, echt peinlich.
+- Nie kannst du einfach funktionieren, hör auf zu heulen.
+- Ständig suchst du Ausreden, lächerlich.
+- Immer bist du chaotisch, das nervt.
+- Nie hast du Plan B, total kindisch.
+- Ständig willst du Sonderbehandlung, lächerlich.
+- Immer bringst du uns in Stress, stell dich nicht so an.
+- Nie checkst du das Offensichtliche, echt traurig.
+- Ständig verspätet, wie im Kindergarten.
+- Immer Drama, nie Lösung, nervt!
+- Nie kannst du Verantwortung übernehmen, kindisch.
+- Ständig Fehler, einfach lächerlich.
+- Immer das Opfer spielen, hör doch auf.
+- Nie zufrieden, immer Theater – dein Problem.
+- Typisch, alles emotional aufblasen, so kindisch.
+semantische_grabber_id: SGR_DESTRUCTIVE_CRITICISM_01
+metadata:
+  created_at: 2025-07-22 00:19:53.893697
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags:
+  - neu_erstellt
+  - needs_review
+  last_repaired: '2025-07-22T02:31:24.216583'
+  repair_version: '1.0'
+category: UNCATEGORIZED
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+
+kategorie: UNCATEGORIZED

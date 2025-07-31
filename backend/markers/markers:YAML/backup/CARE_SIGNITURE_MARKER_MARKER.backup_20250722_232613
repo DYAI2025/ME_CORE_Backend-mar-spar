@@ -1,0 +1,29 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für CARE_SIGNITURE_MARKER_MARKER
+  examples:
+  - Sich musterhaft wiederholdene Nachrichtenabschlüsse beim Verabschieden, die Zuneigung
+    und Verbinung für die Partner implizieren. Die Wiederholung als Beziehungs Baseline
+    Temeratur, an der Microverände
+  - 'description: "Erkennt Muster für care_signiture_marker"'
+  - 'pattern: r"(muster.*wird.*ergänzt)"'
+  id: S_CARE_SIGNITURE_MARKER
+  level: 2
+  name: CARE_SIGNITURE
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_C550
+  semantic_tags:
+  - care-signiture-marker-marker
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.737185'
+  repair_version: '1.0'

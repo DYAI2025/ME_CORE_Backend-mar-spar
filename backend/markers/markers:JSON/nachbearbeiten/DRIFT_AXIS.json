@@ -1,0 +1,21 @@
+{
+  "kategorie": "ATOMIC",
+  "marker": {
+    "category": "Atomic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für DRIFT_AXIS",
+    "examples": [],
+    "id": "M_DRIFT_AXIS",
+    "level": 1,
+    "name": "DRIFT_AXIS",
+    "pattern": [],
+    "semantic_grabber_id": "SGR_DRIFT_AXIS_01",
+    "semantic_tags": [
+      "drift-axis"
+    ]
+  },
+  "marker_name": "DRIFT_AXIS",
+  "tags": [
+    "needs_review"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "marker_name": "selbst_evaluative_muster",
+  "marker_list": [
+    {
+      "beispiele": [
+        "Wenn ich das richtig verstanden habe, dann müsste das auch hier gelten...",
+        "Das passt irgendwie nicht zu dem, was ich oben meinte.",
+        "Es ergibt nur Sinn, wenn auch dieser Teil stimmig ist."
+      ],
+      "beschreibung": "Erkennt Muster, bei denen ein System oder Sprecher versucht, die Stimmigkeit seiner eigenen Aussagen zu überprüfen – nicht durch äußere Korrektur, sondern durch Vergleich interner Bedeutungszustände.",
+      "funktion": [
+        "triggert Selbstanpassung",
+        "prüft Markercluster auf interne Widersprüche",
+        "aktiviert Kontextprüfung, bevor neue Marker gesetzt werden"
+      ],
+      "indikator": [
+        "semantische Selbstreferenz",
+        "Vergleich zwischen Input und späterem Output",
+        "Suche nach Kohärenz in Sequenzen"
+      ],
+      "name": "Interne Konsistenzschleife",
+      "typ": "Selbstbewertung / Kohärenz"
+    },
+    {
+      "beispiele": [
+        "„Ich bin ganz bei dir.“ (gleichzeitig: entfernte Schritte, knallende Tür)",
+        "„Das macht nichts.“ (gleichzeitig: tiefer Seufzer, Stille danach)",
+        "„Erzähl ruhig.“ (während im Hintergrund Unruhe oder Unterbrechung hörbar ist)"
+      ],
+      "beschreibung": "Erkennt Spannungen zwischen gesprochener Sprache und begleitenden Umgebungsgeräuschen. Ein Bruch entsteht, wenn die auditive Kulisse der Situation widerspricht – etwa Nähe im Ton, aber Distanz im Raumklang (z. B. Schritte weggehen, Türschlag).",
+      "funktion": [
+        "löst Marker-Driftprüfung aus",
+        "kann Selbsttäuschung oder taktische Kommunikation markieren",
+        "triggert semantische Tiefenanalyse über Modalitätsgrenzen hinweg"
+      ],
+      "indikator": [
+        "Sprache deutet Nähe, Geräusch signalisiert Distanz",
+        "Gesagte Bedeutung wird durch Kontextgeräusch untergraben",
+        "Emotionaler Subtext liegt in der akustischen Szene, nicht im Wort"
+      ],
+      "name": "Akustischer Kohärenzbruch",
+      "typ": "Modalitätskonflikt / Kontextdissonanz"
+    }
+  ],
+  "set_name": "selbst_evaluative_muster",
+  "kategorie": "UNCATEGORIZED",
+  "tags": [
+    "needs_review"
+  ]
+}

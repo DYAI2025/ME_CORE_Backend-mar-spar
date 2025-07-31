@@ -1,0 +1,22 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für EMOTIONAL_INVALIDATION",
+    "examples": [
+      "name: \"Emotional Invalidation\"",
+      "The act of denying, rejecting, or trivializing someone's feelings, which undermines their perception of reality. It implies that a person's emotional reaction is wrong, inappropriate, or baseless. Thi",
+      "category: \"Gaslighting & Devaluation\""
+    ],
+    "id": "S_EMOTIONAL_INVALIDATION",
+    "level": 2,
+    "name": "EMOTIONAL_INVALIDATION",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_EF38",
+    "semantic_tags": [
+      "emotional-invalidation"
+    ]
+  },
+  "marker_name": "EMOTIONAL_INVALIDATION"
+}

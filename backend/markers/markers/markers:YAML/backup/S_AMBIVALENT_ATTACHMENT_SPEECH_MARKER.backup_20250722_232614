@@ -1,0 +1,20 @@
+# S_AMBIVALENT_ATTACHMENT_SPEECH_MARKER - Semantic Marker
+marker_name: S_AMBIVALENT_ATTACHMENT_SPEECH_MARKER
+beschreibung: >
+  Sprachliche Ausdrücke, die Nähe und Rückzug gleichzeitig
+kommunizieren oder in schneller Abfolge wechseln. Oft unsicher,
+widersprüchlich oder übervorsichtig formuliert.
+beispiele:
+  - "Ich würd dich echt gern sehen – aber nur, wenn das für dich grad okay ist."
+  - "Ich bin offen für alles… oder auch nicht."
+  - "Ich will Nähe, aber bitte nicht zu viel."
+  - "Meld dich, oder auch nicht – ich will dir keinen Stress machen."
+  - "Ich mag dich, aber ich weiß nicht, ob ich das kann."
+
+semantische_grabber_id: SGR_AMBIVALENT_SPEECH_01
+
+metadata:
+  created_at: 2025-07-22T22:45:02.463045
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]

@@ -1,0 +1,23 @@
+{
+  "kategorie": "ATOMIC",
+  "marker": {
+    "category": "Atomic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für ENHANCED_MARKER_CONFIG",
+    "examples": [
+      "Automatisch generierte Beschreibung für ENHANCED_MARKER_CONFIG"
+    ],
+    "id": "M_ENHANCED_MARKER_CONFIG",
+    "level": 1,
+    "name": "ENHANCED_CONFIG",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_9C3B",
+    "semantic_tags": [
+      "enhanced-marker-config"
+    ]
+  },
+  "marker_name": "ENHANCED_MARKER_CONFIG",
+  "tags": [
+    "needs_review"
+  ]
+}

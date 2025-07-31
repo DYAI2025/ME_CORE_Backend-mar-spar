@@ -1,0 +1,56 @@
+marker_name: S_EXPLICIT_CONNECTION
+- id: "S_EXPLICIT_CONNECTION"
+  level: 2
+  version: "1.0.0"
+  author: "Marker_examples_generator"
+  created_at: "2025-07-21"
+  status: "released"
+  lang: "de"
+  name: "Explizite Benennung der Verbindung"
+  description: |
+    Erkennt Aussagen, die die emotionale Verbindung, den Zusammenhalt
+    oder die Wichtigkeit der Beziehung explizit thematisieren und positiv
+    bewerten. [cite_start]Indikator für sichere Bindungsmuster. [cite: 769]
+  composed_of:
+    - type: atomic
+      marker_ids:
+        - "A_FEELING_CONNECTION"
+        - "A_TEAM_METAPHOR"
+  rules:
+    - type: activation_logic
+      value: "A_FEELING_CONNECTION OR A_TEAM_METAPHOR"
+  tags: ["semantisch", "verbindung", "nähe", "intimität", "wertschätzung", "sichere bindung"]
+  examples:
+    - de: "Ich schätze unsere Verbindung mehr, als du vielleicht denkst."
+      en: "I appreciate our connection more than you might think."
+    - de: "Egal was kommt, ich weiß, dass wir ein Team sind."
+      en: "No matter what comes, I know that we are a team."
+    - de: "Ich fühle mich bei dir einfach verstanden, wir sind auf einer Wellenlänge."
+      en: "I just feel understood by you, we're on the same wavelength."
+    - de: "Es tut gut zu wissen, dass ich dich an meiner Seite habe."
+      en: "It feels good to know I have you by my side."
+    - de: "Unsere Freundschaft ist mir echt heilig."
+      en: "Our friendship is truly sacred to me."
+    - de: "Ich merke immer wieder, wie stark das Band zwischen uns ist."
+      en: "I notice again and again how strong the bond between us is."
+    - de: "Ich bin so froh, dass wir uns so gut verstehen."
+      en: "I'm so glad that we get along so well."
+    - de: "Mit dir fühlt sich alles einfacher an, weil wir das zusammen durchstehen."
+      en: "With you, everything feels easier because we get through it together."
+    - de: "Fühle mich dir gerade sehr nah."
+      en: "I'm feeling very close to you right now."
+    - de: "Du bist mein Fels in der Brandung, zusammen schaffen wir alles."
+      en: "You are my rock, together we can do anything."
+    # ── hinzugefügte Beispiele ──
+    - de: "Ich fühle mich sicher, weil ich weiß, dass wir zusammenhalten."
+      en: "I feel safe because I know we stick together."
+    - de: "Danke, dass du immer hinter mir stehst – das bedeutet mir viel."
+      en: "Thank you for always having my back – that means a lot to me."
+    - de: "Unsere Verbindung trägt mich durch schwere Tage."
+      en: "Our connection carries me through tough days."
+    - de: "Mit dir an meiner Seite habe ich das Gefühl, alles schaffen zu können."
+      en: "With you by my side I feel like I can accomplish anything."
+    - de: "Es ist beruhigend zu wissen, dass wir uns blind vertrauen können."
+      en: "It's reassuring to know we can trust each other blindly."
+
+kategorie: UNCATEGORIZED

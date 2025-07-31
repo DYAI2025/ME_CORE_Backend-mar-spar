@@ -1,0 +1,44 @@
+# C_FLIRTING_DYNAMICS_MARKER - Semantic Marker
+marker_name: C_FLIRTING_DYNAMICS_MARKER
+beschreibung: >
+  Bündelt die wichtigsten Teilaspekte eines fortgeschrittenen Flirt-Dialogs: von harmlos-freundlichem Necking über offensive Anspielungen bis hin zu Soft-Commitment-Versprechen, ambivalenter Polarisierung und latenten Erwartungshaltungen.  Erfasst wird die typische Drift-Achse zwischen spielerischer Nähe, verdeckter Erwartung und bewusstem Hinhalten.
+beispiele:
+  - "❶ S_FRIENDLY_FLIRTING  
+A: "Du bist heute auf Meme-Niveau 9000 – impressive."  
+B: "Warte, ich hab noch ein Ass im Ärmel 😉""
+  - "❷ S_OFFENSIVE_FLIRTING + S_BOUNDARY_SHIFT  
+A: "Tattoo an einer Stelle, die nur VIPs sehen 😏"  
+B: "Dann brauch ich wohl VIP-Pass?""
+  - "❸ S_SOFT_COMMITMENT + S_LATENT_EXPECTATION  
+B: "Wenn du nächstes Wochenende frei hast, wär's schön dich zu sehen … nur so, ohne Druck."  
+A: "Schau’n wir mal – geb dir Bescheid.""
+  - "❹ C_ADAPTIVE_POLARIZATION  
+A: "Du fehlst mir."  
+*6 h Funkstille*  
+B: "Sry, busy. Aber erzähl, was hast du vermisst?""
+  - "❺ C_SECRET_BONDING + S_MIRRORED_STYLE  
+A: "Lösch den Chat später, ja?"  
+B: "Schon dabei. Operation Stealth aktiviert.""
+  - "❻ S_RESPONSE_TIMING (Synchron)  
+*beide antworten innerhalb von 30 s über drei Runden – hoher Ping-Pong-Rhythmus*"
+  - "❼ C_NOVELTY_BURST  
+A: "Kurzes Impro-Gedicht nur für dich: *Rosen sind rot …*"  
+B: "*… dein Blick macht mich high* – poetisch genug?""
+  - "❽ C_SUSTAINED_CONTACT  
+*Tag 58 der täglichen Guten-Morgen-Nachrichten*  
+A: "Ohne deinen Kaffee-Emoji komm ich nicht ausm Bett 😂""
+  - "❾ S_AMBIVALENCE + PERMANENT_POSTPONE  
+B: "Wir sollten mal definieren, was das hier ist."  
+A: "True, aber nicht heute – lass uns das Meeting verschieben.""
+  - "❿ DRIFT_AXIS (Bindungsdynamik)  
+*Heatmap zeigt zyklisches Hin- und Her auf der Nähe-Distanz-Achse, ohne dass je klar Stellung bezogen wird.*"
+
+semantische_grabber_id: AUTO_SEM_20250720_8896
+
+metadata:
+  created_at: 2025-07-20T16:53:16.769634
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

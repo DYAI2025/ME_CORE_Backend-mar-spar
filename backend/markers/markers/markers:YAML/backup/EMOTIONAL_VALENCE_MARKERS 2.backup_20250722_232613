@@ -1,0 +1,25 @@
+marker_name:
+  category: Atomic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für EMOTIONAL_VALENCE_MARKERS 2
+  examples:
+  - Automatisch generierte Beschreibung für EMOTIONAL_VALENCE_MARKERS 2
+  id: M_EMOTIONAL_VALENCE_MARKERS2
+  level: 1
+  name: EMOTIONAL_VALENCES 2
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_BED7
+  semantic_tags:
+  - emotional-valence-markers 2
+tags:
+- needs_review
+category: ATOMIC
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.729104'
+  repair_version: '1.0'

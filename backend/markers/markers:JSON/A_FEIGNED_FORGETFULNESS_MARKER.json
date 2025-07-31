@@ -1,0 +1,28 @@
+{
+  "marker_name": "A_FEIGNED_FORGETFULNESS_MARKER",
+  "beschreibung": "Vorgeschobenes Vergessen, um Verantwortung zu vermeiden.\n",
+  "beispiele": [
+    "Oh, hab ich vergessen, das Protokoll zu schicken – mach ich gleich.",
+    "Die Frist? Ups, total übersehen. Mein Fehler.",
+    "Hatte es auf dem Zettel, aber dann kam was dazwischen.",
+    "Sorry, nicht geschafft, die Präsentation zu finalisieren.",
+    "Ich wollt’s echt machen, hab’s einfach nicht mehr dran gedacht.",
+    "Ganz ehrlich, der Task war weg aus meinem Kopf.",
+    "Uff, Kalenderfehler – hab den Call komplett verdrängt.",
+    "Ah, stimmt, die Rechnung. Liegt irgendwo in meinen Mails.",
+    "Wollte einkaufen, aber der Tag war so chaotisch.",
+    "Sorry, hab ich verschwitzt, den Hund rauszulassen.",
+    "Total untergegangen im Stress – sorry.",
+    "War auf meiner Liste, ehrlich. Dann kam ein Notfall rein.",
+    "Ich dacht, du wolltest das übernehmen, hab’s deshalb liegenlassen.",
+    "War überzeugt, ich hätte das Ticket schon geschlossen.",
+    "Ups, Meetinglink vergessen zu schicken – jetzt aber!",
+    "Die Doku? Joa, nicht mehr dran gedacht, war viel los.",
+    "Wollte antworten, aber Akku leer, dann vergessen.",
+    "Kam leider nicht mehr dazu, tut mir leid.",
+    "War der Meinung, ich hätte dich informiert – scheinbar doch nicht.",
+    "Hatte ‘nen Reminder, aber der hat nicht geklingelt."
+  ],
+  "semantische_grabber_id": "SGR_FEIGNED_FORGETFULNESS_01",
+  "metadata": {
+    "created_at": 

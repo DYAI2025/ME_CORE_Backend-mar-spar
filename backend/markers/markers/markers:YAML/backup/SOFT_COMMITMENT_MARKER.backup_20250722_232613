@@ -1,0 +1,29 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für SOFT_COMMITMENT_MARKER
+  examples:
+  - 'name: "Soft Commitment"'
+  - Detects communicative patterns where an agreement or participation is framed as
+    voluntary, yet is subtly demanded or morally framed. This strategy masks expectation
+    behind a facade of casualness or op
+  - 'category: "Indirect Commitment"'
+  id: S_SOFT_COMMITMENT
+  level: 2
+  name: SOFT_COMMITMENT
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_1346
+  semantic_tags:
+  - soft-commitment-marker
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.716008'
+  repair_version: '1.0'

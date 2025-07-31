@@ -1,0 +1,20 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Unerwartete, kreative oder neuartige Beiträge im Chat; ungewöhnliche Formulierungen, neue Ideen, Innovationssprünge.\n",
+    "examples": [
+      "Unerwartete, kreative oder neuartige Beiträge im Chat; ungewöhnliche Formulierungen, neue Ideen, Innovationssprünge"
+    ],
+    "id": "S_NOVELTY_BURST_SEM",
+    "level": 2,
+    "name": "NOVELTY_BURST_SEM",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_241E",
+    "semantic_tags": [
+      "novelty-burst-sem-marker"
+    ]
+  },
+  "marker_name": "NOVELTY_BURST_SEM_MARKER"
+}

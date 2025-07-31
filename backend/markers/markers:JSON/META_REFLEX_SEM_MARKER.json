@@ -1,0 +1,20 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Erkennt Selbstbezug und Reflexion über den Dialog – Meta-Kommentare, Analysen\n  oder Beobachtungen zum eigenen Kommunikationsprozess.\n",
+    "examples": [
+      "Erkennt Selbstbezug und Reflexion über den Dialog – Meta-Kommentare, Analysen\n  oder Beobachtungen zum eigenen Kommunikationsprozess"
+    ],
+    "id": "S_META_REFLEX_SEM",
+    "level": 2,
+    "name": "META_REFLEX_SEM",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_27AC",
+    "semantic_tags": [
+      "meta-reflex-sem-marker"
+    ]
+  },
+  "marker_name": "META_REFLEX_SEM_MARKER"
+}

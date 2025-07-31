@@ -1,0 +1,20 @@
+# C_PERSISTENT_TENSION_MARKER - Semantic Marker
+marker_name: C_PERSISTENT_TENSION_MARKER
+beschreibung: >
+  Ein Cluster, der eine festgefahrene, spannungsgeladene Beziehungsdynamik anzeigt, die durch wiederkehrende, unlösbare Konflikte gekennzeichnet ist.
+beispiele:
+  - "Jedes Mal dasselbe, wir drehen uns nur im Kreis. Das führt doch zu nichts und macht alles nur noch schlimmer."
+  - "Immer wieder Streit über dasselbe Thema, und wir schaffen es einfach nicht, es zu lösen."
+  - "Es ist schon wieder dieses Problem, und wir stecken weiterhin fest."
+  - "Wir kommen nicht weiter – immer dieselben Vorwürfe und keine Abwechslung."
+  - "Jedes Mal, wenn wir darüber reden, endet es im Konflikt und nichts ändert sich."
+
+semantische_grabber_id: AUTO_SEM_20250723_12B1
+
+metadata:
+  created_at: 2025-07-23T01:05:51.991242
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

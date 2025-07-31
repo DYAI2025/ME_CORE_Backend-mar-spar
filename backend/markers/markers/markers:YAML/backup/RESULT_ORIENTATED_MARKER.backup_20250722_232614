@@ -1,0 +1,28 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für RESULT_ORIENTATED_MARKER
+  examples:
+  - 'category: "Result Orientation"'
+  - Effizienz und messbare Ergebnisse legen.
+  - 'created_at: 2025-07-12T10:37:55.593851'
+  - 'version: 1.0'
+  id: S_RESULT_ORIENTATED
+  level: 2
+  name: RESULT_ORIENTATED
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_F8AA
+  semantic_tags:
+  - result-orientated-marker
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.896753'
+  repair_version: '1.0'

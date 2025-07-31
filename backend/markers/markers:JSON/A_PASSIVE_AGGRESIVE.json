@@ -1,0 +1,80 @@
+marker_name: A_PASSIVE_AGGRESIVE
+- id: "A_PASSIVE_AGGRESSIVE"
+  level: 1
+  version: "1.0.0"
+  author: "Marker_examples_generator"
+  created_at: "2025-07-22"
+  status: "released"
+  lang: "de"
+  name: "PASSIVE_AGGRESSIVE"
+  description: >
+    Detects communicative patterns of passive-aggressive remarks that create
+    tension, apply subtle pressure, or induce guilt. :contentReference[oaicite:0]{index=0}
+  category: "ATOMIC"
+  atomic_pattern:
+    - "ist ja nicht so, als"
+    - "schon gut"
+    - "mir ist es sowieso egal"
+    - "na klar"
+    - "ich sage lieber nichts"
+    - "wenn du meinst"
+    - "tu, was du willst"
+    - "wie du willst"
+    - "wer bin ich schon"
+    - "passt schon"
+  regex_flags: ["i"]
+  tags: [atomic, passive_aggressive, manipulation, tension]
+  semantic_grabber_id: "SGR_PASSIVE_AGGRESSIVE_01"
+
+  examples:
+    # ---- 20 DE / EN pairs ----
+    - de: "Ist ja nicht so, als wäre ich wichtig."
+      en: "It’s not like I matter anyway."
+    - de: "Schon gut, ich verzichte eben."
+      en: "It’s fine, I’ll just go without."
+    - de: "Tu, was du willst, mir ist es sowieso egal."
+      en: "Do whatever you want, I couldn’t care less."
+    - de: "Na klar, du musst es ja besser wissen."
+      en: "Sure, you obviously know better."
+    - de: "Ich sage lieber nichts, sonst heißt es wieder, ich sei schuld."
+      en: "I’d rather stay quiet, otherwise I’ll get blamed again."
+    - de: "Wenn du meinst, dass du das richtig machst..."
+      en: "If you think you’re doing it right..."
+    - de: "Passt schon, war ja nur meine Zeit."
+      en: "It’s fine, it was only my time after all."
+    - de: "Mach nur, ich halte dich nicht auf."
+      en: "Go ahead, I won’t stop you."
+    - de: "Wie du willst, ich füge mich."
+      en: "Whatever you want, I’ll comply."
+    - de: "Wer bin ich schon, um etwas zu sagen."
+      en: "Who am I to say anything."
+    - de: "Klar, ich bin ja nur der Statist hier."
+      en: "Sure, I’m just the extra here."
+    - de: "Ist ja nicht so, als hätte ich andere Pläne."
+      en: "It’s not like I had other plans."
+    - de: "Mach ruhig, ich passe mich schon an."
+      en: "Go ahead, I’ll just adapt."
+    - de: "Wenn’s für dich passt, passt es wohl für alle."
+      en: "If it works for you, it must work for everyone."
+    - de: "Schön, dass du entschieden hast, ohne mich zu fragen."
+      en: "Nice that you decided without asking me."
+    - de: "Alles gut, ich brauche keine Rücksicht."
+      en: "All good, no need to consider me."
+    - de: "Ich will ja nicht stören."
+      en: "I wouldn’t want to be a bother."
+    - de: "Schon okay, ich bin es gewohnt, übergangen zu werden."
+      en: "It’s fine, I’m used to being overlooked."
+    - de: "Natürlich, dein Plan ist bestimmt fehlerfrei."
+      en: "Of course, your plan is surely flawless."
+    - de: "Mach weiter, ich seh nur zu."
+      en: "Carry on, I’ll just watch."
+
+  semantic_grab:
+    description: "Pattern definitions used by passive_aggressive_marker.py"
+    patterns:
+      - rule: "AUTO_PATTERN"
+        pattern: r"(muster.*wird.*ergänzt)"
+    tags: [passiv_aggressiv, manipulativ, neu_erstellt, needs_review]
+
+
+kategorie: UNCATEGORIZED

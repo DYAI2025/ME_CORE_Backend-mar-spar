@@ -1,0 +1,23 @@
+{
+  "kategorie": "ATOMIC",
+  "marker": {
+    "category": "Atomic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für meta_marker_definitions",
+    "examples": [
+      "Automatisch generierte Beschreibung für meta_marker_definitions"
+    ],
+    "id": "M_META_MARKER_DEFINITIONS",
+    "level": 1,
+    "name": "meta_marker_definitions",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_C7A8",
+    "semantic_tags": [
+      "meta-marker-definitions"
+    ]
+  },
+  "marker_name": "meta_marker_definitions",
+  "tags": [
+    "needs_review"
+  ]
+}

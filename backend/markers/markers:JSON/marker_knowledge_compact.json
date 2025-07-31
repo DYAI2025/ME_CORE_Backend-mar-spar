@@ -1,0 +1,1077 @@
+[
+  {
+    "beispiel": "Magst du mir schnell deine WhatsApp‑Nummer schicken? Hier in der App landen Nachrichten manchmal im Nirwana.",
+    "kategorie": "Technische Probleme & mangelhafte App-Funktionen",
+    "score": 3
+  },
+  {
+    "beispiel": "Diese Plattform loggt mich ständig aus … Lass uns doch fix auf Signal wechseln, dort geht kein Text verloren.",
+    "kategorie": "Technische Probleme & mangelhafte App-Funktionen",
+    "score": 3
+  },
+  {
+    "beispiel": "Die App zeigt mir deine Antworten oft mit großer Verspätung an … willst du kurz auf WhatsApp springen?",
+    "kategorie": "Technische Probleme & mangelhafte App-Funktionen",
+    "score": 3
+  },
+  {
+    "beispiel": "Komisch, deine letzte Nachricht kam doppelt … Lass uns doch auf Signal wechseln, da passiert das nicht.",
+    "kategorie": "Technische Probleme & mangelhafte App-Funktionen",
+    "score": 3
+  },
+  {
+    "beispiel": "Mir werden hier keine Push-Benachrichtigungen angezeigt, WhatsApp wäre da viel zuverlässiger.",
+    "kategorie": "Technische Probleme & mangelhafte App-Funktionen",
+    "score": 3
+  },
+  {
+    "beispiel": "Die App löscht alte Chats nach einer Weile – gib mir doch deine Nummer, dann bleibt unsere Unterhaltung bestehen.",
+    "kategorie": "Technische Probleme & mangelhafte App-Funktionen",
+    "score": 3
+  },
+  {
+    "beispiel": "Schon mal Probleme gehabt, dass Chats hier einfach verschwinden? Auf Telegram wird alles sicher in der Cloud gespeichert.",
+    "kategorie": "Technische Probleme & mangelhafte App-Funktionen",
+    "score": 3
+  },
+  {
+    "beispiel": "Gerade eben hat die App mich schon wieder ausgeloggt … Schreib mir lieber kurz auf WhatsApp, bevor die Nachricht weg ist.",
+    "kategorie": "Technische Probleme & mangelhafte App-Funktionen",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich schicke dir gleich ein paar schönere Fotos, das geht per Telegram viel besser – was hältst du davon?",
+    "kategorie": "Bessere Features auf anderen Plattformen",
+    "score": 3
+  },
+  {
+    "beispiel": "Kann ich dir eine kurze Sprachnachricht auf WhatsApp schicken? Das Tippen ist hier so umständlich.",
+    "kategorie": "Bessere Features auf anderen Plattformen",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich finde Sprachnachrichten viel persönlicher – auf WhatsApp kann ich dir gleich 'Hallo' sagen.",
+    "kategorie": "Bessere Features auf anderen Plattformen",
+    "score": 3
+  },
+  {
+    "beispiel": "Der Chat hier filtert anscheinend Links raus; über Telegram kann ich dir das Café zeigen, von dem ich erzählt habe.",
+    "kategorie": "Bessere Features auf anderen Plattformen",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich würde dir gern ein kurzes Video schicken; per Mail ist das einfacher – passt das für dich?",
+    "kategorie": "Bessere Features auf anderen Plattformen",
+    "score": 3
+  },
+  {
+    "beispiel": "Diese App hat ein Zeichen-Limit – per Telegram kann ich dir ausführlicher und ohne Unterbrechung antworten.",
+    "kategorie": "Bessere Features auf anderen Plattformen",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich würde gern eine Playlist mit dir teilen; WhatsApp macht das viel einfacher. Hast du Lust?",
+    "kategorie": "Bessere Features auf anderen Plattformen",
+    "score": 3
+  },
+  {
+    "beispiel": "Hier kann man keine PDFs schicken – per Mail könnte ich dir meinen liebsten Buchtipp senden.",
+    "kategorie": "Bessere Features auf anderen Plattformen",
+    "score": 3
+  },
+  {
+    "beispiel": "Die Plattform stoppt Sprachnachrichten bei 30 Sekunden … Auf Telegram kann ich frei und ohne Limit reden.",
+    "kategorie": "Bessere Features auf anderen Plattformen",
+    "score": 3
+  },
+  {
+    "beispiel": "Signal unterstützt HD-Videoanrufe, die Qualität ist viel besser. Wär das was für dich?",
+    "kategorie": "Bessere Features auf anderen Plattformen",
+    "score": 3
+  },
+  {
+    "beispiel": "Mein Abo hier läuft heute Abend aus, aber ich würde das Gespräch sehr gern fortsetzen – per E‑Mail vielleicht?",
+    "kategorie": "Ablaufende Mitgliedschaft & Paywalls",
+    "score": 3
+  },
+  {
+    "beispiel": "Meine Mitgliedschaft endet gleich; magst du den Chat per Mail fortsetzen, damit nichts abbricht?",
+    "kategorie": "Ablaufende Mitgliedschaft & Paywalls",
+    "score": 3
+  },
+  {
+    "beispiel": "Wenn deine Mitgliedschaft auch bald ausläuft, lass uns lieber direkt per Mail oder Signal verbunden bleiben.",
+    "kategorie": "Ablaufende Mitgliedschaft & Paywalls",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich bin ehrlich gesagt kaum online hier – schreib mir lieber direkt auf Hangouts, da erwischst du mich sofort.",
+    "kategorie": "Persönliche Präferenz & Bequemlichkeit",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich antworte meistens von unterwegs – Telegram poppt bei mir zuverlässig auf, hast du das auch?",
+    "kategorie": "Persönliche Präferenz & Bequemlichkeit",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich checke diese App nur abends; tagsüber erreichst du mich blitzschnell via WhatsApp.",
+    "kategorie": "Persönliche Präferenz & Bequemlichkeit",
+    "score": 3
+  },
+  {
+    "beispiel": "Bist du eher Team Signal oder Telegram? Dann springe ich dort schnell rüber.",
+    "kategorie": "Persönliche Präferenz & Bequemlichkeit",
+    "score": 3
+  },
+  {
+    "beispiel": "Meine Freunde funken alle auf Telegram – wäre cool, dich dort auch als Kontakt zu haben.",
+    "kategorie": "Persönliche Präferenz & Bequemlichkeit",
+    "score": 3
+  },
+  {
+    "beispiel": "Du klingst sehr sympathisch; dürfen wir den Smalltalk auf eine persönlichere Ebene bei Telegram verlagern?",
+    "kategorie": "Persönliche Präferenz & Bequemlichkeit",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich mag direkte Kommunikation – schick mir gern deine Mail, dann geht kein 'Hallo' mehr verloren.",
+    "kategorie": "Persönliche Präferenz & Bequemlichkeit",
+    "score": 3
+  },
+  {
+    "beispiel": "Wenn du magst, adde mich schnell auf Signal – dann können wir auch sicher private Fotos austauschen.",
+    "kategorie": "Der schmeichelhafte oder dringende Appell",
+    "score": 3
+  },
+  {
+    "beispiel": "Falls die Plattform mal wieder spinnt: Hier ist meine Nummer, dann geht unser Kontakt nicht verloren 😊",
+    "kategorie": "Der schmeichelhafte oder dringende Appell",
+    "score": 3
+  },
+  {
+    "beispiel": "Schick mir kurz deine Mailadresse, dann landet mein Lächeln nicht im Spam-Ordner der Plattform 😉",
+    "kategorie": "Der schmeichelhafte oder dringende Appell",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich bin gleich in der Bahn ohne gutes Netz … Über WhatsApp klappt die Verbindung auch bei schlechtem Empfang besser.",
+    "kategorie": "Der schmeichelhafte oder dringende Appell",
+    "score": 3
+  },
+  {
+    "beispiel": "Wenn wir uns aus den Augen verlieren sollten, hier meine Nummer – WhatsApp ist sozusagen mein zweites Zuhause.",
+    "kategorie": "Der schmeichelhafte oder dringende Appell",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich reise nächste Woche – E‑Mail wäre perfekt, damit unsere Nachrichten nicht im Daten-Roaming hängen bleiben.",
+    "kategorie": "Der schmeichelhafte oder dringende Appell",
+    "score": 3
+  },
+  {
+    "beispiel": "Notfalls speicher dir schon mal meine Nummer; WhatsApp klappt auch dann noch, wenn diese App mal wieder Wartungsarbeiten hat.",
+    "kategorie": "Der schmeichelhafte oder dringende Appell",
+    "score": 3
+  },
+  {
+    "beispiel": "Ihre konstruktive Kritik ist wirklich eine Bereicherung für uns alle, [ADRESSAT].",
+    "kategorie": "Beruf & Leistung – Der unterbewertete Kollege",
+    "score": 3
+  },
+  {
+    "beispiel": "Selbstverständlich übernehme ich Ihre Aufgaben auch noch. Ich habe ja nur 24 Stunden am Tag Zeit.",
+    "kategorie": "Beruf & Leistung – Der unterbewertete Kollege",
+    "score": 3
+  },
+  {
+    "beispiel": "Ein weiteres Meeting? Wunderbar. Ich liebe es, meine eigentliche Arbeit dann nachts zu erledigen.",
+    "kategorie": "Beruf & Leistung – Der unterbewertete Kollege",
+    "score": 3
+  },
+  {
+    "beispiel": "Macht nur ohne mich weiter. Ich bin ja nur die Person, die das Projekt von Anfang an geleitet hat.",
+    "kategorie": "Beruf & Leistung – Der unterbewertete Kollege",
+    "score": 3
+  },
+  {
+    "beispiel": "Keine Sorge, die Arbeit mache ich gerne für dich mit. Ich wollte sowieso heute Nacht nicht schlafen.",
+    "kategorie": "Beruf & Leistung – Der unterbewertete Kollege",
+    "score": 3
+  },
+  {
+    "beispiel": "Deine Fähigkeit, Verantwortung abzugeben, ist wirklich inspirierend.",
+    "kategorie": "Beruf & Leistung – Der unterbewertete Kollege",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich lebe für unbezahlte Überstunden. Das ist meine wahre Leidenschaft.",
+    "kategorie": "Beruf & Leistung – Der unterbewertete Kollege",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich bin fasziniert von der logischen Stringenz Ihrer Argumentation.",
+    "kategorie": "Beruf & Leistung – Der unterbewertete Kollege",
+    "score": 3
+  },
+  {
+    "beispiel": "Na klar, weil mein einziger Lebensinhalt darin besteht, auf deine Nachrichten zu warten.",
+    "kategorie": "Beziehung & Nähe – Die emotionale Schuldzuweisung",
+    "score": 3
+  },
+  {
+    "beispiel": "Schön, dass du auch mal anrufst. Ist heute ein Feiertag, von dem ich nichts weiß?",
+    "kategorie": "Beziehung & Nähe – Die emotionale Schuldzuweisung",
+    "score": 3
+  },
+  {
+    "beispiel": "Oh, du hast den Müll rausgebracht? Pass nur auf, dass du dich nicht überanstrengst.",
+    "kategorie": "Beziehung & Nähe – Die emotionale Schuldzuweisung",
+    "score": 3
+  },
+  {
+    "beispiel": "Nein, nein, du störst überhaupt nicht. Ich starre nur gerne aus dem Fenster und denke über den Sinn des Lebens nach.",
+    "kategorie": "Beziehung & Nähe – Die emotionale Schuldzuweisung",
+    "score": 3
+  },
+  {
+    "beispiel": "Klar, ruf mich an, wenn du was brauchst. Sonst aber bitte nicht.",
+    "kategorie": "Beziehung & Nähe – Die emotionale Schuldzuweisung",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich habe überhaupt nichts dagegen, wenn du mein Essen isst. Ich wollte sowieso eine Diät anfangen.",
+    "kategorie": "Beziehung & Nähe – Die emotionale Schuldzuweisung",
+    "score": 3
+  },
+  {
+    "beispiel": "Es ist immer wieder erstaunlich, wie du es schaffst, das Thema auf dich zu lenken.",
+    "kategorie": "Beziehung & Nähe – Die emotionale Schuldzuweisung",
+    "score": 3
+  },
+  {
+    "beispiel": "Es ist beruhigend zu wissen, dass du im Krisenfall die Nerven behältst.",
+    "kategorie": "Beziehung & Nähe – Die emotionale Schuldzuweisung",
+    "score": 3
+  },
+  {
+    "beispiel": "Sorry, dass meine Existenz deine Pläne durchkreuzt hat.",
+    "kategorie": "Selbstironie als Waffe – Das kalkulierte Opfer",
+    "score": 3
+  },
+  {
+    "beispiel": "Die Anleitung war sonnenklar. Liegt bestimmt an meiner mangelnden Intelligenz, dass ich sie trotzdem nicht verstehe.",
+    "kategorie": "Selbstironie als Waffe – Das kalkulierte Opfer",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich finde es toll, wie du immer ehrlich deine Meinung sagst, besonders wenn niemand danach gefragt hat.",
+    "kategorie": "Selbstironie als Waffe – Das kalkulierte Opfer",
+    "score": 3
+  },
+  {
+    "beispiel": "Vielen Dank für die unaufgeforderte Lebensberatung.",
+    "kategorie": "Selbstironie als Waffe – Das kalkulierte Opfer",
+    "score": 3
+  },
+  {
+    "beispiel": "Wieder so ein Tag, an dem man am liebsten Applaus für das bloße Aufstehen bekommen möchte.",
+    "kategorie": "Selbstironie als Waffe – Das kalkulierte Opfer",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich schätze deine Hilfe wirklich sehr. Dieses Chaos hier noch zu vergrößern, hätte ich alleine nie geschafft.",
+    "kategorie": "Selbstironie als Waffe – Das kalkulierte Opfer",
+    "score": 3
+  },
+  {
+    "beispiel": "Das war nicht ironisch gemeint. Das war ein Test deines Ironie-Detektors.",
+    "kategorie": "Selbstironie als Waffe – Das kalkulierte Opfer",
+    "score": 3
+  },
+  {
+    "beispiel": "Das hast du ja wieder ganz fantastisch hingekriegt.",
+    "kategorie": "Spöttische Beobachtungen & verletzender Zynismus",
+    "score": 3
+  },
+  {
+    "beispiel": "Deine Pünktlichkeit ist mal wieder bewundernswert.",
+    "kategorie": "Spöttische Beobachtungen & verletzender Zynismus",
+    "score": 3
+  },
+  {
+    "beispiel": "Ach, du hast es bemerkt? Ich bin beeindruckt von deiner scharfen Beobachtungsgabe.",
+    "kategorie": "Spöttische Beobachtungen & verletzender Zynismus",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich bin total überrascht, dass das nicht funktioniert hat. Total.",
+    "kategorie": "Spöttische Beobachtungen & verletzender Zynismus",
+    "score": 3
+  },
+  {
+    "beispiel": "Deine Ratschläge sind Gold wert. Ich werde sie direkt ignorieren.",
+    "kategorie": "Spöttische Beobachtungen & verletzender Zynismus",
+    "score": 3
+  },
+  {
+    "beispiel": "Dein Optimismus ist ansteckend. Zum Glück bin ich geimpft.",
+    "kategorie": "Spöttische Beobachtungen & verletzender Zynismus",
+    "score": 3
+  },
+  {
+    "beispiel": "Das ist ja eine reizende Überraschung. Und ich habe leider kein Gift im Haus.",
+    "kategorie": "Spöttische Beobachtungen & verletzender Zynismus",
+    "score": 3
+  },
+  {
+    "beispiel": "Ach, du konntest dir meine Nachricht von gestern nicht leisten? Kein Problem, ich finanziere gern auch dein Schweigen.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Weißt du, dein „Ich war eingeschlafen“ klingt fast so romantisch wie ein Liebesbrief.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Natürlich vertraue ich dir – sonst hätte ich dir ja nicht schon meinen Selbstwert überwiesen.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Kein Stress, behalt dein Versprechen einfach. Es steht dir wirklich gut, so ungetragen.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Oh, du brauchst nur eine Woche Funkstille, um über uns nachzudenken? Ich pack schon mal Proviant für die Ewigkeit.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Danke, dass du mich blockierst; so sehe ich endlich, wie frei du mich machen willst.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Stell dir vor, ich habe wirklich geglaubt, dass „bald“ eine Zeiteinheit und kein Passwort ist.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Klar, ich sollte dich nicht mit meinen Sorgen nerven – schließlich bist du schon beschäftigt, mich zu retten.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Dein Schweigen spricht Bände – aber nur in einer Sprache, in der ich Schuld heiße.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Unglaublich, wie sehr ich deine Zukunftspläne genieße, während meine Gegenwart auf „Wartemusik“ steht.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Herrlich, du hast wieder vergessen, mich zu vergessen – so viel Aufmerksamkeit macht schwindelig.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Super Idee, mir immer dann Liebe zu schwören, wenn dein Akku und mein Konto leer sind.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ja, kauf dir ruhig Zeit, ich zahle in Erwartungen.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Entspann dich, Tränen trocknen schneller als Kreditrahmen.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich wusste gar nicht, dass „Wir“ nur die Einzahl von „Ich“ ist.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Wie süß, du hast meinen Geburtstag mit einem Abo auf Hoffnung verwechselt.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Natürlich nennt man das Commitment – es ist eben fest versprochen, nie stattzufinden.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Keine Sorge, ich bin nicht verletzt; ich übe nur schon mal das Alleinlaufen für später.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Wenn kalte Schultern heizen könnten, wären wir ein nachhaltiges Paar.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "So lieb, dass du mich ghostest. Spart mir die Sterne, die ich sonst für dich vom Himmel holen müsste.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Schon okay, ich trag das Misstrauen einfach mit – immerhin ist es das Einzige, was du konsequent teilst.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Wunderschön, wie du jede Entschuldigung als Sonderedition herausbringst: limitiert und wertlos.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Danke für die Erinnerung, dass Geduld eine Einbahnstraße ist.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Mach dir keine Sorgen um meine Grenzen – du findest sie ja sowieso immer erst, wenn du drüber bist.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Natürlich ist dein Chaos geordnet – Hauptsache, ich verliere mich darin.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Wie praktisch, deine Ehrlichkeit kommt immer portofrei, wenn schon alles zerbrochen ist.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Schön, dass du mir verzeihst, was du mir vorwirfst.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Dein Plan, mich stark zu machen, indem du mich schwächst, ist wirklich bahnbrechend.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Klar, lass dir Zeit. Ich halte meine Uhr einfach an, damit du pünktlich bleibst.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Unglaublich, wie effektiv dein Schweigen meine Fantasie beflügelt – besonders die Albträume.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Toll, dass du mich an deine Zweifel glaubst.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich verstehe, Liebe wächst eben da, wo Abwesenheit düngt.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Deine „kurze Phase“ fühlt sich an wie ein Dauerabo ohne Kündigungsbutton.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ach, schon wieder ein Notfall bei dir? Gut, dass meine Gefühle Erste Hilfe üben wollten.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Wie nett von dir, meine Fragen offen zu lassen – dann kann ich sie mir selbst beantworten und du sparst Zeit.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Selbstverständlich bist du anders als alle davor – du tust nur exakt dasselbe, viel kreativer.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Danke, dass du mich vorwarnst, wenn du später keine Zeit für Entschuldigungen hast.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Deine Zukunft mit mir klingt spektakulär; schade, dass sie immer im Konjunktiv bleibt.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Unglaublich, was wir schon alles durchgemacht haben – vor allem ich, allein.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Mach dir keinen Kopf, ich trag ihn gern für uns beide.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Du brauchst Abstand? Kein Problem, ich rolle den roten Teppich bis zur Tür.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Schön, wie du meine Liebe in Raten zurückzahlst: immer dann, wenn die Zinsen Schmerz heißen.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Natürlich hast du mich nicht absichtlich ignoriert – das war bestimmt meine besonders leise Anwesenheit.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Beeindruckend, wie du mir erklärst, dass Ehrlichkeit verletzen kann – wenn man sie weglässt.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Schon verrückt, dass ich deine Ausreden mittlerweile rückwärts singen kann.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Danke, dass du mich vermisst, sobald ich drohe, dich nicht mehr zu brauchen.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich finde es inspirierend, wie deine Versprechen im Fitnessstudio sind: groß angemeldet, nie erschienen.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Keine Panik, ich halte das Ruder fest, bis du entscheidest, ob wir überhaupt im selben Boot sitzen.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "So rührend, dass du meine Geduld testest – Forschung braucht schließlich Probanden.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Natürlich nimmst du mich ernst – immerhin bin ich dein bester Vorwand, wenn alles andere scheitert.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Schon okay, ich hab verstanden, dass ich dir nicht so wichtig bin. Ich zieh mich dann mal zurück, bevor ich noch mehr nerve.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Mach dir keine Sorgen, ich komm schon allein klar. Ich bin’s ja gewohnt, dass ich auf mich selbst gestellt bin.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich hätte wissen müssen, dass ich wieder zu viel erwartet habe. Ich halte mich ab jetzt einfach raus.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Du musst dich nicht mehr bemühen, ich hab gemerkt, dass ich nur störe.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ist schon in Ordnung, ich hab gelernt, dass ich nicht der Mensch bin, für den man sich Zeit nimmt. Ich meld mich dann einfach nicht mehr.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Keine Sorge, ich will dich nicht weiter belasten. Ich zieh mich zurück, dann hast du endlich deine Ruhe.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich seh schon, ich bin eher die Notlösung. Ich halte mich dann mal im Hintergrund auf.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Du brauchst dich nicht zu rechtfertigen, ich hab verstanden, dass ich nicht dazugehöre. Ich werd mich ab jetzt rar machen.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich weiß, ich bin nicht leicht zu ertragen. Ich verschwinde dann mal, damit du dich besser fühlst.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Schon okay, ich hab’s kapiert. Ich bin wohl der, den man am ehesten vergisst. Ich geh dann mal.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich will dich nicht weiter stören. Offenbar ist es besser, wenn ich mich zurückziehe.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Du musst dich nicht mehr um mich kümmern, ich hab’s ja eh nicht verdient.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich hab verstanden, dass meine Gefühle hier keinen Platz haben. Ich zieh mich zurück, dann ist es für alle leichter.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ist schon gut, ich hab’s ja nicht anders verdient. Ich halte mich ab jetzt raus.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich seh schon, ich bin nur Ballast. Ich geh dann mal, damit du dich wieder frei fühlst.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Du brauchst dich nicht zu entschuldigen, ich bin’s ja gewohnt, dass ich nicht zähle.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich will dich nicht weiter aufhalten. Ich verschwinde einfach, dann musst du dich nicht mehr mit mir beschäftigen.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Schon klar, ich bin nicht die Priorität. Ich meld mich dann einfach nicht mehr.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich hab verstanden, dass ich zu viel bin. Ich zieh mich zurück, dann hast du weniger Stress.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Du musst dich nicht mehr bemühen, ich hab gemerkt, dass ich nicht gebraucht werde.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich weiß, ich bin schwierig. Ich geh dann mal, bevor es noch unangenehmer wird.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ist schon okay, ich hab’s kapiert. Ich bin nicht der Mensch, für den man bleibt.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Du brauchst dich nicht zu rechtfertigen, ich hab verstanden, dass ich nicht wichtig bin.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich will dich nicht weiter belasten. Ich zieh mich zurück, dann hast du endlich deine Ruhe.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Schon klar, ich bin nicht die Person, die man vermisst. Ich halte mich dann mal fern.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich hab verstanden, dass ich nicht dazugehöre. Ich geh dann mal, damit du dich besser fühlst.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Du musst dich nicht mehr um mich kümmern, ich hab’s ja eh nicht verdient.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich weiß, ich bin nicht leicht zu ertragen. Ich verschwinde dann mal, damit du dich besser fühlst.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ist schon gut, ich hab’s ja nicht anders verdient. Ich halte mich ab jetzt raus.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich seh schon, ich bin nur Ballast. Ich geh dann mal, damit du dich wieder frei fühlst.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Kein Ding, ich hab’s ja eh nicht so mit Partys. Aber danke, dass du an mich gedacht hast…",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Schon verrückt, wie schnell man als Vater scheinbar unwichtig wird. Aber ist schon okay, ich hab ja noch meinen Kalender.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich weiß, ihr habt viel zu tun. Oma ist ja auch nicht mehr so spannend wie früher.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich hätte es wissen müssen, meine Vorschläge liest eh keiner. Ich halte mich dann mal raus.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "War bestimmt nett beim Essen. Ich hab’s ja auch ganz gut allein in der Küche ausgehalten.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Schön, dass du dir wenigstens fünf Minuten für mich genommen hast. Ich will ja nicht stören.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich hab’s halt einfach nicht drauf. Aber danke, dass Sie es mir so ehrlich sagen.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Schon okay, ich hab’s auch allein irgendwie hinbekommen. Aber danke, dass du gefragt hast… jetzt.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich hoffe, dein Tag war wenigstens schön. Meiner war irgendwie… unspektakulär.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "War nur so eine Idee, ist schon okay, wenn ihr was anderes machen wollt.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich weiß, ich bin nicht so der Typ, der auffällt. Aber ein kurzes Danke hätte auch gereicht.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich hab mich schon gefragt, ob ich irgendwas Falsches gesagt habe. Aber wahrscheinlich warst du einfach nur beschäftigt.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ist schon okay, ich hab ja noch andere Sachen, die ich allein machen kann.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich hab’s gar nicht mitbekommen, dass ihr schon so weit seid. Aber ich störe ja auch nicht weiter.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich bin wohl nicht so interessant, dass man mit mir länger reden möchte.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich weiß, das Leben ist stressig. Oma wartet einfach weiter auf ein kleines Lebenszeichen.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "War wohl nicht so wichtig, was ich sagen wollte. Ich höre dann lieber zu.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Schön, dass meine Probleme offenbar nicht so relevant sind. Ich regle das dann eben selbst.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Schon okay, ich hab mich halt gefreut. Aber vielleicht klappt’s ja ein andermal.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich weiß, du hast viel zu tun. Ich wollte nur sicher gehen, dass meine Mail nicht untergegangen ist.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Schon okay, ich hab verstanden, dass ich dir nicht so wichtig bin. Ich zieh mich dann mal zurück, bevor ich noch mehr nerve.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Mach dir keine Sorgen, ich komm schon allein klar. Ich bin’s ja gewohnt, dass ich auf mich selbst gestellt bin.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich hätte wissen müssen, dass ich wieder zu viel erwartet habe. Ich halte mich ab jetzt einfach raus.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Du musst dich nicht mehr bemühen, ich hab gemerkt, dass ich nur störe.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ist schon in Ordnung, ich hab gelernt, dass ich nicht der Mensch bin, für den man sich Zeit nimmt. Ich meld mich dann einfach nicht mehr.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Keine Sorge, ich will dich nicht weiter belasten. Ich zieh mich zurück, dann hast du endlich deine Ruhe.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich seh schon, ich bin eher die Notlösung. Ich halte mich dann mal im Hintergrund auf.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Du brauchst dich nicht zu rechtfertigen, ich hab verstanden, dass ich nicht dazugehöre. Ich werd mich ab jetzt rar machen.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich weiß, ich bin nicht leicht zu ertragen. Ich verschwinde dann mal, damit du dich besser fühlst.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Schon okay, ich hab’s kapiert. Ich bin wohl der, den man am ehesten vergisst. Ich geh dann mal.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich will dich nicht weiter stören. Offenbar ist es besser, wenn ich mich zurückziehe.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Du musst dich nicht mehr um mich kümmern, ich hab’s ja eh nicht verdient.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich hab verstanden, dass meine Gefühle hier keinen Platz haben. Ich zieh mich zurück, dann ist es für alle leichter.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ist schon gut, ich hab’s ja nicht anders verdient. Ich halte mich ab jetzt raus.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich seh schon, ich bin nur Ballast. Ich geh dann mal, damit du dich wieder frei fühlst.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Du brauchst dich nicht zu entschuldigen, ich bin’s ja gewohnt, dass ich nicht zähle.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich will dich nicht weiter aufhalten. Ich verschwinde einfach, dann musst du dich nicht mehr mit mir beschäftigen.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Schon klar, ich bin nicht die Priorität. Ich meld mich dann einfach nicht mehr.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich hab verstanden, dass ich zu viel bin. Ich zieh mich zurück, dann hast du weniger Stress.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Du musst dich nicht mehr bemühen, ich hab gemerkt, dass ich nicht gebraucht werde.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich weiß, ich bin schwierig. Ich geh dann mal, bevor es noch unangenehmer wird.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ist schon okay, ich hab’s kapiert. Ich bin nicht der Mensch, für den man bleibt.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Du brauchst dich nicht zu rechtfertigen, ich hab verstanden, dass ich nicht wichtig bin.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich will dich nicht weiter belasten. Ich zieh mich zurück, dann hast du endlich deine Ruhe.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Schon klar, ich bin nicht die Person, die man vermisst. Ich halte mich dann mal fern.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich hab verstanden, dass ich nicht dazugehöre. Ich geh dann mal, damit du dich besser fühlst.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Du musst dich nicht mehr um mich kümmern, ich hab’s ja eh nicht verdient.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich weiß, ich bin nicht leicht zu ertragen. Ich verschwinde dann mal, damit du dich besser fühlst.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ist schon gut, ich hab’s ja nicht anders verdient. Ich halte mich ab jetzt raus.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich seh schon, ich bin nur Ballast. Ich geh dann mal, damit du dich wieder frei fühlst.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Kein Ding, ich hab’s ja eh nicht so mit Partys. Aber danke, dass du an mich gedacht hast…",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Schon verrückt, wie schnell man als Vater scheinbar unwichtig wird. Aber ist schon okay, ich hab ja noch meinen Kalender.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich weiß, ihr habt viel zu tun. Oma ist ja auch nicht mehr so spannend wie früher.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich hätte es wissen müssen, meine Vorschläge liest eh keiner. Ich halte mich dann mal raus.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "War bestimmt nett beim Essen. Ich hab’s ja auch ganz gut allein in der Küche ausgehalten.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Schön, dass du dir wenigstens fünf Minuten für mich genommen hast. Ich will ja nicht stören.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich hab’s halt einfach nicht drauf. Aber danke, dass Sie es mir so ehrlich sagen.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Schon okay, ich hab’s auch allein irgendwie hinbekommen. Aber danke, dass du gefragt hast… jetzt.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich hoffe, dein Tag war wenigstens schön. Meiner war irgendwie… unspektakulär.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "War nur so eine Idee, ist schon okay, wenn ihr was anderes machen wollt.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich weiß, ich bin nicht so der Typ, der auffällt. Aber ein kurzes Danke hätte auch gereicht.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich hab mich schon gefragt, ob ich irgendwas Falsches gesagt habe. Aber wahrscheinlich warst du einfach nur beschäftigt.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ist schon okay, ich hab ja noch andere Sachen, die ich allein machen kann.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich hab’s gar nicht mitbekommen, dass ihr schon so weit seid. Aber ich störe ja auch nicht weiter.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich bin wohl nicht so interessant, dass man mit mir länger reden möchte.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich weiß, das Leben ist stressig. Oma wartet einfach weiter auf ein kleines Lebenszeichen.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "War wohl nicht so wichtig, was ich sagen wollte. Ich höre dann lieber zu.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Schön, dass meine Probleme offenbar nicht so relevant sind. Ich regle das dann eben selbst.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Schon okay, ich hab mich halt gefreut. Aber vielleicht klappt’s ja ein andermal.",
+    "kategorie": "unspecified",
+    "score": 3
+  },
+  {
+    "beispiel": "Ich weiß, du hast viel zu tun. Ich wollte nur sicher gehen, dass meine Mail nicht untergegangen ist.",
+    "kategorie": "unspecified",
+    "score": 3
+  }
+]

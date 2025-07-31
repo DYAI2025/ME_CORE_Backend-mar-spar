@@ -1,0 +1,111 @@
+---
+# 🔗 Dynamic Knot: Reactive Control Spiral
+reactive_control_spiral:
+  name: "Reactive Control Spiral"
+  description: >
+    A dynamic knot that emerges when self-worth disruptions (e.g. shame, guilt) can't be regulated and shift into covert control dynamics. 
+    The person loses perceived autonomy and compensates through indirect, reactive influence. 
+    This creates a spiral of ambivalence, empathy-activation, and power asymmetry – often unconsciously.
+
+  activated_markers:
+    - empathy_koeder_marker
+    - anticipation_dynamic_manipulation_marker
+    - ambivalenzmarker
+    - unklarheitsmarker
+    - scham_profil
+    - schuldmarker
+
+  trigger_sequence:
+    - Self-worth collapse (e.g. through criticism or distance)
+    - Internal helplessness activates shame or guilt
+    - Ambiguity and ambivalence increase
+    - Reactive control via manipulative strategies begins
+    - Counterparty responds – often with comfort, avoidance, or escalation
+
+  systemic_effect: >
+    The relationship becomes opaque. One loses clarity of action, the other control. Communication turns indirect. 
+    Connection is not built through presence, but through triggered reactions. Exhaustion or rupture often follows.
+
+  integration_suggestion: >
+    Build early detection: Once three markers from this knot appear together, initiate meta-communication. 
+    Example: “I notice a pattern here. Let’s not react – let’s reflect.”
+drift_escalation:
+  name: "Drift Escalation"
+  description: >
+    When semantic drift markers combine with emotional triggers, 
+    creating confusion loops for reactive control.
+  activated_markers:
+    - semantic_drift_marker
+    - rapid_topic_shift
+    - empathy_koeder_marker
+    - anticipation_dynamic_manipulation_marker
+  trigger_sequence:
+    - Conceptual dissonance detected (drift)
+    - Emotional baiting (love-bombing, guilt)
+    - Reactive control spiral begins
+  integration_suggestion: >
+    “Ich merke, dass wir hier sehr schnell die Themen wechseln. 
+     Lass uns einmal anhalten und gemeinsam sortieren.”  
+analyse_schuldmarker:
+  marker: "schuldmarker"
+  auslösende_stelle: >
+    "Ich bin schuld daran, dass alles kaputtgeht. Ich kann das nicht mehr hören."
+
+  inneres_grundgefühl: >
+    Tiefe Selbstanklage, ein Gefühl moralischen oder emotionalen Versagens. Schuld wird zur Identität.
+
+  typische_selbstreaktion: >
+    Rückzug, Rechtfertigung, Opferhaltung oder übermäßige Kompensation (z. B. sich klein machen, um Frieden zu erzwingen).
+
+  archetypischer_schatten: >
+    Der "Sündenbock" im inneren Kind. Oder: Der Bußfertige, der durch Selbstverleugnung Erlösung sucht.
+
+  systemische_dynamik: >
+    Schuld erzeugt Spannungen: Der Andere wird zum Retter, Richter oder Mit-Leidenden gemacht. Beziehung verliert Gleichgewicht.
+
+  integrationsvorschlag: >
+    Schuld als Signal für ungenutzte Verantwortung verstehen: Was wäre ein kleiner, aktiver, wahrhaftiger Schritt, statt Selbstbestrafung?
+
+---
+
+analyse_scham_profil:
+  marker: "scham_profil"
+  auslösende_stelle: >
+    "Ich hasse mich für das, was ich wieder getan habe. Ich kann mich selbst nicht ertragen."
+
+  inneres_grundgefühl: >
+    Abwertung der eigenen Existenz, nicht nur des Handelns. Scham formt Identität negativ, als "ich bin falsch".
+
+  typische_selbstreaktion: >
+    Rückzug, innerer Kollaps, Selbstabwertung, sozialer Selbstentzug.
+
+  archetypischer_schatten: >
+    Der "Verstoßene" – Archetyp des Exilierten, der glaubt, keine Daseinsberechtigung zu haben.
+
+  systemische_dynamik: >
+    Scham lähmt Kommunikation. Der Andere wird zur Projektionsfläche – wird als bedrohlich oder moralisch überlegen erlebt.
+
+  integrationsvorschlag: >
+    Sanfte Spiegelung des wahren Selbst: "Ich sehe dich – nicht dein Verhalten." Radikale Akzeptanz statt Beruhigung.
+
+---
+
+analyse_ambivalenzmarker:
+  marker: "ambivalenzmarker"
+  auslösende_stelle: >
+    "Ich will, aber ich kann nicht. Ich sehne mich und hab Angst zugleich."
+
+  innere_polarität: >
+    Nähebedürfnis versus Verlustangst, Selbstverwirklichung versus Anpassung, Präsenz versus Rückzug
+
+  entscheidungsvermeidung: >
+    Handlungsaufschub, vage Aussagen, wechselhafte Stimmung, plötzlicher Themenwechsel
+
+  archetypischer_schatten: >
+    Der "Zerissene": Schattenform des Helden, der keine Wahl treffen kann und damit weder Abenteuer noch Heimat erfährt.
+
+  systemische_dynamik: >
+    Das Gegenüber erlebt Unklarheit, muss kompensieren oder wird selbst ambivalent. Nähe wird unbewusst sabotiert.
+
+  integrationsvorschlag: >
+    Sichtbarmachen beider Pole: "Ich merke, dass in mir zwei Bewegungen gleichzeitig da sind – darf das so sein?" Klarheit entsteht aus Halten, nicht aus Entscheidung.

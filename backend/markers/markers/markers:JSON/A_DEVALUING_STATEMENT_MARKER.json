@@ -1,0 +1,28 @@
+{
+  "marker_name": "A_DEVALUING_STATEMENT_MARKER",
+  "beschreibung": "Abwertung/Lächerlichmachen von Gefühlen oder Handlungen.\n",
+  "beispiele": [
+    "Deine Sorge ist doch lächerlich.",
+    "Stell dich nicht so an, war nur ein Spaß.",
+    "Wenn du damit nicht klarkommst, ist das dein Problem.",
+    "Übertreib mal nicht, so schlimm war's nicht.",
+    "Das ist doch kindisch, ehrlich jetzt.",
+    "Hör auf zu jammern, du Drama‑Queen.",
+    "So sensibel? Ernsthaft?",
+    "Das Thema ist nicht der Rede wert.",
+    "Du heulst wegen jeder Kleinigkeit.",
+    "Deine Prioritäten sind wirklich seltsam.",
+    "Echt jetzt, dafür machst du Stress?",
+    "Du bist aber empfindlich heute.",
+    "Das klingt nach Luxusproblem.",
+    "Kannst du bitte erwachsen werden?",
+    "Es nervt, wie du dich anstellst.",
+    "Reg dich ab, das war harmlos.",
+    "Typisch, dass du gleich theater machst.",
+    "Boah, deine Grenzen sind echt weich.",
+    "Du tust so, als ginge es um Leben und Tod.",
+    "Ist doch alles halb so wild."
+  ],
+  "semantische_grabber_id": "SGR_DEVALUING_STATEMENT_01",
+  "metadata": {
+    "created_at": 

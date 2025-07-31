@@ -1,0 +1,24 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Diese Sammlung von Meta-Markern beschreibt kommunikative Spannungs- und Rückzugsmuster – von emotionalem Rückzugsdruck, Ambivalenz und Sarkasmus bis zu Kontrollspiralen, Angst, semantischer Drift und (Selbst-)Abwertung. Sie sind einzeln oder kombiniert Indikatoren für emotionale Distanz, unterschwelligen Konflikt oder manipulative Dynamiken.\n",
+    "examples": [
+      "Diese Sammlung von Meta-Markern beschreibt kommunikative Spannungs- und Rückzugsmuster – von emotionalem Rückzugsdruck, Ambivalenz und Sarkasmus bis zu Kontrollspiralen, Angst, semantischer Drift und (Selbst-)Abwertung",
+      "Sie sind einzeln oder kombiniert Indikatoren für emotionale Distanz, unterschwelligen Konflikt oder manipulative Dynamiken"
+    ],
+    "id": "S_SPANNUNGEN_RUECKZUG",
+    "level": 2,
+    "name": "spannungen_rueckzug",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_5C5A",
+    "semantic_tags": [
+      "spannungen-rueckzug"
+    ]
+  },
+  "marker_name": "spannungen_rueckzug",
+  "tags": [
+    "needs_review"
+  ]
+}

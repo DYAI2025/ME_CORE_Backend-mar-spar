@@ -1,0 +1,1722 @@
+[
+  {
+    "marker_id": "locescam_early__pattern_technische_probleme_&_mangelhafte_app-funktionen_0",
+    "source": "locescam_early__pattern",
+    "kategorie": "Technische Probleme & mangelhafte App-Funktionen",
+    "beispiel": "Magst du mir schnell deine WhatsApp‑Nummer schicken? Hier in der App landen Nachrichten manchmal im Nirwana.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_technische_probleme_&_mangelhafte_app-funktionen_1",
+    "source": "locescam_early__pattern",
+    "kategorie": "Technische Probleme & mangelhafte App-Funktionen",
+    "beispiel": "Diese Plattform loggt mich ständig aus … Lass uns doch fix auf Signal wechseln, dort geht kein Text verloren.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_technische_probleme_&_mangelhafte_app-funktionen_2",
+    "source": "locescam_early__pattern",
+    "kategorie": "Technische Probleme & mangelhafte App-Funktionen",
+    "beispiel": "Die App zeigt mir deine Antworten oft mit großer Verspätung an … willst du kurz auf WhatsApp springen?",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_technische_probleme_&_mangelhafte_app-funktionen_3",
+    "source": "locescam_early__pattern",
+    "kategorie": "Technische Probleme & mangelhafte App-Funktionen",
+    "beispiel": "Komisch, deine letzte Nachricht kam doppelt … Lass uns doch auf Signal wechseln, da passiert das nicht.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_technische_probleme_&_mangelhafte_app-funktionen_4",
+    "source": "locescam_early__pattern",
+    "kategorie": "Technische Probleme & mangelhafte App-Funktionen",
+    "beispiel": "Mir werden hier keine Push-Benachrichtigungen angezeigt, WhatsApp wäre da viel zuverlässiger.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_technische_probleme_&_mangelhafte_app-funktionen_5",
+    "source": "locescam_early__pattern",
+    "kategorie": "Technische Probleme & mangelhafte App-Funktionen",
+    "beispiel": "Die App löscht alte Chats nach einer Weile – gib mir doch deine Nummer, dann bleibt unsere Unterhaltung bestehen.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_technische_probleme_&_mangelhafte_app-funktionen_6",
+    "source": "locescam_early__pattern",
+    "kategorie": "Technische Probleme & mangelhafte App-Funktionen",
+    "beispiel": "Schon mal Probleme gehabt, dass Chats hier einfach verschwinden? Auf Telegram wird alles sicher in der Cloud gespeichert.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_technische_probleme_&_mangelhafte_app-funktionen_7",
+    "source": "locescam_early__pattern",
+    "kategorie": "Technische Probleme & mangelhafte App-Funktionen",
+    "beispiel": "Gerade eben hat die App mich schon wieder ausgeloggt … Schreib mir lieber kurz auf WhatsApp, bevor die Nachricht weg ist.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_bessere_features_auf_anderen_plattformen_0",
+    "source": "locescam_early__pattern",
+    "kategorie": "Bessere Features auf anderen Plattformen",
+    "beispiel": "Ich schicke dir gleich ein paar schönere Fotos, das geht per Telegram viel besser – was hältst du davon?",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_bessere_features_auf_anderen_plattformen_1",
+    "source": "locescam_early__pattern",
+    "kategorie": "Bessere Features auf anderen Plattformen",
+    "beispiel": "Kann ich dir eine kurze Sprachnachricht auf WhatsApp schicken? Das Tippen ist hier so umständlich.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_bessere_features_auf_anderen_plattformen_2",
+    "source": "locescam_early__pattern",
+    "kategorie": "Bessere Features auf anderen Plattformen",
+    "beispiel": "Ich finde Sprachnachrichten viel persönlicher – auf WhatsApp kann ich dir gleich 'Hallo' sagen.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_bessere_features_auf_anderen_plattformen_3",
+    "source": "locescam_early__pattern",
+    "kategorie": "Bessere Features auf anderen Plattformen",
+    "beispiel": "Der Chat hier filtert anscheinend Links raus; über Telegram kann ich dir das Café zeigen, von dem ich erzählt habe.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_bessere_features_auf_anderen_plattformen_4",
+    "source": "locescam_early__pattern",
+    "kategorie": "Bessere Features auf anderen Plattformen",
+    "beispiel": "Ich würde dir gern ein kurzes Video schicken; per Mail ist das einfacher – passt das für dich?",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_bessere_features_auf_anderen_plattformen_5",
+    "source": "locescam_early__pattern",
+    "kategorie": "Bessere Features auf anderen Plattformen",
+    "beispiel": "Diese App hat ein Zeichen-Limit – per Telegram kann ich dir ausführlicher und ohne Unterbrechung antworten.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_bessere_features_auf_anderen_plattformen_6",
+    "source": "locescam_early__pattern",
+    "kategorie": "Bessere Features auf anderen Plattformen",
+    "beispiel": "Ich würde gern eine Playlist mit dir teilen; WhatsApp macht das viel einfacher. Hast du Lust?",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_bessere_features_auf_anderen_plattformen_7",
+    "source": "locescam_early__pattern",
+    "kategorie": "Bessere Features auf anderen Plattformen",
+    "beispiel": "Hier kann man keine PDFs schicken – per Mail könnte ich dir meinen liebsten Buchtipp senden.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_bessere_features_auf_anderen_plattformen_8",
+    "source": "locescam_early__pattern",
+    "kategorie": "Bessere Features auf anderen Plattformen",
+    "beispiel": "Die Plattform stoppt Sprachnachrichten bei 30 Sekunden … Auf Telegram kann ich frei und ohne Limit reden.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_bessere_features_auf_anderen_plattformen_9",
+    "source": "locescam_early__pattern",
+    "kategorie": "Bessere Features auf anderen Plattformen",
+    "beispiel": "Signal unterstützt HD-Videoanrufe, die Qualität ist viel besser. Wär das was für dich?",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_ablaufende_mitgliedschaft_&_paywalls_0",
+    "source": "locescam_early__pattern",
+    "kategorie": "Ablaufende Mitgliedschaft & Paywalls",
+    "beispiel": "Mein Abo hier läuft heute Abend aus, aber ich würde das Gespräch sehr gern fortsetzen – per E‑Mail vielleicht?",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_ablaufende_mitgliedschaft_&_paywalls_1",
+    "source": "locescam_early__pattern",
+    "kategorie": "Ablaufende Mitgliedschaft & Paywalls",
+    "beispiel": "Meine Mitgliedschaft endet gleich; magst du den Chat per Mail fortsetzen, damit nichts abbricht?",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_ablaufende_mitgliedschaft_&_paywalls_2",
+    "source": "locescam_early__pattern",
+    "kategorie": "Ablaufende Mitgliedschaft & Paywalls",
+    "beispiel": "Wenn deine Mitgliedschaft auch bald ausläuft, lass uns lieber direkt per Mail oder Signal verbunden bleiben.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_persönliche_präferenz_&_bequemlichkeit_0",
+    "source": "locescam_early__pattern",
+    "kategorie": "Persönliche Präferenz & Bequemlichkeit",
+    "beispiel": "Ich bin ehrlich gesagt kaum online hier – schreib mir lieber direkt auf Hangouts, da erwischst du mich sofort.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_persönliche_präferenz_&_bequemlichkeit_1",
+    "source": "locescam_early__pattern",
+    "kategorie": "Persönliche Präferenz & Bequemlichkeit",
+    "beispiel": "Ich antworte meistens von unterwegs – Telegram poppt bei mir zuverlässig auf, hast du das auch?",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_persönliche_präferenz_&_bequemlichkeit_2",
+    "source": "locescam_early__pattern",
+    "kategorie": "Persönliche Präferenz & Bequemlichkeit",
+    "beispiel": "Ich checke diese App nur abends; tagsüber erreichst du mich blitzschnell via WhatsApp.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_persönliche_präferenz_&_bequemlichkeit_3",
+    "source": "locescam_early__pattern",
+    "kategorie": "Persönliche Präferenz & Bequemlichkeit",
+    "beispiel": "Bist du eher Team Signal oder Telegram? Dann springe ich dort schnell rüber.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_persönliche_präferenz_&_bequemlichkeit_4",
+    "source": "locescam_early__pattern",
+    "kategorie": "Persönliche Präferenz & Bequemlichkeit",
+    "beispiel": "Meine Freunde funken alle auf Telegram – wäre cool, dich dort auch als Kontakt zu haben.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_persönliche_präferenz_&_bequemlichkeit_5",
+    "source": "locescam_early__pattern",
+    "kategorie": "Persönliche Präferenz & Bequemlichkeit",
+    "beispiel": "Du klingst sehr sympathisch; dürfen wir den Smalltalk auf eine persönlichere Ebene bei Telegram verlagern?",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_persönliche_präferenz_&_bequemlichkeit_6",
+    "source": "locescam_early__pattern",
+    "kategorie": "Persönliche Präferenz & Bequemlichkeit",
+    "beispiel": "Ich mag direkte Kommunikation – schick mir gern deine Mail, dann geht kein 'Hallo' mehr verloren.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_der_schmeichelhafte_oder_dringende_appell_0",
+    "source": "locescam_early__pattern",
+    "kategorie": "Der schmeichelhafte oder dringende Appell",
+    "beispiel": "Wenn du magst, adde mich schnell auf Signal – dann können wir auch sicher private Fotos austauschen.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_der_schmeichelhafte_oder_dringende_appell_1",
+    "source": "locescam_early__pattern",
+    "kategorie": "Der schmeichelhafte oder dringende Appell",
+    "beispiel": "Falls die Plattform mal wieder spinnt: Hier ist meine Nummer, dann geht unser Kontakt nicht verloren 😊",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_der_schmeichelhafte_oder_dringende_appell_2",
+    "source": "locescam_early__pattern",
+    "kategorie": "Der schmeichelhafte oder dringende Appell",
+    "beispiel": "Schick mir kurz deine Mailadresse, dann landet mein Lächeln nicht im Spam-Ordner der Plattform 😉",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_der_schmeichelhafte_oder_dringende_appell_3",
+    "source": "locescam_early__pattern",
+    "kategorie": "Der schmeichelhafte oder dringende Appell",
+    "beispiel": "Ich bin gleich in der Bahn ohne gutes Netz … Über WhatsApp klappt die Verbindung auch bei schlechtem Empfang besser.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_der_schmeichelhafte_oder_dringende_appell_4",
+    "source": "locescam_early__pattern",
+    "kategorie": "Der schmeichelhafte oder dringende Appell",
+    "beispiel": "Wenn wir uns aus den Augen verlieren sollten, hier meine Nummer – WhatsApp ist sozusagen mein zweites Zuhause.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_der_schmeichelhafte_oder_dringende_appell_5",
+    "source": "locescam_early__pattern",
+    "kategorie": "Der schmeichelhafte oder dringende Appell",
+    "beispiel": "Ich reise nächste Woche – E‑Mail wäre perfekt, damit unsere Nachrichten nicht im Daten-Roaming hängen bleiben.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "locescam_early__pattern_der_schmeichelhafte_oder_dringende_appell_6",
+    "source": "locescam_early__pattern",
+    "kategorie": "Der schmeichelhafte oder dringende Appell",
+    "beispiel": "Notfalls speicher dir schon mal meine Nummer; WhatsApp klappt auch dann noch, wenn diese App mal wieder Wartungsarbeiten hat.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_beruf_&_leistung_–_der_unterbewertete_kollege_0",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Beruf & Leistung – Der unterbewertete Kollege",
+    "beispiel": "Ihre konstruktive Kritik ist wirklich eine Bereicherung für uns alle, [ADRESSAT].",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_beruf_&_leistung_–_der_unterbewertete_kollege_1",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Beruf & Leistung – Der unterbewertete Kollege",
+    "beispiel": "Selbstverständlich übernehme ich Ihre Aufgaben auch noch. Ich habe ja nur 24 Stunden am Tag Zeit.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_beruf_&_leistung_–_der_unterbewertete_kollege_2",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Beruf & Leistung – Der unterbewertete Kollege",
+    "beispiel": "Ein weiteres Meeting? Wunderbar. Ich liebe es, meine eigentliche Arbeit dann nachts zu erledigen.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_beruf_&_leistung_–_der_unterbewertete_kollege_3",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Beruf & Leistung – Der unterbewertete Kollege",
+    "beispiel": "Macht nur ohne mich weiter. Ich bin ja nur die Person, die das Projekt von Anfang an geleitet hat.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_beruf_&_leistung_–_der_unterbewertete_kollege_4",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Beruf & Leistung – Der unterbewertete Kollege",
+    "beispiel": "Keine Sorge, die Arbeit mache ich gerne für dich mit. Ich wollte sowieso heute Nacht nicht schlafen.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_beruf_&_leistung_–_der_unterbewertete_kollege_5",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Beruf & Leistung – Der unterbewertete Kollege",
+    "beispiel": "Deine Fähigkeit, Verantwortung abzugeben, ist wirklich inspirierend.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_beruf_&_leistung_–_der_unterbewertete_kollege_6",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Beruf & Leistung – Der unterbewertete Kollege",
+    "beispiel": "Ich lebe für unbezahlte Überstunden. Das ist meine wahre Leidenschaft.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_beruf_&_leistung_–_der_unterbewertete_kollege_7",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Beruf & Leistung – Der unterbewertete Kollege",
+    "beispiel": "Ich bin fasziniert von der logischen Stringenz Ihrer Argumentation.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_beziehung_&_nähe_–_die_emotionale_schuldzuweisung_0",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Beziehung & Nähe – Die emotionale Schuldzuweisung",
+    "beispiel": "Na klar, weil mein einziger Lebensinhalt darin besteht, auf deine Nachrichten zu warten.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_beziehung_&_nähe_–_die_emotionale_schuldzuweisung_1",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Beziehung & Nähe – Die emotionale Schuldzuweisung",
+    "beispiel": "Schön, dass du auch mal anrufst. Ist heute ein Feiertag, von dem ich nichts weiß?",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_beziehung_&_nähe_–_die_emotionale_schuldzuweisung_2",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Beziehung & Nähe – Die emotionale Schuldzuweisung",
+    "beispiel": "Oh, du hast den Müll rausgebracht? Pass nur auf, dass du dich nicht überanstrengst.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_beziehung_&_nähe_–_die_emotionale_schuldzuweisung_3",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Beziehung & Nähe – Die emotionale Schuldzuweisung",
+    "beispiel": "Nein, nein, du störst überhaupt nicht. Ich starre nur gerne aus dem Fenster und denke über den Sinn des Lebens nach.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_beziehung_&_nähe_–_die_emotionale_schuldzuweisung_4",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Beziehung & Nähe – Die emotionale Schuldzuweisung",
+    "beispiel": "Klar, ruf mich an, wenn du was brauchst. Sonst aber bitte nicht.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_beziehung_&_nähe_–_die_emotionale_schuldzuweisung_5",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Beziehung & Nähe – Die emotionale Schuldzuweisung",
+    "beispiel": "Ich habe überhaupt nichts dagegen, wenn du mein Essen isst. Ich wollte sowieso eine Diät anfangen.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_beziehung_&_nähe_–_die_emotionale_schuldzuweisung_6",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Beziehung & Nähe – Die emotionale Schuldzuweisung",
+    "beispiel": "Es ist immer wieder erstaunlich, wie du es schaffst, das Thema auf dich zu lenken.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_beziehung_&_nähe_–_die_emotionale_schuldzuweisung_7",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Beziehung & Nähe – Die emotionale Schuldzuweisung",
+    "beispiel": "Es ist beruhigend zu wissen, dass du im Krisenfall die Nerven behältst.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_selbstironie_als_waffe_–_das_kalkulierte_opfer_0",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Selbstironie als Waffe – Das kalkulierte Opfer",
+    "beispiel": "Sorry, dass meine Existenz deine Pläne durchkreuzt hat.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_selbstironie_als_waffe_–_das_kalkulierte_opfer_1",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Selbstironie als Waffe – Das kalkulierte Opfer",
+    "beispiel": "Die Anleitung war sonnenklar. Liegt bestimmt an meiner mangelnden Intelligenz, dass ich sie trotzdem nicht verstehe.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_selbstironie_als_waffe_–_das_kalkulierte_opfer_2",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Selbstironie als Waffe – Das kalkulierte Opfer",
+    "beispiel": "Ich finde es toll, wie du immer ehrlich deine Meinung sagst, besonders wenn niemand danach gefragt hat.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_selbstironie_als_waffe_–_das_kalkulierte_opfer_3",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Selbstironie als Waffe – Das kalkulierte Opfer",
+    "beispiel": "Vielen Dank für die unaufgeforderte Lebensberatung.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_selbstironie_als_waffe_–_das_kalkulierte_opfer_4",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Selbstironie als Waffe – Das kalkulierte Opfer",
+    "beispiel": "Wieder so ein Tag, an dem man am liebsten Applaus für das bloße Aufstehen bekommen möchte.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_selbstironie_als_waffe_–_das_kalkulierte_opfer_5",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Selbstironie als Waffe – Das kalkulierte Opfer",
+    "beispiel": "Ich schätze deine Hilfe wirklich sehr. Dieses Chaos hier noch zu vergrößern, hätte ich alleine nie geschafft.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_selbstironie_als_waffe_–_das_kalkulierte_opfer_6",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Selbstironie als Waffe – Das kalkulierte Opfer",
+    "beispiel": "Das war nicht ironisch gemeint. Das war ein Test deines Ironie-Detektors.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_spöttische_beobachtungen_&_verletzender_zynismus_0",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Spöttische Beobachtungen & verletzender Zynismus",
+    "beispiel": "Das hast du ja wieder ganz fantastisch hingekriegt.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_spöttische_beobachtungen_&_verletzender_zynismus_1",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Spöttische Beobachtungen & verletzender Zynismus",
+    "beispiel": "Deine Pünktlichkeit ist mal wieder bewundernswert.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_spöttische_beobachtungen_&_verletzender_zynismus_2",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Spöttische Beobachtungen & verletzender Zynismus",
+    "beispiel": "Ach, du hast es bemerkt? Ich bin beeindruckt von deiner scharfen Beobachtungsgabe.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_spöttische_beobachtungen_&_verletzender_zynismus_3",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Spöttische Beobachtungen & verletzender Zynismus",
+    "beispiel": "Ich bin total überrascht, dass das nicht funktioniert hat. Total.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_spöttische_beobachtungen_&_verletzender_zynismus_4",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Spöttische Beobachtungen & verletzender Zynismus",
+    "beispiel": "Deine Ratschläge sind Gold wert. Ich werde sie direkt ignorieren.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_spöttische_beobachtungen_&_verletzender_zynismus_5",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Spöttische Beobachtungen & verletzender Zynismus",
+    "beispiel": "Dein Optimismus ist ansteckend. Zum Glück bin ich geimpft.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ironic_statements_spöttische_beobachtungen_&_verletzender_zynismus_6",
+    "source": "sarkasm_in_ironic_statements",
+    "kategorie": "Spöttische Beobachtungen & verletzender Zynismus",
+    "beispiel": "Das ist ja eine reizende Überraschung. Und ich habe leider kein Gift im Haus.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_0",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Ach, du konntest dir meine Nachricht von gestern nicht leisten? Kein Problem, ich finanziere gern auch dein Schweigen.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_1",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Weißt du, dein „Ich war eingeschlafen“ klingt fast so romantisch wie ein Liebesbrief.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_2",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Natürlich vertraue ich dir – sonst hätte ich dir ja nicht schon meinen Selbstwert überwiesen.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_3",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Kein Stress, behalt dein Versprechen einfach. Es steht dir wirklich gut, so ungetragen.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_4",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Oh, du brauchst nur eine Woche Funkstille, um über uns nachzudenken? Ich pack schon mal Proviant für die Ewigkeit.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_5",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Danke, dass du mich blockierst; so sehe ich endlich, wie frei du mich machen willst.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_6",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Stell dir vor, ich habe wirklich geglaubt, dass „bald“ eine Zeiteinheit und kein Passwort ist.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_7",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Klar, ich sollte dich nicht mit meinen Sorgen nerven – schließlich bist du schon beschäftigt, mich zu retten.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_8",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Dein Schweigen spricht Bände – aber nur in einer Sprache, in der ich Schuld heiße.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_9",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Unglaublich, wie sehr ich deine Zukunftspläne genieße, während meine Gegenwart auf „Wartemusik“ steht.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_10",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Herrlich, du hast wieder vergessen, mich zu vergessen – so viel Aufmerksamkeit macht schwindelig.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_11",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Super Idee, mir immer dann Liebe zu schwören, wenn dein Akku und mein Konto leer sind.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_12",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Ja, kauf dir ruhig Zeit, ich zahle in Erwartungen.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_13",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Entspann dich, Tränen trocknen schneller als Kreditrahmen.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_14",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Ich wusste gar nicht, dass „Wir“ nur die Einzahl von „Ich“ ist.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_15",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Wie süß, du hast meinen Geburtstag mit einem Abo auf Hoffnung verwechselt.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_16",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Natürlich nennt man das Commitment – es ist eben fest versprochen, nie stattzufinden.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_17",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Keine Sorge, ich bin nicht verletzt; ich übe nur schon mal das Alleinlaufen für später.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_18",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Wenn kalte Schultern heizen könnten, wären wir ein nachhaltiges Paar.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_19",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "So lieb, dass du mich ghostest. Spart mir die Sterne, die ich sonst für dich vom Himmel holen müsste.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_20",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Schon okay, ich trag das Misstrauen einfach mit – immerhin ist es das Einzige, was du konsequent teilst.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_21",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Wunderschön, wie du jede Entschuldigung als Sonderedition herausbringst: limitiert und wertlos.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_22",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Danke für die Erinnerung, dass Geduld eine Einbahnstraße ist.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_23",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Mach dir keine Sorgen um meine Grenzen – du findest sie ja sowieso immer erst, wenn du drüber bist.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_24",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Natürlich ist dein Chaos geordnet – Hauptsache, ich verliere mich darin.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_25",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Wie praktisch, deine Ehrlichkeit kommt immer portofrei, wenn schon alles zerbrochen ist.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_26",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Schön, dass du mir verzeihst, was du mir vorwirfst.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_27",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Dein Plan, mich stark zu machen, indem du mich schwächst, ist wirklich bahnbrechend.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_28",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Klar, lass dir Zeit. Ich halte meine Uhr einfach an, damit du pünktlich bleibst.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_29",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Unglaublich, wie effektiv dein Schweigen meine Fantasie beflügelt – besonders die Albträume.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_30",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Toll, dass du mich an deine Zweifel glaubst.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_31",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Ich verstehe, Liebe wächst eben da, wo Abwesenheit düngt.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_32",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Deine „kurze Phase“ fühlt sich an wie ein Dauerabo ohne Kündigungsbutton.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_33",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Ach, schon wieder ein Notfall bei dir? Gut, dass meine Gefühle Erste Hilfe üben wollten.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_34",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Wie nett von dir, meine Fragen offen zu lassen – dann kann ich sie mir selbst beantworten und du sparst Zeit.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_35",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Selbstverständlich bist du anders als alle davor – du tust nur exakt dasselbe, viel kreativer.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_36",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Danke, dass du mich vorwarnst, wenn du später keine Zeit für Entschuldigungen hast.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_37",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Deine Zukunft mit mir klingt spektakulär; schade, dass sie immer im Konjunktiv bleibt.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_38",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Unglaublich, was wir schon alles durchgemacht haben – vor allem ich, allein.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_39",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Mach dir keinen Kopf, ich trag ihn gern für uns beide.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_40",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Du brauchst Abstand? Kein Problem, ich rolle den roten Teppich bis zur Tür.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_41",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Schön, wie du meine Liebe in Raten zurückzahlst: immer dann, wenn die Zinsen Schmerz heißen.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_42",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Natürlich hast du mich nicht absichtlich ignoriert – das war bestimmt meine besonders leise Anwesenheit.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_43",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Beeindruckend, wie du mir erklärst, dass Ehrlichkeit verletzen kann – wenn man sie weglässt.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_44",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Schon verrückt, dass ich deine Ausreden mittlerweile rückwärts singen kann.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_45",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Danke, dass du mich vermisst, sobald ich drohe, dich nicht mehr zu brauchen.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_46",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Ich finde es inspirierend, wie deine Versprechen im Fitnessstudio sind: groß angemeldet, nie erschienen.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_47",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Keine Panik, ich halte das Ruder fest, bis du entscheidest, ob wir überhaupt im selben Boot sitzen.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_48",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "So rührend, dass du meine Geduld testest – Forschung braucht schließlich Probanden.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "sarkasm_in_ew_49",
+    "source": "sarkasm_in_ew",
+    "kategorie": "unspecified",
+    "beispiel": "Natürlich nimmst du mich ernst – immerhin bin ich dein bester Vorwand, wenn alles andere scheitert.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_0",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Schon okay, ich hab verstanden, dass ich dir nicht so wichtig bin. Ich zieh mich dann mal zurück, bevor ich noch mehr nerve.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_1",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Mach dir keine Sorgen, ich komm schon allein klar. Ich bin’s ja gewohnt, dass ich auf mich selbst gestellt bin.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_2",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich hätte wissen müssen, dass ich wieder zu viel erwartet habe. Ich halte mich ab jetzt einfach raus.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_3",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Du musst dich nicht mehr bemühen, ich hab gemerkt, dass ich nur störe.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_4",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Ist schon in Ordnung, ich hab gelernt, dass ich nicht der Mensch bin, für den man sich Zeit nimmt. Ich meld mich dann einfach nicht mehr.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_5",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Keine Sorge, ich will dich nicht weiter belasten. Ich zieh mich zurück, dann hast du endlich deine Ruhe.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_6",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich seh schon, ich bin eher die Notlösung. Ich halte mich dann mal im Hintergrund auf.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_7",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Du brauchst dich nicht zu rechtfertigen, ich hab verstanden, dass ich nicht dazugehöre. Ich werd mich ab jetzt rar machen.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_8",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich weiß, ich bin nicht leicht zu ertragen. Ich verschwinde dann mal, damit du dich besser fühlst.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_9",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Schon okay, ich hab’s kapiert. Ich bin wohl der, den man am ehesten vergisst. Ich geh dann mal.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_10",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich will dich nicht weiter stören. Offenbar ist es besser, wenn ich mich zurückziehe.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_11",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Du musst dich nicht mehr um mich kümmern, ich hab’s ja eh nicht verdient.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_12",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich hab verstanden, dass meine Gefühle hier keinen Platz haben. Ich zieh mich zurück, dann ist es für alle leichter.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_13",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Ist schon gut, ich hab’s ja nicht anders verdient. Ich halte mich ab jetzt raus.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_14",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich seh schon, ich bin nur Ballast. Ich geh dann mal, damit du dich wieder frei fühlst.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_15",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Du brauchst dich nicht zu entschuldigen, ich bin’s ja gewohnt, dass ich nicht zähle.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_16",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich will dich nicht weiter aufhalten. Ich verschwinde einfach, dann musst du dich nicht mehr mit mir beschäftigen.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_17",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Schon klar, ich bin nicht die Priorität. Ich meld mich dann einfach nicht mehr.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_18",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich hab verstanden, dass ich zu viel bin. Ich zieh mich zurück, dann hast du weniger Stress.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_19",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Du musst dich nicht mehr bemühen, ich hab gemerkt, dass ich nicht gebraucht werde.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_20",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich weiß, ich bin schwierig. Ich geh dann mal, bevor es noch unangenehmer wird.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_21",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Ist schon okay, ich hab’s kapiert. Ich bin nicht der Mensch, für den man bleibt.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_22",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Du brauchst dich nicht zu rechtfertigen, ich hab verstanden, dass ich nicht wichtig bin.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_23",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich will dich nicht weiter belasten. Ich zieh mich zurück, dann hast du endlich deine Ruhe.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_24",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Schon klar, ich bin nicht die Person, die man vermisst. Ich halte mich dann mal fern.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_25",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich hab verstanden, dass ich nicht dazugehöre. Ich geh dann mal, damit du dich besser fühlst.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_26",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Du musst dich nicht mehr um mich kümmern, ich hab’s ja eh nicht verdient.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_27",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich weiß, ich bin nicht leicht zu ertragen. Ich verschwinde dann mal, damit du dich besser fühlst.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_28",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Ist schon gut, ich hab’s ja nicht anders verdient. Ich halte mich ab jetzt raus.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_29",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich seh schon, ich bin nur Ballast. Ich geh dann mal, damit du dich wieder frei fühlst.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_30",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Kein Ding, ich hab’s ja eh nicht so mit Partys. Aber danke, dass du an mich gedacht hast…",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_31",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Schon verrückt, wie schnell man als Vater scheinbar unwichtig wird. Aber ist schon okay, ich hab ja noch meinen Kalender.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_32",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich weiß, ihr habt viel zu tun. Oma ist ja auch nicht mehr so spannend wie früher.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_33",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich hätte es wissen müssen, meine Vorschläge liest eh keiner. Ich halte mich dann mal raus.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_34",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "War bestimmt nett beim Essen. Ich hab’s ja auch ganz gut allein in der Küche ausgehalten.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_35",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Schön, dass du dir wenigstens fünf Minuten für mich genommen hast. Ich will ja nicht stören.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_36",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich hab’s halt einfach nicht drauf. Aber danke, dass Sie es mir so ehrlich sagen.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_37",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Schon okay, ich hab’s auch allein irgendwie hinbekommen. Aber danke, dass du gefragt hast… jetzt.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_38",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich hoffe, dein Tag war wenigstens schön. Meiner war irgendwie… unspektakulär.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_39",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "War nur so eine Idee, ist schon okay, wenn ihr was anderes machen wollt.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_40",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich weiß, ich bin nicht so der Typ, der auffällt. Aber ein kurzes Danke hätte auch gereicht.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_41",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich hab mich schon gefragt, ob ich irgendwas Falsches gesagt habe. Aber wahrscheinlich warst du einfach nur beschäftigt.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_42",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Ist schon okay, ich hab ja noch andere Sachen, die ich allein machen kann.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_43",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich hab’s gar nicht mitbekommen, dass ihr schon so weit seid. Aber ich störe ja auch nicht weiter.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_44",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich bin wohl nicht so interessant, dass man mit mir länger reden möchte.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_45",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich weiß, das Leben ist stressig. Oma wartet einfach weiter auf ein kleines Lebenszeichen.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_46",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "War wohl nicht so wichtig, was ich sagen wollte. Ich höre dann lieber zu.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_47",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Schön, dass meine Probleme offenbar nicht so relevant sind. Ich regle das dann eben selbst.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_48",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Schon okay, ich hab mich halt gefreut. Aber vielleicht klappt’s ja ein andermal.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "mm_emotional_espaw_49",
+    "source": "mm_emotional_espaw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich weiß, du hast viel zu tun. Ich wollte nur sicher gehen, dass meine Mail nicht untergegangen ist.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_0",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Schon okay, ich hab verstanden, dass ich dir nicht so wichtig bin. Ich zieh mich dann mal zurück, bevor ich noch mehr nerve.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_1",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Mach dir keine Sorgen, ich komm schon allein klar. Ich bin’s ja gewohnt, dass ich auf mich selbst gestellt bin.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_2",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich hätte wissen müssen, dass ich wieder zu viel erwartet habe. Ich halte mich ab jetzt einfach raus.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_3",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Du musst dich nicht mehr bemühen, ich hab gemerkt, dass ich nur störe.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_4",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Ist schon in Ordnung, ich hab gelernt, dass ich nicht der Mensch bin, für den man sich Zeit nimmt. Ich meld mich dann einfach nicht mehr.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_5",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Keine Sorge, ich will dich nicht weiter belasten. Ich zieh mich zurück, dann hast du endlich deine Ruhe.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_6",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich seh schon, ich bin eher die Notlösung. Ich halte mich dann mal im Hintergrund auf.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_7",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Du brauchst dich nicht zu rechtfertigen, ich hab verstanden, dass ich nicht dazugehöre. Ich werd mich ab jetzt rar machen.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_8",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich weiß, ich bin nicht leicht zu ertragen. Ich verschwinde dann mal, damit du dich besser fühlst.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_9",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Schon okay, ich hab’s kapiert. Ich bin wohl der, den man am ehesten vergisst. Ich geh dann mal.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_10",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich will dich nicht weiter stören. Offenbar ist es besser, wenn ich mich zurückziehe.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_11",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Du musst dich nicht mehr um mich kümmern, ich hab’s ja eh nicht verdient.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_12",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich hab verstanden, dass meine Gefühle hier keinen Platz haben. Ich zieh mich zurück, dann ist es für alle leichter.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_13",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Ist schon gut, ich hab’s ja nicht anders verdient. Ich halte mich ab jetzt raus.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_14",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich seh schon, ich bin nur Ballast. Ich geh dann mal, damit du dich wieder frei fühlst.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_15",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Du brauchst dich nicht zu entschuldigen, ich bin’s ja gewohnt, dass ich nicht zähle.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_16",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich will dich nicht weiter aufhalten. Ich verschwinde einfach, dann musst du dich nicht mehr mit mir beschäftigen.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_17",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Schon klar, ich bin nicht die Priorität. Ich meld mich dann einfach nicht mehr.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_18",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich hab verstanden, dass ich zu viel bin. Ich zieh mich zurück, dann hast du weniger Stress.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_19",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Du musst dich nicht mehr bemühen, ich hab gemerkt, dass ich nicht gebraucht werde.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_20",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich weiß, ich bin schwierig. Ich geh dann mal, bevor es noch unangenehmer wird.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_21",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Ist schon okay, ich hab’s kapiert. Ich bin nicht der Mensch, für den man bleibt.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_22",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Du brauchst dich nicht zu rechtfertigen, ich hab verstanden, dass ich nicht wichtig bin.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_23",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich will dich nicht weiter belasten. Ich zieh mich zurück, dann hast du endlich deine Ruhe.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_24",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Schon klar, ich bin nicht die Person, die man vermisst. Ich halte mich dann mal fern.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_25",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich hab verstanden, dass ich nicht dazugehöre. Ich geh dann mal, damit du dich besser fühlst.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_26",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Du musst dich nicht mehr um mich kümmern, ich hab’s ja eh nicht verdient.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_27",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich weiß, ich bin nicht leicht zu ertragen. Ich verschwinde dann mal, damit du dich besser fühlst.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_28",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Ist schon gut, ich hab’s ja nicht anders verdient. Ich halte mich ab jetzt raus.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_29",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich seh schon, ich bin nur Ballast. Ich geh dann mal, damit du dich wieder frei fühlst.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_30",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Kein Ding, ich hab’s ja eh nicht so mit Partys. Aber danke, dass du an mich gedacht hast…",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_31",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Schon verrückt, wie schnell man als Vater scheinbar unwichtig wird. Aber ist schon okay, ich hab ja noch meinen Kalender.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_32",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich weiß, ihr habt viel zu tun. Oma ist ja auch nicht mehr so spannend wie früher.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_33",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich hätte es wissen müssen, meine Vorschläge liest eh keiner. Ich halte mich dann mal raus.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_34",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "War bestimmt nett beim Essen. Ich hab’s ja auch ganz gut allein in der Küche ausgehalten.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_35",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Schön, dass du dir wenigstens fünf Minuten für mich genommen hast. Ich will ja nicht stören.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_36",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich hab’s halt einfach nicht drauf. Aber danke, dass Sie es mir so ehrlich sagen.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_37",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Schon okay, ich hab’s auch allein irgendwie hinbekommen. Aber danke, dass du gefragt hast… jetzt.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_38",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich hoffe, dein Tag war wenigstens schön. Meiner war irgendwie… unspektakulär.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_39",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "War nur so eine Idee, ist schon okay, wenn ihr was anderes machen wollt.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_40",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich weiß, ich bin nicht so der Typ, der auffällt. Aber ein kurzes Danke hätte auch gereicht.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_41",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich hab mich schon gefragt, ob ich irgendwas Falsches gesagt habe. Aber wahrscheinlich warst du einfach nur beschäftigt.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_42",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Ist schon okay, ich hab ja noch andere Sachen, die ich allein machen kann.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_43",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich hab’s gar nicht mitbekommen, dass ihr schon so weit seid. Aber ich störe ja auch nicht weiter.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_44",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich bin wohl nicht so interessant, dass man mit mir länger reden möchte.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_45",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich weiß, das Leben ist stressig. Oma wartet einfach weiter auf ein kleines Lebenszeichen.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_46",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "War wohl nicht so wichtig, was ich sagen wollte. Ich höre dann lieber zu.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_47",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Schön, dass meine Probleme offenbar nicht so relevant sind. Ich regle das dann eben selbst.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_48",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Schon okay, ich hab mich halt gefreut. Aber vielleicht klappt’s ja ein andermal.",
+    "score": 3,
+    "matching_type": "semantic"
+  },
+  {
+    "marker_id": "emotional_withdraw_49",
+    "source": "emotional_withdraw",
+    "kategorie": "unspecified",
+    "beispiel": "Ich weiß, du hast viel zu tun. Ich wollte nur sicher gehen, dass meine Mail nicht untergegangen ist.",
+    "score": 3,
+    "matching_type": "semantic"
+  }
+]

@@ -1,0 +1,21 @@
+# A_DAILY_GREETING_MARKER - Semantic Marker
+marker_name: A_DAILY_GREETING_MARKER
+beschreibung: >
+  Alltägliche Begrüßungs- und Verabschiedungsformeln, die regelmäßigen Kontakt
+und Routine im Chat signalisieren.
+beispiele:
+  - "Guten Morgen! Hoffe, du hast gut geschlafen."
+  - "Gute Nacht, träum was Schönes."
+  - "Schönen Abend dir noch!"
+  - "Morgen 😊 Wie läuft’s bei dir?"
+  - "Nacht 🌙 Wir schreiben morgen."
+
+semantische_grabber_id: SGR_DAILY_GREETING_01
+
+metadata:
+  created_at: 2025-07-21T05:19:35.400607
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

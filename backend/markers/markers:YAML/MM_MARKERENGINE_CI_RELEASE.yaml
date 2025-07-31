@@ -1,0 +1,14 @@
+id: MARKERENGINE_CI_RELEASE
+version: 1.0.0
+author: senior_fullstack_lead
+created_at: '2025-07-26'
+description: '>'
+phases: ''
+'- name': Release Hardening
+trigger: Pull-Request
+tasks: ''
+gate: Fail-fast if any check fails
+cadence: Quarterly
+environment: Production
+level: 1
+category: general

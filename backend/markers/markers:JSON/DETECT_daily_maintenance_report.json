@@ -1,0 +1,468 @@
+{
+  "timestamp": "2025-07-01T12:57:14.452819",
+  "marker_count": 41,
+  "trends_found": 3,
+  "trends_details": [
+    {
+      "pattern": "(krypto|bitcoin|ethereum).*investition.*garantiert.*gewinn",
+      "category": "crypto_scam",
+      "confidence": 0.89,
+      "examples": [
+        "Bitcoin-Investment mit 500% Gewinn garantiert!",
+        "Krypto-Trading-Bot macht dich reich - garantiert!"
+      ]
+    },
+    {
+      "pattern": "künstliche.*intelligenz.*trading.*roboter",
+      "category": "ai_trading_scam",
+      "confidence": 0.85,
+      "examples": [
+        "Mein KI-Trading-Roboter verdient täglich 1000€",
+        "Künstliche Intelligenz macht automatisch Gewinne"
+      ]
+    },
+    {
+      "pattern": "ukraine.*krieg.*militär.*einsatz.*geld.*brauche",
+      "category": "war_romance_scam",
+      "confidence": 0.92,
+      "examples": [
+        "Bin Soldat in der Ukraine, brauche Geld für Ausrüstung",
+        "Kriegseinsatz verhindert Bankzugang, bitte hilf mir"
+      ]
+    }
+  ],
+  "marker_stats": {
+    "RELATIONSHIP_AUTHENTICITY_MARKER_MARKER.txt": {
+      "file": "RELATIONSHIP_AUTHENTICITY_MARKER_MARKER.txt",
+      "size": 3708,
+      "lines": 56,
+      "examples_count": 47,
+      "has_semantic_grab": true,
+      "has_regex_patterns": true,
+      "last_modified": "2025-07-01T12:41:55.823927",
+      "marker_type": "psychological_manipulation"
+    },
+    "RESONANZ_MATCHING_MARKER_MARKER.txt": {
+      "file": "RESONANZ_MATCHING_MARKER_MARKER.txt",
+      "size": 5122,
+      "lines": 66,
+      "examples_count": 55,
+      "has_semantic_grab": true,
+      "has_regex_patterns": true,
+      "last_modified": "2025-07-01T12:41:55.829480",
+      "marker_type": "general"
+    },
+    "PERMANENT_POSTPONE_MARKER.txt": {
+      "file": "PERMANENT_POSTPONE_MARKER.txt",
+      "size": 3060,
+      "lines": 46,
+      "examples_count": 20,
+      "has_semantic_grab": true,
+      "has_regex_patterns": true,
+      "last_modified": "2025-06-29T00:52:01",
+      "marker_type": "general"
+    },
+    "AI_BOT_SEMANTIC_DETECT.py_MARKER.txt": {
+      "file": "AI_BOT_SEMANTIC_DETECT.py_MARKER.txt",
+      "size": 9133,
+      "lines": 179,
+      "examples_count": 152,
+      "has_semantic_grab": true,
+      "has_regex_patterns": true,
+      "last_modified": "2025-07-01T02:36:37.931053",
+      "marker_type": "emotional_manipulation"
+    },
+    "FRIENDLY_FLIRTING_DETECT.py_MARKER.txt": {
+      "file": "FRIENDLY_FLIRTING_DETECT.py_MARKER.txt",
+      "size": 5705,
+      "lines": 123,
+      "examples_count": 109,
+      "has_semantic_grab": true,
+      "has_regex_patterns": true,
+      "last_modified": "2025-07-01T12:33:24.776251",
+      "marker_type": "psychological_manipulation"
+    },
+    "PLAYING_VICTIM_MARKER.txt": {
+      "file": "PLAYING_VICTIM_MARKER.txt",
+      "size": 10232,
+      "lines": 103,
+      "examples_count": 74,
+      "has_semantic_grab": true,
+      "has_regex_patterns": true,
+      "last_modified": "2025-07-01T02:02:19.741879",
+      "marker_type": "general"
+    },
+    "SIMU_LOVE_SCAM_PSYCHO_DISTRACT.yaml_MARKER.txt": {
+      "file": "SIMU_LOVE_SCAM_PSYCHO_DISTRACT.yaml_MARKER.txt",
+      "size": 7928,
+      "lines": 83,
+      "examples_count": 72,
+      "has_semantic_grab": true,
+      "has_regex_patterns": true,
+      "last_modified": "2025-07-01T04:47:00.664275",
+      "marker_type": "emotional_manipulation"
+    },
+    "GUILT_TRIPPING_SEMANTIC_DETECT.py_MARKER.txt": {
+      "file": "GUILT_TRIPPING_SEMANTIC_DETECT.py_MARKER.txt",
+      "size": 3783,
+      "lines": 72,
+      "examples_count": 48,
+      "has_semantic_grab": true,
+      "has_regex_patterns": true,
+      "last_modified": "2025-07-01T04:37:14.973777",
+      "marker_type": "emotional_manipulation"
+    },
+    "WEBCAM_EXCUSE_MARKER.txt": {
+      "file": "WEBCAM_EXCUSE_MARKER.txt",
+      "size": 2464,
+      "lines": 62,
+      "examples_count": 79,
+      "has_semantic_grab": true,
+      "has_regex_patterns": true,
+      "last_modified": "2025-07-01T04:04:16.128776",
+      "marker_type": "general"
+    },
+    "AROUSAL_MARKER.txt": {
+      "file": "AROUSAL_MARKER.txt",
+      "size": 1192,
+      "lines": 27,
+      "examples_count": 0,
+      "has_semantic_grab": false,
+      "has_regex_patterns": false,
+      "last_modified": "2025-06-29T01:49:04",
+      "marker_type": "general"
+    },
+    "FLUCTUATION_MARKER.txt": {
+      "file": "FLUCTUATION_MARKER.txt",
+      "size": 1120,
+      "lines": 26,
+      "examples_count": 0,
+      "has_semantic_grab": false,
+      "has_regex_patterns": false,
+      "last_modified": "2025-06-29T01:49:04",
+      "marker_type": "general"
+    },
+    "SILENT_TREATMENT_MARKER.txt": {
+      "file": "SILENT_TREATMENT_MARKER.txt",
+      "size": 1795,
+      "lines": 21,
+      "examples_count": 16,
+      "has_semantic_grab": false,
+      "has_regex_patterns": false,
+      "last_modified": "2025-06-29T03:04:22",
+      "marker_type": "general"
+    },
+    "COMPARISON_GHOST_MARKER.txt": {
+      "file": "COMPARISON_GHOST_MARKER.txt",
+      "size": 3358,
+      "lines": 46,
+      "examples_count": 20,
+      "has_semantic_grab": true,
+      "has_regex_patterns": true,
+      "last_modified": "2025-06-29T00:36:15",
+      "marker_type": "general"
+    },
+    "SCAMMER_DETECTIO.py_MARKER.txt": {
+      "file": "SCAMMER_DETECTIO.py_MARKER.txt",
+      "size": 1448,
+      "lines": 34,
+      "examples_count": 20,
+      "has_semantic_grab": true,
+      "has_regex_patterns": true,
+      "last_modified": "2025-07-01T04:54:21.997333",
+      "marker_type": "social_manipulation"
+    },
+    "BLAME_SHIFT_MARKER.txt": {
+      "file": "BLAME_SHIFT_MARKER.txt",
+      "size": 3092,
+      "lines": 47,
+      "examples_count": 20,
+      "has_semantic_grab": true,
+      "has_regex_patterns": true,
+      "last_modified": "2025-06-29T00:26:08",
+      "marker_type": "general"
+    },
+    "GASLIGHTING_MARKER.txt": {
+      "file": "GASLIGHTING_MARKER.txt",
+      "size": 3108,
+      "lines": 39,
+      "examples_count": 19,
+      "has_semantic_grab": true,
+      "has_regex_patterns": true,
+      "last_modified": "2025-06-29T02:29:02",
+      "marker_type": "psychological_manipulation"
+    },
+    "OFFENSIVE_FLIRTING.txt_MARKER.txt": {
+      "file": "OFFENSIVE_FLIRTING.txt_MARKER.txt",
+      "size": 3279,
+      "lines": 60,
+      "examples_count": 47,
+      "has_semantic_grab": true,
+      "has_regex_patterns": true,
+      "last_modified": "2025-07-01T12:37:28.484716",
+      "marker_type": "general"
+    },
+    "UNCERTAINTY_MARKER.txt": {
+      "file": "UNCERTAINTY_MARKER.txt",
+      "size": 1980,
+      "lines": 40,
+      "examples_count": 0,
+      "has_semantic_grab": false,
+      "has_regex_patterns": false,
+      "last_modified": "2025-06-29T01:49:04",
+      "marker_type": "general"
+    },
+    "INTEGRATION_MARKER.txt": {
+      "file": "INTEGRATION_MARKER.txt",
+      "size": 1486,
+      "lines": 33,
+      "examples_count": 0,
+      "has_semantic_grab": false,
+      "has_regex_patterns": false,
+      "last_modified": "2025-06-29T01:49:04",
+      "marker_type": "general"
+    },
+    "LOVE_BOMBING_MARKER.txt": {
+      "file": "LOVE_BOMBING_MARKER.txt",
+      "size": 4922,
+      "lines": 59,
+      "examples_count": 38,
+      "has_semantic_grab": true,
+      "has_regex_patterns": true,
+      "last_modified": "2025-06-29T06:57:23",
+      "marker_type": "emotional_manipulation"
+    },
+    "ESCALATION_MARKER.txt": {
+      "file": "ESCALATION_MARKER.txt",
+      "size": 2501,
+      "lines": 52,
+      "examples_count": 0,
+      "has_semantic_grab": false,
+      "has_regex_patterns": false,
+      "last_modified": "2025-06-29T01:49:04",
+      "marker_type": "general"
+    },
+    "TERMINATION_MARKER.txt": {
+      "file": "TERMINATION_MARKER.txt",
+      "size": 937,
+      "lines": 24,
+      "examples_count": 0,
+      "has_semantic_grab": false,
+      "has_regex_patterns": false,
+      "last_modified": "2025-06-29T01:49:04",
+      "marker_type": "general"
+    },
+    "DEEPENING_BY_QUESTIONING.txt_MARKER.txt": {
+      "file": "DEEPENING_BY_QUESTIONING.txt_MARKER.txt",
+      "size": 22966,
+      "lines": 679,
+      "examples_count": 626,
+      "has_semantic_grab": true,
+      "has_regex_patterns": true,
+      "last_modified": "2025-07-01T12:44:21.835328",
+      "marker_type": "financial_fraud"
+    },
+    "LIE_CONCEALMENT_MARKER.txt": {
+      "file": "LIE_CONCEALMENT_MARKER.txt",
+      "size": 3092,
+      "lines": 66,
+      "examples_count": 5,
+      "has_semantic_grab": true,
+      "has_regex_patterns": true,
+      "last_modified": "2025-06-29T07:43:52",
+      "marker_type": "general"
+    },
+    "AI_BOT_SCAM.txt_MARKER.txt": {
+      "file": "AI_BOT_SCAM.txt_MARKER.txt",
+      "size": 1719,
+      "lines": 48,
+      "examples_count": 55,
+      "has_semantic_grab": true,
+      "has_regex_patterns": true,
+      "last_modified": "2025-07-01T02:26:30.902162",
+      "marker_type": "general"
+    },
+    "ISOLATION_MARKER.txt": {
+      "file": "ISOLATION_MARKER.txt",
+      "size": 8758,
+      "lines": 84,
+      "examples_count": 77,
+      "has_semantic_grab": true,
+      "has_regex_patterns": false,
+      "last_modified": "2025-07-01T01:57:47.709215",
+      "marker_type": "financial_fraud"
+    },
+    "SIMU_LAVE_SCAM_SEMANTIC.yaml_MARKER.txt": {
+      "file": "SIMU_LAVE_SCAM_SEMANTIC.yaml_MARKER.txt",
+      "size": 997,
+      "lines": 24,
+      "examples_count": 16,
+      "has_semantic_grab": true,
+      "has_regex_patterns": true,
+      "last_modified": "2025-07-01T04:39:05.899508",
+      "marker_type": "general"
+    },
+    "AMBIVALENCE_MARKER.txt": {
+      "file": "AMBIVALENCE_MARKER.txt",
+      "size": 2352,
+      "lines": 45,
+      "examples_count": 0,
+      "has_semantic_grab": false,
+      "has_regex_patterns": false,
+      "last_modified": "2025-06-29T01:49:04",
+      "marker_type": "general"
+    },
+    "FRIENDLY_FLIRTING_MARKER.txt": {
+      "file": "FRIENDLY_FLIRTING_MARKER.txt",
+      "size": 3820,
+      "lines": 69,
+      "examples_count": 51,
+      "has_semantic_grab": true,
+      "has_regex_patterns": true,
+      "last_modified": "2025-07-01T12:30:56.916127",
+      "marker_type": "general"
+    },
+    "SELF_SABOTAGE_LOOP_MARKER.txt": {
+      "file": "SELF_SABOTAGE_LOOP_MARKER.txt",
+      "size": 3456,
+      "lines": 47,
+      "examples_count": 20,
+      "has_semantic_grab": true,
+      "has_regex_patterns": true,
+      "last_modified": "2025-06-29T00:31:22",
+      "marker_type": "general"
+    },
+    "SCAMMER_BEHAVIOUR_DETECT.py_MARKER.txt": {
+      "file": "SCAMMER_BEHAVIOUR_DETECT.py_MARKER.txt",
+      "size": 3527,
+      "lines": 70,
+      "examples_count": 75,
+      "has_semantic_grab": true,
+      "has_regex_patterns": true,
+      "last_modified": "2025-07-01T04:51:54.677237",
+      "marker_type": "psychological_manipulation"
+    },
+    "SIMU_IMITATION_STRATEGIES.yaml_MARKER.txt": {
+      "file": "SIMU_IMITATION_STRATEGIES.yaml_MARKER.txt",
+      "size": 5926,
+      "lines": 46,
+      "examples_count": 33,
+      "has_semantic_grab": true,
+      "has_regex_patterns": true,
+      "last_modified": "2025-07-01T05:23:24.562527",
+      "marker_type": "emotional_manipulation"
+    },
+    "SOCIAL_INTERACTION.py_MARKER.txt": {
+      "file": "SOCIAL_INTERACTION.py_MARKER.txt",
+      "size": 5751,
+      "lines": 125,
+      "examples_count": 111,
+      "has_semantic_grab": true,
+      "has_regex_patterns": true,
+      "last_modified": "2025-07-01T12:30:56.921413",
+      "marker_type": "psychological_manipulation"
+    },
+    "SOCIAL_BORDERLINES_MARKER_MIX.txt_MARKER.txt": {
+      "file": "SOCIAL_BORDERLINES_MARKER_MIX.txt_MARKER.txt",
+      "size": 3716,
+      "lines": 69,
+      "examples_count": 58,
+      "has_semantic_grab": true,
+      "has_regex_patterns": true,
+      "last_modified": "2025-07-01T12:21:09.145656",
+      "marker_type": "psychological_manipulation"
+    },
+    "SIMU_LOVE_SCAM_HUMAN01.py_MARKER.txt": {
+      "file": "SIMU_LOVE_SCAM_HUMAN01.py_MARKER.txt",
+      "size": 2666,
+      "lines": 77,
+      "examples_count": 40,
+      "has_semantic_grab": true,
+      "has_regex_patterns": true,
+      "last_modified": "2025-07-01T04:37:14.980376",
+      "marker_type": "general"
+    },
+    "PROJECTIVE_IDENTIFICATION_MARKER.txt": {
+      "file": "PROJECTIVE_IDENTIFICATION_MARKER.txt",
+      "size": 1716,
+      "lines": 25,
+      "examples_count": 20,
+      "has_semantic_grab": false,
+      "has_regex_patterns": false,
+      "last_modified": "2025-06-29T02:52:06",
+      "marker_type": "general"
+    },
+    "GUILT_TRIPPING_MARKER.txt": {
+      "file": "GUILT_TRIPPING_MARKER.txt",
+      "size": 3868,
+      "lines": 51,
+      "examples_count": 46,
+      "has_semantic_grab": false,
+      "has_regex_patterns": false,
+      "last_modified": "2025-07-01T04:19:15.091716",
+      "marker_type": "general"
+    },
+    "SUBTLE_TERRITORIAL_MARKER.txt": {
+      "file": "SUBTLE_TERRITORIAL_MARKER.txt",
+      "size": 3134,
+      "lines": 45,
+      "examples_count": 20,
+      "has_semantic_grab": true,
+      "has_regex_patterns": true,
+      "last_modified": "2025-06-29T00:30:11",
+      "marker_type": "general"
+    },
+    "DRAMA_TRIANGLE_MARKER.txt": {
+      "file": "DRAMA_TRIANGLE_MARKER.txt",
+      "size": 11072,
+      "lines": 131,
+      "examples_count": 86,
+      "has_semantic_grab": false,
+      "has_regex_patterns": false,
+      "last_modified": "2025-07-01T02:05:50.745325",
+      "marker_type": "general"
+    },
+    "CONNECTION_MARKER.txt": {
+      "file": "CONNECTION_MARKER.txt",
+      "size": 850,
+      "lines": 24,
+      "examples_count": 0,
+      "has_semantic_grab": false,
+      "has_regex_patterns": false,
+      "last_modified": "2025-06-29T01:49:04",
+      "marker_type": "general"
+    },
+    "SCAMMER_SEMANTIC_BEHAVIOUR.yaml_MARKER.txt": {
+      "file": "SCAMMER_SEMANTIC_BEHAVIOUR.yaml_MARKER.txt",
+      "size": 3634,
+      "lines": 73,
+      "examples_count": 77,
+      "has_semantic_grab": true,
+      "has_regex_patterns": true,
+      "last_modified": "2025-07-01T04:51:54.683573",
+      "marker_type": "psychological_manipulation"
+    }
+  },
+  "recommendations": [
+    "Marker AROUSAL_MARKER.txt benötigt mehr Beispiele (0 vorhanden)",
+    "Marker AROUSAL_MARKER.txt sollte semantic_grab Patterns erhalten",
+    "Marker FLUCTUATION_MARKER.txt benötigt mehr Beispiele (0 vorhanden)",
+    "Marker FLUCTUATION_MARKER.txt sollte semantic_grab Patterns erhalten",
+    "Marker SILENT_TREATMENT_MARKER.txt sollte semantic_grab Patterns erhalten",
+    "Marker UNCERTAINTY_MARKER.txt benötigt mehr Beispiele (0 vorhanden)",
+    "Marker UNCERTAINTY_MARKER.txt sollte semantic_grab Patterns erhalten",
+    "Marker INTEGRATION_MARKER.txt benötigt mehr Beispiele (0 vorhanden)",
+    "Marker INTEGRATION_MARKER.txt sollte semantic_grab Patterns erhalten",
+    "Marker ESCALATION_MARKER.txt benötigt mehr Beispiele (0 vorhanden)",
+    "Marker ESCALATION_MARKER.txt sollte semantic_grab Patterns erhalten",
+    "Marker TERMINATION_MARKER.txt benötigt mehr Beispiele (0 vorhanden)",
+    "Marker TERMINATION_MARKER.txt sollte semantic_grab Patterns erhalten",
+    "Marker AMBIVALENCE_MARKER.txt benötigt mehr Beispiele (0 vorhanden)",
+    "Marker AMBIVALENCE_MARKER.txt sollte semantic_grab Patterns erhalten",
+    "Marker PROJECTIVE_IDENTIFICATION_MARKER.txt sollte semantic_grab Patterns erhalten",
+    "Marker GUILT_TRIPPING_MARKER.txt sollte semantic_grab Patterns erhalten",
+    "Marker DRAMA_TRIANGLE_MARKER.txt sollte semantic_grab Patterns erhalten",
+    "Marker CONNECTION_MARKER.txt benötigt mehr Beispiele (0 vorhanden)",
+    "Marker CONNECTION_MARKER.txt sollte semantic_grab Patterns erhalten"
+  ]
+}

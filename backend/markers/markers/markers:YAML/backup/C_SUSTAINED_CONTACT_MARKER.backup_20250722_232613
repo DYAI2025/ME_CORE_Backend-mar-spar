@@ -1,0 +1,35 @@
+marker_name: C_SUSTAINED_CONTACT_MARKER
+beschreibung: 'Ungewöhnlich hohe Kommunikationsfrequenz (≥ 3/Woche) länger als zwei
+  Monate ohne äußeren Sachzwang.
+
+  '
+beispiele:
+- Meld dich, wenn du wach bist ☕️
+- Gute Nacht – schreib morgen.
+- Memes des Tages schon gesehen?
+- Voice-Note Marathon again?
+- Noch wach? 🌙
+- Ping mich, wenn du Pause hast.
+- Schon zwei Monate Daily-Streak!
+- Kein Tag ohne dein Update.
+- Jeden Abend ein Recap, crazy.
+- Hab extra Datenvolumen für dich geholt.
+semantische_grabber_id: AUTO_SEM_20250720_C103
+metadata:
+  created_at: 2025-07-20 11:58:15.715511
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags:
+  - neu_erstellt
+  - needs_review
+  last_repaired: '2025-07-22T02:31:24.138334'
+  repair_version: '1.0'
+category: UNCATEGORIZED
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5

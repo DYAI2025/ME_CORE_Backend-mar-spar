@@ -1,0 +1,30 @@
+marker_name: A_EMOJI_SUPPORT
+ id: "A_EMOJI_SUPPORT"
+  level: 1
+  version: "1.0.0"
+  author: "auto_gpt"
+  created_at: "2025-07-21"
+  status: "draft"
+  lang: "de"
+  name: "SUPPORT_EMOJI"
+  description: |
+    Atomic-Marker für unterstützende oder validierende Emojis
+    (😊❤️👍🙏🤗), die ohne weitere Worte Zuwendung signalisieren.
+  category: "ATOMIC"
+  atomic_pattern:
+    - "<SUPPORT_EMOJI>"
+  tags: ["emoji", "validation", "support"]
+  semantic_grabber_id: "SGR_SUPPORT_EMOJI_01"
+  examples:
+    - "😊"
+    - "🙏"
+    - "👍"
+    - "❤️"
+    - "🤗"
+    - "💪"
+    - "🙌"
+    - "💖"
+    - "🌟"
+    - "💬"
+
+kategorie: UNCATEGORIZED

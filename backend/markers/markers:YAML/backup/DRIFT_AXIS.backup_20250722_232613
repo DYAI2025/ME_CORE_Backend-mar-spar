@@ -1,0 +1,20 @@
+driftachsen_set:
+  achsen:
+  - name: Bindungsdynamik
+    negativ_pol: Rückzugsvermeidung
+    positiv_pol: Bindungsdruck
+    zugeordnete_marker:
+    - antizipierte Manipulation
+    - emotionaler Rückzugsdruck
+    - Sarkasmus
+  - name: Scham-Selbstwirksamkeit
+    negativ_pol: Scham
+    positiv_pol: Selbstwirksamkeit
+    zugeordnete_marker:
+    - Scham
+    - Selbstwirksamkeit
+    - Schuld
+    - Stolz
+  beschreibung: Bündelt zentrale emotionale Driftachsen zur Analyse und Visualisierung
+    in Kommunikationssystemen.
+  name: Basis-Driftachsen

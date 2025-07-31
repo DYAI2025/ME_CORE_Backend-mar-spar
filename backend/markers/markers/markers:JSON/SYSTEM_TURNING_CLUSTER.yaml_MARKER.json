@@ -1,0 +1,52 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Beschreibt die Marker, die zusammen einen Systenkipppunkt sichtbarmachen.\n",
+    "examples": [
+      "20. **Face-to-Face (Partnerschaft, positiv):** Nach einer langen Zeit der Distanz sagt einer: „Ich will dich nicht verlieren. Ich bin bereit, alles zu tun, was nötig ist, um uns zu retten.“",
+      "19. **Arbeit (positiv):** Ein riskantes, aber innovatives Projekt erhält unerwartet grünes Licht vom Vorstand und verändert die strategische Ausrichtung des gesamten Teams.",
+      "18. **Face-to-Face (Familie, negativ):** Ein volljähriges Kind sagt zu den Eltern: „Ich werde den Kontakt abbrechen, bis ihr bereit seid, meine Grenzen zu respektieren.“",
+      "17. **Chat (Freundschaft, negativ):** Nach einem langen, eskalierenden Streit blockiert eine Person die andere auf allen Kanälen.",
+      "16. **Therapie (positiv):** Der Moment einer tiefen Einsicht (Aha-Erlebnis), nach dem ein altes, destruktives Muster nicht mehr auf die gleiche Weise fortgesetzt werden kann.",
+      "15. **Face-to-Face (Partnerschaft, negativ):** „Ich habe nicht aufgehört, dich zu lieben. Aber ich glaube, ich bin nicht mehr *in dich verliebt*.“",
+      "14. **Familie (positiv/negativ):** Die Geburt des ersten Kindes, die das Paarsystem unwiderruflich zu einem Familiensystem macht.",
+      "13. **Arbeit (negativ):** Die Ankündigung einer Fusion oder Übernahme, die alle bestehenden Teamstrukturen und Sicherheiten infrage stellt.",
+      "12. **Face-to-Face (Partnerschaft, positiv):** Ein Heiratsantrag.",
+      "11. **Gericht (Betrug/Fraud, negativ):** Der Moment der Anklageerhebung, der eine rein private Angelegenheit zu einem öffentlichen, rechtlichen Fall macht.",
+      "10. **Chat (Team, positiv):** Nach einer Krise schreibt der Chef: „Vergesst das alte Projekt. Wir haben jetzt eine neue, viel spannendere Mission. Hier ist der Plan:“",
+      "9.  **Face-to-Face (Partnerschaft, negativ):** Der Moment, in dem ein Seitensprung gestanden wird.",
+      "8.  **Sprachnachricht (Freundschaft, positiv):** „Deine Unterstützung in den letzten Wochen hat mir die Augen geöffnet. Du bist kein normaler Freund, du bist Familie.“",
+      "7.  **Alltag (Familie, negativ):** Ein Elternteil zieht aus der gemeinsamen Wohnung aus.",
+      "6.  **Face-to-Face (Partnerschaft, positiv):** Nach einem verletzlichen Gespräch sagt einer: „Wow. Das ist das erste Mal, dass ich dich wirklich verstehe. Das ändert alles.“",
+      "5.  **E-Mail (Arbeit, negativ):** Die Kündigung eines langjährigen, zentralen Teammitglieds, die das gesamte Gefüge verändert.",
+      "4.  **Telefonat (Familie, positiv):** Nach langer Funkstille ruft jemand an und sagt: „Ich will diesen Streit nicht mehr. Können wir bitte einfach nochmal von vorne anfangen?“",
+      "3.  **Chat (Freundschaft, negativ):** „Ich glaube, es ist besser, wenn wir erst mal eine Weile keinen Kontakt haben. Ich brauche Abstand.“",
+      "2.  **Team-Meeting (Arbeit, positiv):** „Nach wochenlangen Diskussionen haben wir uns jetzt entschieden: Wir ziehen das Projekt durch, und zwar alle zusammen mit voller Kraft.“",
+      "1.  **Face-to-Face (Partnerschaft, negativ):** „Ich kann das nicht mehr. Entweder wir holen uns Hilfe, oder ich muss gehen.“"
+    ],
+    "id": "S_SYSTEM_TURNING_CLUSTERYAML",
+    "level": 2,
+    "name": "SYSTEM_TURNING_CLUSTER.yaml",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_DAA6",
+    "semantic_tags": [
+      "system-turning-cluster.yaml-marker"
+    ]
+  },
+  "marker_name": "SYSTEM_TURNING_CLUSTER.yaml_MARKER",
+  "semantic_grab": {
+    "description": "Erkennt Muster für system_turning_cluster.txt",
+    "patterns": [
+      {
+        "pattern": "r\"(muster.*wird.*ergänzt)\"",
+        "rule": "AUTO_PATTERN"
+      }
+    ]
+  },
+  "tags": [
+    "neu_erstellt",
+    "needs_review"
+  ]
+}

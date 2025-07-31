@@ -1,0 +1,44 @@
+marker_name: C_DOMINANCE_BEHAVIOR_PATTERN_MARKER
+beschreibung: 'Wiederholte destruktive Kritik + Machtentscheidungen in 25 Nachrichten.
+
+  '
+beispiele:
+- 'Mo: ''Immer zu spät, kindisch.'' – Mi: ''Ich habe entschieden, wir ändern den Zeitplan.'''
+- Chatlog zeigt abwechselnd Generalvorwürfe und einseitige Anweisungen.
+- Erst 'Nie hörst du zu', dann 'Diskussion beendet, Plan steht'.
+- '30‑Min‑Call: fünf globale Vorwürfe, zwei Machtansagen.'
+- 'Kombi: ''Ständig Chaos'' + ''Ich setz das jetzt um''.'
+- Immer Drama‑Vorwurf → Tool‑Wechsel ohne Abstimmung.
+- 'Sitzung: Abwertung des Teams, sofortige Alleingänge.'
+- '''Immer Fehler'' → ''Ich hab Release verschoben, fertig''.'
+- 'Sequenz: Kritik, Machtbeschluss, Kritik, Machtbeschluss.'
+- '''Nie lieferst du Qualität'' + ''Ich hab Leitung übernommen''.'
+- 'Slack: destruktive Kritik, dann Task reassigned ohne Rücksprache.'
+- '''Immer Jammer'' → ''Urlaub storniert, keine Diskussion''.'
+- 'Treffen: Vorwurf Tirade, dann Unilateral Decision.'
+- 'Protokoll: fünf Kritik‑Sätze, Abschluss ''Ich entscheide das''.'
+- 'Muster über zwei Wochen: Dauerkritik + Befehle.'
+- '''Ständig versagst du'' → ''ich kündige Vertrag, Thema durch''.'
+- 'Whip‑Chat: Generalisierung, Abwertung, Planerzwingung.'
+- 'Stand‑Up: ''Immer Probleme'' → ''Wir setzen Deadline vor.'''
+- 'Email: Großer Vorwurf, danach ''Budget ist gekürzt, fertig''.'
+- Analyse erkennt Pattern >2 innerhalb 25 Nachrichten.
+semantische_grabber_id: SGR_DOMINANCE_PATTERN_01
+metadata:
+  created_at: 2025-07-22 00:20:43.021259
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags:
+  - neu_erstellt
+  - needs_review
+  last_repaired: '2025-07-22T02:31:24.227097'
+  repair_version: '1.0'
+category: UNCATEGORIZED
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5

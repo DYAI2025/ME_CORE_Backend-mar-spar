@@ -1,0 +1,24 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für PYSCHOLOGICAL_MANIPULATION",
+    "examples": [
+      "nlp = spacy.load(\"de_core_news_lg\")",
+      "print(\"Fehler: Das Sprachmodell 'de_core_news_lg' wurde nicht gefunden.\")",
+      "print(\"Bitte installieren Sie es mit dem Befehl: python -m spacy download de_core_news_lg\")",
+      "YAML_DATA = \"\"\"",
+      "name: \"Gaslighting\""
+    ],
+    "id": "S_PYSCHOLOGICAL_MANIPULATION",
+    "level": 2,
+    "name": "PYSCHOLOGICAL_MANIPULATION",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_D478",
+    "semantic_tags": [
+      "pyschological-manipulation"
+    ]
+  },
+  "marker_name": "PYSCHOLOGICAL_MANIPULATION"
+}

@@ -1,0 +1,31 @@
+marker_name: A_SYMBOL_LANGUAGES
+- id: "A_SYMBOL_LANGUAGE"
+  level: 1
+  version: "1.0.0"
+  author: "auto_gpt"
+  created_at: "2025-07-21"
+  status: "draft"
+  lang: "de"
+  name: "SYMBOL_LANGUAGE"
+  description: |
+    Atomic-Marker wird getriggert, wenn der Sprecher eigenständige
+    Symbolsprache oder Piktogramme verwendet (z. B. 🌱, 🔄, ☄, ↔),
+    um Bedeutung anzudeuten, ohne dies sprachlich auszubuchstabieren.
+  category: "ATOMIC"
+  atomic_pattern:
+    - "<SYMBOL_LANG>"
+  tags: ["symbol", "piktogramm", "implizit"]
+  semantic_grabber_id: "SGR_SYMBOL_LANGUAGE_01"
+  examples:
+    - "🌱"
+    - "↔"
+    - "☄"
+    - "🚀→"
+    - "♻️"
+    - "🔄"
+    - "🌟"
+    - "💬"
+    - "💡"
+    - "❤️"
+    
+kategorie: UNCATEGORIZED

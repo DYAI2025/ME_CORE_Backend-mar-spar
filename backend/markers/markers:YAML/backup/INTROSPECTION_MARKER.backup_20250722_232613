@@ -1,0 +1,28 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für INTROSPECTION_MARKER
+  examples:
+  - 'category: "Self-reflection"'
+  - Verhalten hinterfragt, analysiert und persönliche Erkenntnisse teilt.
+  - 'created_at: 2025-07-12T10:41:47.304171'
+  - 'version: 1.0'
+  id: S_INTROSPECTION
+  level: 2
+  name: INTROSPECTION
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_92E1
+  semantic_tags:
+  - introspection-marker
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.630858'
+  repair_version: '1.0'

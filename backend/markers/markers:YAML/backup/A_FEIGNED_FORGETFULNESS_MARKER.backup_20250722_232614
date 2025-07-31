@@ -1,0 +1,30 @@
+marker_name: A_FEIGNED_FORGETFULNESS_MARKER
+beschreibung: 'Atomic Marker für das Vortäuschen von Vergesslichkeit oder Unwissenheit,
+  um Verantwortung oder Aufgaben zu umgehen.
+
+  '
+beispiele:
+- Ich wollte die Spülmaschine ausräumen, hab ich aber total vergessen.
+- Oh, die E-Mail hab ich komplett übersehen.
+- Ich hab einfach nicht mehr dran gedacht, sorry.
+- Da kam leider was Wichtiges dazwischen.
+- Sorry, hab ich heute nicht geschafft.
+semantische_grabber_id: SGR_FEIGNED_FORGETFULNESS_01
+metadata:
+  created_at: 2025-07-21 12:51:17.609109
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags:
+  - neu_erstellt
+  - needs_review
+  last_repaired: '2025-07-21T14:03:13.496393'
+  repair_version: '1.0'
+category: UNCATEGORIZED
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5

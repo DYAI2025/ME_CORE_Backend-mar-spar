@@ -1,0 +1,24 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für SHOCK_SURPRISE_DRIFT_MARKER",
+    "examples": [
+      "marker_name: SHOCK_SURPRISE_DRIFT.yaml_MARKER",
+      "Erkennt Momente plötzlicher Überraschung oder Erschrockenheit, die einen abrupten Bedeutungsdrift auslösen.",
+      "oder auf Hingabe (Akzeptanz, neue Offenheit) zusteuert – oder ob eine ambivalente, schwankende Tendenz vorliegt.",
+      "Relevant für die Analyse von Beziehungsmustern, Dynamik und emergenter Systemsteuerung.",
+      "description: \"Erkennt Muster für shock_surprise_drift.txt\""
+    ],
+    "id": "S_SHOCK_SURPRISE_DRIFT",
+    "level": 2,
+    "name": "SHOCK_SURPRISE_DRIFT",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_6A8F",
+    "semantic_tags": [
+      "shock-surprise-drift-marker"
+    ]
+  },
+  "marker_name": "SHOCK_SURPRISE_DRIFT_MARKER"
+}

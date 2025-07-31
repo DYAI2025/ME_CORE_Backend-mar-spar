@@ -1,0 +1,48 @@
+marker_set:
+  beschreibung: Marker zur Erkennung von Bindungsstrategien in zwischenmenschlichen
+    Beziehungen – z. B. vermeidend, klammernd oder ambivalent.
+  marker:
+  - beispiel:
+    - Ich brauch einfach meinen Freiraum.
+    - Gefühle sind nicht so mein Ding.
+    - Du übertreibst da grad ein bisschen, oder?
+    definition: Distanzorientiertes Verhalten, Rückzug bei Nähe, emotionale Abgrenzung.
+    indikatoren:
+    - emotionale Ausweichmanöver
+    - Abwertung von Nähe
+    - Überbetonung von Unabhängigkeit
+    name: vermeidendes Bindungsmuster
+  - beispiel:
+    - Warum hast du mir nicht sofort geschrieben?
+    - Ich hab das Gefühl, ich bin dir egal.
+    - Du bist das Einzige, was ich hab.
+    definition: Nähe-Suche bis zur Selbstaufgabe, starke Verlustangst, ständiges Bestätigungsbedürfnis.
+    indikatoren:
+    - übermäßiges Kontrollverhalten
+    - Sorge bei Nicht-Erreichbarkeit
+    - emotionales Verschmelzungsbedürfnis
+    name: klammerndes Bindungsmuster
+  - beispiel:
+    - Lass mich in Ruhe! ... Aber geh bitte nicht.
+    - Ich will dich – aber ich kann dir nicht vertrauen.
+    - Du verstehst mich nie – aber ich brauch dich.
+    definition: Wechsel zwischen Nähe und Rückzug, innere Zerrissenheit, emotionale
+      Unsicherheit.
+    indikatoren:
+    - Wechsel zwischen Vorwurf und Sehnsucht
+    - Unklare Kommunikationssignale
+    - emotionale Achterbahnen
+    name: ambivalentes Bindungsmuster
+  name: Bindungsmuster
+category: UNCATEGORIZED
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-21T21:32:11.844697'
+  repair_version: '1.0'

@@ -1,0 +1,29 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: 'Detektiert Reparatur- und Versöhnungsphasen nach Kommunikationsbrüchen
+    – Entschuldigungen, Neustart-Signale oder Einladungen zur Wiederannäherung.
+
+    '
+  examples:
+  - Detektiert Reparatur- und Versöhnungsphasen nach Kommunikationsbrüchen – Entschuldigungen,
+    Neustart-Signale oder Einladungen zur Wiederannäherung
+  id: S_REBOUND_SEM
+  level: 2
+  name: REBOUND_SEM
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_4409
+  semantic_tags:
+  - rebound-sem-marker
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.865326'
+  repair_version: '1.0'

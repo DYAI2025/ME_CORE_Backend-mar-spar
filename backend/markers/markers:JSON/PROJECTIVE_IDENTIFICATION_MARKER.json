@@ -1,0 +1,20 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für PROJECTIVE_IDENTIFICATION_MARKER",
+    "examples": [
+      "Eigene, oft unbewusste Gefühle, Schwächen oder Eigenschaften werden dem Gegenüber so zugeschrieben, dass dieser sie schließlich übernimmt oder sich entsprechend verhält."
+    ],
+    "id": "S_PROJECTIVE_IDENTIFICATION",
+    "level": 2,
+    "name": "PROJECTIVE_IDENTIFICATION",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_0AA5",
+    "semantic_tags": [
+      "projective-identification-marker"
+    ]
+  },
+  "marker_name": "PROJECTIVE_IDENTIFICATION_MARKER"
+}

@@ -1,0 +1,59 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für ESCALATION_MARKER
+  examples:
+  - Jetzt reicht’s! Ich zittere am ganzen Körper, weil du mir schon wieder nicht zuhörst.
+    Ich geh jetzt, bevor ich was Falsches sage!
+  - ALTER, DAS LAGGT SO HARD! ICH RASTE AUS! FUCK IT, ICH BIN RAUS FÜR HEUTE!
+  - Mein Puls ist auf 180! Wenn Sie das jetzt nicht sofort klären, dann eskaliert
+    das hier gewaltig, das garantiere ich Ihnen!
+  - Ich hab dir das jetzt 10x erklärt und mein Herz hämmert vor Wut. Lass mich einfach
+    in Ruhe, ich kann nicht mehr.
+  - FÄHRT DER IDIOT MIR JETZT ECHT HINTEN REIN? ICH PLATZE GLEICH!
+  - Mir schnürt sich die Kehle zu. Du hast mein Vertrauen so missbraucht, ich kann
+    gerade nicht mal mehr klar denken. Ende.
+  - Wenn ich diesen Blödsinn noch einmal lese, explodiert mein Kopf! Ihr seid doch
+    alle verloren. Ich lösche meinen Account.
+  - (Person wird rot, ballt die Fäuste unter dem Tisch) „Das ist inakzeptabel. Ich
+    muss kurz an die frische Luft.“
+  - Ich krieg keine Luft mehr, alles dreht sich, ich glaube, ich kippe um, irgendwas
+    stimmt nicht!
+  - 🤬🤬🤬 ICH HASSE DAS. BIN WEG. 🚪
+  - Ey, mein Herz rast und ich zittere – du hörst mir nie zu und ich hab echt keinen
+    Bock mehr, ich bin raus.
+  - Alter, ich raste aus vor Wut, fühl mich komplett verarscht und jetzt reicht’s,
+    ciao.
+  - Ich koche vor Zorn, mein Puls hämmert bis zum Hals, du ignorierst mich ständig
+    – ich geh offline!
+  - Ey, ich schwitze und zittere, du hast null Respekt, ich hab die Schnauze voll,
+    peace.
+  - Mein ganzer Körper bebt, du bringst mich zum Explodieren und ich lösche den Chat
+    – fertig.
+  - OMG, ich kann kaum atmen, du hörst nie zu und laberst nur Blödsinn – ich bin raus!
+  - Alter, ich platze gleich vor Wut, du gehst mir so derbe auf den Keks, also bis
+    hier hin und weg!
+  - Ich spür mein Herz hämmern, du lenkst mich ab und hast mich hängen lassen – tschö
+    mit ö!
+  - Ey, ich bin so sauer, mein Puls rast, du hältst mich für’n Idioten, peace out!
+  - Ich zitter gerade am ganzen Körper, du verarschst mich, ey, das war’s, ich geh
+    offline.
+  id: S_ESCALATION
+  level: 2
+  name: ESCALATION
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_14A3
+  semantic_tags:
+  - needs_review
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.900818'
+  repair_version: '1.0'

@@ -1,0 +1,18 @@
+{
+  "marker_name": "C_SUSTAINED_CONTACT_MARKER",
+  "beschreibung": "Ungewöhnlich hohe Kommunikationsfrequenz (≥ 3/Woche) länger als zwei Monate ohne äußeren Sachzwang.\n",
+  "beispiele": [
+    "Meld dich, wenn du wach bist ☕️",
+    "Gute Nacht – schreib morgen.",
+    "Memes des Tages schon gesehen?",
+    "Voice-Note Marathon again?",
+    "Noch wach? 🌙",
+    "Ping mich, wenn du Pause hast.",
+    "Schon zwei Monate Daily-Streak!",
+    "Kein Tag ohne dein Update.",
+    "Jeden Abend ein Recap, crazy.",
+    "Hab extra Datenvolumen für dich geholt."
+  ],
+  "semantische_grabber_id": "AUTO_SEM_20250720_C103",
+  "metadata": {
+    "created_at": 

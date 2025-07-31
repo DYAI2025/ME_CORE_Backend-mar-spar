@@ -1,0 +1,20 @@
+# A_UNRESOLVED_ISSUE_MARKER - Semantic Marker
+marker_name: A_UNRESOLVED_ISSUE_MARKER
+beschreibung: >
+  Identifiziert Ausdrücke, die einen Stillstand oder eine fehlende Lösung in einer Diskussion signalisieren.
+beispiele:
+  - "Ganz ehrlich, wir drehen uns im Kreis und finden einfach keine Lösung."
+  - "Wir kommen hier einfach nicht weiter mit dieser Entscheidung."
+  - "Das führt zu nichts, wenn wir so weiter diskutieren."
+  - "Es gibt keine Lösung für dieses Problem, oder?"
+  - "Wir stecken fest und wissen nicht, wie es weitergehen soll."
+
+semantische_grabber_id: AUTO_SEM_20250723_0B15
+
+metadata:
+  created_at: 2025-07-23T01:09:01.113873
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

@@ -1,0 +1,26 @@
+marker_name: A_TEAM_METAPHOR_MARKER
+beschreibung: 'Verwendung der Metapher ''Team'', um Zusammengehörigkeit zu beschreiben.
+
+  '
+beispiele: null
+semantische_grabber_id: AUTO_SEM_20250721_209C
+metadata:
+  created_at: 2025-07-21 18:44:50.533231
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags:
+  - neu_erstellt
+  - needs_review
+  last_repaired: '2025-07-22T02:31:24.233577'
+  repair_version: '1.0'
+category: UNCATEGORIZED
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+
+kategorie: UNCATEGORIZED

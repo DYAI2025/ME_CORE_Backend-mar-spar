@@ -1,0 +1,36 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für COMPARISON_GHOST_MARKER
+  examples:
+  - 'beschreibung: Subtiler oder offener Vergleich einer aktuellen Situation mit Ex-Partnern,
+    einem früheren Leben oder alternativen Szenarien, was Unsicherheit und Konkurrenzdruck
+    erzeugt.'
+  - 'dynamik_absicht: Die Absicht reicht von unbewusster Unsicherheit und dem Suchen
+    nach Bestätigung („Bin ich gut genug?“) über passive Aggression („Früher war alles
+    besser“) bis zu gezielter Manipulatio'
+  - 'szenario: "Die Verantwortung für die Diskrepanz zwischen ''früher'' und ''heute''
+    wird dem neuen Partner zugeschoben. Beispiel: ''Mit meiner Ex konnte ich stundenlang
+    reden. Bei dir habe ich das Gefühl, je'
+  - 'description: "Erkennt vergleichende Sprache, die sich auf vergangene oder alternative
+    Personen/Szenarien bezieht."'
+  - 'pattern: "(mein/e Ex|\\w+) +(hat immer|hat nie|war mehr|konnte besser) +([\\w\\s]+)"'
+  id: S_COMPARISON_GHOST
+  level: 2
+  name: COMPARISON_GHOST
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_1AEE
+  semantic_tags:
+  - comparison-ghost-marker
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.868242'
+  repair_version: '1.0'

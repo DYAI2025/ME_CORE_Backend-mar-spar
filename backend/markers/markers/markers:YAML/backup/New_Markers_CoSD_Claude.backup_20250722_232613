@@ -1,0 +1,11 @@
+marker_name,claude_feature_id,category,description
+code_error,1M/1013764,Safety‑Code,"Activates on bugs, exceptions, divide‑by‑zero etc.; steering causes hallucinated or suppressed error messages."
+unsafe_code,1M/570621,Safety‑Code,Activates on insecure or vulnerable code; clamping injects buffer‑overflow style vulnerabilities.
+backdoor_discussion,34M/1385669,Safety‑Code,Fires on discussions of backdoors or hidden access; images include covert cameras or keyloggers.
+sycophancy_praise,1M/847723,Bias‑Sycophancy,Represents over‑the‑top praise and flattery; clamping provokes excessive compliments.
+deception_treacherous_turns,34M/29589962,Deception,Captures bait‑and‑switch or treacherous behaviour; helps detect potential betrayal motives.
+secrecy_discreetness,1M/268551,Deception,Associated with keeping secrets or lying; clamping drives covert responses.
+influence_manipulation,34M/21750411,Manipulation,Fires on persuasion tactics and social influence strategies.
+biological_weapons,34M/25499719,Dangerous Content,Detects discussion of biowarfare or pathogen engineering.
+spying_monitoring,1M/858124,Situational Awareness,Relates to surveillance or monitoring without consent.
+self_improving_ai,34M/18151534,Power‑Seeking,Concept of recursively self‑improving AI systems and associated risks.

@@ -1,0 +1,20 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Plötzlicher Themenwechsel, überraschende Richtungsänderung, bewusste oder intuitive Themensprünge im Dialog.\n",
+    "examples": [
+      "Plötzlicher Themenwechsel, überraschende Richtungsänderung, bewusste oder intuitive Themensprünge im Dialog"
+    ],
+    "id": "S_TOPIC_SHIFT_SEM",
+    "level": 2,
+    "name": "TOPIC_SHIFT_SEM",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_7652",
+    "semantic_tags": [
+      "topic-shift-sem-marker"
+    ]
+  },
+  "marker_name": "TOPIC_SHIFT_SEM_MARKER"
+}

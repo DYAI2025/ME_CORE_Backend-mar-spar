@@ -1,0 +1,36 @@
+marker_name: C_SYMBOLIC_SUPPORT_FIELD
+- id: "C_SYMBOLIC_SUPPORT_FIELD"
+  level: 3
+  version: "1.0.0"
+  author: "auto_gpt"
+  created_at: "2025-07-21"
+  status: "draft"
+  lang: "de"
+  name: "SYMBOLIC_SUPPORT_FIELD"
+  description: |
+    Cluster-Marker für symbolisch vermittelte Zuwendung: Emojis
+    und Symbolsprache stabilisieren die Interaktion ohne explizite
+    Beziehungsnennung.
+  category: "CLUSTER"
+  composed_of:
+    - type: atomic
+      marker_ids: ["A_SYMBOL_LANGUAGE", "A_EMOJI_SUPPORT"]
+  activation_logic: "A_SYMBOL_LANGUAGE OR A_EMOJI_SUPPORT"
+  window:
+    messages: 8
+  scoring:
+    weight: 1.2
+    priority: "low"
+  tags: ["symbolic", "support"]
+  semantic_grabber_id: "SGR_SYMBOLIC_SUPPORT_01"
+  examples:
+    - "A sendet ↔ und ein 🙏, ohne Kommentar – Zustimmung per Symbol."
+    - "“Gern!” + ❤️ als einzige Rückmeldung."
+    - "Projekt-Chat: 🚀→ als Signal für Fortschritt."
+    - "Team: 👍👍 in Reihe, kein Text."
+    - "B antwortet nur mit 🌱 auf lange Erklärung."
+    - "A: 'Danke für die Hilfe!' + 🙌 "
+    - "C schickt nur ein 🤗 nach dem Meeting."
+    - "A: 'Das war super!' + 🎉"
+    - "B: 'Klingt gut!' + 👍"
+kategorie: UNCATEGORIZED

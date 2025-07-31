@@ -1,0 +1,20 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Wiederkehrende, ritualisierte Nähe-Gesten und Insider im Chat; private Codes, Grußformeln, feste Abschiede.\n",
+    "examples": [
+      "Wiederkehrende, ritualisierte Nähe-Gesten und Insider im Chat; private Codes, Grußformeln, feste Abschiede"
+    ],
+    "id": "S_RITUAL_PROXIMITY_SEM",
+    "level": 2,
+    "name": "RITUAL_PROXIMITY_SEM",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_6477",
+    "semantic_tags": [
+      "ritual-proximity-sem-marker"
+    ]
+  },
+  "marker_name": "RITUAL_PROXIMITY_SEM_MARKER"
+}

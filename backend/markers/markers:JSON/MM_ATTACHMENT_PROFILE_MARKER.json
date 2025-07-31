@@ -1,0 +1,33 @@
+# MM_ATTACHMENT_PROFILE_MARKER - Semantic Marker
+marker_name: MM_ATTACHMENT_PROFILE_MARKER
+beschreibung: >
+  Meta‑Marker, der das dominante Bindungsmuster eines Sprechers
+auswählt, sobald mindestens ein Attachment‑Cluster (Secure,
+Avoidant oder Anxious) in drei aufeinander folgenden Analyse‑Chunks
+aktiv bleibt.
+beispiele:
+  - "Nach Langzeit­analyse zeigt der Sprecher konsistent sichere Muster."
+  - "Drei Gesprächssegmente hintereinander aktivieren Avoidant‑Cluster → Profil = vermeidend."
+  - "Secure‑ und Anxious‑Cluster wechseln, doch Anxious überwiegt drei Chunks lang."
+  - "System meldet: 'Dominanter Stil: Secure (p = 0.82)'."
+  - "Profilergebnis wird als Feature an Coaching‑Modul übergeben."
+  - "Dashboard: grüner Balken bei Secure, rote Warnung aus."
+  - "Bei Avoidant‑Profil werden Empathie‑Prompts verstärkt."
+  - "Anxious‑Profil löst Stabilitäts‑Intervention im Chatbot aus."
+  - "Historic‑Graph zeigt Schwenk von Anxious → Secure nach Therapie."
+  - "Keine Cluster‑Dominanz = Profil 'Unresolved', meldet Meta‑Marker."
+  - "Profilwechsel wird mit Zeit­stempel geloggt."
+  - "Userdaten werden anonymisiert für Forschungszwecke exportiert."
+  - "Meta‑Marker fließt in Matching‑Engine für Beziehungstipps ein."
+  - "Edge‑Case: gleichzeitige Aktivierung zweier Cluster → Warnung."
+  - "Coach‑Dashboard zeigt Meta‑Score 0.67 (Secure)."
+
+semantische_grabber_id: SGR_META_ATTACH_01
+
+metadata:
+  created_at: 2025-07-22T00:10:50.668731
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

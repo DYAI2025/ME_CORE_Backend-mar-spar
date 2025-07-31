@@ -1,0 +1,72 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Ein Verhaltens- oder Kommunikationsmuster, bei dem eine Person aktiv oder passiv ihre eigenen Chancen auf Erfolg, Nähe oder Problemlösung untergräbt.",
+    "examples": [
+      "Ich glaube, ich sage das Date ab. Ich bin heute eh nicht gut drauf.",
+      "Du verdienst jemanden, der besser für dich ist als ich.",
+      "Ach, die Beförderung sollen sie jemand anderem geben. Der Druck wäre mir eh zu groß.",
+      "Ich fange mit der Diät lieber erst gar nicht an, ich halte das eh nicht durch.",
+      "Lass uns das Thema beenden, ich mache doch eh alles nur noch schlimmer.",
+      "Nein, danke für die Hilfe. Ich will dir keine Umstände machen.",
+      "Ich wusste doch, dass das zu gut war, um wahr zu sein.",
+      "Bevor ich dich verletze, beende ich das hier lieber gleich.",
+      "Ich habe die Bewerbungsfrist verpasst. War wohl einfach nicht sein soll.",
+      "Mach du das mal, du kannst das viel besser als ich. Ich würde es nur ruinieren.",
+      "Ich fange vor wichtigen Prüfungen immer einen Streit an, ich weiß auch nicht warum.",
+      "Das Kompliment meines Chefs habe ich ignoriert. Er meinte das sicher nicht so.",
+      "Lass uns die Verabredung lieber absagen, ich fühl mich heute eh nicht gut genug.",
+      "Ich glaube, ich plane die Feiertage einfach ohne dich.",
+      "Wenn’s kompliziert wird, dann lass ich es halt ganz sein.",
+      "Ich fang nächstes Jahr einfach irgendwo neu an, hier klappt es ja eh nicht.",
+      "Ich bin es nicht wert, dass man sich so um mich bemüht.",
+      "Ich hab das Projekt absichtlich nicht perfekt gemacht, damit die Erwartungen beim nächsten Mal nicht so hoch sind.",
+      "Ich antworte ihm extra nicht, dann merkt er vielleicht von selbst, dass ich zu kompliziert bin.",
+      "Ist schon okay, wenn du gehst. Ich bin es gewohnt, allein zu sein."
+    ],
+    "id": "S_SELF_SABOTAGE_LOOP",
+    "level": 2,
+    "name": "SELF_SABOTAGE_LOOP",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_F817",
+    "semantic_tags": [
+      "self-sabotage-loop-marker"
+    ]
+  },
+  "marker_name": "SELF_SABOTAGE_LOOP_MARKER",
+  "psychologischer_hintergrund": [
+    {
+      "Theorie": "Schematherapie (Schema \"Versagen\" oder \"Unzulänglichkeit\")"
+    },
+    {
+      "Theorie": "Bindungstheorie (desorganisierter oder vermeidender Stil)"
+    },
+    {
+      "Abwehrmechanismus": "Agieren, Regression"
+    }
+  ],
+  "semantic_grab": {
+    "description": "Erkennt eine Kombination aus negativen Selbstbewertungen, Rückzugsankündigungen und der Ablehnung von Chancen oder Hilfe.",
+    "patterns": [
+      {
+        "example": "Das Date wäre toll, aber ich glaube, ich bin nicht interessant genug und sage lieber ab.",
+        "pattern": "(aber ich glaube|ich habe Angst) +(ich schaffe das nicht|sagen wir es lieber ab)",
+        "rule": "PREEMPTIVE_SURRENDER"
+      },
+      {
+        "example": "Bevor ich dich nur enttäusche, fangen wir lieber gar nichts Ernstes an.",
+        "pattern": "(bevor ich alles kaputt mache|damit ich niemanden enttäusche) +(lasse ich es lieber gleich|mache ich es erst gar nicht)",
+        "rule": "FOCUS_ON_FAILURE_POTENTIAL"
+      }
+    ]
+  },
+  "tags": [
+    "selbstbild",
+    "angst",
+    "vermeidung",
+    "prokrastination",
+    "kontrolle"
+  ]
+}

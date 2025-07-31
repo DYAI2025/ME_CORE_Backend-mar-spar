@@ -1,0 +1,50 @@
+{
+  "ID": "S_CRISIS_MONEY_REQUEST",
+  "frame": 
+    
+    "description": "Eine plötzliche, dramatische und oft lebensbedrohliche Notlage wird präsentiert, die nur durch eine sofortige finanzielle Hilfe des Opfers gelöst werden kann.",
+    "examples": [
+      "Ich sitze am Flughafen fest, mein Portemonnaie wurde gestohlen. Ich weiß nicht, was ich tun soll, ich brauche nur Geld für ein neues Ticket.",
+      "Mein Kind liegt im Krankenhaus und die Versicherung zahlt nicht sofort. Ich bin verzweifelt, es geht um die Operation.",
+      "Ich habe eine einmalige Geschäftschance, aber mir fehlt ein kleiner Betrag für die Lizenzgebühr. Du würdest es tausendfach zurückbekommen.",
+      "Wegen eines Missverständnisses wurde mein Konto eingefroren. Ich komme an nichts ran, nicht mal an Geld für Essen.",
+      "Ich habe eine Steuerschuld, von der ich nichts wusste. Wenn ich nicht bis morgen zahle, droht mir eine Strafe.",
+      "Ich schäme mich so, dich zu fragen, aber ich habe niemanden sonst. Mein Vermieter will mich rauswerfen.",
+      "Die Ausrüstung, die ich für meinen Job brauche, ist kaputtgegangen. Ohne sie kann ich nicht arbeiten und kein Geld verdienen.",
+      "Ich bin im Ausland gestrandet und die Botschaft hilft nicht. Ich brauche nur Hilfe für eine sichere Unterkunft.",
+      "Ich habe eine Erbschaft gemacht, aber um sie anzutreten, muss ich eine hohe Gebühr zahlen, die ich gerade nicht habe.",
+      "Mein Laptop wurde gestohlen, mit all meiner Arbeit darauf. Ich brauche dringend einen neuen, um meine Projekte zu beenden.",
+      "Ich habe Schulden bei den falschen Leuten gemacht. Sie haben mich bedroht. Ich habe Angst um mein Leben.",
+      "Das Paket mit den Geschenken für dich steckt beim Zoll fest. Könntest du bitte die Zollgebühren für mich übernehmen?",
+      "Ich wollte dich mit einem Besuch überraschen, aber jetzt reicht das Geld für den Flug nicht ganz.",
+      "Mein Sohn hat etwas kaputt gemacht und ich muss den Schaden sofort bezahlen.",
+      "Ich wurde ausgeraubt und habe alles verloren. Ich brauche nur eine kleine Starthilfe.",
+      "Ich habe eine dringende Arztrechnung zu bezahlen.",
+      "Mein Visum läuft ab und ich brauche Geld für die Verlängerung, sonst werde ich abgeschoben.",
+      "Ich würde dich niemals um Geld bitten, aber dies ist ein absoluter Notfall, der nicht warten kann.",
+      "Ich habe mein ganzes Geld in ein Projekt investiert, das zu scheitern droht, wenn ich nicht sofort nachschieße.",
+      "Bitte, kannst du mir helfen? Ich verspreche, du bist meine einzige Hoffnung."
+    ],
+    "id": "S_CRISIS_MONEY_REQUEST",
+    "level": 2,
+    "name": "CRISIS_MONEY_REQUEST",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_4AF8",
+    "semantic_tags": [
+      "crisis-money-request"
+    ]
+  },
+  "marker_name": "CRISIS_MONEY_REQUEST",
+  "psychologischer_hintergrund": [
+    "Ausnutzung von Empathie und Helfersyndrom",
+    "Erzeugung von kognitiver Dissonanz",
+    "Kernelement des Romance-Scam-Skripts"
+  ],
+  "tags": [
+    "fraud",
+    "scam",
+    "notfall",
+    "geldforderung",
+    "manipulation"
+  ]
+}

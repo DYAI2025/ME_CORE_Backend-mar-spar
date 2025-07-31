@@ -1,0 +1,21 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für NEW_STRATEGY_ATTEMPT_MARKER_MARKER",
+    "examples": [
+      "description: \"Erkennt Muster für new_strategy_attempt_marker\"",
+      "pattern: r\"(muster.*wird.*ergänzt)\""
+    ],
+    "id": "S_NEW_STRATEGY_ATTEMPT_MARKER",
+    "level": 2,
+    "name": "NEW_STRATEGY_ATTEMPT",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_0E62",
+    "semantic_tags": [
+      "new-strategy-attempt-marker-marker"
+    ]
+  },
+  "marker_name": "NEW_STRATEGY_ATTEMPT_MARKER_MARKER"
+}

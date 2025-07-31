@@ -1,0 +1,22 @@
+# S_BLAME_SHIFT_RESPONSE_MARKER - Semantic Marker
+marker_name: S_BLAME_SHIFT_RESPONSE_MARKER
+beschreibung: >
+  Semantischer Marker, wenn eine Schuldumkehr-Phrase (A_BLAME_SHIFT)
+kombiniert mit einer Verharmlosung (A_DOWNPLAYING) oder Gaslighting (A_GASLIGHT)
+in derselben Nachricht vorkommt.
+beispiele:
+  - "Ach komm, teilweise ist da was dran, aber übertreib nicht – wärst du besser vorbereitet gewesen."
+  - "Nicht meine Schuld, das ist wirklich keine große Sache."
+  - "Wegen dir lief’s schief, aber halb so wild."
+  - "Wenn du es genau nimmst, wärst du dran gewesen – war doch nur Spaß."
+  - "Nicht ich hab’s vermasselt, du bildest dir das nur ein."
+
+semantische_grabber_id: SGR_BLAME_SHIFT_RESPONSE_01
+
+metadata:
+  created_at: 2025-07-21T13:34:25.786374
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

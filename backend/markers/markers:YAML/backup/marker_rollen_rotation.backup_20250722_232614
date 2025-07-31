@@ -1,0 +1,29 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für marker_rollen_rotation
+  examples:
+  - 'funktion: "Wechselt zyklisch zwischen Opfer, Retter, Verfolger."'
+  - 'psychodynamischer_resonanzkörper: "Karpman-Dramadreieck"'
+  - 'funktion: "Sprache als intellektuelles Ritual statt Gefühlskommunikation."'
+  - 'psychodynamischer_resonanzkörper: "Abwehrmechanismus: Intellektualisierung"'
+  - 'funktion: "Scheinbar sachlicher Ton verschleiert inneren Konflikt."'
+  id: S_MARKER_ROLLEN_ROTATION
+  level: 2
+  name: marker_rollen_rotation
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_1E13
+  semantic_tags:
+  - marker-rollen-rotation
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.894253'
+  repair_version: '1.0'

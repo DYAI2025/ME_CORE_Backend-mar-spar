@@ -1,0 +1,22 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für AFFILIATION_INCENTIVE",
+    "examples": [
+      "name: \"Affiliation Incentive\"",
+      "Detects communicative patterns that motivate belonging, loyalty, or long-term engagement through informal incentives or promises of future rewards. These statements create a sense of exclusivity, futu",
+      "category: \"Psychological Reward\""
+    ],
+    "id": "S_AFFILIATION_INCENTIVE",
+    "level": 2,
+    "name": "AFFILIATION_INCENTIVE",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_4F19",
+    "semantic_tags": [
+      "affiliation-incentive"
+    ]
+  },
+  "marker_name": "AFFILIATION_INCENTIVE"
+}

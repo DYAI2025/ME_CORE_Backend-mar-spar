@@ -1,0 +1,24 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für SCAMMER_SEMANTIC_BEHAVIOUR_MARKER",
+    "examples": [
+      "marker_name: SCAMMER_SEMANTIC_BEHAVIOUR.yaml_MARKER",
+      "marker: SCAMMER_SEMANTIC_BEHAVIOUR.yaml_MARKER",
+      "Erkennt manipulative Verhaltensmuster aus Romance-Scam-Situationen.",
+      "Die Marker basieren auf semantischen Strategien wie Love Bombing, Future Faking, Schuldumkehr, Isolation und Krisenmanipulation.",
+      "Diese Muster treten häufig in digitaler Kommunikation auf und lassen sich nicht auf einzelne Schlüsselwörter reduzieren."
+    ],
+    "id": "S_SCAMMER_SEMANTIC_BEHAVIOUR",
+    "level": 2,
+    "name": "SCAMMER_SEMANTIC_BEHAVIOUR",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_607A",
+    "semantic_tags": [
+      "scammer-semantic-behaviour-marker"
+    ]
+  },
+  "marker_name": "SCAMMER_SEMANTIC_BEHAVIOUR_MARKER"
+}

@@ -1,0 +1,10 @@
+Kategorie,Matches,Score,Threshold_Reached
+Beige_Survival,"nahrung, sicherheit, schutz",0.5,True
+Purpur_Tribal,"ritual, magie",0.333,False
+Rot_Power,"macht, dominanz, ego, stärke, kontrolle",0.833,True
+Blau_Order,"ordnung, regeln, moral, gehorsam",0.667,True
+Orange_Success,"fortschritt, konkurrenz",0.4,False
+Grün_Community,"harmonie, empathie",0.4,False
+Gelb_Integration,"system, komplexität, integration, paradox",0.8,True
+Türkis_Holistic,"bewusstsein, transzendenz",0.4,False
+Coral_Cosmic,,0.0,False

@@ -1,0 +1,24 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für MM_MANIPULATIVE_RELATIONSHIP_ENGINEERING_MARKER",
+    "examples": [
+      "id: \"MM_MANIPULATIVE_RELATIONSHIP_ENGINEERING\"",
+      "name: \"Manipulativer Beziehungsaufbau\"",
+      "Übergeordneter Meta-Marker für die Kombination von strategisch eingesetzten Beziehungsmustern.",
+      "Entsteht, wenn Rapid Self Disclosure, Love Bombing und Future Faking in kurzer Folge auftreten.",
+      "marker_ids: [\"M_RAPID_SELF_DISCLOSURE\",\"M_LOVE_BOMBING\",\"M_FUTURE_FAKING\"]"
+    ],
+    "id": "S_MM_MANIPULATIVE_RELATIONSHIP_ENGINEERING",
+    "level": 2,
+    "name": "MM_MANIPULATIVE_RELATIONSHIP_ENGINEERING",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_9FB7",
+    "semantic_tags": [
+      "mm-manipulative-relationship-engineering-marker"
+    ]
+  },
+  "marker_name": "MM_MANIPULATIVE_RELATIONSHIP_ENGINEERING_MARKER"
+}

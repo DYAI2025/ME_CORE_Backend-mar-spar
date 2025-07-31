@@ -1,0 +1,60 @@
+marker_name: S_HOPEFUL_DRIVING_TONE
+- id: "S_HOPEFUL_DRIVING_TONE"
+  level: 2
+  version: "1.1.0"
+  author: "Marker_examples_generator"
+  created_at: "2025-07-22"
+  status: "released"
+  lang: "de"
+  name: "HOPEFUL_DRIVING_TONE"
+  description: "Positive, dynamic, motivating tone focused on future chances and potential."
+  composed_of:
+    - type: atomic
+      marker_ids: ["A_HOPEFUL_FORWARD_LOOKING"]
+  rules:
+    - type: activation_logic
+      value: "A_HOPEFUL_FORWARD_LOOKING"
+  tags: ["semantic","emotion","hopeful","motivating"]
+  examples:
+    - de: "Ich glaube, da geht noch richtig was für uns."
+      en: "I believe there's still a lot of potential for us."
+    - de: "Das ist die perfekte Möglichkeit, alles zu ändern."
+      en: "This is the perfect opportunity to change everything."
+    - de: "Ich sehe so viele neue Chancen am Horizont."
+      en: "I see so many new chances on the horizon."
+    - de: "Okay, das ist ein Rückschlag, aber jetzt erst recht!"
+      en: "Okay, that's a setback, but now more than ever!"
+    - de: "Das fühlt sich wie ein echter Aufbruch an."
+      en: "This feels like a real new beginning."
+    - de: "Wir haben unendlich viele Möglichkeiten, wenn wir nur wollen."
+      en: "We have endless possibilities if we just want to."
+    - de: "Lass uns nach vorne schauen, die besten Zeiten kommen noch."
+      en: "Let's look ahead; the best times are yet to come."
+    - de: "Ich bin total hoffnungsvoll, was dieses Projekt angeht."
+      en: "I'm totally hopeful about this project."
+    - de: "Das ist unsere Chance, es besser zu machen."
+      en: "This is our chance to do it better."
+    - de: "Vergiss das Alte, hier beginnt ein neues Kapitel."
+      en: "Forget the old stuff; a new chapter begins here."
+    - de: "In jeder Herausforderung steckt eine Möglichkeit zum Wachsen."
+      en: "Every challenge holds an opportunity to grow."
+    - de: "Ich spüre, dass die nächsten Monate voller Chancen sind."
+      en: "I feel the next months are full of opportunities."
+    - de: "Das Potenzial dieses Teams ist grenzenlos."
+      en: "The potential of this team is limitless."
+    - de: "Genau jetzt können wir die Zukunft gestalten."
+      en: "Right now we can shape the future."
+    - de: "Ich sehe Licht am Ende des Tunnels – und es ist nicht der Zug."
+      en: "I see light at the end of the tunnel—and it's not the train."
+    - de: "Dieses Feedback zeigt, wo wir noch besser werden können."
+      en: "This feedback shows where we can still improve."
+    - de: "Aufbruchsstimmung liegt in der Luft; lass sie uns nutzen."
+      en: "There's a spirit of new beginnings in the air; let's harness it."
+    - de: "Die nächste Chance wartet nur darauf, dass wir zugreifen."
+      en: "The next opportunity is just waiting for us to grab it."
+    - de: "Ich bin zuversichtlich, dass wir das Ruder herumreißen können."
+      en: "I'm confident we can turn this around."
+    - de: "Es ist erst der Anfang; das Beste kommt noch."
+      en: "This is only the beginning; the best is yet to come."
+
+kategorie: UNCATEGORIZED

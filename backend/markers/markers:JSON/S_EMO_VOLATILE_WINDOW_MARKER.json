@@ -1,0 +1,21 @@
+# S_EMO_VOLATILE_WINDOW_MARKER - Semantic Marker
+marker_name: S_EMO_VOLATILE_WINDOW_MARKER
+beschreibung: >
+  Semantic marker for high emotional volatility: valence standard
+deviation ≥ 0.45 within any 10-message window for the same speaker.
+beispiele:
+  - "Valence series: 0.7, -0.6, 0.65, -0.55 – extreme swings."
+  - "A shifts from euphoria to despair within five posts."
+  - "Chat: “Amazing!” → “Terrible!” → “Awesome!” → “Ugh…”"
+  - "Stand-up mood graph shows wild spikes hour to hour."
+  - "Voice mood: laughing, sobbing, laughing again inside 10 mins."
+
+semantische_grabber_id: SGR_EMO_VOLATILE_WINDOW_01
+
+metadata:
+  created_at: 2025-07-21T19:42:44.804158
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

@@ -1,0 +1,36 @@
+# S_CRITICISM_DEFENSIVENESS_LOOP_MARKER - Semantic Marker
+marker_name: S_CRITICISM_DEFENSIVENESS_LOOP_MARKER
+beschreibung: >
+  d: S_CRITICISM_DEFENSIVENESS_LOOP
+level: 2
+version: "1.0.0"
+author: "Marker_Evaluator_v2"
+created_at: "2025-07-18"
+status: "draft"
+lang: "de"
+name: CRITICISM_DEFENSIVENESS_LOOP
+description: "Erkennt die Eskalationssequenz Kritik → Abwehr innerhalb von zwei Nachrichten."
+composed_of:
+  - type: atomic
+    marker_ids: ["A_CRITICISM_ATTACK","A_DEFENSIVENESS_SHIFT"]
+rules:
+  - type: sequence
+    marker_ids: ["A_CRITICISM_ATTACK","A_DEFENSIVENESS_SHIFT"]
+    value: 2
+    scope: conversation_chunk
+semantic_grabber_id: SGR_GOTTMAN_LOOP
+cluster: ["C_FOUR_HORSEMEN"]
+tags: ["gottman","escalation","feedback_loop","origin_author:John_Gottman"]
+beispiele:
+  - "iexamples:"
+  - "- "A: Du machst immer alles falsch!\n  B: Es ist nicht meine Schuld, du stellst dich an.""
+
+semantische_grabber_id: AUTO_SEM_20250718_5B9C
+
+metadata:
+  created_at: 2025-07-18T02:35:20.060045
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

@@ -1,0 +1,54 @@
+marker_name: A_JOINT_PLANNING_MARKER
+beschreibung: 'Detects phrases that actively propose or initiate a shared activity.
+
+  '
+beispiele:
+- Wollen wir am Samstag ins Kino gehen?
+- Wanna go to the movies on Saturday?
+- Lass uns unseren Urlaub für den Sommer planen.
+- Let’s plan our summer vacation.
+- Hast du Lust auf einen Spaziergang heute Abend?
+- Fancy a walk this evening?
+- Wie wärs, wenn wir mal wieder kochen?
+- How about cooking together again?
+- Sollen wir zusammen die Serie weiterschauen?
+- Shall we continue the series together?
+- Feel like hitting the museum this weekend?
+- Let’s map out our New Year trip tonight.
+- Want to co-work at the café tomorrow morning?
+- How about we try that new sushi place Friday?
+- Should we sign up for a pottery class?
+- What do you think of hosting game night at ours?
+- Let’s schedule a monthly budget check together.
+- Fancy a spontaneous road trip next month?
+- Want to join me for sunrise yoga on the beach?
+- Let’s create a shared playlist for the drive.
+- Shall we test that bread recipe Sunday?
+- How about planning a surprise picnic for your mom?
+- We could sketch out a garden layout this afternoon.
+- Interested in booking the escape-room deal I found?
+- Let’s set a date for our photo shoot downtown.
+- Up for volunteering together at the shelter?
+- Want to draft our goals for the next quarter?
+- How about organising a chill movie marathon?
+- Shall we brainstorm our podcast outline tonight?
+- Let’s join the weekend hackathon as a duo.
+semantische_grabber_id: SGR_JOINT_PLANNING_01
+metadata:
+  created_at: 2025-07-22 00:22:31.585827
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags:
+  - neu_erstellt
+  - needs_review
+  last_repaired: '2025-07-22T02:31:24.241185'
+  repair_version: '1.0'
+category: UNCATEGORIZED
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5

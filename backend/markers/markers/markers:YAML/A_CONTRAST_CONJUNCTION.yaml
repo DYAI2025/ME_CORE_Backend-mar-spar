@@ -1,0 +1,31 @@
+marker_name: A_CONTRAST_CONJUNCTION
+- id: "A_CONTRAST_CONJUNCTION"
+  level: 1
+  version: "1.0.0"
+  author: "Marker_examples_generator"
+  created_at: "2025-07-21"
+  status: "released"
+  lang: "de"
+  name: "Gegensatz-Konjunktion"
+  description: "Wörter, die einen Gegensatz oder Widerspruch einleiten."
+  atomic_pattern:
+    - "aber"
+    - "jedoch"
+    - "andererseits"
+    - "but"
+    - "however"
+    - "on the other hand"
+  tags: ["konjunktion", "gegensatz", "widerspruch"]
+  examples:
+    - "..., but in relationship..."
+    - "..., aber in Beziehungen..."
+    - "I like it, but I don't love it."
+    - "Ich mag es, aber ich liebe es nicht."
+    - "Ich will kommen, aber ich schaff's vielleicht nicht."
+    - "I'd love to go, however I'm broke."
+    - "Er sagt ja, andererseits klingt das komisch."
+    - "I like the idea, but I'm not convinced."
+    - "Wir könnten gehen, jedoch regnet es."
+    - "Sounds fun, but I'm exhausted."
+
+kategorie: UNCATEGORIZED

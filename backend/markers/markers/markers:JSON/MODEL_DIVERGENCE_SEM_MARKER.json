@@ -1,0 +1,20 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Auffällige Abweichungen, Widersprüche oder divergierende Klassifikationen bei mehreren KI-Systemen auf denselben Input.\n",
+    "examples": [
+      "Auffällige Abweichungen, Widersprüche oder divergierende Klassifikationen bei mehreren KI-Systemen auf denselben Input"
+    ],
+    "id": "S_MODEL_DIVERGENCE_SEM",
+    "level": 2,
+    "name": "MODEL_DIVERGENCE_SEM",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_9CE2",
+    "semantic_tags": [
+      "model-divergence-sem-marker"
+    ]
+  },
+  "marker_name": "MODEL_DIVERGENCE_SEM_MARKER"
+}

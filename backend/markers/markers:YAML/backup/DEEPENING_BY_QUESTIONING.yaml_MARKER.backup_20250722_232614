@@ -1,0 +1,31 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für DEEPENING_BY_QUESTIONING_MARKER
+  examples:
+  - 'marker_name: DEEPENING_BY_QUESTIONING.yaml_MARKER'
+  - '"marker": "DEEPENING_BY_QUESTIONING",'
+  - '"beschreibung": ('
+  - '"Erkennt dialogische Muster, bei denen durch feinfühlige, offene oder introspektive
+    Fragen gezielt emotionale Nähe aufgebaut wird. "'
+  - '"Typisch sind aufeinander aufbauende Themen, Wechsel zwischen Selbstöffnung und
+    neugieriger Exploration, sowie die Verwendung von "'
+  id: S_DEEPENING_BY_QUESTIONING
+  level: 2
+  name: DEEPENING_BY_QUESTIONING
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_C4E2
+  semantic_tags:
+  - deepening-by-questioning-marker
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.862702'
+  repair_version: '1.0'

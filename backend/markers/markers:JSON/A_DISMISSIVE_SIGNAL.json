@@ -1,0 +1,21 @@
+id: 'A_DISMISSIVE_SIGNAL'
+marker: DISMISSIVE_SIGNAL
+description: Erkennt kurze, abwertende oder gleichgültige Phrasen, die die Gefühle
+  oder das Anliegen des Gegenübers invalidieren und Nähe unterbrechen. Dient oft der
+  Distanzierung oder als passive Aggression.
+level: '1'
+version: 1.0.0
+status: draft
+author: kimi_k2@moonshot.ai
+created: '2025-07-26T07:36:03Z'
+last_modified: '2025-07-26T07:36:03Z'
+tags: '[atomic, pattern, deactivation, passive-aggression, invalidation, conflict]'
+category: ATOMIC
+risk_score: '3'
+pattern: ''
+'- "a': 'Ich liebe dich. B: 👍'
+examples:
+- ''
+- '"Ich hab mir da viele Gedanken gemacht... - Whatever."'
+- '"Ich hab das Gefühl, wir reden aneinander vorbei. - Wie du meinst."'
+- '"Das ist mir wichtig! - Ist doch egal."'

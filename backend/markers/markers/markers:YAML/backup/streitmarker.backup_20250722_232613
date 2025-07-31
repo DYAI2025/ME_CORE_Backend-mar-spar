@@ -1,0 +1,35 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für streitmarker
+  examples:
+  - Ey, warum hörst du mir nie zu, Alter? Ich hab’s echt satt!
+  - Ich frag mich echt, ob du noch alle Tassen im Schrank hast?
+  - Warum musst du immer alles besser wissen? Das nervt mich total!
+  - Ich verstehe nicht, warum du so drauf bist. Sag’s mir endlich!
+  - Alter, das ist doch völliger Quatsch, was du da redest!
+  - Ich hab dir doch gesagt, dass ich das nicht will, warum machst du es trotzdem?
+  - Warum ignorierst du mich? Ich fühl mich komplett verarscht!
+  - Ey, reg dich ab! Halt mal deine Klappe!
+  - Ich finde es echt arm, wie du dich verhältst.
+  - Du denkst wohl, du bist was Besseres, stimmt’s?
+  - Ich kann nicht glauben, dass du so respektlos bist!
+  id: S_STREITMARKER
+  level: 2
+  name: streitmarker
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_7FB2
+  semantic_tags:
+  - needs_review
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.684270'
+  repair_version: '1.0'

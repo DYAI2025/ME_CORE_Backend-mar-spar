@@ -1,0 +1,21 @@
+# A_IF_YOU_WANT_MARKER - Semantic Marker
+marker_name: A_IF_YOU_WANT_MARKER
+beschreibung: >
+  Typische Formulierungen, die Entscheidungsverantwortung höflich oder indirekt
+an das Gegenüber delegieren.
+beispiele:
+  - "Können wir machen – aber nur, wenn du willst."
+  - "Ich würd dich gern sehen… falls es dir passt."
+  - "Wie du magst, ich bin offen."
+  - "Ich will dich nicht drängen."
+  - "Deine Entscheidung – ich richte mich nach dir."
+
+semantische_grabber_id: SGR_IF_YOU_WANT_01
+
+metadata:
+  created_at: 2025-07-21T01:21:42.958062
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

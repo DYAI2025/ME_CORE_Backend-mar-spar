@@ -1,0 +1,17 @@
+id: TERMINATION
+level: '1'
+version: 0.1.0
+author: assistant
+created_at: '2025-07-22'
+status: draft
+lang: de
+name: ABBRUCHMARKER
+description: '|'
+category: general
+examples:
+- ''
+- '"… egal, bin weg."'
+- '"Muss los. Tschau."'
+- '"Keine Zeit, später vielleicht."'
+- '"*geht offline*"'
+- '"Stop. Anderes Thema."'

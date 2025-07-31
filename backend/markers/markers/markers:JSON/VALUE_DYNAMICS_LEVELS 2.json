@@ -1,0 +1,23 @@
+{
+  "kategorie": "ATOMIC",
+  "marker": {
+    "category": "Atomic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für VALUE_DYNAMICS_LEVELS 2",
+    "examples": [
+      "Automatisch generierte Beschreibung für VALUE_DYNAMICS_LEVELS 2"
+    ],
+    "id": "M_VALUE_DYNAMICS_LEVELS2",
+    "level": 1,
+    "name": "VALUE_DYNAMICS_LEVELS 2",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_9025",
+    "semantic_tags": [
+      "value-dynamics-levels 2"
+    ]
+  },
+  "marker_name": "VALUE_DYNAMICS_LEVELS 2",
+  "tags": [
+    "needs_review"
+  ]
+}

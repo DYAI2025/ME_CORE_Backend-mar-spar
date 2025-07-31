@@ -1,0 +1,30 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für INTEGRATION_MARKER",
+    "examples": [
+      "Ey, ich verstehe, warum du sauer warst, tut mir leid, lass uns wieder gut machen, wir sind schließlich ein Team.",
+      "Ich seh dein Problem total, lass uns das klären und wieder zueinander finden.",
+      "Ich kapier, was dich verletzt hat, ich biete dir an, das hinter uns zu lassen, wir halten zusammen.",
+      "Ich verstehe dich und möchte, dass wir uns wieder vertragen, weil unsere Freundschaft mir am Herzen liegt.",
+      "Ich hör dir zu, hab kapiert, was falsch gelaufen ist, lass uns einen Neuanfang starten.",
+      "Ich erkenne an, wie viel du durchgemacht hast, verzeih mir, ich will unser Band stärken.",
+      "Ich verstehe, dass du enttäuscht bist, lass uns das beilegen und uns wieder verbunden fühlen.",
+      "Ich fühl mit dir und möchte unsere Verbindung reparieren, okay?",
+      "Ich sehe, wie wichtig dir das ist, tut mir leid, ich hoffe, wir können uns wieder vertragen.",
+      "Ich erkenne dein Gefühl an, lass es uns klären und unsere Freundschaft neu definieren.",
+      "Ich kapier, was los war, es tut mir leid, wir gehören zusammen, lass uns das klären."
+    ],
+    "id": "S_INTEGRATION",
+    "level": 2,
+    "name": "INTEGRATION",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_6D6E",
+    "semantic_tags": [
+      "needs_review"
+    ]
+  },
+  "marker_name": "INTEGRATION_MARKER"
+}

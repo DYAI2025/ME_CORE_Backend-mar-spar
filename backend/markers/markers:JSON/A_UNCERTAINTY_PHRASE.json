@@ -1,0 +1,26 @@
+marker_name: A_UNCERTAINTY_PHRASE
+- id: "A_UNCERTAINTY_PHRASE"
+  level: 1
+  version: "1.0.0"
+  author: "Marker_examples_generator"
+  created_at: "2025-07-21"
+  status: "released"
+  lang: "de"
+  name: "Unsicherheits-Phrase"
+  description: "Ausdrücke, die Nichtwissen, Zweifel oder Unsicherheit signalisieren."
+  atomic_pattern:
+    - "ich weiß nicht"
+    - "ich bin unsicher"
+    - "keine Ahnung"
+    - "I don't know"
+    - "I'm not sure"
+  tags: ["unsicherheit", "zweifel", "kognition"]
+  examples:
+    - "but in relationship - I don't know."
+    - "Ich weiß nicht 🤷‍♂️, vielleicht morgen?"
+    - "Kein Plan, bin unsicher..."
+    - "I'm not sure about that tbh."
+    - "I don't know 🤔, feels weird."
+    - "Ich bin unsicher, was du meinst."
+    - "I dunno, kinda lost here."
+kategorie: UNCATEGORIZED

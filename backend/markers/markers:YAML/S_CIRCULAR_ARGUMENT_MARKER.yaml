@@ -1,0 +1,20 @@
+# S_CIRCULAR_ARGUMENT_MARKER - Semantic Marker
+marker_name: S_CIRCULAR_ARGUMENT_MARKER
+beschreibung: 
+  Erkennt eine Gesprächsdynamik, bei der wiederholte Beschwerden mit dem Gefühl der Ausweglosigkeit kombiniert werden.
+Examples
+  - "Nicht schon wieder dieses Thema! Wir kommen da einfach nicht weiter."
+  - "Immer wieder das Gleiche, und es bringt uns keinen Schritt weiter."
+  - "Schon wieder dieselben Vorwürfe, und wir finden keine Lösung."
+  - "Jedes Mal diese Beschwerde, und wir drehen uns nur im Kreis."
+  - "Wir hatten das doch schon, und dennoch kommen wir nicht voran."
+
+semantische_grabber_id: SGR_CIRCULAR_ARGUMENT_01
+
+metadata:
+  created_at: 2025-07-23T01:09:13.319945
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

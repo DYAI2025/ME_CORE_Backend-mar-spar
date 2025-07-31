@@ -1,0 +1,28 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für AI_BOT_SEMANTIC_DETECT.py_MARKER
+  examples:
+  - 'marker_name: AI_BOT_SEMANTIC_DETECT.py_MARKER'
+  - 'marker: AI_BOT_SEMANTIC_DETECT.py_MARKER'
+  - 'description: "Erkennt Muster für ai_bot_semantic_detect.py"'
+  - 'pattern: r"(muster.*wird.*ergänzt)"'
+  id: S_AI_BOT_SEMANTIC_DETECTPY
+  level: 2
+  name: AI_BOT_SEMANTIC_DETECT.py
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_835D
+  semantic_tags:
+  - ai-bot-semantic-detect.py-marker
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.627537'
+  repair_version: '1.0'

@@ -1,0 +1,28 @@
+{
+  "marker_name": "S_PASSIVE_AGGRESSIVE_ATTACK_MARKER",
+  "beschreibung": "Subtiler Sarkasmus + verdeckte Anspielung in einer Message.\n",
+  "beispiele": [
+    "War ja klar, *immer* vergisst du die Deadline – schön gemacht.",
+    "Schön für dich, dass du *ständig* perfekt bist.",
+    "Na toll, *jedes Mal* passiert dir so was.",
+    "Wie nett von dir, *nie* pünktlich zu sein.",
+    "Muss ja schön sein, wenn man *immer* Recht hat.",
+    "War ja klar, dass du *typisch* wieder alles an dich reißt.",
+    "Schön für dich, du hast es heute sogar *einmal* geschafft zuzuhören.",
+    "Na super, *immer* bist du der Held des Tages.",
+    "Wie nett von dir, *ständig* Ausreden zu finden.",
+    "Muss ja schön sein, wenn du *nie* was falsch machst.",
+    "War ja klar, du bist *immer* der, der es besser weiß.",
+    "Schön, *jedes Mal* derselbe Zirkus mit dir.",
+    "Na toll, *nie* kriegst du’s hin, die Küche sauber zu lassen.",
+    "Wie nett, dass du *ständig* meine Hinweise ignorierst.",
+    "Muss ja schön sein, wenn dein *typisch* chaotischer Stil funktioniert.",
+    "War ja klar, *immer* Drama, wenn du dabei bist.",
+    "Schön für dich, das *jedes Mal* auf mich abzuwälzen.",
+    "Na super, *immer* bist du im Mittelpunkt – großartig.",
+    "Wie nett, dass du *nie* Fehler zugibst.",
+    "Muss ja schön sein, wenn du *ständig* Applaus erwartest."
+  ],
+  "semantische_grabber_id": "SGR_PASSIVE_AGGRESSIVE_ATTACK_01",
+  "metadata": {
+    "created_at": 

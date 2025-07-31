@@ -1,0 +1,22 @@
+# C_FRIENDSHIP_SIGNALING_MARKER - Semantic Marker
+marker_name: C_FRIENDSHIP_SIGNALING_MARKER
+beschreibung: >
+  Cluster-Marker für sprachliche Signale, die Zugehörigkeit, Vertrautheit und 
+freundschaftliche Nähe erzeugen. Oft durch Anspielungen, geteilte Geschichte, 
+Nicknames oder ironische Zuneigung ausgedrückt.
+beispiele:
+  - "Weißt du noch, wie wir damals im Regen gefeiert haben?"
+  - "Du bist und bleibst mein Lieblingsidiot."
+  - "Egal was passiert, ich steh hinter dir, klar?"
+  - "Du kennst mich doch – ich brauch drei Tage zum Antworten 😂"
+  - "Nur du darfst mich so nennen, Alter."
+
+semantische_grabber_id: SGR_FRIENDSHIP_SIGNALING_01
+
+metadata:
+  created_at: 2025-07-21T05:18:41.822985
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

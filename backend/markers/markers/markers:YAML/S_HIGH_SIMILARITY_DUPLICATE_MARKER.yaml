@@ -1,0 +1,34 @@
+# S_HIGH_SIMILARITY_DUPLICATE_MARKER - Semantic Marker
+marker_name: S_HIGH_SIMILARITY_DUPLICATE_MARKER
+beschreibung: >
+  id: S_HIGH_SIMILARITY_DUPLICATE
+level: 2
+version: "1.0.0"
+author: "Marker_Evaluator_v2"
+created_at: "2025-07-18"
+status: "draft"
+lang: "en"
+name: HIGH_SEMANTIC_DUPLICATE
+description: "Flags two messages with cosine-embedding-similarity ≥ 0.9 and token overlap ≤ 0.5."
+pattern: []
+composed_of: []         # nutzt ausschließlich die similarity-Regel
+rules:
+  - type: semantic_similarity
+    threshold: 0.9
+    overlap_max: 0.5
+    scope: message_pair
+semantic_grabber_id: SGR_SEM_SIM_01
+tags: ["semantic_similarity","embedding","origin_source:SAS_Paper"]
+beispiele:
+  - "examples:"
+  - "- "Msg1: National Football League\n    Msg2: the NFL""
+
+semantische_grabber_id: AUTO_SEM_20250718_9216
+
+metadata:
+  created_at: 2025-07-18T02:34:40.223025
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

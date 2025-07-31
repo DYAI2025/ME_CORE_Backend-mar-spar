@@ -1,0 +1,22 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für INITIATIVE_MARKER",
+    "examples": [
+      "Wer beginnt Gespräche oder neue Themen? Indikator für Beziehungsdynamik und Engagement.",
+      "description: \"Erkennt Muster für initiative\"",
+      "pattern: r\"(muster.*wird.*ergänzt)\""
+    ],
+    "id": "S_INITIATIVE",
+    "level": 2,
+    "name": "INITIATIVE",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_9573",
+    "semantic_tags": [
+      "initiative-marker"
+    ]
+  },
+  "marker_name": "INITIATIVE_MARKER"
+}

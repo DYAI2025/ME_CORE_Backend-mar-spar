@@ -1,0 +1,23 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für ANALYTICAL_THINKING_MARKER",
+    "examples": [
+      "category: \"Analytical Thinking\"",
+      "datengetriebene Schlussfolgerungen und strukturierte Problemlösung signalisieren.",
+      "created_at: 2025-07-12T10:40:23.095869",
+      "version: 1.0"
+    ],
+    "id": "S_ANALYTICAL_THINKING",
+    "level": 2,
+    "name": "ANALYTICAL_THINKING",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_D6B3",
+    "semantic_tags": [
+      "analytical-thinking-marker"
+    ]
+  },
+  "marker_name": "ANALYTICAL_THINKING_MARKER"
+}

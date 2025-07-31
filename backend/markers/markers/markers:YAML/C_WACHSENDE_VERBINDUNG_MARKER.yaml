@@ -1,0 +1,69 @@
+# C_WACHSENDE_VERBINDUNG_MARKER - Semantic Marker
+marker_name: C_WACHSENDE_VERBINDUNG_MARKER
+beschreibung: >
+  Pattern of repeated joint future planning plus expressed anticipation.
+beispiele:
+  - "A: "Wollen wir am Samstag zusammen kochen?"
+B: "Oh ja, super Idee!"
+A: "Ich freu mich schon drauf!""
+  - "A: "Shall we cook together on Saturday?"
+B: "Oh yes, great idea!"
+A: "I’m already looking forward to it!""
+  - "A: "Lass uns bald mal wieder ein Wochenende wegfahren."
+B: "Unbedingt! Ich kann es kaum erwarten.""
+  - "A: "Let’s plan another weekend getaway soon."
+B: "Absolutely! I can’t wait.""
+  - "A: "Sollen wir für den Herbst Tickets buchen?"
+B: "Ja! Das wird unser Highlight.""
+  - "A: "Shall we book tickets for fall?"
+B: "Yes! That’ll be our highlight.""
+  - "A: "Want to join the winter cabin trip?"
+B: "Yes! I’m counting the days already.""
+  - "A: "Let’s set a date for our photo shoot."
+B: "Perfect—super excited!""
+  - "A: "Shall we both run the charity 5 K?"
+B: "I love it! Training starts now.""
+  - "A: "How about planning a themed dinner night?"
+B: "Yum! Can’t wait to taste our masterpiece.""
+  - "A: "Let’s co-author that article next month."
+B: "I’m buzzing for the brainstorming session.""
+  - "A: "We could book a pottery workshop."
+B: "Yes! Been looking forward to it.""
+  - "A: "Want to take Friday off for a road trip?"
+B: "Absolutely, that thought keeps me going.""
+  - "A: "Shall we start a Sunday brunch tradition?"
+B: "Deal—I’m already hungry.""
+  - "A: "Let’s plant herbs together this weekend."
+B: "Sounds wholesome—I’m excited.""
+  - "A: "We could sign up for dance lessons."
+B: "Yes! Been dreaming of that.""
+  - "A: "How about building a playlist for our trip?"
+B: "On it—can’t wait to jam.""
+  - "A: "Let’s craft holiday ornaments together."
+B: "Love that—so looking forward.""
+  - "A: "Plan a joint photo album?"
+B: "Yes! I’m thrilled already.""
+  - "A: "Schedule a monthly budget date?"
+B: "Great idea—excited to start.""
+  - "A: "Want to do a sunrise hike?"
+B: "Absolutely, I’m pumped.""
+  - "A: "Let’s host a themed game night."
+B: "Yay! Counting down.""
+  - "A: "How about co-learning guitar?"
+B: "Yes! Can’t wait for our duet.""
+  - "A: "Plan a surprise picnic for your mom?"
+B: "She’ll love that—I’m excited.""
+  - "A: "Shall we read the same book next month?"
+B: "Book club of two—can’t wait.""
+  - "A: "Let’s plot a long weekend in Lisbon."
+B: "Booked mentally—so excited!""
+
+semantische_grabber_id: SGR_GROWING_CONNECTION_01
+
+metadata:
+  created_at: 2025-07-22T00:37:03.970645
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

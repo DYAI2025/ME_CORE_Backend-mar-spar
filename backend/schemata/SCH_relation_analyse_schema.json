@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "analysis_type": "beziehungsdynamik",
+  "meta": {
+    "timestamp": "auto",
+    "session_id": "auto_generated",
+    "analyzed_by": "froza_engine"
+  },
+  "input_data": {
+    "text_source": "chat/voice/transcript",
+    "language": "mixed",
+    "chunking_strategy": {
+      "chunk_size": 6000,
+      "overlap": 500
+    }
+  },
+  "marker_detection": {
+    "atomic_markers": [
+      { "name": "A_DELAYED_REPLY", "count": 0 },
+      { "name": "A_SELF_DISCLOSURE", "count": 0 },
+      { "name": "A_SOFT_COMMITMENT", "count": 0 }
+    ],
+    "cluster_markers": [
+      { "name": "C_AMBIVALENCE", "count": 0 },
+      { "name": "C_SOFT_FLIRT", "count": 0 },
+      { "name": "C_ADAPTIVE_POLARIZATION", "count": 0 },
+      { "name": "C_NEED_FOR_REASSURANCE", "count": 0 }
+    ],
+    "semantic_markers": [
+      { "name": "S_PROJECTION", "count": 0 },
+      { "name": "S_BOUNDARY_NEGOTIATION", "count": 0 }
+    ],
+    "meta_markers": [
+      { "name": "MM_FLIRT_TANZ_DYNAMIK", "active": false },
+      { "name": "MM_PARALLEL_SYSTEM_KONFLIKT", "active": false },
+      { "name": "MM_SECRET_ATTACHMENT", "active": false }
+    ]
+  },
+  "drift_analysis": {
+    "drift_axes": [
+      {
+        "axis_name": "intimacy_vs_distance",
+        "curve": [],
+        "trend": "neutral"
+      },
+      {
+        "axis_name": "clarity_vs_ambiguity",
+        "curve": [],
+        "trend": "ambiguous"
+      }
+    ],
+    "marker_density_timeline": []
+  },
+  "relationship_inference": {
+    "emotional_attachment_score": 0,
+    "flirtation_index": 0,
+    "projection_load": 0,
+    "system_split_detected": false,
+    "dominant_tendencies": []
+  },
+  "outputs": {
+    "export_format": ["json", "csv"],
+    "visualization": ["curve_chart", "heatmap", "timeline"]
+  }
+}

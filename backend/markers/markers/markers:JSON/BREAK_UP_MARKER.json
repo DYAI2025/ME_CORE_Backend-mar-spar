@@ -1,0 +1,24 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für BREAK_UP_MARKER",
+    "examples": [
+      "name: \"Abbruchmarker\"",
+      "category: \"Kommunikationsabbruch\"",
+      "semantic_grabber_id: \"SGR_ABBRUCH_01\"",
+      "Signalisiert den bewussten, oft abrupten Abbruch der Kommunikation durch eine Partei.",
+      "Rückzug erfolgen und beendet das Gespräch einseitig."
+    ],
+    "id": "S_BREAK_UP",
+    "level": 2,
+    "name": "BREAK_UP",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_13EF",
+    "semantic_tags": [
+      "break-up-marker"
+    ]
+  },
+  "marker_name": "BREAK_UP_MARKER"
+}

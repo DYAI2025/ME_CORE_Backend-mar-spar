@@ -1,0 +1,29 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für AROUSAL_MARKER
+  examples:
+  - 'id: "M_AROUSAL"'
+  - 'name: "AROUSAL"'
+  - 'level: "meta"'
+  - 'category: "Emotionsdynamik"'
+  - 'semantic_tags: ["Intensität", "Erregung", "Arousal", "Aktivierung"]'
+  id: S_AROUSAL
+  level: 2
+  name: AROUSAL
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_89E8
+  semantic_tags:
+  - arousal-marker
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.565163'
+  repair_version: '1.0'

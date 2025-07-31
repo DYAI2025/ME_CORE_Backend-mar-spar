@@ -1,0 +1,31 @@
+# A_NEGATIVE_CAREGIVER_MARKER - Semantic Marker
+marker_name: A_NEGATIVE_CAREGIVER_MARKER
+beschreibung: >
+  Direkte Aussagen über emotionale oder physische Abwesenheit,
+Vernachlässigung oder Kälte der Bezugspersonen.
+beispiele:
+  - "Ich war als Kind meistens allein nach der Schule."
+  - "Meine Eltern hatten nie Zeit, mir zuzuhören."
+  - "Wenn ich geweint habe, interessierte es niemanden."
+  - "Zu Hause war es emotional kalt und distanziert."
+  - "Es gab keine Umarmungen, wenn etwas weh tat."
+  - "Ich erinnere mich kaum an Lob von meinen Eltern."
+  - "Oft wusste niemand, wo ich abends war."
+  - "Hausaufgaben musste ich völlig alleine schaffen."
+  - "Geburtstage wurden selten gefeiert, es war normal."
+  - "Bei Krankheit musste ich mich selbst versorgen."
+  - "Ich wurde ignoriert, wenn ich etwas erzählen wollte."
+  - "Probleme wurden heruntergespielt: 'Stell dich nicht so an'."
+  - "Papa war ständig auf Geschäftsreise, Mama überfordert."
+  - "Wir haben nie Familienurlaube gemacht, jeder war für sich."
+  - "Ich fühlte mich überflüssig in meinem eigenen Zuhause."
+
+semantische_grabber_id: SGR_NEG_CARE_01
+
+metadata:
+  created_at: 2025-07-21T23:59:12.585747
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

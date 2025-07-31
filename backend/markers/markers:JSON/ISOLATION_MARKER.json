@@ -1,0 +1,21 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für ISOLATION_MARKER",
+    "examples": [
+      "Kommunikation, die aktiv oder subtil soziale Kontakte, Familie oder Freunde des Gegenübers abwertet, beschränkt oder ausschließt.",
+      "description: \"Erkennt Muster, die darauf abzielen, soziale Isolation zu fördern oder zu"
+    ],
+    "id": "S_ISOLATION",
+    "level": 2,
+    "name": "ISOLATION",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_5D65",
+    "semantic_tags": [
+      "isolation-marker"
+    ]
+  },
+  "marker_name": "ISOLATION_MARKER"
+}

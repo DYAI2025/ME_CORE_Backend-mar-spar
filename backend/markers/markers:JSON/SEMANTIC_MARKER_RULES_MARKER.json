@@ -1,0 +1,20 @@
+{
+  "beispiele": null,
+  "beschreibung": "Definiert Regeln und Muster für semantische Marker-Erkennung",
+  "kategorie": "UNCATEGORIZED",
+  "marker": "SEMANTIC_MARKER_RULES_MARKER",
+  "marker_name": "SEMANTIC_MARKER_RULES_MARKER",
+  "semantic_grab": {
+    "description": "Erkennt Muster für semantic_marker_rules_marker",
+    "patterns": [
+      {
+        "pattern": "r\"(muster.*wird.*ergänzt)\"",
+        "rule": "AUTO_PATTERN"
+      }
+    ]
+  },
+  "tags": [
+    "neu_erstellt",
+    "needs_review"
+  ]
+}

@@ -1,0 +1,43 @@
+marker_name: C_INDIRECT_CONFLICT_AVOIDANCE_MARKER
+beschreibung: 'Wiederholt passiv‑aggressive Angriffe, Rückzug oder Schuldumkehr in
+  20 Nachrichten.
+
+  '
+examples:
+- 'Sequenz: subtile Spitze → Schweigen → Schuldumkehr – alles binnen eines Abends.'
+- 'Montag: ''Na toll, immer Fehler.'' – Dienstag: ''Vergessen.'' + ''...'''
+- 'Chat 1: Sarkastischer Kommentar. Chat 2: Rechtfertigung + Blame. Chat 3: Schweigen.'
+- 'Drei Tage: Angriff, Ausrede, Angriff – Konflikt nie direkt.'
+- Sarkasmus in Voice‑Note, danach Stille, dann 'Ich wollte nur helfen, du bist sensibel.'
+- 'Wiederholt: ''Schön für dich.'' → ''Hab verplant.'' → Schuld an Empfänger.'
+- Spitze am Morgen, Schweigen mittags, Schuldumkehr abends.
+- 'Meeting‑Chat: Ironie, vergessene Aufgabe, ''du schuld''.'
+- Zwei Angriffe + ein Rückzug in 15 Nachrichten.
+- 'Chronik einer Woche: fünfmal passive Aggression, kein offenes Gespräch.'
+- 'Abwechselnd: Sarkasmus ‑ Rechtfertigung ‑ Schweigen (Pattern).'
+- Täglich ein sarkastischer Kommentar, gefolgt von karger Antwort.
+- '''War ja klar'' → Ticket vergessen → ''wegen dir''.'
+- 'Ironischer Gruß, vergessene Datei, Schuldzuweisung: Schleife.'
+- Rundmail mit Spitze, dann Offended Silence im Thread.
+- 'Mehrere Reaktionszyklen: Hilfevortäuschung + Vorwurf.'
+- 'Statusbericht: Passiv‑aggressiv, später ''mhm''.'
+- 'Private Message: ''Ich wollte nur...'' + ''Du provozierst das.'''
+- Konflikt zieht sich, keiner spricht Klartext.
+- Analyse markiert Pattern >2 innerhalb 20 Nachrichten.
+ "A (Montag): "Denk bitte an den Termin morgen."
+  - "B (Dienstag): "Sorry, hab ich komplett übersehen."
+  - "A (Donnerstag): "Das war mir aber wichtig, ich bin enttäuscht."
+  - "B (Donnerstag): "Ich wollte doch nur helfen, aber wenn du mir immer so einen Druck machst...""
+semantische_grabber_id: SGR_INDIRECT_CONFLICT_01
+metadata:
+  created_at: 2025-07-22 00:20:23.490191
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags:
+  - neu_erstellt
+  - needs_review
+  last_repaired: '2025-07-22T02:31:24.238118'
+  repair_version: '1.0'
+category: UNCATEGORIZED
+
+kategorie: UNCATEGORIZED

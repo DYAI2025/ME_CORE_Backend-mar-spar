@@ -1,0 +1,30 @@
+id: S_SELF_PITY
+marker: SELF_PITY
+level: 2
+version: "1.0.0"
+status: draft
+author: "auto_gpt"
+created: "2025-07-25T21:17:00Z"
+tags: [semantic, self_pity, emotion]
+pattern:
+  - "(niemand versteht mich)"
+  - "(immer passiert mir sowas)"
+  - "(alles ist gegen mich)"
+  - "(ich armes Opfer)"
+  - "(ich kann nichts tun)"
+description: "Detects expressions of self-pity and feeling like a victim."
+examples:
+  - "Immer passiert mir sowas, ich habe einfach kein Glück."
+  - "Niemand versteht mich, ich bin immer allein."
+  - "Ich kann nichts dafür, die Welt ist gegen mich."
+  - "Ich armes Opfer, alle sind gemein zu mir."
+  - "Ich weiß nicht, warum ich immer alles abbekomme."
+category: "SEMANTIC"
+scoring:
+  weight: 1.5
+semantic_rules:
+  - "Detects self-blame and self-victimization patterns in emotional statements."
+composed_of:
+  - "A_VICTIM_LANGUAGE"
+  - "A_LONELINESS"
+activation_logic: "A_VICTIM_LANGUAGE OR A_LONELINESS"

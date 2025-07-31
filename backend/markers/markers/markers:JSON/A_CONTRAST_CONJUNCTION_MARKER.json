@@ -1,0 +1,15 @@
+{
+  "marker_name": "A_CONTRAST_CONJUNCTION_MARKER",
+  "beschreibung": "Wörter, die einen Gegensatz oder Widerspruch einleiten.\n",
+  "beispiele": [
+    "..., but in relationship...",
+    "Ich will kommen, aber ich schaff's vielleicht nicht.",
+    "I'd love to go, however I'm broke.",
+    "Er sagt ja, andererseits klingt das komisch.",
+    "I like the idea, but I'm not convinced.",
+    "Wir könnten gehen, jedoch regnet es.",
+    "Sounds fun, but I'm exhausted."
+  ],
+  "semantische_grabber_id": "AUTO_SEM_20250721_31CE",
+  "metadata": {
+    "created_at": 

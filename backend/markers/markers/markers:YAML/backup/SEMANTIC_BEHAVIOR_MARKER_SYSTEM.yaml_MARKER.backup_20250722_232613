@@ -1,0 +1,30 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für SEMANTIC_BEHAVIOR_MARKER_SYSTEM_MARKER
+  examples:
+  - 'marker_name: SEMANTIC_BEHAVIOR_MARKER_SYSTEM.yaml_MARKER'
+  - 'marker: XXXSEMANTIC_BEHAVIOR_MARKER_SYSTEM.YAML_MARKER'
+  - wie Love-Scamming, emotionalem Profiling und Pseudo-Intimität. Ziel ist u. a.
+    der
+  - in digitalen Dialogen.
+  - 'description: "Erkennt Muster für xxxsemantic_behavior_marker_system.yaml"'
+  id: S_SEMANTIC_BEHAVIOR_MARKER_SYSTEM
+  level: 2
+  name: SEMANTIC_BEHAVIOR_SYSTEM
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_B0EF
+  semantic_tags:
+  - semantic-behavior-marker-system-marker
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.602776'
+  repair_version: '1.0'

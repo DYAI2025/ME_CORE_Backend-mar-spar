@@ -1,0 +1,24 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für PLAYING_VICTIM_MARKER",
+    "examples": [
+      "Das bewusste oder unbewusste Einnehmen der Opferrolle, um Mitleid, Entlastung oder Verantwortungsverschiebung zu erreichen.",
+      "description: \"Erkennt Muster, die darauf abzielen, Mitleid zu erregen oder Verantwortung zu vermeiden, indem die eigene Rolle als Opfer betont wird.\"",
+      "pattern: r\"(nicht meine Schuld|immer passiert es nur mir|alle erwarten so viel von mir|Chef hatte mich auf dem Kieker|Schicksal ist gegen mich)\"",
+      "example: \"Es ist nicht meine Schuld, dass ich den Job verloren habe. Der Chef hatte mich von Anfang an auf dem Kieker.\"",
+      "pattern: r\"(immer Kopfschmerzen|schwere Kindheit|niemand weiß, wie sehr ich leide|alles versucht)\""
+    ],
+    "id": "S_PLAYING_VICTIM",
+    "level": 2,
+    "name": "PLAYING_VICTIM",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_47D6",
+    "semantic_tags": [
+      "playing-victim-marker"
+    ]
+  },
+  "marker_name": "PLAYING_VICTIM_MARKER"
+}

@@ -1,0 +1,14 @@
+{
+  "marker_name": "A_ROUTINE_GREETING_MARKER",
+  "beschreibung": "Typische, wiederkehrende Grußformeln zu bestimmten Tageszeiten.\n",
+  "beispiele": [
+    "Good morning NAME.",
+    "Hey, hast du  gut geschlafen?",
+    "Ich wünsche dir  einen schönen guten Morgen",
+    "gut geschlafen?",
+    "Wie war deine Nacht?",
+    "Hast du schöne Träume gehabt?"
+  ],
+  "semantische_grabber_id": "AUTO_SEM_20250721_1972",
+  "metadata": {
+    "created_at": 

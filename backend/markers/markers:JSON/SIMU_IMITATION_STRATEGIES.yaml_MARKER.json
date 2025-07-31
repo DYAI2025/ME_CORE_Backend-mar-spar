@@ -1,0 +1,24 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für SIMU_IMITATION_STRATEGIES_MARKER",
+    "examples": [
+      "marker_name: SIMU_IMITATION_STRATEGIES.yaml_MARKER",
+      "marker: SIMU_IMITATION_STRATEGIES.yaml_MARKER",
+      "Um das Verhalten eines Love Scammers möglichst realistisch zu imitieren, muss eine KI über ihre bisherigen textbasierten Anweisungen hinausgehen und Fähigkeiten entwickeln, die menschliche Adaptivität",
+      "description: \"Erkennt Muster für simu_imitation_strategies.yaml\"",
+      "pattern: r\"(muster.*wird.*ergänzt)\""
+    ],
+    "id": "S_SIMU_IMITATION_STRATEGIES",
+    "level": 2,
+    "name": "SIMU_IMITATION_STRATEGIES",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_8575",
+    "semantic_tags": [
+      "simu-imitation-strategies-marker"
+    ]
+  },
+  "marker_name": "SIMU_IMITATION_STRATEGIES_MARKER"
+}

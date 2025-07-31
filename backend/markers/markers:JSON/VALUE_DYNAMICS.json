@@ -1,0 +1,3218 @@
+{
+  "Beige": [
+    {
+      "input": "Ich habe Hunger und brauch dringend etwas zu essen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mir ist kalt und ich suche Schutz.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mein Körper ist erschöpft, ich muss mich ausruhen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich spüre, dass mein Instinkt Alarm schlägt, ich muss fliehen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich halte es nicht mehr aus, irgendwer muss mir helfen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mein Magen knurrt so laut, ich muss was finden.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich bin völlig ausgelaugt, brauche 'nen sicheren Ort.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich zitter vor Kälte, ich muss mich warm halten.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich suche jetzt sofort ein Versteck, sonst geht das nicht gut.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich atme flach, mein Körper will nur überleben.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich habe Hunger und brauch dringend etwas zu essen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mir ist kalt und ich suche Schutz.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mein Körper ist erschöpft, ich muss mich ausruhen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich spüre, dass mein Instinkt Alarm schlägt, ich muss fliehen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich halte es nicht mehr aus, irgendwer muss mir helfen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mein Magen knurrt so laut, ich muss was finden.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich bin völlig ausgelaugt, brauche 'nen sicheren Ort.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich zitter vor Kälte, ich muss mich warm halten.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich suche jetzt sofort ein Versteck, sonst geht das nicht gut.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich atme flach, mein Körper will nur überleben.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich habe Hunger und brauch dringend etwas zu essen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mir ist kalt und ich suche Schutz.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mein Körper ist erschöpft, ich muss mich ausruhen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich spüre, dass mein Instinkt Alarm schlägt, ich muss fliehen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich halte es nicht mehr aus, irgendwer muss mir helfen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mein Magen knurrt so laut, ich muss was finden.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich bin völlig ausgelaugt, brauche 'nen sicheren Ort.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich zitter vor Kälte, ich muss mich warm halten.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich suche jetzt sofort ein Versteck, sonst geht das nicht gut.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich atme flach, mein Körper will nur überleben.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich habe Hunger und brauch dringend etwas zu essen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mir ist kalt und ich suche Schutz.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mein Körper ist erschöpft, ich muss mich ausruhen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich spüre, dass mein Instinkt Alarm schlägt, ich muss fliehen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich halte es nicht mehr aus, irgendwer muss mir helfen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mein Magen knurrt so laut, ich muss was finden.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich bin völlig ausgelaugt, brauche 'nen sicheren Ort.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich zitter vor Kälte, ich muss mich warm halten.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich suche jetzt sofort ein Versteck, sonst geht das nicht gut.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich atme flach, mein Körper will nur überleben.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich habe Hunger und brauch dringend etwas zu essen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mir ist kalt und ich suche Schutz.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mein Körper ist erschöpft, ich muss mich ausruhen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich spüre, dass mein Instinkt Alarm schlägt, ich muss fliehen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich halte es nicht mehr aus, irgendwer muss mir helfen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mein Magen knurrt so laut, ich muss was finden.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich bin völlig ausgelaugt, brauche 'nen sicheren Ort.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich zitter vor Kälte, ich muss mich warm halten.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich suche jetzt sofort ein Versteck, sonst geht das nicht gut.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich atme flach, mein Körper will nur überleben.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich habe Hunger und brauch dringend etwas zu essen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mir ist kalt und ich suche Schutz.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mein Körper ist erschöpft, ich muss mich ausruhen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich spüre, dass mein Instinkt Alarm schlägt, ich muss fliehen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich halte es nicht mehr aus, irgendwer muss mir helfen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mein Magen knurrt so laut, ich muss was finden.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich bin völlig ausgelaugt, brauche 'nen sicheren Ort.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich zitter vor Kälte, ich muss mich warm halten.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich suche jetzt sofort ein Versteck, sonst geht das nicht gut.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich atme flach, mein Körper will nur überleben.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich habe Hunger und brauch dringend etwas zu essen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mir ist kalt und ich suche Schutz.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mein Körper ist erschöpft, ich muss mich ausruhen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich spüre, dass mein Instinkt Alarm schlägt, ich muss fliehen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich halte es nicht mehr aus, irgendwer muss mir helfen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mein Magen knurrt so laut, ich muss was finden.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich bin völlig ausgelaugt, brauche 'nen sicheren Ort.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich zitter vor Kälte, ich muss mich warm halten.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich suche jetzt sofort ein Versteck, sonst geht das nicht gut.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich atme flach, mein Körper will nur überleben.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich habe Hunger und brauch dringend etwas zu essen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mir ist kalt und ich suche Schutz.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mein Körper ist erschöpft, ich muss mich ausruhen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich spüre, dass mein Instinkt Alarm schlägt, ich muss fliehen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich halte es nicht mehr aus, irgendwer muss mir helfen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mein Magen knurrt so laut, ich muss was finden.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich bin völlig ausgelaugt, brauche 'nen sicheren Ort.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich zitter vor Kälte, ich muss mich warm halten.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich suche jetzt sofort ein Versteck, sonst geht das nicht gut.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich atme flach, mein Körper will nur überleben.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich habe Hunger und brauch dringend etwas zu essen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mir ist kalt und ich suche Schutz.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mein Körper ist erschöpft, ich muss mich ausruhen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich spüre, dass mein Instinkt Alarm schlägt, ich muss fliehen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich halte es nicht mehr aus, irgendwer muss mir helfen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mein Magen knurrt so laut, ich muss was finden.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich bin völlig ausgelaugt, brauche 'nen sicheren Ort.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich zitter vor Kälte, ich muss mich warm halten.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich suche jetzt sofort ein Versteck, sonst geht das nicht gut.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich atme flach, mein Körper will nur überleben.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich habe Hunger und brauch dringend etwas zu essen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mir ist kalt und ich suche Schutz.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mein Körper ist erschöpft, ich muss mich ausruhen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich spüre, dass mein Instinkt Alarm schlägt, ich muss fliehen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich halte es nicht mehr aus, irgendwer muss mir helfen.",
+      "output": "Beige"
+    },
+    {
+      "input": "Mein Magen knurrt so laut, ich muss was finden.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich bin völlig ausgelaugt, brauche 'nen sicheren Ort.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich zitter vor Kälte, ich muss mich warm halten.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich suche jetzt sofort ein Versteck, sonst geht das nicht gut.",
+      "output": "Beige"
+    },
+    {
+      "input": "Ich atme flach, mein Körper will nur überleben.",
+      "output": "Beige"
+    }
+  ],
+  "Purple": [
+    {
+      "input": "Ich fühle mich in dieser Gruppe sicher, wir stehen zusammen.",
+      "output": "Purple"
+    },
+    {
+      "input": "Unsere Rituale geben mir Geborgenheit.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich ehre die Tradition meiner Vorfahren.",
+      "output": "Purple"
+    },
+    {
+      "input": "Dieses Ritual verbindet uns wie eine Familie.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich spüre die Kraft unseres Stammes.",
+      "output": "Purple"
+    },
+    {
+      "input": "Gemeinsame Lieder geben mir Halt.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich vertraue den Älteren, sie wissen, was gut ist.",
+      "output": "Purple"
+    },
+    {
+      "input": "Unsere Bräuche sind heilig für mich.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich bin stolz, Teil dieses Kreises zu sein.",
+      "output": "Purple"
+    },
+    {
+      "input": "Die Gemeinschaft schützt mich vor Gefahren.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich fühle mich in dieser Gruppe sicher, wir stehen zusammen.",
+      "output": "Purple"
+    },
+    {
+      "input": "Unsere Rituale geben mir Geborgenheit.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich ehre die Tradition meiner Vorfahren.",
+      "output": "Purple"
+    },
+    {
+      "input": "Dieses Ritual verbindet uns wie eine Familie.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich spüre die Kraft unseres Stammes.",
+      "output": "Purple"
+    },
+    {
+      "input": "Gemeinsame Lieder geben mir Halt.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich vertraue den Älteren, sie wissen, was gut ist.",
+      "output": "Purple"
+    },
+    {
+      "input": "Unsere Bräuche sind heilig für mich.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich bin stolz, Teil dieses Kreises zu sein.",
+      "output": "Purple"
+    },
+    {
+      "input": "Die Gemeinschaft schützt mich vor Gefahren.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich fühle mich in dieser Gruppe sicher, wir stehen zusammen.",
+      "output": "Purple"
+    },
+    {
+      "input": "Unsere Rituale geben mir Geborgenheit.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich ehre die Tradition meiner Vorfahren.",
+      "output": "Purple"
+    },
+    {
+      "input": "Dieses Ritual verbindet uns wie eine Familie.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich spüre die Kraft unseres Stammes.",
+      "output": "Purple"
+    },
+    {
+      "input": "Gemeinsame Lieder geben mir Halt.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich vertraue den Älteren, sie wissen, was gut ist.",
+      "output": "Purple"
+    },
+    {
+      "input": "Unsere Bräuche sind heilig für mich.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich bin stolz, Teil dieses Kreises zu sein.",
+      "output": "Purple"
+    },
+    {
+      "input": "Die Gemeinschaft schützt mich vor Gefahren.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich fühle mich in dieser Gruppe sicher, wir stehen zusammen.",
+      "output": "Purple"
+    },
+    {
+      "input": "Unsere Rituale geben mir Geborgenheit.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich ehre die Tradition meiner Vorfahren.",
+      "output": "Purple"
+    },
+    {
+      "input": "Dieses Ritual verbindet uns wie eine Familie.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich spüre die Kraft unseres Stammes.",
+      "output": "Purple"
+    },
+    {
+      "input": "Gemeinsame Lieder geben mir Halt.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich vertraue den Älteren, sie wissen, was gut ist.",
+      "output": "Purple"
+    },
+    {
+      "input": "Unsere Bräuche sind heilig für mich.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich bin stolz, Teil dieses Kreises zu sein.",
+      "output": "Purple"
+    },
+    {
+      "input": "Die Gemeinschaft schützt mich vor Gefahren.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich fühle mich in dieser Gruppe sicher, wir stehen zusammen.",
+      "output": "Purple"
+    },
+    {
+      "input": "Unsere Rituale geben mir Geborgenheit.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich ehre die Tradition meiner Vorfahren.",
+      "output": "Purple"
+    },
+    {
+      "input": "Dieses Ritual verbindet uns wie eine Familie.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich spüre die Kraft unseres Stammes.",
+      "output": "Purple"
+    },
+    {
+      "input": "Gemeinsame Lieder geben mir Halt.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich vertraue den Älteren, sie wissen, was gut ist.",
+      "output": "Purple"
+    },
+    {
+      "input": "Unsere Bräuche sind heilig für mich.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich bin stolz, Teil dieses Kreises zu sein.",
+      "output": "Purple"
+    },
+    {
+      "input": "Die Gemeinschaft schützt mich vor Gefahren.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich fühle mich in dieser Gruppe sicher, wir stehen zusammen.",
+      "output": "Purple"
+    },
+    {
+      "input": "Unsere Rituale geben mir Geborgenheit.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich ehre die Tradition meiner Vorfahren.",
+      "output": "Purple"
+    },
+    {
+      "input": "Dieses Ritual verbindet uns wie eine Familie.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich spüre die Kraft unseres Stammes.",
+      "output": "Purple"
+    },
+    {
+      "input": "Gemeinsame Lieder geben mir Halt.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich vertraue den Älteren, sie wissen, was gut ist.",
+      "output": "Purple"
+    },
+    {
+      "input": "Unsere Bräuche sind heilig für mich.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich bin stolz, Teil dieses Kreises zu sein.",
+      "output": "Purple"
+    },
+    {
+      "input": "Die Gemeinschaft schützt mich vor Gefahren.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich fühle mich in dieser Gruppe sicher, wir stehen zusammen.",
+      "output": "Purple"
+    },
+    {
+      "input": "Unsere Rituale geben mir Geborgenheit.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich ehre die Tradition meiner Vorfahren.",
+      "output": "Purple"
+    },
+    {
+      "input": "Dieses Ritual verbindet uns wie eine Familie.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich spüre die Kraft unseres Stammes.",
+      "output": "Purple"
+    },
+    {
+      "input": "Gemeinsame Lieder geben mir Halt.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich vertraue den Älteren, sie wissen, was gut ist.",
+      "output": "Purple"
+    },
+    {
+      "input": "Unsere Bräuche sind heilig für mich.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich bin stolz, Teil dieses Kreises zu sein.",
+      "output": "Purple"
+    },
+    {
+      "input": "Die Gemeinschaft schützt mich vor Gefahren.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich fühle mich in dieser Gruppe sicher, wir stehen zusammen.",
+      "output": "Purple"
+    },
+    {
+      "input": "Unsere Rituale geben mir Geborgenheit.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich ehre die Tradition meiner Vorfahren.",
+      "output": "Purple"
+    },
+    {
+      "input": "Dieses Ritual verbindet uns wie eine Familie.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich spüre die Kraft unseres Stammes.",
+      "output": "Purple"
+    },
+    {
+      "input": "Gemeinsame Lieder geben mir Halt.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich vertraue den Älteren, sie wissen, was gut ist.",
+      "output": "Purple"
+    },
+    {
+      "input": "Unsere Bräuche sind heilig für mich.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich bin stolz, Teil dieses Kreises zu sein.",
+      "output": "Purple"
+    },
+    {
+      "input": "Die Gemeinschaft schützt mich vor Gefahren.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich fühle mich in dieser Gruppe sicher, wir stehen zusammen.",
+      "output": "Purple"
+    },
+    {
+      "input": "Unsere Rituale geben mir Geborgenheit.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich ehre die Tradition meiner Vorfahren.",
+      "output": "Purple"
+    },
+    {
+      "input": "Dieses Ritual verbindet uns wie eine Familie.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich spüre die Kraft unseres Stammes.",
+      "output": "Purple"
+    },
+    {
+      "input": "Gemeinsame Lieder geben mir Halt.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich vertraue den Älteren, sie wissen, was gut ist.",
+      "output": "Purple"
+    },
+    {
+      "input": "Unsere Bräuche sind heilig für mich.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich bin stolz, Teil dieses Kreises zu sein.",
+      "output": "Purple"
+    },
+    {
+      "input": "Die Gemeinschaft schützt mich vor Gefahren.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich fühle mich in dieser Gruppe sicher, wir stehen zusammen.",
+      "output": "Purple"
+    },
+    {
+      "input": "Unsere Rituale geben mir Geborgenheit.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich ehre die Tradition meiner Vorfahren.",
+      "output": "Purple"
+    },
+    {
+      "input": "Dieses Ritual verbindet uns wie eine Familie.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich spüre die Kraft unseres Stammes.",
+      "output": "Purple"
+    },
+    {
+      "input": "Gemeinsame Lieder geben mir Halt.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich vertraue den Älteren, sie wissen, was gut ist.",
+      "output": "Purple"
+    },
+    {
+      "input": "Unsere Bräuche sind heilig für mich.",
+      "output": "Purple"
+    },
+    {
+      "input": "Ich bin stolz, Teil dieses Kreises zu sein.",
+      "output": "Purple"
+    },
+    {
+      "input": "Die Gemeinschaft schützt mich vor Gefahren.",
+      "output": "Purple"
+    }
+  ],
+  "Red": [
+    {
+      "input": "Ich bestimme hier das Sagen, klar?",
+      "output": "Red"
+    },
+    {
+      "input": "Ich fordere Respekt ein, sonst knallt’s.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich gehe vor dir als Erster durchs Feuer.",
+      "output": "Red"
+    },
+    {
+      "input": "Keiner widerspricht mir, ich setze meinen Willen durch.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich habe die Macht und zeige sie.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich befehle, du gehst diesem Befehl nach.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich nehme mir, was mir zusteht.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich lasse mir nichts gefallen und zeige es laut.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich kontrolliere die Situation, Punkt.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich lasse nicht mit mir spaßen.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich bestimme hier das Sagen, klar?",
+      "output": "Red"
+    },
+    {
+      "input": "Ich fordere Respekt ein, sonst knallt’s.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich gehe vor dir als Erster durchs Feuer.",
+      "output": "Red"
+    },
+    {
+      "input": "Keiner widerspricht mir, ich setze meinen Willen durch.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich habe die Macht und zeige sie.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich befehle, du gehst diesem Befehl nach.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich nehme mir, was mir zusteht.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich lasse mir nichts gefallen und zeige es laut.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich kontrolliere die Situation, Punkt.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich lasse nicht mit mir spaßen.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich bestimme hier das Sagen, klar?",
+      "output": "Red"
+    },
+    {
+      "input": "Ich fordere Respekt ein, sonst knallt’s.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich gehe vor dir als Erster durchs Feuer.",
+      "output": "Red"
+    },
+    {
+      "input": "Keiner widerspricht mir, ich setze meinen Willen durch.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich habe die Macht und zeige sie.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich befehle, du gehst diesem Befehl nach.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich nehme mir, was mir zusteht.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich lasse mir nichts gefallen und zeige es laut.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich kontrolliere die Situation, Punkt.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich lasse nicht mit mir spaßen.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich bestimme hier das Sagen, klar?",
+      "output": "Red"
+    },
+    {
+      "input": "Ich fordere Respekt ein, sonst knallt’s.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich gehe vor dir als Erster durchs Feuer.",
+      "output": "Red"
+    },
+    {
+      "input": "Keiner widerspricht mir, ich setze meinen Willen durch.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich habe die Macht und zeige sie.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich befehle, du gehst diesem Befehl nach.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich nehme mir, was mir zusteht.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich lasse mir nichts gefallen und zeige es laut.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich kontrolliere die Situation, Punkt.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich lasse nicht mit mir spaßen.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich bestimme hier das Sagen, klar?",
+      "output": "Red"
+    },
+    {
+      "input": "Ich fordere Respekt ein, sonst knallt’s.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich gehe vor dir als Erster durchs Feuer.",
+      "output": "Red"
+    },
+    {
+      "input": "Keiner widerspricht mir, ich setze meinen Willen durch.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich habe die Macht und zeige sie.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich befehle, du gehst diesem Befehl nach.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich nehme mir, was mir zusteht.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich lasse mir nichts gefallen und zeige es laut.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich kontrolliere die Situation, Punkt.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich lasse nicht mit mir spaßen.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich bestimme hier das Sagen, klar?",
+      "output": "Red"
+    },
+    {
+      "input": "Ich fordere Respekt ein, sonst knallt’s.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich gehe vor dir als Erster durchs Feuer.",
+      "output": "Red"
+    },
+    {
+      "input": "Keiner widerspricht mir, ich setze meinen Willen durch.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich habe die Macht und zeige sie.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich befehle, du gehst diesem Befehl nach.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich nehme mir, was mir zusteht.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich lasse mir nichts gefallen und zeige es laut.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich kontrolliere die Situation, Punkt.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich lasse nicht mit mir spaßen.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich bestimme hier das Sagen, klar?",
+      "output": "Red"
+    },
+    {
+      "input": "Ich fordere Respekt ein, sonst knallt’s.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich gehe vor dir als Erster durchs Feuer.",
+      "output": "Red"
+    },
+    {
+      "input": "Keiner widerspricht mir, ich setze meinen Willen durch.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich habe die Macht und zeige sie.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich befehle, du gehst diesem Befehl nach.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich nehme mir, was mir zusteht.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich lasse mir nichts gefallen und zeige es laut.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich kontrolliere die Situation, Punkt.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich lasse nicht mit mir spaßen.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich bestimme hier das Sagen, klar?",
+      "output": "Red"
+    },
+    {
+      "input": "Ich fordere Respekt ein, sonst knallt’s.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich gehe vor dir als Erster durchs Feuer.",
+      "output": "Red"
+    },
+    {
+      "input": "Keiner widerspricht mir, ich setze meinen Willen durch.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich habe die Macht und zeige sie.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich befehle, du gehst diesem Befehl nach.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich nehme mir, was mir zusteht.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich lasse mir nichts gefallen und zeige es laut.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich kontrolliere die Situation, Punkt.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich lasse nicht mit mir spaßen.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich bestimme hier das Sagen, klar?",
+      "output": "Red"
+    },
+    {
+      "input": "Ich fordere Respekt ein, sonst knallt’s.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich gehe vor dir als Erster durchs Feuer.",
+      "output": "Red"
+    },
+    {
+      "input": "Keiner widerspricht mir, ich setze meinen Willen durch.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich habe die Macht und zeige sie.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich befehle, du gehst diesem Befehl nach.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich nehme mir, was mir zusteht.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich lasse mir nichts gefallen und zeige es laut.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich kontrolliere die Situation, Punkt.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich lasse nicht mit mir spaßen.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich bestimme hier das Sagen, klar?",
+      "output": "Red"
+    },
+    {
+      "input": "Ich fordere Respekt ein, sonst knallt’s.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich gehe vor dir als Erster durchs Feuer.",
+      "output": "Red"
+    },
+    {
+      "input": "Keiner widerspricht mir, ich setze meinen Willen durch.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich habe die Macht und zeige sie.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich befehle, du gehst diesem Befehl nach.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich nehme mir, was mir zusteht.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich lasse mir nichts gefallen und zeige es laut.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich kontrolliere die Situation, Punkt.",
+      "output": "Red"
+    },
+    {
+      "input": "Ich lasse nicht mit mir spaßen.",
+      "output": "Red"
+    }
+  ],
+  "Blue": [
+    {
+      "input": "Ich halte mich strikt an die Regeln.",
+      "output": "Blue"
+    },
+    {
+      "input": "Pflichtbewusstsein ist für mich alles.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich befolge den Plan, genau wie abgesprochen.",
+      "output": "Blue"
+    },
+    {
+      "input": "Disziplin ist wichtiger als Gefühle.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich halte Termine und Deadlines ein.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ohne Struktur bricht hier alles zusammen.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich verlasse mich auf Ordnung und Vorgaben.",
+      "output": "Blue"
+    },
+    {
+      "input": "Regeln geben mir Sicherheit.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich erwarte Gehorsam und liefere selbst.",
+      "output": "Blue"
+    },
+    {
+      "input": "Verantwortung bedeutet für mich Pflicht.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich halte mich strikt an die Regeln.",
+      "output": "Blue"
+    },
+    {
+      "input": "Pflichtbewusstsein ist für mich alles.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich befolge den Plan, genau wie abgesprochen.",
+      "output": "Blue"
+    },
+    {
+      "input": "Disziplin ist wichtiger als Gefühle.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich halte Termine und Deadlines ein.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ohne Struktur bricht hier alles zusammen.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich verlasse mich auf Ordnung und Vorgaben.",
+      "output": "Blue"
+    },
+    {
+      "input": "Regeln geben mir Sicherheit.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich erwarte Gehorsam und liefere selbst.",
+      "output": "Blue"
+    },
+    {
+      "input": "Verantwortung bedeutet für mich Pflicht.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich halte mich strikt an die Regeln.",
+      "output": "Blue"
+    },
+    {
+      "input": "Pflichtbewusstsein ist für mich alles.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich befolge den Plan, genau wie abgesprochen.",
+      "output": "Blue"
+    },
+    {
+      "input": "Disziplin ist wichtiger als Gefühle.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich halte Termine und Deadlines ein.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ohne Struktur bricht hier alles zusammen.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich verlasse mich auf Ordnung und Vorgaben.",
+      "output": "Blue"
+    },
+    {
+      "input": "Regeln geben mir Sicherheit.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich erwarte Gehorsam und liefere selbst.",
+      "output": "Blue"
+    },
+    {
+      "input": "Verantwortung bedeutet für mich Pflicht.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich halte mich strikt an die Regeln.",
+      "output": "Blue"
+    },
+    {
+      "input": "Pflichtbewusstsein ist für mich alles.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich befolge den Plan, genau wie abgesprochen.",
+      "output": "Blue"
+    },
+    {
+      "input": "Disziplin ist wichtiger als Gefühle.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich halte Termine und Deadlines ein.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ohne Struktur bricht hier alles zusammen.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich verlasse mich auf Ordnung und Vorgaben.",
+      "output": "Blue"
+    },
+    {
+      "input": "Regeln geben mir Sicherheit.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich erwarte Gehorsam und liefere selbst.",
+      "output": "Blue"
+    },
+    {
+      "input": "Verantwortung bedeutet für mich Pflicht.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich halte mich strikt an die Regeln.",
+      "output": "Blue"
+    },
+    {
+      "input": "Pflichtbewusstsein ist für mich alles.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich befolge den Plan, genau wie abgesprochen.",
+      "output": "Blue"
+    },
+    {
+      "input": "Disziplin ist wichtiger als Gefühle.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich halte Termine und Deadlines ein.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ohne Struktur bricht hier alles zusammen.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich verlasse mich auf Ordnung und Vorgaben.",
+      "output": "Blue"
+    },
+    {
+      "input": "Regeln geben mir Sicherheit.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich erwarte Gehorsam und liefere selbst.",
+      "output": "Blue"
+    },
+    {
+      "input": "Verantwortung bedeutet für mich Pflicht.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich halte mich strikt an die Regeln.",
+      "output": "Blue"
+    },
+    {
+      "input": "Pflichtbewusstsein ist für mich alles.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich befolge den Plan, genau wie abgesprochen.",
+      "output": "Blue"
+    },
+    {
+      "input": "Disziplin ist wichtiger als Gefühle.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich halte Termine und Deadlines ein.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ohne Struktur bricht hier alles zusammen.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich verlasse mich auf Ordnung und Vorgaben.",
+      "output": "Blue"
+    },
+    {
+      "input": "Regeln geben mir Sicherheit.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich erwarte Gehorsam und liefere selbst.",
+      "output": "Blue"
+    },
+    {
+      "input": "Verantwortung bedeutet für mich Pflicht.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich halte mich strikt an die Regeln.",
+      "output": "Blue"
+    },
+    {
+      "input": "Pflichtbewusstsein ist für mich alles.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich befolge den Plan, genau wie abgesprochen.",
+      "output": "Blue"
+    },
+    {
+      "input": "Disziplin ist wichtiger als Gefühle.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich halte Termine und Deadlines ein.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ohne Struktur bricht hier alles zusammen.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich verlasse mich auf Ordnung und Vorgaben.",
+      "output": "Blue"
+    },
+    {
+      "input": "Regeln geben mir Sicherheit.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich erwarte Gehorsam und liefere selbst.",
+      "output": "Blue"
+    },
+    {
+      "input": "Verantwortung bedeutet für mich Pflicht.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich halte mich strikt an die Regeln.",
+      "output": "Blue"
+    },
+    {
+      "input": "Pflichtbewusstsein ist für mich alles.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich befolge den Plan, genau wie abgesprochen.",
+      "output": "Blue"
+    },
+    {
+      "input": "Disziplin ist wichtiger als Gefühle.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich halte Termine und Deadlines ein.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ohne Struktur bricht hier alles zusammen.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich verlasse mich auf Ordnung und Vorgaben.",
+      "output": "Blue"
+    },
+    {
+      "input": "Regeln geben mir Sicherheit.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich erwarte Gehorsam und liefere selbst.",
+      "output": "Blue"
+    },
+    {
+      "input": "Verantwortung bedeutet für mich Pflicht.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich halte mich strikt an die Regeln.",
+      "output": "Blue"
+    },
+    {
+      "input": "Pflichtbewusstsein ist für mich alles.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich befolge den Plan, genau wie abgesprochen.",
+      "output": "Blue"
+    },
+    {
+      "input": "Disziplin ist wichtiger als Gefühle.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich halte Termine und Deadlines ein.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ohne Struktur bricht hier alles zusammen.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich verlasse mich auf Ordnung und Vorgaben.",
+      "output": "Blue"
+    },
+    {
+      "input": "Regeln geben mir Sicherheit.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich erwarte Gehorsam und liefere selbst.",
+      "output": "Blue"
+    },
+    {
+      "input": "Verantwortung bedeutet für mich Pflicht.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich halte mich strikt an die Regeln.",
+      "output": "Blue"
+    },
+    {
+      "input": "Pflichtbewusstsein ist für mich alles.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich befolge den Plan, genau wie abgesprochen.",
+      "output": "Blue"
+    },
+    {
+      "input": "Disziplin ist wichtiger als Gefühle.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich halte Termine und Deadlines ein.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ohne Struktur bricht hier alles zusammen.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich verlasse mich auf Ordnung und Vorgaben.",
+      "output": "Blue"
+    },
+    {
+      "input": "Regeln geben mir Sicherheit.",
+      "output": "Blue"
+    },
+    {
+      "input": "Ich erwarte Gehorsam und liefere selbst.",
+      "output": "Blue"
+    },
+    {
+      "input": "Verantwortung bedeutet für mich Pflicht.",
+      "output": "Blue"
+    }
+  ],
+  "Orange": [
+    {
+      "input": "Ich will das Ziel erreichen, koste es was es wolle.",
+      "output": "Orange"
+    },
+    {
+      "input": "Erfolg messe ich in klaren Zahlen.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich arbeite hart, um an die Spitze zu kommen.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich setze mir ehrgeizige Meilensteine.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich optimiere kontinuierlich meine Strategien.",
+      "output": "Orange"
+    },
+    {
+      "input": "Risiko ist für mich Teil des Spiels.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich fokussiere mich auf Performance.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich kontrolliere jeden Fortschritt mit KPIs.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich strebe nach maximaler Rendite.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich setze Ressourcen effizient ein.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich will das Ziel erreichen, koste es was es wolle.",
+      "output": "Orange"
+    },
+    {
+      "input": "Erfolg messe ich in klaren Zahlen.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich arbeite hart, um an die Spitze zu kommen.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich setze mir ehrgeizige Meilensteine.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich optimiere kontinuierlich meine Strategien.",
+      "output": "Orange"
+    },
+    {
+      "input": "Risiko ist für mich Teil des Spiels.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich fokussiere mich auf Performance.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich kontrolliere jeden Fortschritt mit KPIs.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich strebe nach maximaler Rendite.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich setze Ressourcen effizient ein.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich will das Ziel erreichen, koste es was es wolle.",
+      "output": "Orange"
+    },
+    {
+      "input": "Erfolg messe ich in klaren Zahlen.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich arbeite hart, um an die Spitze zu kommen.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich setze mir ehrgeizige Meilensteine.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich optimiere kontinuierlich meine Strategien.",
+      "output": "Orange"
+    },
+    {
+      "input": "Risiko ist für mich Teil des Spiels.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich fokussiere mich auf Performance.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich kontrolliere jeden Fortschritt mit KPIs.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich strebe nach maximaler Rendite.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich setze Ressourcen effizient ein.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich will das Ziel erreichen, koste es was es wolle.",
+      "output": "Orange"
+    },
+    {
+      "input": "Erfolg messe ich in klaren Zahlen.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich arbeite hart, um an die Spitze zu kommen.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich setze mir ehrgeizige Meilensteine.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich optimiere kontinuierlich meine Strategien.",
+      "output": "Orange"
+    },
+    {
+      "input": "Risiko ist für mich Teil des Spiels.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich fokussiere mich auf Performance.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich kontrolliere jeden Fortschritt mit KPIs.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich strebe nach maximaler Rendite.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich setze Ressourcen effizient ein.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich will das Ziel erreichen, koste es was es wolle.",
+      "output": "Orange"
+    },
+    {
+      "input": "Erfolg messe ich in klaren Zahlen.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich arbeite hart, um an die Spitze zu kommen.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich setze mir ehrgeizige Meilensteine.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich optimiere kontinuierlich meine Strategien.",
+      "output": "Orange"
+    },
+    {
+      "input": "Risiko ist für mich Teil des Spiels.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich fokussiere mich auf Performance.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich kontrolliere jeden Fortschritt mit KPIs.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich strebe nach maximaler Rendite.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich setze Ressourcen effizient ein.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich will das Ziel erreichen, koste es was es wolle.",
+      "output": "Orange"
+    },
+    {
+      "input": "Erfolg messe ich in klaren Zahlen.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich arbeite hart, um an die Spitze zu kommen.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich setze mir ehrgeizige Meilensteine.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich optimiere kontinuierlich meine Strategien.",
+      "output": "Orange"
+    },
+    {
+      "input": "Risiko ist für mich Teil des Spiels.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich fokussiere mich auf Performance.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich kontrolliere jeden Fortschritt mit KPIs.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich strebe nach maximaler Rendite.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich setze Ressourcen effizient ein.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich will das Ziel erreichen, koste es was es wolle.",
+      "output": "Orange"
+    },
+    {
+      "input": "Erfolg messe ich in klaren Zahlen.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich arbeite hart, um an die Spitze zu kommen.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich setze mir ehrgeizige Meilensteine.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich optimiere kontinuierlich meine Strategien.",
+      "output": "Orange"
+    },
+    {
+      "input": "Risiko ist für mich Teil des Spiels.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich fokussiere mich auf Performance.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich kontrolliere jeden Fortschritt mit KPIs.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich strebe nach maximaler Rendite.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich setze Ressourcen effizient ein.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich will das Ziel erreichen, koste es was es wolle.",
+      "output": "Orange"
+    },
+    {
+      "input": "Erfolg messe ich in klaren Zahlen.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich arbeite hart, um an die Spitze zu kommen.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich setze mir ehrgeizige Meilensteine.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich optimiere kontinuierlich meine Strategien.",
+      "output": "Orange"
+    },
+    {
+      "input": "Risiko ist für mich Teil des Spiels.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich fokussiere mich auf Performance.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich kontrolliere jeden Fortschritt mit KPIs.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich strebe nach maximaler Rendite.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich setze Ressourcen effizient ein.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich will das Ziel erreichen, koste es was es wolle.",
+      "output": "Orange"
+    },
+    {
+      "input": "Erfolg messe ich in klaren Zahlen.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich arbeite hart, um an die Spitze zu kommen.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich setze mir ehrgeizige Meilensteine.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich optimiere kontinuierlich meine Strategien.",
+      "output": "Orange"
+    },
+    {
+      "input": "Risiko ist für mich Teil des Spiels.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich fokussiere mich auf Performance.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich kontrolliere jeden Fortschritt mit KPIs.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich strebe nach maximaler Rendite.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich setze Ressourcen effizient ein.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich will das Ziel erreichen, koste es was es wolle.",
+      "output": "Orange"
+    },
+    {
+      "input": "Erfolg messe ich in klaren Zahlen.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich arbeite hart, um an die Spitze zu kommen.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich setze mir ehrgeizige Meilensteine.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich optimiere kontinuierlich meine Strategien.",
+      "output": "Orange"
+    },
+    {
+      "input": "Risiko ist für mich Teil des Spiels.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich fokussiere mich auf Performance.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich kontrolliere jeden Fortschritt mit KPIs.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich strebe nach maximaler Rendite.",
+      "output": "Orange"
+    },
+    {
+      "input": "Ich setze Ressourcen effizient ein.",
+      "output": "Orange"
+    }
+  ],
+  "Green": [
+    {
+      "input": "Ich glaube an Gleichberechtigung für alle.",
+      "output": "Green"
+    },
+    {
+      "input": "Empathie ist meine stärkste Ressource.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich höre dir zu und versuche, dich zu verstehen.",
+      "output": "Green"
+    },
+    {
+      "input": "Gemeinschaft und Harmonie sind mir wichtig.",
+      "output": "Green"
+    },
+    {
+      "input": "Wir unterstützen uns gegenseitig.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich sorge mich um das Wohl aller.",
+      "output": "Green"
+    },
+    {
+      "input": "Respekt und Offenheit prägen mein Handeln.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich schätze Vielfalt und Unterschiedlichkeit.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich fördere Kooperation statt Konkurrenz.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich spüre, wenn jemand Hilfe braucht.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich glaube an Gleichberechtigung für alle.",
+      "output": "Green"
+    },
+    {
+      "input": "Empathie ist meine stärkste Ressource.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich höre dir zu und versuche, dich zu verstehen.",
+      "output": "Green"
+    },
+    {
+      "input": "Gemeinschaft und Harmonie sind mir wichtig.",
+      "output": "Green"
+    },
+    {
+      "input": "Wir unterstützen uns gegenseitig.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich sorge mich um das Wohl aller.",
+      "output": "Green"
+    },
+    {
+      "input": "Respekt und Offenheit prägen mein Handeln.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich schätze Vielfalt und Unterschiedlichkeit.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich fördere Kooperation statt Konkurrenz.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich spüre, wenn jemand Hilfe braucht.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich glaube an Gleichberechtigung für alle.",
+      "output": "Green"
+    },
+    {
+      "input": "Empathie ist meine stärkste Ressource.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich höre dir zu und versuche, dich zu verstehen.",
+      "output": "Green"
+    },
+    {
+      "input": "Gemeinschaft und Harmonie sind mir wichtig.",
+      "output": "Green"
+    },
+    {
+      "input": "Wir unterstützen uns gegenseitig.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich sorge mich um das Wohl aller.",
+      "output": "Green"
+    },
+    {
+      "input": "Respekt und Offenheit prägen mein Handeln.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich schätze Vielfalt und Unterschiedlichkeit.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich fördere Kooperation statt Konkurrenz.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich spüre, wenn jemand Hilfe braucht.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich glaube an Gleichberechtigung für alle.",
+      "output": "Green"
+    },
+    {
+      "input": "Empathie ist meine stärkste Ressource.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich höre dir zu und versuche, dich zu verstehen.",
+      "output": "Green"
+    },
+    {
+      "input": "Gemeinschaft und Harmonie sind mir wichtig.",
+      "output": "Green"
+    },
+    {
+      "input": "Wir unterstützen uns gegenseitig.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich sorge mich um das Wohl aller.",
+      "output": "Green"
+    },
+    {
+      "input": "Respekt und Offenheit prägen mein Handeln.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich schätze Vielfalt und Unterschiedlichkeit.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich fördere Kooperation statt Konkurrenz.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich spüre, wenn jemand Hilfe braucht.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich glaube an Gleichberechtigung für alle.",
+      "output": "Green"
+    },
+    {
+      "input": "Empathie ist meine stärkste Ressource.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich höre dir zu und versuche, dich zu verstehen.",
+      "output": "Green"
+    },
+    {
+      "input": "Gemeinschaft und Harmonie sind mir wichtig.",
+      "output": "Green"
+    },
+    {
+      "input": "Wir unterstützen uns gegenseitig.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich sorge mich um das Wohl aller.",
+      "output": "Green"
+    },
+    {
+      "input": "Respekt und Offenheit prägen mein Handeln.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich schätze Vielfalt und Unterschiedlichkeit.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich fördere Kooperation statt Konkurrenz.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich spüre, wenn jemand Hilfe braucht.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich glaube an Gleichberechtigung für alle.",
+      "output": "Green"
+    },
+    {
+      "input": "Empathie ist meine stärkste Ressource.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich höre dir zu und versuche, dich zu verstehen.",
+      "output": "Green"
+    },
+    {
+      "input": "Gemeinschaft und Harmonie sind mir wichtig.",
+      "output": "Green"
+    },
+    {
+      "input": "Wir unterstützen uns gegenseitig.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich sorge mich um das Wohl aller.",
+      "output": "Green"
+    },
+    {
+      "input": "Respekt und Offenheit prägen mein Handeln.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich schätze Vielfalt und Unterschiedlichkeit.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich fördere Kooperation statt Konkurrenz.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich spüre, wenn jemand Hilfe braucht.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich glaube an Gleichberechtigung für alle.",
+      "output": "Green"
+    },
+    {
+      "input": "Empathie ist meine stärkste Ressource.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich höre dir zu und versuche, dich zu verstehen.",
+      "output": "Green"
+    },
+    {
+      "input": "Gemeinschaft und Harmonie sind mir wichtig.",
+      "output": "Green"
+    },
+    {
+      "input": "Wir unterstützen uns gegenseitig.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich sorge mich um das Wohl aller.",
+      "output": "Green"
+    },
+    {
+      "input": "Respekt und Offenheit prägen mein Handeln.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich schätze Vielfalt und Unterschiedlichkeit.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich fördere Kooperation statt Konkurrenz.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich spüre, wenn jemand Hilfe braucht.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich glaube an Gleichberechtigung für alle.",
+      "output": "Green"
+    },
+    {
+      "input": "Empathie ist meine stärkste Ressource.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich höre dir zu und versuche, dich zu verstehen.",
+      "output": "Green"
+    },
+    {
+      "input": "Gemeinschaft und Harmonie sind mir wichtig.",
+      "output": "Green"
+    },
+    {
+      "input": "Wir unterstützen uns gegenseitig.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich sorge mich um das Wohl aller.",
+      "output": "Green"
+    },
+    {
+      "input": "Respekt und Offenheit prägen mein Handeln.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich schätze Vielfalt und Unterschiedlichkeit.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich fördere Kooperation statt Konkurrenz.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich spüre, wenn jemand Hilfe braucht.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich glaube an Gleichberechtigung für alle.",
+      "output": "Green"
+    },
+    {
+      "input": "Empathie ist meine stärkste Ressource.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich höre dir zu und versuche, dich zu verstehen.",
+      "output": "Green"
+    },
+    {
+      "input": "Gemeinschaft und Harmonie sind mir wichtig.",
+      "output": "Green"
+    },
+    {
+      "input": "Wir unterstützen uns gegenseitig.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich sorge mich um das Wohl aller.",
+      "output": "Green"
+    },
+    {
+      "input": "Respekt und Offenheit prägen mein Handeln.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich schätze Vielfalt und Unterschiedlichkeit.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich fördere Kooperation statt Konkurrenz.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich spüre, wenn jemand Hilfe braucht.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich glaube an Gleichberechtigung für alle.",
+      "output": "Green"
+    },
+    {
+      "input": "Empathie ist meine stärkste Ressource.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich höre dir zu und versuche, dich zu verstehen.",
+      "output": "Green"
+    },
+    {
+      "input": "Gemeinschaft und Harmonie sind mir wichtig.",
+      "output": "Green"
+    },
+    {
+      "input": "Wir unterstützen uns gegenseitig.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich sorge mich um das Wohl aller.",
+      "output": "Green"
+    },
+    {
+      "input": "Respekt und Offenheit prägen mein Handeln.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich schätze Vielfalt und Unterschiedlichkeit.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich fördere Kooperation statt Konkurrenz.",
+      "output": "Green"
+    },
+    {
+      "input": "Ich spüre, wenn jemand Hilfe braucht.",
+      "output": "Green"
+    }
+  ],
+  "Yellow": [
+    {
+      "input": "Ich sehe, wie alles zusammenhängt.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Systemdenken hilft mir, komplexes zu lösen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich integriere verschiedene Perspektiven.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Flexibilität ist wichtiger als starre Regeln.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich nutze Netzwerke, um Synergien zu schaffen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich adaptiere mich schnell an Neues.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich experimentiere, um bessere Lösungen zu finden.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich verbinde einzelne Elemente zum Ganzen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich fokussiere auf nachhaltige Lösungen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich schaffe Brücken zwischen Systemen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich sehe, wie alles zusammenhängt.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Systemdenken hilft mir, komplexes zu lösen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich integriere verschiedene Perspektiven.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Flexibilität ist wichtiger als starre Regeln.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich nutze Netzwerke, um Synergien zu schaffen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich adaptiere mich schnell an Neues.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich experimentiere, um bessere Lösungen zu finden.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich verbinde einzelne Elemente zum Ganzen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich fokussiere auf nachhaltige Lösungen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich schaffe Brücken zwischen Systemen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich sehe, wie alles zusammenhängt.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Systemdenken hilft mir, komplexes zu lösen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich integriere verschiedene Perspektiven.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Flexibilität ist wichtiger als starre Regeln.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich nutze Netzwerke, um Synergien zu schaffen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich adaptiere mich schnell an Neues.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich experimentiere, um bessere Lösungen zu finden.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich verbinde einzelne Elemente zum Ganzen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich fokussiere auf nachhaltige Lösungen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich schaffe Brücken zwischen Systemen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich sehe, wie alles zusammenhängt.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Systemdenken hilft mir, komplexes zu lösen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich integriere verschiedene Perspektiven.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Flexibilität ist wichtiger als starre Regeln.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich nutze Netzwerke, um Synergien zu schaffen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich adaptiere mich schnell an Neues.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich experimentiere, um bessere Lösungen zu finden.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich verbinde einzelne Elemente zum Ganzen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich fokussiere auf nachhaltige Lösungen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich schaffe Brücken zwischen Systemen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich sehe, wie alles zusammenhängt.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Systemdenken hilft mir, komplexes zu lösen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich integriere verschiedene Perspektiven.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Flexibilität ist wichtiger als starre Regeln.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich nutze Netzwerke, um Synergien zu schaffen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich adaptiere mich schnell an Neues.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich experimentiere, um bessere Lösungen zu finden.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich verbinde einzelne Elemente zum Ganzen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich fokussiere auf nachhaltige Lösungen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich schaffe Brücken zwischen Systemen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich sehe, wie alles zusammenhängt.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Systemdenken hilft mir, komplexes zu lösen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich integriere verschiedene Perspektiven.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Flexibilität ist wichtiger als starre Regeln.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich nutze Netzwerke, um Synergien zu schaffen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich adaptiere mich schnell an Neues.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich experimentiere, um bessere Lösungen zu finden.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich verbinde einzelne Elemente zum Ganzen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich fokussiere auf nachhaltige Lösungen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich schaffe Brücken zwischen Systemen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich sehe, wie alles zusammenhängt.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Systemdenken hilft mir, komplexes zu lösen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich integriere verschiedene Perspektiven.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Flexibilität ist wichtiger als starre Regeln.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich nutze Netzwerke, um Synergien zu schaffen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich adaptiere mich schnell an Neues.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich experimentiere, um bessere Lösungen zu finden.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich verbinde einzelne Elemente zum Ganzen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich fokussiere auf nachhaltige Lösungen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich schaffe Brücken zwischen Systemen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich sehe, wie alles zusammenhängt.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Systemdenken hilft mir, komplexes zu lösen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich integriere verschiedene Perspektiven.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Flexibilität ist wichtiger als starre Regeln.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich nutze Netzwerke, um Synergien zu schaffen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich adaptiere mich schnell an Neues.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich experimentiere, um bessere Lösungen zu finden.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich verbinde einzelne Elemente zum Ganzen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich fokussiere auf nachhaltige Lösungen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich schaffe Brücken zwischen Systemen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich sehe, wie alles zusammenhängt.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Systemdenken hilft mir, komplexes zu lösen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich integriere verschiedene Perspektiven.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Flexibilität ist wichtiger als starre Regeln.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich nutze Netzwerke, um Synergien zu schaffen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich adaptiere mich schnell an Neues.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich experimentiere, um bessere Lösungen zu finden.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich verbinde einzelne Elemente zum Ganzen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich fokussiere auf nachhaltige Lösungen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich schaffe Brücken zwischen Systemen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich sehe, wie alles zusammenhängt.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Systemdenken hilft mir, komplexes zu lösen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich integriere verschiedene Perspektiven.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Flexibilität ist wichtiger als starre Regeln.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich nutze Netzwerke, um Synergien zu schaffen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich adaptiere mich schnell an Neues.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich experimentiere, um bessere Lösungen zu finden.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich verbinde einzelne Elemente zum Ganzen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich fokussiere auf nachhaltige Lösungen.",
+      "output": "Yellow"
+    },
+    {
+      "input": "Ich schaffe Brücken zwischen Systemen.",
+      "output": "Yellow"
+    }
+  ],
+  "Turquoise": [
+    {
+      "input": "Ich spüre die Einheit aller Dinge.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ganzheitliches Bewusstsein leitet mich.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich lasse mein Ego los und verbinde mich.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich lebe im Einklang mit dem universellen Fluss.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Kollektives Bewusstsein ist meine Orientierung.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich fühle die Energie des großen Ganzen.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich fördere Kooperation auf allen Ebenen.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich erkenne das verbindende Prinzip in allem.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich strebe nach innerem und äußerem Frieden.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich respektiere die Einheit in der Vielfalt.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich spüre die Einheit aller Dinge.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ganzheitliches Bewusstsein leitet mich.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich lasse mein Ego los und verbinde mich.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich lebe im Einklang mit dem universellen Fluss.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Kollektives Bewusstsein ist meine Orientierung.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich fühle die Energie des großen Ganzen.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich fördere Kooperation auf allen Ebenen.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich erkenne das verbindende Prinzip in allem.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich strebe nach innerem und äußerem Frieden.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich respektiere die Einheit in der Vielfalt.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich spüre die Einheit aller Dinge.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ganzheitliches Bewusstsein leitet mich.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich lasse mein Ego los und verbinde mich.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich lebe im Einklang mit dem universellen Fluss.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Kollektives Bewusstsein ist meine Orientierung.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich fühle die Energie des großen Ganzen.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich fördere Kooperation auf allen Ebenen.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich erkenne das verbindende Prinzip in allem.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich strebe nach innerem und äußerem Frieden.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich respektiere die Einheit in der Vielfalt.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich spüre die Einheit aller Dinge.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ganzheitliches Bewusstsein leitet mich.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich lasse mein Ego los und verbinde mich.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich lebe im Einklang mit dem universellen Fluss.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Kollektives Bewusstsein ist meine Orientierung.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich fühle die Energie des großen Ganzen.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich fördere Kooperation auf allen Ebenen.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich erkenne das verbindende Prinzip in allem.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich strebe nach innerem und äußerem Frieden.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich respektiere die Einheit in der Vielfalt.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich spüre die Einheit aller Dinge.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ganzheitliches Bewusstsein leitet mich.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich lasse mein Ego los und verbinde mich.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich lebe im Einklang mit dem universellen Fluss.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Kollektives Bewusstsein ist meine Orientierung.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich fühle die Energie des großen Ganzen.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich fördere Kooperation auf allen Ebenen.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich erkenne das verbindende Prinzip in allem.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich strebe nach innerem und äußerem Frieden.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich respektiere die Einheit in der Vielfalt.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich spüre die Einheit aller Dinge.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ganzheitliches Bewusstsein leitet mich.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich lasse mein Ego los und verbinde mich.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich lebe im Einklang mit dem universellen Fluss.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Kollektives Bewusstsein ist meine Orientierung.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich fühle die Energie des großen Ganzen.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich fördere Kooperation auf allen Ebenen.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich erkenne das verbindende Prinzip in allem.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich strebe nach innerem und äußerem Frieden.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich respektiere die Einheit in der Vielfalt.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich spüre die Einheit aller Dinge.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ganzheitliches Bewusstsein leitet mich.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich lasse mein Ego los und verbinde mich.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich lebe im Einklang mit dem universellen Fluss.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Kollektives Bewusstsein ist meine Orientierung.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich fühle die Energie des großen Ganzen.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich fördere Kooperation auf allen Ebenen.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich erkenne das verbindende Prinzip in allem.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich strebe nach innerem und äußerem Frieden.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich respektiere die Einheit in der Vielfalt.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich spüre die Einheit aller Dinge.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ganzheitliches Bewusstsein leitet mich.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich lasse mein Ego los und verbinde mich.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich lebe im Einklang mit dem universellen Fluss.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Kollektives Bewusstsein ist meine Orientierung.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich fühle die Energie des großen Ganzen.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich fördere Kooperation auf allen Ebenen.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich erkenne das verbindende Prinzip in allem.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich strebe nach innerem und äußerem Frieden.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich respektiere die Einheit in der Vielfalt.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich spüre die Einheit aller Dinge.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ganzheitliches Bewusstsein leitet mich.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich lasse mein Ego los und verbinde mich.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich lebe im Einklang mit dem universellen Fluss.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Kollektives Bewusstsein ist meine Orientierung.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich fühle die Energie des großen Ganzen.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich fördere Kooperation auf allen Ebenen.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich erkenne das verbindende Prinzip in allem.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich strebe nach innerem und äußerem Frieden.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich respektiere die Einheit in der Vielfalt.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich spüre die Einheit aller Dinge.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ganzheitliches Bewusstsein leitet mich.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich lasse mein Ego los und verbinde mich.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich lebe im Einklang mit dem universellen Fluss.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Kollektives Bewusstsein ist meine Orientierung.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich fühle die Energie des großen Ganzen.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich fördere Kooperation auf allen Ebenen.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich erkenne das verbindende Prinzip in allem.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich strebe nach innerem und äußerem Frieden.",
+      "output": "Turquoise"
+    },
+    {
+      "input": "Ich respektiere die Einheit in der Vielfalt.",
+      "output": "Turquoise"
+    }
+  ]
+}

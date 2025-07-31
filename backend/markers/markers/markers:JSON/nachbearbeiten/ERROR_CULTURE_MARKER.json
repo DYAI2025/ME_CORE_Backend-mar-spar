@@ -1,0 +1,23 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für ERROR_CULTURE_MARKER",
+    "examples": [
+      "category: \"Error Culture\"",
+      "Verantwortungsübernahme und Lernen aus Misserfolgen signalisieren.",
+      "created_at: 2025-07-12T10:43:24.438204",
+      "version: 1.0"
+    ],
+    "id": "S_ERROR_CULTURE",
+    "level": 2,
+    "name": "ERROR_CULTURE",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_109A",
+    "semantic_tags": [
+      "error-culture-marker"
+    ]
+  },
+  "marker_name": "ERROR_CULTURE_MARKER"
+}

@@ -1,0 +1,27 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für BOUNDARY_SETTING_MARKER_MARKER
+  examples:
+  - Klarheit und Kommunikation eigener Grenzen, Selbstschutz.
+  - 'description: "Erkennt Muster für boundary_setting_marker"'
+  - 'pattern: r"(muster.*wird.*ergänzt)"'
+  id: S_BOUNDARY_SETTING_MARKER
+  level: 2
+  name: BOUNDARY_SETTING
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_6DF8
+  semantic_tags:
+  - boundary-setting-marker-marker
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.621607'
+  repair_version: '1.0'

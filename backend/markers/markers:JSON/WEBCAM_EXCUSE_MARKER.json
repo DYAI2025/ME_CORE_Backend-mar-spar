@@ -1,0 +1,23 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für WEBCAM_EXCUSE_MARKER",
+    "examples": [
+      "Erkennt typische Ausreden, mit denen eine Videoverbindung vermieden wird. Diese Phrasen kommen häufig in Betrugsszenarien vor – insbesondere Romance Scams –",
+      "und dienen der Identitätsverschleierung. Sie lassen sich in technische, berufliche, emotionale und strategische Kategorien einteilen.",
+      "description: \"Erkennt Muster für webcam_excuse\"",
+      "pattern: r\"(muster.*wird.*ergänzt)\""
+    ],
+    "id": "S_WEBCAM_EXCUSE",
+    "level": 2,
+    "name": "WEBCAM_EXCUSE",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_3883",
+    "semantic_tags": [
+      "webcam-excuse-marker"
+    ]
+  },
+  "marker_name": "WEBCAM_EXCUSE_MARKER"
+}

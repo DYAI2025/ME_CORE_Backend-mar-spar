@@ -1,0 +1,15 @@
+{
+  "marker_name": "A_UNCERTAINTY_PHRASE_MARKER",
+  "beschreibung": "Ausdrücke, die Nichtwissen, Zweifel oder Unsicherheit signalisieren.\n",
+  "beispiele": [
+    "but in relationship - I don't know.",
+    "Ich weiß nicht 🤷‍♂️, vielleicht morgen?",
+    "Kein Plan, bin unsicher...",
+    "I'm not sure about that tbh.",
+    "I don't know 🤔, feels weird.",
+    "Ich bin unsicher, was du meinst.",
+    "I dunno, kinda lost here."
+  ],
+  "semantische_grabber_id": "AUTO_SEM_20250721_D963",
+  "metadata": {
+    "created_at": 

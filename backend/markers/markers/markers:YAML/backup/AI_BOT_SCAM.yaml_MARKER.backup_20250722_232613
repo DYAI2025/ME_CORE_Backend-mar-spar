@@ -1,0 +1,31 @@
+marker_name:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für AI_BOT_SCAM_MARKER
+  examples:
+  - 'marker_name: AI_BOT_SCAM.yaml_MARKER'
+  - Erkennt sprachliche Muster, typische Phrasen und Begriffe aus Romance Scams, Love
+    Fraud oder KI-generierten Texten.
+  - Ziel ist es, auffällige Wortwahl oder generische Sprache in Messaging-Umgebungen
+    zu markieren.
+  - 'description: "Erkennt Muster für ai_bot_scam.txt"'
+  - 'pattern: r"(muster.*wird.*ergänzt)"'
+  id: S_AI_BOT_SCAM
+  level: 2
+  name: AI_BOT_SCAM
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_757D
+  semantic_tags:
+  - ai-bot-scam-marker
+category: SEMANTIC
+tags:
+- needs_review
+examples:
+- AUTO_GENERATED_EXAMPLE_1
+- AUTO_GENERATED_EXAMPLE_2
+- AUTO_GENERATED_EXAMPLE_3
+- AUTO_GENERATED_EXAMPLE_4
+- AUTO_GENERATED_EXAMPLE_5
+metadata:
+  last_repaired: '2025-07-19T05:25:21.572676'
+  repair_version: '1.0'

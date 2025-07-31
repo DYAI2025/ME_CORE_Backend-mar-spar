@@ -1,0 +1,26 @@
+resonanz_taktik_marker:
+  name: "Resonanz-Taktik"
+  beschreibung: >
+    Eine Äußerung oder Handlung, die nicht primär aus Selbstausdruck oder Klarheit erfolgt, sondern darauf zielt, eine bestimmte Reaktion beim Gegenüber hervorzurufen. 
+    Oft handelt es sich um unbewusste emotionale Steuerung über Schuld, Verlustangst, Mitleid oder Rettungsimpulse. 
+    Der Marker erkennt strategisch eingesetzte Unklarheit, Schweigen, doppeldeutige Aussagen oder Selbstabwertungen, 
+    die beim Anderen ein reflexhaftes Verhalten triggern sollen – meist im Sinne von Nähe, Bestätigung oder Handlung.
+
+  archetypen:
+    licht: ["Magier (Kommunikation als Wirkung)", "Kind (ehrliches Bedürfnis nach Reaktion)"]
+    schatten: ["Manipulator (verdeckte Steuerung)", "hilfloses Kind (reaktive Kontrolle durch Ohnmacht)"]
+
+  systemwirkung: >
+    Erzeugt dynamische Schleifen zwischen Personen, bei denen nicht das Gesagte, sondern das implizit Gemeinte zur Wirkung führt.
+    Kann zu wiederholten emotionalen Verstrickungen führen, da der Andere auf die versteckte Botschaft reagiert statt auf die offensichtliche.
+    Der Marker hilft, unausgesprochene Erwartungen, Tests und emotionale Steuerungsmuster sichtbar zu machen.
+
+  beispiele:
+    - "Du kannst gehen, wenn du willst. Ich halt dich nicht auf."
+    - "Ist schon okay, ich bin eh zu viel für Menschen wie dich."
+    - "Mach einfach, was du für richtig hältst – ich erwarte nichts mehr."
+    - "Ich sage lieber nichts mehr. Es bringt ja eh nichts."
+    - "Vielleicht ist es besser, wenn wir uns nicht mehr sehen."
+    - (schweigt, während sie gleichzeitig aktiv in Chat online ist)
+    - "Du verstehst mich sowieso nicht – aber das ist okay."
+

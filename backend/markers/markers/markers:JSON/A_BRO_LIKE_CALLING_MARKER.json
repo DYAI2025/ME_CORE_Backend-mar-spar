@@ -1,0 +1,21 @@
+# A_BRO_LIKE_CALLING_MARKER - Semantic Marker
+marker_name: A_BRO_LIKE_CALLING_MARKER
+beschreibung: >
+  Direktanreden oder Spitznamen, die eine freundschaftlich-vertraute Ebene 
+signalisieren, oft verspielt, neckisch oder liebevoll.
+beispiele:
+  - "Digga, was geht?"
+  - "Brudi, ich vermiss dich!"
+  - "Alter, du bist der Beste!"
+  - "Ey du Vogel, ich feier dich."
+  - "Schatzi, komm klar jetzt 😂"
+
+semantische_grabber_id: SGR_BRO_LIKE_CALLING_01
+
+metadata:
+  created_at: 2025-07-21T03:05:33.847179
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

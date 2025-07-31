@@ -1,0 +1,24 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für OFFENSIVE_FLIRTING_MARKER",
+    "examples": [
+      "marker_name: OFFENSIVE_FLIRTING.yaml_MARKER",
+      "Erkennt kommunikative Muster von offensivem, teils grenzüberschreitendem Flirten.",
+      "einer (körperlichen) Beziehung. Oft gepaart mit Pacing, Übertreibung und",
+      "description: \"Erkennt Muster für offensive_flirting.txt\"",
+      "pattern: r\"(muster.*wird.*ergänzt)\""
+    ],
+    "id": "S_OFFENSIVE_FLIRTING",
+    "level": 2,
+    "name": "OFFENSIVE_FLIRTING",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_BFF5",
+    "semantic_tags": [
+      "offensive-flirting-marker"
+    ]
+  },
+  "marker_name": "OFFENSIVE_FLIRTING_MARKER"
+}

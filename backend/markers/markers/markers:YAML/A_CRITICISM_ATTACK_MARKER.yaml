@@ -1,0 +1,63 @@
+# A_CRITICISM_ATTACK_MARKER - Semantic Marker
+marker_name: A_CRITICISM_ATTACK_MARKER
+beschreibung: >
+  id: A_CRITICISM_ATTACK
+level: 1
+version: "1.0.0"
+author: "Marker_Evaluator_v2"
+created_at: "2025-07-18"
+status: "draft"
+lang: "de"
+name: CRITICISM_ATTACK
+description: "Ad-hominem-Kritik, die den Charakter statt das Verhalten adressiert."
+atomic_pattern:
+  - "Du bist so .*"
+  - "Du machst immer .* falsch"
+  - "Warum kannst du nie .*"
+  - "Immer musst du .*"
+semantic_grabber_id: SGR_GOTTMAN_01
+tags: ["gottman","criticism","communication","origin_author:John_Gottman"]
+beispiele:
+  - "👿 angry face with horns"
+  - "😠 angry face"
+  - "😤 face with look of triumph"
+  - "🤬 face with symbols on mouth"
+  - "😡 face with steam from nose"
+  - "😡 WUT & FRUSTRATION"
+  - "😬 grimacing face"
+  - "😑 expressionless face"
+  - "🙄 face with rolling eyes"
+  - "😒 unamused face"
+  - "😒 GENERVT & PASSIV-AGGRESSIV"
+  - "- "Du bist wie ein schwarzes Loch für jede gute Stimmung."
+  - "- "Wow, wieder mal alles um dich – bravo."
+  - "- "Red nicht von Respekt, du kennst das Wort nicht mal."
+  - "- "Du brauchst ständig Drama, sonst fühlst du dich nicht lebendig, oder?"
+  - "- "Wie kann man so kalt und gleichzeitig so needy sein?"
+  - "- "Immer wenn's schwierig wird, haust du ab – typisch!"
+  - "- "Du bist so unfassbar unreif, es ist traurig."
+  - "- "Du drehst dir eh immer alles so hin, wie’s dir passt."
+  - "- "Mit deinem ständigen Gekränktsein macht das echt keinen Spaß mehr."
+  - "- "Dein Verhalten ist einfach nur peinlich."
+  - "- "Du kannst halt keine fünf Minuten normal sein."
+  - "- "Du versaust einfach alles mit deinem Ego-Trip."
+  - "- "Du hörst nie zu, weil du nur dich selbst reden hören willst."
+  - "- "Boah, du bist so der Inbegriff von Chaos."
+  - "- "Man kann sich echt auf niemanden weniger verlassen als auf dich."
+  - "- "Mit dir ist jede Kleinigkeit gleich ein Drama."
+  - "- "Du checkst es halt einfach nie, oder?"
+  - "- "Ey, was stimmt eigentlich nicht mit dir?"
+  - "- "Typisch du, wieder null Mitdenken, wie immer."
+  - "- "Ganz ehrlich? Du bist einfach nur anstrengend."
+  - "examples:"
+  - "- "Du bist so faul, ich kann nicht mehr!""
+
+semantische_grabber_id: AUTO_SEM_20250718_944A
+
+metadata:
+  created_at: 2025-07-18T02:36:13.580894
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

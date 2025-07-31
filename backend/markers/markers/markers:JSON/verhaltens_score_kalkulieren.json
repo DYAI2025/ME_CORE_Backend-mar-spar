@@ -1,0 +1,24 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für verhaltens_score_kalkulieren",
+    "examples": [
+      "\"name\": \"erstelle_verhaltens_score\",",
+      "\"description\": \"Erstellt ein quantitatives Scoring-Profil für eine Person basierend auf dem Dialog und den psychologischen Modellen.\",",
+      "\"parameters\": {",
+      "\"type\": \"object\",",
+      "\"properties\": {"
+    ],
+    "id": "S_VERHALTENS_SCORE_KALKULIEREN",
+    "level": 2,
+    "name": "verhaltens_score_kalkulieren",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_FC82",
+    "semantic_tags": [
+      "verhaltens-score-kalkulieren"
+    ]
+  },
+  "marker_name": "verhaltens_score_kalkulieren"
+}

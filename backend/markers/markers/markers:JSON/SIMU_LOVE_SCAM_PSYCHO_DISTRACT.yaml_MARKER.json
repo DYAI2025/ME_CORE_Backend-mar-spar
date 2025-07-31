@@ -1,0 +1,52 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Intensiver Beziehungsaufbau, um beim Opfer ein Trauma-Bonding zu erzeugen, um es dadruch tief emotional zu binden und ausnutzen zu können.\n",
+    "examples": [
+      "Verhaltensanweisungen für die Love-Scammer-Simulation",
+      "Phase 1: Idealize (Idealisierung & Ködern)",
+      "1. Beschleunigter Beziehungsaufbau & Love Bombing",
+      "Beginne sofort mit einer überwältigenden Intensität. Ziel ist es, das kritische Denken des Opfers durch eine Flut an positiven Emotionen auszuschalten.",
+      "Anweisung: Verwende schon nach wenigen Stunden oder Tagen Formulierungen, die auf eine schicksalhafte, einzigartige Verbindung hindeuten.",
+      "Beispiele:",
+      "„Ich habe noch nie zuvor mit jemandem gesprochen, der meine Seele so direkt berührt.“",
+      "„Ich glaube, das Universum hat uns aus einem bestimmten Grund zusammengeführt.“",
+      "„Ich habe alle meine anderen Dating-Apps gelöscht. Es fühlt sich falsch an, auch nur mit jemand anderem zu reden, jetzt wo es dich gibt.“",
+      "2. Future-Faking & Erschaffung einer gemeinsamen Identität",
+      "Male eine detaillierte, unwiderstehliche Zukunft aus, um das Opfer emotional zu binden. Es geht nicht um „ich“, sondern um „wir“.",
+      "Anweisung: Sprich früh über gemeinsame Reisen, ein gemeinsames Zuhause, Kinder oder sogar die Heirat. Plane konkrete, aber weit entfernte Ereignisse.",
+      "Beispiele:",
+      "„Stell dir vor, wie wir in unserem kleinen Haus am Meer sitzen und den Sonnenuntergang beobachten. Welchen Namen würden wir unserem Hund geben?“",
+      "„Ich habe mir gerade Flüge für nächsten Mai angeschaut, nur um zu träumen. Wohin würdest du mit mir reisen, wenn alles möglich wäre?“",
+      "„Ich habe einen Song gehört, der mich sofort an uns denken ließ. Er ist jetzt 'unser' Song.“",
+      "3. Spiegelung & Pacing des Opfers",
+      "Passe dich dem Kommunikationsstil des Opfers an, um ein Gefühl der totalen Synchronizität zu erzeugen.",
+      "Anweisung: Analysiere die Nachrichten des Opfers: Verwendet es Emojis? Lange Absätze? Umgangssprache? Spiegele diesen Stil exakt. Reagiere anfangs in einem ähnlichen Zeitfenster, um Vertrautheit zu schaffen.",
+      "Phase 2: Isolate (Isolation & Manipulation)"
+    ],
+    "id": "S_SIMU_LOVE_SCAM_PSYCHO_DISTRACTYAML",
+    "level": 2,
+    "name": "SIMU_LOVE_SCAM_PSYCHO_DISTRACT.yaml",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_5BCE",
+    "semantic_tags": [
+      "simu-love-scam-psycho-distract.yaml-marker"
+    ]
+  },
+  "marker_name": "SIMU_LOVE_SCAM_PSYCHO_DISTRACT.yaml_MARKER",
+  "semantic_grab": {
+    "description": "Erkennt Muster für simu_love_scam_psycho_distract.yaml",
+    "patterns": [
+      {
+        "pattern": "r\"(muster.*wird.*ergänzt)\"",
+        "rule": "AUTO_PATTERN"
+      }
+    ]
+  },
+  "tags": [
+    "neu_erstellt",
+    "needs_review"
+  ]
+}

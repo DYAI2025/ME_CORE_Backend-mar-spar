@@ -1,0 +1,85 @@
+marker_name: A_REALITY_SHIFT
+# =========================================================
+# REALITY_SHIFT_MARKER.yaml
+# =========================================================
+- id: "A_REALITY_SHIFT"
+  level: 1
+  version: "1.0.0"
+  author: "Marker_examples_generator"
+  created_at: "2025-07-22"
+  status: "released"
+  lang: "de"
+  name: "REALITY_SHIFT"
+  description: >
+    Detects subtle communicative patterns indicating that a fundamental
+    change in reality or in the relationship is looming (or already
+    happening) but has not yet been consciously accepted. Typical cues
+    include denial, suppressed fears, mild disorientation, and small
+    ruptures in interaction that are ignored until the shift becomes
+    irreversible. :contentReference[oaicite:0]{index=0}
+  category: "ATOMIC"
+  atomic_pattern:
+    - "irgendwie anders"
+    - "alles in Ordnung"
+    - "nicht nachdenken"
+    - "bilde ich mir ein"
+    - "lass uns nicht über"
+    - "nur eine Phase"
+    - "fühlt sich komisch an"
+    - "weiß nicht warum"
+    - "machen wir einfach weiter"
+    - "nichts hat sich geändert"
+  regex_flags: ["i"]
+  tags: [atomic, reality_shift, denial, cognitive_dissonance]
+
+  examples:
+    # ---- 20 DE / EN pairs ----
+    - de: "Es fühlt sich irgendwie anders an, aber ich weiß nicht warum."
+      en: "Something feels different, but I don’t know why."
+    - de: "Eigentlich ist doch alles in Ordnung, oder?"
+      en: "Everything’s fine, isn’t it?"
+    - de: "Ich will darüber nicht nachdenken, lass uns einfach so weitermachen."
+      en: "I don’t want to think about it; let’s just keep going as we are."
+    - de: "Vielleicht bilde ich mir das alles nur ein."
+      en: "Maybe I’m just imagining all of this."
+    - de: "Lass uns nicht über Dinge sprechen, die noch gar nicht passiert sind."
+      en: "Let’s not talk about things that haven’t even happened."
+    - de: "Es ist sicher alles nur eine Phase."
+      en: "I’m sure it’s just a phase."
+    - de: "Irgendwas hat sich verändert, ohne dass ich es benennen kann."
+      en: "Something has changed, though I can’t put my finger on it."
+    - de: "Mir kommt alles vertraut vor, und doch stimmt etwas nicht."
+      en: "Everything feels familiar, yet something’s off."
+    - de: "Kann sein, dass ich übertreibe, aber es fühlt sich komisch an."
+      en: "Maybe I’m overreacting, but it feels strange."
+    - de: "Lass uns nicht verrückt machen, es bleibt bestimmt wie immer."
+      en: "Let’s not freak out; I’m sure it’ll stay the same."
+    - de: "Ich glaube, wir reden uns das Problem nur ein."
+      en: "I think we’re just talking ourselves into a problem."
+    - de: "Das Gefühl, dass etwas kippt, ignoriere ich besser."
+      en: "I’d rather ignore the sense that something is tipping."
+    - de: "Wenn wir es nicht thematisieren, löst es sich sicher von allein."
+      en: "If we don’t bring it up, it’ll surely sort itself out."
+    - de: "Es wirkt alles normal, auch wenn es sich nicht so anfühlt."
+      en: "Everything looks normal even if it doesn’t feel that way."
+    - de: "Vielleicht sehe nur ich diese kleinen Risse."
+      en: "Maybe I’m the only one seeing these small cracks."
+    - de: "Das ist bestimmt bloß Einbildung wegen des Stresses."
+      en: "It’s probably just in my head because of stress."
+    - de: "Wir sollten nicht von Veränderungen sprechen, bevor sie real sind."
+      en: "We shouldn’t talk about changes before they’re real."
+    - de: "Mir fällt auf, dass sich Gespräche verschieben, aber egal."
+      en: "I notice our talks shifting, but never mind."
+    - de: "Solange niemand etwas sagt, ist doch alles gut."
+      en: "As long as no one says anything, everything’s fine."
+    - de: "Ich tue einfach so, als wäre alles beim Alten."
+      en: "I’ll just act like everything is the same."
+
+  semantic_grab:
+    description: "Pattern definitions used by reality_shift_marker.py"
+    patterns:
+      - rule: "AUTO_PATTERN"
+        pattern: r"(muster.*wird.*ergänzt)"
+    tags: [reality_break, denial, cognitive_dissonance, subtle_change, needs_review]
+
+kategorie: UNCATEGORIZED

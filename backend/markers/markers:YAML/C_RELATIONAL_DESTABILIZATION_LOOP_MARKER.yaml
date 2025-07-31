@@ -1,0 +1,23 @@
+# C_RELATIONAL_DESTABILIZATION_LOOP_MARKER - Semantic Marker
+marker_name: C_RELATIONAL_DESTABILIZATION_LOOP_MARKER
+beschreibung: >
+  Cluster von Beziehungsmustern, die durch emotionale Wechselhaftigkeit,
+Ambivalenz und inkongruente Kommunikation eine dauerhafte Instabilität 
+erzeugen. Charakteristisch sind unvorhersehbare Nähe-/Distanzbewegungen
+und widersprüchliche Aussagen.
+beispiele:
+  - "Ich vermisse dich… aber irgendwie bin ich froh, allein zu sein."
+  - "Das war schön gestern – ich weiß nur nicht, ob wir zu viel Nähe haben."
+  - "Ich sag das alles nur, weil ich dich liebe… oder zumindest denke ich das."
+  - "Ich will dir nichts versprechen, aber ich kann mir was vorstellen."
+  - "Ich hab’s gestern ernst gemeint. Und heute weiß ich nicht, ob es richtig war."
+
+semantische_grabber_id: SGR_RELATIONAL_DRIFT_01
+
+metadata:
+  created_at: 2025-07-22T22:45:40.461290
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

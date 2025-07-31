@@ -1,0 +1,24 @@
+{
+  "kategorie": "SEMANTIC",
+  "marker": {
+    "category": "Semantic",
+    "context_rule": [],
+    "description": "Automatisch generierte Beschreibung für MARKER_AXIES_DRIFT_MARKER",
+    "examples": [
+      "marker_name: MARKER_AXIES_DRIFT.yaml_MARKER",
+      "in Kommunikationssystemen.",
+      "Absolut. Der Marker „driftachsen_set“ ist ein anspruchsvolles Meta-Konzept, das über die Analyse einzelner Sätze hinausgeht. Hier ist eine detaillierte Ausarbeitung, die dem eigentlich Gemeinten – der",
+      "description: \"Erkennt Muster für marker_axies_drift.txt\"",
+      "pattern: r\"(muster.*wird.*ergänzt)\""
+    ],
+    "id": "S_MARKER_AXIES_DRIFT",
+    "level": 2,
+    "name": "MARKER_AXIES_DRIFT",
+    "pattern": [],
+    "semantic_grabber_id": "AUTO_SEM_20250714_D68D",
+    "semantic_tags": [
+      "marker-axies-drift-marker"
+    ]
+  },
+  "marker_name": "MARKER_AXIES_DRIFT_MARKER"
+}
