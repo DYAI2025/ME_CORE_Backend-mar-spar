@@ -1,0 +1,146 @@
+# Render Blueprint Specification
+# https://render.com/docs/blueprint-spec
+
+services:
+  # Backend API Service
+  - type: web
+    name: me-core-backend
+    runtime: docker
+    repo: https://github.com/DYAI2025/ME_CORE_Backend-mar-spar.git
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    envVars:
+      - key: PYTHON_ENV
+        value: production
+      - key: PORT
+        value: 8000
+      - key: MONGODB_URI
+        fromDatabase:
+          name: me-core-mongodb
+          property: connectionString
+      - key: REDIS_URL
+        fromService:
+          name: me-core-redis
+          type: redis
+          property: connectionString
+      - key: SPARK_NLP_URL
+        value: http://me-core-spark:8090
+      - key: FRONTEND_URL
+        fromService:
+          name: me-core-dashboard
+          type: web
+          property: url
+      - key: API_KEY
+        generateValue: true
+      - key: JWT_SECRET
+        generateValue: true
+    healthCheckPath: /api/health/live
+    autoDeploy: true
+    plan: standard
+
+  # Monitoring Dashboard Frontend
+  - type: web
+    name: me-core-dashboard
+    runtime: docker
+    repo: https://github.com/DYAI2025/ME_CORE_Backend-mar-spar.git
+    dockerfilePath: ./dashboard/Dockerfile
+    dockerContext: ./dashboard
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        fromService:
+          name: me-core-backend
+          type: web
+          property: url
+      - key: NEXT_PUBLIC_JENKINS_URL
+        value: https://jenkins.your-domain.com
+      - key: JENKINS_API_TOKEN
+        sync: false
+      - key: NEXTAUTH_URL
+        fromService:
+          name: me-core-dashboard
+          type: web
+          property: url
+      - key: NEXTAUTH_SECRET
+        generateValue: true
+    buildCommand: npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: true
+    plan: starter
+
+  # Spark NLP Service (if needed)
+  - type: privateSiervice
+    name: me-core-spark
+    runtime: docker
+    repo: https://github.com/DYAI2025/ME_CORE_Backend-mar-spar.git
+    dockerfilePath: ./spark-nlp/Dockerfile
+    dockerContext: ./spark-nlp
+    envVars:
+      - key: SPARK_MASTER
+        value: local[*]
+      - key: SPARK_DRIVER_MEMORY
+        value: 4g
+      - key: REDIS_URL
+        fromService:
+          name: me-core-redis
+          type: redis
+          property: connectionString
+    plan: standard
+
+  # Redis Cache
+  - type: redis
+    name: me-core-redis
+    ipAllowList: []
+    plan: starter
+    maxMemoryPolicy: allkeys-lru
+
+databases:
+  # MongoDB Database
+  - name: me-core-mongodb
+    plan: starter
+    databaseName: markerengine
+    user: mecore
+
+# Cron Jobs
+cronJobs:
+  # E2E Test Runner
+  - type: cron
+    name: me-core-e2e-tests
+    runtime: docker
+    repo: https://github.com/DYAI2025/ME_CORE_Backend-mar-spar.git
+    dockerfilePath: ./tests/e2e/Dockerfile
+    dockerContext: ./tests/e2e
+    schedule: "0 */6 * * *"  # Every 6 hours
+    envVars:
+      - key: API_URL
+        fromService:
+          name: me-core-backend
+          type: web
+          property: url
+      - key: DASHBOARD_URL
+        fromService:
+          name: me-core-dashboard
+          type: web
+          property: url
+      - key: TEST_REPORT_URL
+        value: https://your-test-reports.com
+
+  # Backup Job
+  - type: cron
+    name: me-core-backup
+    runtime: docker
+    repo: https://github.com/DYAI2025/ME_CORE_Backend-mar-spar.git
+    dockerfilePath: ./tools/backup/Dockerfile
+    dockerContext: ./tools/backup
+    schedule: "0 2 * * *"  # Daily at 2 AM
+    envVars:
+      - key: MONGODB_URI
+        fromDatabase:
+          name: me-core-mongodb
+          property: connectionString
+      - key: S3_BUCKET
+        value: me-core-backups
+      - key: AWS_ACCESS_KEY_ID
+        sync: false
+      - key: AWS_SECRET_ACCESS_KEY
+        sync: false

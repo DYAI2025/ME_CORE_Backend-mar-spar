@@ -1,6 +1,7 @@
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from .routes import health, markers, analyze, analyze_v2, metrics
+from .api import dashboard
 from .core.logging import configure_logging, get_logger
 from .core.container import get_container
 from .infrastructure.metrics import metrics as prom_metrics
@@ -64,6 +65,7 @@ app.include_router(health.router, tags=["Health"])
 app.include_router(markers.router, prefix="/markers", tags=["Markers"])
 app.include_router(analyze.router, prefix="/analyze", tags=["Analysis"])
 app.include_router(analyze_v2.router, prefix="/analyze/v2", tags=["Analysis v2"])
+app.include_router(dashboard.router, tags=["Dashboard"])
 
 # Include metrics router if enabled
 if settings.ENABLE_METRICS:

@@ -1,0 +1,234 @@
+name: Deploy to Render
+
+on:
+  push:
+    branches:
+      - main
+      - staging
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Deployment environment'
+        required: true
+        default: 'staging'
+        type: choice
+        options:
+          - staging
+          - production
+
+env:
+  RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
+  RENDER_SERVICE_ID_BACKEND: ${{ secrets.RENDER_SERVICE_ID_BACKEND }}
+  RENDER_SERVICE_ID_DASHBOARD: ${{ secrets.RENDER_SERVICE_ID_DASHBOARD }}
+  RENDER_SERVICE_ID_SPARK: ${{ secrets.RENDER_SERVICE_ID_SPARK }}
+
+jobs:
+  test:
+    name: Run Tests
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cache/pip
+            ~/.npm
+          key: ${{ runner.os }}-deps-${{ hashFiles('**/requirements*.txt', '**/package-lock.json') }}
+          
+      - name: Install backend dependencies
+        run: |
+          cd backend
+          pip install -r requirements-test.txt
+          
+      - name: Install dashboard dependencies
+        run: |
+          cd dashboard
+          npm ci
+          
+      - name: Run backend tests
+        run: |
+          cd backend
+          pytest tests/ -v --cov=. --cov-report=xml
+          
+      - name: Run dashboard tests
+        run: |
+          cd dashboard
+          npm test -- --ci --coverage
+          
+      - name: Upload coverage
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./backend/coverage.xml,./dashboard/coverage/lcov.info
+
+  deploy-backend:
+    name: Deploy Backend to Render
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Determine environment
+        id: env
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            echo "environment=${{ github.event.inputs.environment }}" >> $GITHUB_OUTPUT
+          elif [[ "${{ github.ref }}" == "refs/heads/main" ]]; then
+            echo "environment=production" >> $GITHUB_OUTPUT
+          else
+            echo "environment=staging" >> $GITHUB_OUTPUT
+          fi
+          
+      - name: Deploy Backend to Render
+        run: |
+          curl -X POST "https://api.render.com/v1/services/${{ env.RENDER_SERVICE_ID_BACKEND }}/deploys" \
+            -H "Authorization: Bearer ${{ env.RENDER_API_KEY }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "clearCache": "clear",
+              "branch": "${{ github.ref_name }}"
+            }'
+            
+      - name: Wait for Backend Deployment
+        run: |
+          echo "Waiting for backend deployment to complete..."
+          sleep 30
+          
+          # Poll deployment status
+          for i in {1..20}; do
+            STATUS=$(curl -s "https://api.render.com/v1/services/${{ env.RENDER_SERVICE_ID_BACKEND }}" \
+              -H "Authorization: Bearer ${{ env.RENDER_API_KEY }}" | \
+              jq -r '.service.deploy.status')
+              
+            if [[ "$STATUS" == "live" ]]; then
+              echo "Backend deployment successful!"
+              break
+            elif [[ "$STATUS" == "failed" ]]; then
+              echo "Backend deployment failed!"
+              exit 1
+            fi
+            
+            echo "Status: $STATUS. Waiting..."
+            sleep 30
+          done
+
+  deploy-dashboard:
+    name: Deploy Dashboard to Render
+    needs: [test, deploy-backend]
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Deploy Dashboard to Render
+        run: |
+          curl -X POST "https://api.render.com/v1/services/${{ env.RENDER_SERVICE_ID_DASHBOARD }}/deploys" \
+            -H "Authorization: Bearer ${{ env.RENDER_API_KEY }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "clearCache": "clear",
+              "branch": "${{ github.ref_name }}"
+            }'
+            
+      - name: Wait for Dashboard Deployment
+        run: |
+          echo "Waiting for dashboard deployment to complete..."
+          sleep 30
+          
+          for i in {1..20}; do
+            STATUS=$(curl -s "https://api.render.com/v1/services/${{ env.RENDER_SERVICE_ID_DASHBOARD }}" \
+              -H "Authorization: Bearer ${{ env.RENDER_API_KEY }}" | \
+              jq -r '.service.deploy.status')
+              
+            if [[ "$STATUS" == "live" ]]; then
+              echo "Dashboard deployment successful!"
+              break
+            elif [[ "$STATUS" == "failed" ]]; then
+              echo "Dashboard deployment failed!"
+              exit 1
+            fi
+            
+            echo "Status: $STATUS. Waiting..."
+            sleep 30
+          done
+
+  e2e-tests:
+    name: Run E2E Tests
+    needs: [deploy-backend, deploy-dashboard]
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          
+      - name: Install E2E test dependencies
+        run: |
+          cd tests/e2e
+          npm ci
+          
+      - name: Install Playwright browsers
+        run: |
+          cd tests/e2e
+          npx playwright install --with-deps
+          
+      - name: Determine test URLs
+        id: urls
+        run: |
+          if [[ "${{ steps.env.outputs.environment }}" == "production" ]]; then
+            echo "api_url=https://me-core-backend.onrender.com" >> $GITHUB_OUTPUT
+            echo "dashboard_url=https://me-core-dashboard.onrender.com" >> $GITHUB_OUTPUT
+          else
+            echo "api_url=https://me-core-backend-staging.onrender.com" >> $GITHUB_OUTPUT
+            echo "dashboard_url=https://me-core-dashboard-staging.onrender.com" >> $GITHUB_OUTPUT
+          fi
+          
+      - name: Run E2E tests
+        env:
+          API_URL: ${{ steps.urls.outputs.api_url }}
+          DASHBOARD_URL: ${{ steps.urls.outputs.dashboard_url }}
+        run: |
+          cd tests/e2e
+          npm test
+          
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: e2e-test-results
+          path: tests/e2e/test-results/
+
+  notify:
+    name: Notify Deployment Status
+    needs: [deploy-backend, deploy-dashboard, e2e-tests]
+    runs-on: ubuntu-latest
+    if: always()
+    
+    steps:
+      - name: Send notification
+        run: |
+          if [[ "${{ needs.e2e-tests.result }}" == "success" ]]; then
+            MESSAGE="✅ Deployment to ${{ steps.env.outputs.environment }} successful!"
+          else
+            MESSAGE="❌ Deployment to ${{ steps.env.outputs.environment }} failed!"
+          fi
+          
+          # Send notification (e.g., to Slack, Discord, etc.)
+          echo "$MESSAGE"
