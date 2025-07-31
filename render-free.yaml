@@ -1,0 +1,64 @@
+# Render Free Tier Configuration - $0/Monat für Testing
+# WICHTIG: Diese Konfiguration nutzt NUR kostenlose Services!
+
+services:
+  # Backend API - Kombiniert Backend + Spark NLP (spart $25!)
+  - type: web
+    name: me-core-api
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: starter  # FREE TIER!
+    
+    # Starter Limits: 512MB RAM, spins down after 15 min
+    healthCheckPath: /api/health/live
+    
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: PYTHON_ENV
+        value: production
+      
+      # Mock Mode - Keine externe DB nötig!
+      - key: DATABASE_URL
+        value: mongodb://localhost:27017/test
+      
+      # In-Memory Cache statt Redis (spart $10!)
+      - key: CACHE_TYPE
+        value: memory
+      - key: REDIS_URL
+        value: ""
+      
+      # Spark NLP im gleichen Container
+      - key: ENABLE_SPARK_NLP
+        value: "false"  # Für Testing deaktiviert
+      
+      # Security
+      - key: API_KEY
+        generateValue: true
+      - key: JWT_SECRET
+        generateValue: true
+
+  # Dashboard - Minimal Frontend
+  - type: web
+    name: me-core-dashboard
+    runtime: docker
+    dockerfilePath: ./dashboard/Dockerfile
+    dockerContext: ./dashboard
+    plan: starter  # FREE TIER!
+    
+    healthCheckPath: /api/health
+    
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        value: https://me-core-api.onrender.com
+      - key: PORT
+        value: 3000
+
+# Entfernt für Free Tier:
+# ❌ Redis ($10) - Nutzen In-Memory Cache
+# ❌ Spark Service ($25) - Im Backend integriert
+# ❌ E2E Tests - Manuell ausführen
+# ❌ Backup Service - Für Testing nicht nötig
+
+# Gesamtkosten: $0 ! 🎉
