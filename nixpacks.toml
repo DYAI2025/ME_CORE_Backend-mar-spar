@@ -1,0 +1,20 @@
+# Nixpacks configuration for Railway
+# This helps Railway understand how to build our services
+
+[phases.setup]
+nixPkgs = ["python310", "nodejs-18_x", "openjdk11"]
+
+[phases.install]
+cmds = ["pip install -r requirements.txt"]
+
+[phases.build]
+cmds = ["echo 'Build complete'"]
+
+[start]
+cmd = "uvicorn main:app --host 0.0.0.0 --port $PORT"
+
+[deploy]
+healthcheckPath = "/api/health/live"
+healthcheckTimeout = 30
+restartPolicyType = "on-failure"
+restartPolicyMaxRetries = 3
