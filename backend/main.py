@@ -121,3 +121,22 @@ if settings.ENABLE_METRICS:
 @app.get("/", tags=["Root"])
 async def read_root():
     return {"message": "Welcome to the MarkerEngine Core API"}
+
+# Add startup message
+@app.on_event("startup")
+async def startup_event():
+    """Log startup information."""
+    logger.info(f"Starting MarkerEngine API on {settings.API_HOST}:{settings.API_PORT}")
+    logger.info(f"Environment: {settings.ENVIRONMENT}")
+    logger.info(f"Database URL: {settings.DATABASE_URL[:20]}...")  # Log partial URL for security
+    logger.info(f"Metrics enabled: {settings.ENABLE_METRICS}")
+    logger.info(f"Spark NLP enabled: {settings.SPARK_NLP_ENABLED}")
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(
+        "main:app",
+        host=settings.API_HOST,
+        port=settings.API_PORT,
+        reload=settings.ENVIRONMENT == "development"
+    )

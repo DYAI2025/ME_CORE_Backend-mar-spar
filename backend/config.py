@@ -13,6 +13,7 @@ class Settings(BaseSettings):
     # API configuration
     API_HOST: str = Field(default="0.0.0.0", description="API host")
     API_PORT: int = Field(default=8000, description="API port")
+    PORT: Optional[int] = Field(default=None, description="Railway PORT override")
     
     # Detector configuration
     DETECTOR_PATH: str = Field(
@@ -145,6 +146,13 @@ class Settings(BaseSettings):
         """Use MOONSHOT_API_KEY if KIMI_API_KEY not set"""
         if not v and 'MOONSHOT_API_KEY' in values:
             return values['MOONSHOT_API_KEY']
+        return v
+    
+    @validator('API_PORT', always=True)
+    def set_api_port(cls, v, values):
+        """Use PORT if available (Railway sets this)"""
+        if 'PORT' in values and values['PORT'] is not None:
+            return values['PORT']
         return v
 
 # Create settings instance - let exceptions propagate to be handled by the application
