@@ -16,7 +16,7 @@ class Settings(BaseSettings):
     PORT: Optional[int] = Field(default=None, description="Railway PORT override")
     
     # Detector configuration
-    DETECTOR_PATH: str = Field(
+    DETECTOR_PATH: Optional[str] = Field(
         default=None,
         description="Path to detector scripts (defaults to ../resources relative to backend dir)"
     )
@@ -117,6 +117,7 @@ class Settings(BaseSettings):
                 backend_dir.parent / "resources",  # ../resources from backend
                 backend_dir / "resources",         # backend/resources
                 Path.cwd() / "resources",          # current working dir/resources
+                Path("/app/resources"),            # Fly.io/Docker default
             ]
             
             # Find first existing path
@@ -127,17 +128,25 @@ class Settings(BaseSettings):
                     break
             
             if not path:
-                # Create default path if none exists
-                path = backend_dir.parent / "resources"
-                path.mkdir(exist_ok=True)
+                # Create default path if none exists - prefer /app/resources in containers
+                if Path("/app").exists():
+                    path = Path("/app/resources")
+                else:
+                    path = backend_dir.parent / "resources"
+                path.mkdir(parents=True, exist_ok=True)
         
-        # Ensure path exists
+        # Ensure path exists - create it if missing in production
         if not path.exists():
-            raise ConfigurationError(
-                f"Detector path does not exist: {path}. "
-                "Please set DETECTOR_PATH environment variable or create the resources directory.",
-                config_key="DETECTOR_PATH"
-            )
+            try:
+                path.mkdir(parents=True, exist_ok=True)
+                import logging
+                logging.warning(f"Created missing detector path: {path}")
+            except OSError:
+                raise ConfigurationError(
+                    f"Detector path does not exist and cannot be created: {path}. "
+                    "Please set DETECTOR_PATH environment variable or ensure the directory exists.",
+                    config_key="DETECTOR_PATH"
+                )
         
         return str(path.absolute())
     

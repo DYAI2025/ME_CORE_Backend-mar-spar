@@ -14,15 +14,18 @@ kill_timeout = "5s"
   MONGO_DB_NAME = "marker_engine"
   
   # Feature flags
-  ENABLE_METRICS = "true"
+  ENABLE_METRICS = "false"
   SPARK_NLP_ENABLED = "false"
   
   # Cache configuration
-  CACHE_TYPE = "memory"  # Start with memory, can add Redis later
+  CACHE_TYPE = "memory"
   CACHE_DEFAULT_TTL = "3600"
   
   # API configuration
   API_HOST = "0.0.0.0"
+  
+  # Resources path
+  DETECTOR_PATH = "/app/resources"
 
 [experimental]
   auto_rollback = true
@@ -59,7 +62,11 @@ kill_timeout = "5s"
     path = "/api/health/live"
     protocol = "http"
 
-[mounts]
-  # Optional: Add persistent storage if needed later
-  # source = "data"
-  # destination = "/data"
+# Resource constraints for better stability
+[metrics]
+  port = 9091
+
+# Optional: persistent storage if needed later
+# [mounts]
+#   source = "data"
+#   destination = "/data"
