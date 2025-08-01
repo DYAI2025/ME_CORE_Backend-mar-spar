@@ -1,0 +1,12 @@
+# Backend-specific Nixpacks configuration
+[phases.setup]
+nixPkgs = ["python310", "gcc"]
+
+[phases.install]
+cmds = ["pip install -r requirements.txt"]
+
+[phases.build]
+cmds = ["echo 'Backend build complete'"]
+
+[start]
+cmd = "uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}"
