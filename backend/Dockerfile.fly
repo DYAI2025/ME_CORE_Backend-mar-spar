@@ -3,7 +3,7 @@
 
 FROM python:3.10-slim
 
-WORKDIR /app
+WORKDIR /app/backend
 
 # Install only essential system dependencies
 RUN apt-get update && apt-get install -y \
@@ -13,18 +13,18 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy requirements - use base requirements without Spark
-COPY requirements-base.txt requirements.txt
+COPY backend/requirements-base.txt ./requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy application code
-COPY . .
+COPY backend ./
 
 # Create necessary directories
 RUN mkdir -p /app/resources /app/logs
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
-ENV PYTHONPATH=/app
+ENV PYTHONPATH=/app/backend
 ENV API_HOST=0.0.0.0
 ENV API_PORT=8000
 ENV PORT=8000
