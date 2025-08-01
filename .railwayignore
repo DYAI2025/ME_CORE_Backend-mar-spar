@@ -1,0 +1,10 @@
+# Ignore everything except backend
+dashboard/
+frontend/
+spark-nlp/
+tests/
+docs/
+jenkins/
+monitoring/
+*.md
+!backend/
