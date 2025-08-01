@@ -1,0 +1,65 @@
+# Fly.io configuration for ME_CORE Backend
+app = "me-core-backend"
+primary_region = "fra"  # Frankfurt, Germany (closest to Europe)
+kill_signal = "SIGINT"
+kill_timeout = "5s"
+
+[build]
+  dockerfile = "backend/Dockerfile"
+
+[env]
+  # Basic configuration
+  ENVIRONMENT = "production"
+  PYTHON_ENV = "production"
+  MONGO_DB_NAME = "marker_engine"
+  
+  # Feature flags
+  ENABLE_METRICS = "true"
+  SPARK_NLP_ENABLED = "false"
+  
+  # Cache configuration
+  CACHE_TYPE = "memory"  # Start with memory, can add Redis later
+  CACHE_DEFAULT_TTL = "3600"
+  
+  # API configuration
+  API_HOST = "0.0.0.0"
+
+[experimental]
+  auto_rollback = true
+
+[[services]]
+  protocol = "tcp"
+  internal_port = 8000
+  processes = ["app"]
+
+  [[services.ports]]
+    port = 80
+    handlers = ["http"]
+    force_https = true
+
+  [[services.ports]]
+    port = 443
+    handlers = ["tls", "http"]
+  
+  [services.concurrency]
+    type = "connections"
+    hard_limit = 25
+    soft_limit = 20
+
+  [[services.tcp_checks]]
+    interval = "15s"
+    timeout = "2s"
+    grace_period = "30s"
+
+  [[services.http_checks]]
+    interval = "30s"
+    timeout = "3s"
+    grace_period = "60s"
+    method = "get"
+    path = "/api/health/live"
+    protocol = "http"
+
+[mounts]
+  # Optional: Add persistent storage if needed later
+  # source = "data"
+  # destination = "/data"
