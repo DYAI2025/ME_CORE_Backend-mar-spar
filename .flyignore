@@ -1,0 +1,25 @@
+# Ignore everything except backend
+*
+!backend/
+!fly.toml
+!.flyignore
+
+# But still ignore these in backend
+backend/__pycache__/
+backend/*.pyc
+backend/.env
+backend/venv/
+backend/.pytest_cache/
+backend/logs/
+
+# Ignore frontend and dashboard
+frontend/
+dashboard/
+node_modules/
+package.json
+package-lock.json
+
+# Ignore other deployment configs
+railway.json
+render.yaml
+docker-compose.yml

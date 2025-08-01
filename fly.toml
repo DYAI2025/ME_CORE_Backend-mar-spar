@@ -1,11 +1,14 @@
 # Fly.io configuration for ME_CORE Backend
 app = "me-core-backend"
-primary_region = "fra"  # Frankfurt, Germany (closest to Europe)
+primary_region = "sin"  # Singapore (optimal for Asia-Pacific)
 kill_signal = "SIGINT"
 kill_timeout = "5s"
 
 [build]
+  # Explicitly specify this is a Dockerfile build, not auto-detect
   dockerfile = "backend/Dockerfile"
+  # Ignore detection of package.json etc
+  ignorefile = ".flyignore"
 
 [env]
   # Basic configuration
