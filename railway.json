@@ -13,23 +13,19 @@
       "source": {
         "repo": "https://github.com/DYAI2025/ME_CORE_Backend-mar-spar",
         "branch": "main",
-        "dir": "backend"
-      },
-      "build": {
-        "dockerfile": "Dockerfile"
+        "dir": "."
       },
       "deploy": {
-        "startCommand": "uvicorn main:app --host 0.0.0.0 --port $PORT",
-        "healthcheckPath": "/api/health/live",
+        "startCommand": "./start-backend.sh",
+        "healthcheckPath": "/healthz",
         "healthcheckTimeout": 30
       },
       "envs": {
         "PYTHON_ENV": "production",
         "DATABASE_URL": "${{MongoDB.DATABASE_URL}}",
         "REDIS_URL": "${{Redis.REDIS_URL}}",
-        "API_KEY": "${{shared.API_KEY}}",
-        "JWT_SECRET": "${{shared.JWT_SECRET}}",
-        "ENABLE_METRICS": "true"
+        "ENABLE_METRICS": "true",
+        "PYTHONPATH": "/app"
       }
     },
     "dashboard": {

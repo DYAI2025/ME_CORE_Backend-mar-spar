@@ -1,20 +1,23 @@
 # Nixpacks configuration for Railway
-# This helps Railway understand how to build our services
+# This helps Railway understand how to build our backend service
+
+[variables]
+PYTHONPATH = "/app"
 
 [phases.setup]
 nixPkgs = ["python310", "nodejs-18_x", "openjdk11"]
 
 [phases.install]
-cmds = ["pip install -r requirements.txt"]
+cmds = ["pip install -r backend/requirements-base.txt"]
 
 [phases.build]
 cmds = ["echo 'Build complete'"]
 
 [start]
-cmd = "uvicorn main:app --host 0.0.0.0 --port $PORT"
+cmd = "./start-backend.sh"
 
 [deploy]
-healthcheckPath = "/api/health/live"
+healthcheckPath = "/healthz"
 healthcheckTimeout = 30
 restartPolicyType = "on-failure"
 restartPolicyMaxRetries = 3
