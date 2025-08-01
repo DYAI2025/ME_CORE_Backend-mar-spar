@@ -1,0 +1,2 @@
+# Basis dependencies für Spark NLP.
+# Bitte hier alle benötigten Abhängigkeiten eintragen.
