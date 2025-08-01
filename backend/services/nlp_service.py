@@ -5,9 +5,9 @@ Provides pluggable NLP capabilities with dummy and Spark NLP implementations.
 import os
 import logging
 from abc import ABC, abstractmethod
-from typing import Optional
-from ..models.analysis_context import AnalysisContext
-from ..config import settings
+from typing import Optional, Dict, Any, Dict, Any
+from models.analysis_context import AnalysisContext
+from config import settings
 
 
 logger = logging.getLogger(__name__)
