@@ -22,53 +22,72 @@ try:
     container.initialize()
     
     logger.info("Configuration loaded successfully")
+    config_loaded = True
     
 except ConfigurationError as e:
     logger.error(f"Configuration error: {e.message}")
     logger.error("Please check your environment configuration and try again.")
+    logger.info("Falling back to minimal application mode")
     
-    # Create a minimal app that returns configuration error
-    app = FastAPI(
-        title="MarkerEngine Core API - Configuration Error",
-        description="Service is not properly configured.",
-        version="1.0.0"
-    )
-    
-    @app.get("/")
-    @app.get("/api/health/live")
-    @app.get("/api/health/ready")
-    async def configuration_error():
-        raise HTTPException(
-            status_code=500,
-            detail={
-                "error": "CONFIGURATION_ERROR",
-                "message": e.message,
-                "details": e.details
-            }
+    # Import and run minimal app instead of exiting
+    try:
+        from minimal_app import app
+        logger.info("Using minimal application fallback")
+    except ImportError:
+        logger.error("Minimal app fallback not available")
+        # Create a basic error app as last resort
+        app = FastAPI(
+            title="MarkerEngine Core API - Configuration Error",
+            description="Service is not properly configured.",
+            version="1.0.0"
         )
-    
-    # Exit early if configuration is invalid
-    sys.exit(1)
+        
+        @app.get("/")
+        @app.get("/api/health/live")
+        @app.get("/api/health/ready")
+        async def configuration_error():
+            raise HTTPException(
+                status_code=500,
+                detail={
+                    "error": "CONFIGURATION_ERROR",
+                    "message": e.message,
+                    "details": e.details
+                }
+            )
+        
+        # Don't exit - let the app run with error endpoint
+        config_loaded = False
 
 except Exception as e:
     logger.error(f"Unexpected error during initialization: {e}")
-    sys.exit(1)
+    logger.info("Attempting to fall back to minimal application")
+    
+    try:
+        from minimal_app import app
+        logger.info("Using minimal application fallback")
+        config_loaded = False
+    except ImportError:
+        logger.error("No fallback available, exiting")
+        sys.exit(1)
 
 # If configuration is valid, create the full app
-app = FastAPI(
-    title="MarkerEngine Core API",
-    description="Zentrales Nervensystem der MarkerEngine zur Übersetzung von Sprache in strukturierte Marker.",
-    version="1.0.0"
-)
+if 'config_loaded' not in locals() or config_loaded:
+    app = FastAPI(
+        title="MarkerEngine Core API",
+        description="Zentrales Nervensystem der MarkerEngine zur Übersetzung von Sprache in strukturierte Marker.",
+        version="1.0.0"
+    )
 
-# Add CORS middleware
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],  # Configure appropriately for production
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+# Only configure full app if configuration was loaded successfully
+if 'config_loaded' not in locals() or config_loaded:
+    # Add CORS middleware
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=["*"],  # Configure appropriately for production
+        allow_credentials=True,
+        allow_methods=["*"],
+        allow_headers=["*"],
+    )
 
 # Add request tracking middleware
 @app.middleware("http")
@@ -114,23 +133,23 @@ app.include_router(analyze.router, prefix="/analyze", tags=["Analysis"])
 app.include_router(analyze_v2.router, prefix="/analyze/v2", tags=["Analysis v2"])
 app.include_router(dashboard.router, tags=["Dashboard"])
 
-# Include metrics router if enabled
-if settings.ENABLE_METRICS:
-    app.include_router(metrics.router, tags=["Metrics"])
+    # Include metrics router if enabled
+    if settings.ENABLE_METRICS:
+        app.include_router(metrics.router, tags=["Metrics"])
 
-@app.get("/", tags=["Root"])
-async def read_root():
-    return {"message": "Welcome to the MarkerEngine Core API"}
+    @app.get("/", tags=["Root"])
+    async def read_root():
+        return {"message": "Welcome to the MarkerEngine Core API"}
 
-# Add startup message
-@app.on_event("startup")
-async def startup_event():
-    """Log startup information."""
-    logger.info(f"Starting MarkerEngine API on {settings.API_HOST}:{settings.API_PORT}")
-    logger.info(f"Environment: {settings.ENVIRONMENT}")
-    logger.info(f"Database URL: {settings.DATABASE_URL[:20]}...")  # Log partial URL for security
-    logger.info(f"Metrics enabled: {settings.ENABLE_METRICS}")
-    logger.info(f"Spark NLP enabled: {settings.SPARK_NLP_ENABLED}")
+    # Add startup message
+    @app.on_event("startup")
+    async def startup_event():
+        """Log startup information."""
+        logger.info(f"Starting MarkerEngine API on {settings.API_HOST}:{settings.API_PORT}")
+        logger.info(f"Environment: {settings.ENVIRONMENT}")
+        logger.info(f"Database URL: {settings.DATABASE_URL[:20]}...")  # Log partial URL for security
+        logger.info(f"Metrics enabled: {settings.ENABLE_METRICS}")
+        logger.info(f"Spark NLP enabled: {settings.SPARK_NLP_ENABLED}")
 
 if __name__ == "__main__":
     import uvicorn
