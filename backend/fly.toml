@@ -1,0 +1,43 @@
+# Fly.io configuration for MarkerEngine Core API
+# This ensures proper deployment without Java dependencies
+
+app = "markerengine-core"
+primary_region = "fra"
+
+[build]
+  # Use Dockerfile.fly for Fly.io deployment (Python-only, no Java)
+  dockerfile = "Dockerfile.fly"
+
+[http_service]
+  internal_port = 8000
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  
+  [[http_service.checks]]
+    grace_period = "10s"
+    interval = "30s"
+    method = "GET"
+    timeout = "5s"
+    path = "/health"
+
+[env]
+  API_HOST = "0.0.0.0"
+  API_PORT = "8000"
+  PYTHONUNBUFFERED = "1"
+  SPARK_NLP_ENABLED = "false"
+  ENVIRONMENT = "production"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = 512
+
+# Optional: Add secrets for database connections
+# Use: fly secrets set DATABASE_URL="mongodb://..."
+# secrets = ["DATABASE_URL"]
+
+# Optional: Add persistent volumes if needed
+# [[mounts]]
+#   source = "markerengine_data"
+#   destination = "/app/data"

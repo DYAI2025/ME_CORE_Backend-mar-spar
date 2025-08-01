@@ -5,8 +5,8 @@ kill_signal = "SIGINT"
 kill_timeout = "5s"
 
 [build]
-  # Explicitly specify this is a Dockerfile build, not auto-detect
-  dockerfile = "backend/Dockerfile"
+  # Use the Fly.io optimized Dockerfile without Java dependencies
+  dockerfile = "backend/Dockerfile.fly"
   # Ignore detection of package.json etc
   ignorefile = ".flyignore"
 
