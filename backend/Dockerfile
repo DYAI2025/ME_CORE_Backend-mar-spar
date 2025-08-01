@@ -16,8 +16,7 @@ COPY requirements-base.txt .
 RUN pip install --no-cache-dir -r requirements-base.txt
 
 # Copy application code
-COPY app/ ./app/
-COPY resources/ ./resources/
+COPY . ./app/
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
@@ -63,8 +62,7 @@ RUN pip install --no-cache-dir -r requirements-spark.txt
 # RUN python -c "import sparknlp; sparknlp.start(); sparknlp.pretrained.PretrainedPipeline.from_disk('de')"
 
 # Copy application code
-COPY app/ ./app/
-COPY resources/ ./resources/
+COPY . ./app/
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1

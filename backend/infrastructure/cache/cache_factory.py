@@ -2,9 +2,9 @@
 Cache factory for creating appropriate cache implementations.
 """
 from typing import Optional
-from app.core.interfaces import ICacheProvider
-from app.core.config import settings
-from app.core.logging import get_logger
+from ...core.interfaces import ICacheProvider
+from ...config import settings
+from ...core.logging import get_logger
 from .memory_cache import MemoryCache
 from .redis_cache import RedisCache
 

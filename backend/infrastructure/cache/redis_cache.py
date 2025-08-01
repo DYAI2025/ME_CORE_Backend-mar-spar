@@ -7,9 +7,9 @@ import pickle
 from typing import Any, Optional
 from redis import asyncio as aioredis
 from redis.exceptions import RedisError
-from app.core.interfaces import ICacheProvider
-from app.core.logging import get_logger
-from app.core.config import settings
+from ...core.interfaces import ICacheProvider
+from ...core.logging import get_logger
+from ...config import settings
 
 logger = get_logger(__name__)
 

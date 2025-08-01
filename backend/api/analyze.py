@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Body
 from pydantic import BaseModel, Field
 from typing import List, Dict, Any, Optional
-from services import analyze_service
-from services.llm_bridge import llm_bridge, MarkerInterpretation
+from ..services import analyze_service
+from ..services.llm_bridge import llm_bridge, MarkerInterpretation
 
 router = APIRouter()
 

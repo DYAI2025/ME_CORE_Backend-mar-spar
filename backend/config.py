@@ -3,7 +3,7 @@ from pathlib import Path
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from pydantic import Field, validator
 from typing import Optional
-from core.exceptions import ConfigurationError
+from .core.exceptions import ConfigurationError
 
 class Settings(BaseSettings):
     # Database configuration
@@ -15,7 +15,7 @@ class Settings(BaseSettings):
     API_PORT: int = Field(default=8000, description="API port")
     
     # Detector configuration
-    DETECTOR_PATH: str = Field(
+    DETECTOR_PATH: Optional[str] = Field(
         default=None,
         description="Path to detector scripts (defaults to ../resources relative to backend dir)"
     )
@@ -105,38 +105,14 @@ class Settings(BaseSettings):
     def validate_detector_path(cls, v):
         """Validate and set detector path with intelligent defaults"""
         if v:
-            # Use provided path
             path = Path(v)
         else:
-            # Try to find resources directory relative to backend
+            # Use a safe default - create resources in parent directory
             backend_dir = Path(__file__).parent
+            path = backend_dir.parent / "resources"
             
-            # Try multiple possible locations
-            possible_paths = [
-                backend_dir.parent / "resources",  # ../resources from backend
-                backend_dir / "resources",         # backend/resources
-                Path.cwd() / "resources",          # current working dir/resources
-            ]
-            
-            # Find first existing path
-            path = None
-            for p in possible_paths:
-                if p.exists() and p.is_dir():
-                    path = p
-                    break
-            
-            if not path:
-                # Create default path if none exists
-                path = backend_dir.parent / "resources"
-                path.mkdir(exist_ok=True)
-        
         # Ensure path exists
-        if not path.exists():
-            raise ConfigurationError(
-                f"Detector path does not exist: {path}. "
-                "Please set DETECTOR_PATH environment variable or create the resources directory.",
-                config_key="DETECTOR_PATH"
-            )
+        path.mkdir(parents=True, exist_ok=True)
         
         return str(path.absolute())
     

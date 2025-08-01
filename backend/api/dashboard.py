@@ -8,14 +8,18 @@ import json
 import asyncio
 from pydantic import BaseModel
 
-from core.container import get_container
-from core.interfaces import IMarkerService, ICacheService
-from database import get_database
-from config import get_settings
-from detect.DETECT_registry import load_registry, save_registry, validate_registry_format
+from ..core.container import get_container
+# from ..core.interfaces import IMarkerService, ICacheService  # TODO: These interfaces don't exist yet
+from ..database import db  # Use the db instance directly
+from ..config import settings  # Use settings instance directly
+# from ..detect.DETECT_registry import load_registry, save_registry, validate_registry_format  # TODO: Module doesn't exist
+
+# Simple dependency function to return the db instance
+def get_database():
+    return db
 
 router = APIRouter(prefix="/api/dashboard", tags=["dashboard"])
-settings = get_settings()
+# settings is already imported above
 
 # WebSocket connection manager
 class ConnectionManager:

@@ -4,12 +4,12 @@ Enhanced version using the modular architecture components.
 """
 import time
 from typing import Dict, Any, Optional, List
-from app.models.analysis_context import AnalysisContext
-from app.services.marker_service import MarkerService
-from app.core.interfaces import ICacheProvider, IMetricsCollector
-from app.core.logging import get_logger, MarkerEngineLogger
-from app.core.container import get_service
-from app.config import settings
+from ..models.analysis_context import AnalysisContext
+from ..services.marker_service import MarkerService
+from ..core.interfaces import ICacheProvider, IMetricsCollector
+from ..core.logging import get_logger, MarkerEngineLogger
+from ..core.container import get_service
+from ..config import settings
 
 logger = get_logger(__name__)
 
@@ -33,7 +33,7 @@ class OrchestrationServiceDI:
         self.metrics = metrics_collector or get_service(IMetricsCollector)
         
         # Get NLP service
-        from app.services.nlp_service import get_nlp_service
+        from ..services.nlp_service import get_nlp_service
         self.nlp_service = get_nlp_service()
         
         self._phase_timings = {}
@@ -449,7 +449,7 @@ class OrchestrationServiceDI:
 # Factory function
 def create_orchestration_service() -> OrchestrationServiceDI:
     """Create orchestration service with dependencies from container."""
-    from app.core.container import get_container
+    from ..core.container import get_container
     
     container = get_container()
     return OrchestrationServiceDI(

@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Body, HTTPException, status
 from typing import List
-from models.marker import Marker
-from services import marker_service
+from ..models.marker import Marker
+from ..services import marker_service
 
 router = APIRouter()
 
