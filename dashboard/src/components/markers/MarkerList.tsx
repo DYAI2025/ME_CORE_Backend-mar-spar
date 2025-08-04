@@ -23,7 +23,7 @@ export function MarkerList({ markers }: MarkerListProps) {
   const [expandedMarkers, setExpandedMarkers] = useState<Set<string>>(new Set())
   const [selectedType, setSelectedType] = useState<string>('all')
 
-  const markerTypes = ['all', ...new Set(markers.map(m => m.type))]
+  const markerTypes = ['all', ...Array.from(new Set(markers.map(m => m.type)))]
   const filteredMarkers = selectedType === 'all' 
     ? markers 
     : markers.filter(m => m.type === selectedType)

@@ -267,6 +267,88 @@ async def websocket_endpoint(websocket: WebSocket):
     except WebSocketDisconnect:
         manager.disconnect(websocket)
 
+# Jenkins integration endpoints
+@router.get("/jenkins/status")
+async def get_jenkins_status():
+    """Get Jenkins server status and recent builds"""
+    try:
+        # In a real implementation, this would connect to Jenkins API
+        # For now, return mock data that simulates a real Jenkins environment
+        import random
+        
+        # Simulate Jenkins server status
+        jenkins_healthy = random.choice([True, True, True, False])  # 75% healthy
+        
+        # Simulate recent builds
+        build_names = [
+            "MarkerEngine-Backend",
+            "MarkerEngine-Frontend", 
+            "Spark-NLP-Service",
+            "Dashboard-Build",
+            "E2E-Tests",
+            "Security-Scan"
+        ]
+        
+        recent_builds = []
+        for i, name in enumerate(build_names[:4]):
+            build_num = random.randint(30, 50)
+            result = random.choices(
+                ['SUCCESS', 'FAILURE', 'IN_PROGRESS'], 
+                weights=[70, 20, 10]  # 70% success, 20% failure, 10% in progress
+            )[0]
+            
+            recent_builds.append({
+                "displayName": f"{name} #{build_num}",
+                "result": result,
+                "timestamp": (datetime.utcnow() - timedelta(minutes=random.randint(5, 120))).isoformat(),
+                "duration": random.randint(30000, 300000) if result != 'IN_PROGRESS' else None,
+                "url": f"http://jenkins.example.com/job/{name}/{build_num}/"
+            })
+        
+        return {
+            "healthy": jenkins_healthy,
+            "queueSize": random.randint(0, 5),
+            "busyExecutors": random.randint(0, 3),
+            "totalExecutors": 4,
+            "recentBuilds": recent_builds
+        }
+    except Exception as e:
+        # Fallback if Jenkins is not available
+        return {
+            "healthy": False,
+            "queueSize": 0,
+            "busyExecutors": 0,
+            "totalExecutors": 0,
+            "recentBuilds": [],
+            "error": "Jenkins server not available"
+        }
+
+@router.post("/jenkins/trigger/{job_name}")
+async def trigger_jenkins_job(
+    job_name: str,
+    db = Depends(get_database)
+):
+    """Trigger a Jenkins job"""
+    try:
+        # In real implementation, this would call Jenkins API
+        build_number = random.randint(50, 100)
+        
+        await log_activity(
+            db,
+            "jenkins_job_triggered",
+            f"Jenkins job '{job_name}' triggered",
+            {"job_name": job_name, "build_number": build_number}
+        )
+        
+        return {
+            "job_name": job_name,
+            "build_number": build_number,
+            "status": "triggered",
+            "queue_id": random.randint(1000, 9999)
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
 # Deployment management
 @router.post("/deploy/{environment}")
 async def trigger_deployment(

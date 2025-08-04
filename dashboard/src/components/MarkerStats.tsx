@@ -16,7 +16,7 @@ interface MarkerStatsProps {
   }
 }
 
-const COLORS = {
+const COLORS: Record<string, string> = {
   'A': '#3B82F6',
   'S': '#10B981',
   'C': '#8B5CF6',

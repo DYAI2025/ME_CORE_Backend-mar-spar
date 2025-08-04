@@ -38,10 +38,27 @@ export default function DashboardHome() {
         <QuickActions />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <SystemHealth data={data?.health} />
         <MarkerStats data={data?.markers} />
         <JenkinsStatus data={data?.jenkins} />
+        <div className="bg-white rounded-lg shadow p-6">
+          <h3 className="text-lg font-medium text-gray-900 mb-4">Quick Actions</h3>
+          <div className="space-y-3">
+            <a
+              href="/ci"
+              className="block w-full bg-blue-600 text-white text-center py-2 px-4 rounded-md hover:bg-blue-700 transition-colors"
+            >
+              View CI/CD Dashboard
+            </a>
+            <a
+              href="/markers"
+              className="block w-full bg-green-600 text-white text-center py-2 px-4 rounded-md hover:bg-green-700 transition-colors"
+            >
+              Manage Markers
+            </a>
+          </div>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">

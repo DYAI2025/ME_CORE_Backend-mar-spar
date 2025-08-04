@@ -10,8 +10,16 @@ import clsx from 'clsx'
 
 interface HealthData {
   status: 'healthy' | 'degraded' | 'unhealthy'
-  timestamp: string
-  components: {
+  timestamp?: string
+  uptime?: number
+  services?: {
+    [key: string]: {
+      status: 'up' | 'down' | 'degraded'
+      latency?: number
+      lastCheck: string
+    }
+  }
+  components?: {
     name: string
     status: 'healthy' | 'degraded' | 'unhealthy'
     latency?: number
@@ -77,7 +85,14 @@ export function SystemHealth({ data }: SystemHealthProps) {
       </div>
 
       <div className="space-y-3">
-        {data.components.map((component) => (
+        {data.uptime && (
+          <div className="flex items-center justify-between">
+            <span className="text-sm text-gray-500">Uptime</span>
+            <span className="text-sm font-medium">{Math.floor(data.uptime / 3600)}h</span>
+          </div>
+        )}
+        
+        {data.components?.map((component) => (
           <div key={component.name} className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               {getStatusIcon(component.status)}
@@ -98,13 +113,45 @@ export function SystemHealth({ data }: SystemHealthProps) {
             </div>
           </div>
         ))}
+        
+        {data.services && Object.entries(data.services).map(([name, service]) => (
+          <div key={name} className="flex items-center justify-between">
+            <div className="flex items-center space-x-2">
+              {getStatusIcon(service.status === 'up' ? 'healthy' : service.status === 'down' ? 'unhealthy' : 'degraded')}
+              <span className="text-sm text-gray-700">{name}</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              {service.latency && (
+                <span className="text-xs text-gray-500">
+                  {service.latency}ms
+                </span>
+              )}
+              <span className={clsx(
+                'inline-flex items-center px-2 py-0.5 rounded text-xs font-medium',
+                service.status === 'up' ? 'bg-green-100 text-green-800' :
+                service.status === 'down' ? 'bg-red-100 text-red-800' :
+                'bg-yellow-100 text-yellow-800'
+              )}>
+                {service.status}
+              </span>
+            </div>
+          </div>
+        ))}
+        
+        {!data.components?.length && !data.services && (
+          <div className="text-center text-gray-500 py-4">
+            No health data available
+          </div>
+        )}
       </div>
 
-      <div className="mt-4 pt-4 border-t border-gray-200">
-        <p className="text-xs text-gray-500">
-          Last checked: {new Date(data.timestamp).toLocaleTimeString()}
-        </p>
-      </div>
+      {data.timestamp && (
+        <div className="mt-4 pt-4 border-t border-gray-200">
+          <p className="text-xs text-gray-500">
+            Last checked: {new Date(data.timestamp).toLocaleTimeString()}
+          </p>
+        </div>
+      )}
     </div>
   )
 }

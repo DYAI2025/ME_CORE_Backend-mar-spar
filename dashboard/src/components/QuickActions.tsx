@@ -21,7 +21,7 @@ export function QuickActions() {
   } | null>(null)
 
   const deployMutation = useMutation({
-    mutationFn: (environment: string) => triggerDeployment(environment),
+    mutationFn: (environment: string) => triggerDeployment(environment as 'staging' | 'production'),
     onSuccess: (data) => {
       toast.success(`Deployment to ${pendingAction?.environment} initiated`)
       setIsConfirmOpen(false)
