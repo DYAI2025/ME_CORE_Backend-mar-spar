@@ -7,8 +7,8 @@ from typing import List, Dict, Any
 
 detector_collection = db["detectors"]
 
-async def run_analysis(text: str, schema_id: str) -> List[Dict[str, Any]]:
-    recognized_markers = []
+async def run_analysis(text: str, schema_id: str) -> Dict[str, Any]:
+    recognized_markers: List[Dict[str, Any]] = []
     
     # Hier könnte man den schema_id nutzen, um Detektoren zu filtern
     detectors = await detector_collection.find().to_list(length=None)
@@ -38,4 +38,19 @@ async def run_analysis(text: str, schema_id: str) -> List[Dict[str, Any]]:
         except Exception as e:
             logging.error(f"Error executing detector {module_name}: {e}")
             
-    return recognized_markers
+    # Build detection summary
+    summary: Dict[str, Dict[str, float]] = {}
+    for entry in recognized_markers:
+        marker = entry.get("fired_marker")
+        if not marker:
+            continue
+        info = summary.setdefault(marker, {"count": 0, "score": 0.0})
+        info["count"] += 1
+        info["score"] += entry.get("confidence", 1.0)
+
+    detection = [
+        {"marker": m, "count": v["count"], "score": v["score"]}
+        for m, v in summary.items()
+    ]
+
+    return {"recognized_markers": recognized_markers, "detection": detection}

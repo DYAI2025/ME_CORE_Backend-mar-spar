@@ -38,16 +38,16 @@
                 "type": "string",
                 "enum": ["low", "medium", "high", "critical"]
               },
-              "description": {
-                "type": "string"
-              }
+              "description": { "type": "string" }
             }
           },
           "minItems": 1,
           "description": "Specific fraud indicators"
         }
       },
-      "required": ["fraud_indicators"]
+      "required": ["fraud_indicators"],
+      "additionalProperties": false
     }
-  ]
-} 
+  ],
+  "additionalProperties": false
+}

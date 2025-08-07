@@ -7,7 +7,7 @@
     "fires_marker": "S_MANEUVER_COMPONENTS",
     "last_updated": "2025-07-26T00:00:00Z",
     "auto_generated": false,
-    "schema_version": "3.1"
+    "schema_version": "3.3"
   },
   {
     "id": "FAMILIENDYNAMIK_MARKER",
@@ -17,7 +17,7 @@
     "fires_marker": "S_FAMILIENDYNAMIK",
     "last_updated": "2025-07-26T00:00:00Z",
     "auto_generated": false,
-    "schema_version": "3.1"
+    "schema_version": "3.3"
   },
   {
     "id": "REACTIVE_CONTROL_SPIRAL",
@@ -27,7 +27,7 @@
     "fires_marker": "C_REACTIVE_CONTROL_SPIRAL",
     "last_updated": "2025-07-26T00:00:00Z",
     "auto_generated": false,
-    "schema_version": "3.1"
+    "schema_version": "3.3"
   },
   {
     "id": "RESONANCE",
@@ -37,7 +37,7 @@
     "fires_marker": "S_RESONANCE",
     "last_updated": "2025-07-26T00:00:00Z",
     "auto_generated": false,
-    "schema_version": "3.1"
+    "schema_version": "3.3"
   },
   {
     "id": "CO_REGULATION_COLLAPSE",
@@ -47,7 +47,7 @@
     "fires_marker": "C_CO_REGULATION_COLLAPSE",
     "last_updated": "2025-07-26T00:00:00Z",
     "auto_generated": false,
-    "schema_version": "3.1"
+    "schema_version": "3.3"
   },
   {
     "id": "AMBIVALENCE_KNOT",
@@ -57,7 +57,7 @@
     "fires_marker": "C_AMBIVALENCE_KNOT",
     "last_updated": "2025-07-26T00:00:00Z",
     "auto_generated": false,
-    "schema_version": "3.1"
+    "schema_version": "3.3"
   },
   {
     "id": "SYMBOLIC_ROLE_SWAP",
@@ -67,7 +67,7 @@
     "fires_marker": "C_SYMBOLIC_ROLE_SWAP",
     "last_updated": "2025-07-26T00:00:00Z",
     "auto_generated": false,
-    "schema_version": "3.1"
+    "schema_version": "3.3"
   },
   {
     "id": "COMPLEX_MARKER_PATTERNS",
@@ -77,6 +77,6 @@
     "fires_marker": "MM_COMPLEX_MARKER_PATTERNS",
     "last_updated": "2025-07-26T00:00:00Z",
     "auto_generated": false,
-    "schema_version": "3.1"
+    "schema_version": "3.3"
   }
 ]

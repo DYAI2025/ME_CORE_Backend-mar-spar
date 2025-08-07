@@ -25,7 +25,7 @@ class MarkerUDFs:
         """Load and broadcast marker data and detect registry"""
         try:
             # Load DETECT registry
-            with open('/app/backend/detect/DETECT_registry.json', 'r') as f:
+            with open('/app/backend/detect/detector_registry.json', 'r') as f:
                 detect_registry = json.load(f)
             self.broadcast_detect = self.spark.sparkContext.broadcast(detect_registry)
             

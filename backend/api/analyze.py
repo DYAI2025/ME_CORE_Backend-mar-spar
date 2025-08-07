@@ -10,8 +10,15 @@ class AnalysisRequest(BaseModel):
     text: str = Field(..., max_length=4000, description="Text to analyze (max 4000 characters)")
     schema_id: str = Field(..., description="Schema ID for analysis")
 
+class DetectionEntry(BaseModel):
+    marker: str
+    count: int
+    score: float
+
+
 class AnalysisResponse(BaseModel):
     markers: List[Dict[str, Any]] = Field(..., description="Detected markers")
+    detection: List[DetectionEntry] = Field(default_factory=list, description="Aggregated detection summary")
     interpretation: str = Field(..., description="Narrative interpretation of results")
     model_used: Optional[str] = Field(None, description="LLM model used for interpretation")
     processing_time: Optional[float] = Field(None, description="Total processing time")
@@ -24,7 +31,9 @@ async def analyze_text(request: AnalysisRequest = Body(...)):
     Analyze text for markers and provide narrative interpretation
     """
     # Run marker detection
-    recognized_markers = await analyze_service.run_analysis(request.text, request.schema_id)
+    analysis_result = await analyze_service.run_analysis(request.text, request.schema_id)
+    recognized_markers = analysis_result.get("recognized_markers", [])
+    detection_summary = analysis_result.get("detection", [])
     
     # Calculate summary statistics
     marker_count = len(recognized_markers)
@@ -49,6 +58,7 @@ async def analyze_text(request: AnalysisRequest = Body(...)):
         
         return AnalysisResponse(
             markers=recognized_markers,
+            detection=detection_summary,
             interpretation=llm_response.interpretation,
             model_used=llm_response.model_used,
             processing_time=llm_response.processing_time,
@@ -59,6 +69,7 @@ async def analyze_text(request: AnalysisRequest = Body(...)):
         # No markers found
         return AnalysisResponse(
             markers=[],
+            detection=[],
             interpretation="Die Analyse hat keine signifikanten Marker in Ihrem Text gefunden. Dies kann bedeuten, dass der Text keine der spezifischen Muster enthält, nach denen das gewählte Analyseschema sucht.",
             model_used="none",
             marker_count=0,

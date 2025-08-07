@@ -58,8 +58,12 @@
     "system_split_detected": false,
     "dominant_tendencies": []
   },
+  "detection": [
+    { "marker": "CLU_EXAMPLE", "count": 0, "score": 0.0 }
+  ],
   "outputs": {
     "export_format": ["json", "csv"],
     "visualization": ["curve_chart", "heatmap", "timeline"]
-  }
+  },
+  "additionalProperties": false
 }
