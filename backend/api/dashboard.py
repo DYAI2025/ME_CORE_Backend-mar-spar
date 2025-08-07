@@ -12,7 +12,7 @@ from core.container import get_container
 from core.interfaces import IMarkerService, ICacheService
 from database import get_database
 from config import get_settings
-from detect.DETECT_registry import load_registry, save_registry, validate_registry_format
+from detect.detector_registry import load_registry, persist_registry, validate_registry
 
 router = APIRouter(prefix="/api/dashboard", tags=["dashboard"])
 settings = get_settings()
@@ -40,7 +40,7 @@ manager = ConnectionManager()
 
 # Request/Response models
 class RegistryUpdateRequest(BaseModel):
-    registry: Dict[str, Any]
+    registry: List[Dict[str, Any]]
 
 class MarkerStatsResponse(BaseModel):
     total: int
@@ -145,7 +145,7 @@ async def get_detect_registry():
 async def validate_detect_registry(request: RegistryUpdateRequest):
     """Validate DETECT registry format"""
     try:
-        errors = validate_registry_format(request.registry)
+        errors = validate_registry(request.registry)
         return {
             "valid": len(errors) == 0,
             "errors": errors
@@ -165,12 +165,12 @@ async def update_detect_registry(
     """Update DETECT registry"""
     try:
         # Validate before saving
-        errors = validate_registry_format(request.registry)
+        errors = validate_registry(request.registry)
         if errors:
             raise HTTPException(status_code=400, detail={"errors": errors})
         
         # Save registry
-        save_registry(request.registry)
+        persist_registry(request.registry)
         
         # Clear cache to force reload
         cache_service = container.get(ICacheService)

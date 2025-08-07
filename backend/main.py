@@ -133,23 +133,26 @@ app.include_router(analyze.router, prefix="/analyze", tags=["Analysis"])
 app.include_router(analyze_v2.router, prefix="/analyze/v2", tags=["Analysis v2"])
 app.include_router(dashboard.router, tags=["Dashboard"])
 
-    # Include metrics router if enabled
-    if settings.ENABLE_METRICS:
-        app.include_router(metrics.router, tags=["Metrics"])
+# Include metrics router if enabled
+if settings.ENABLE_METRICS:
+    app.include_router(metrics.router, tags=["Metrics"])
 
-    @app.get("/", tags=["Root"])
-    async def read_root():
-        return {"message": "Welcome to the MarkerEngine Core API"}
 
-    # Add startup message
-    @app.on_event("startup")
-    async def startup_event():
-        """Log startup information."""
-        logger.info(f"Starting MarkerEngine API on {settings.API_HOST}:{settings.API_PORT}")
-        logger.info(f"Environment: {settings.ENVIRONMENT}")
-        logger.info(f"Database URL: {settings.DATABASE_URL[:20]}...")  # Log partial URL for security
-        logger.info(f"Metrics enabled: {settings.ENABLE_METRICS}")
-        logger.info(f"Spark NLP enabled: {settings.SPARK_NLP_ENABLED}")
+@app.get("/", tags=["Root"])
+async def read_root():
+    return {"message": "Welcome to the MarkerEngine Core API"}
+
+
+# Add startup message
+@app.on_event("startup")
+async def startup_event():
+    """Log startup information."""
+    logger.info(f"Starting MarkerEngine API on {settings.API_HOST}:{settings.API_PORT}")
+    logger.info(f"Environment: {settings.ENVIRONMENT}")
+    logger.info(f"Database URL: {settings.DATABASE_URL[:20]}...")  # Log partial URL for security
+    logger.info(f"Metrics enabled: {settings.ENABLE_METRICS}")
+    logger.info(f"Spark NLP enabled: {settings.SPARK_NLP_ENABLED}")
+
 
 if __name__ == "__main__":
     import uvicorn

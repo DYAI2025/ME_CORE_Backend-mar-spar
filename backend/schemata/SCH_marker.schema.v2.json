@@ -19,7 +19,8 @@
         "concept": { "type": "string" },
         "pragmatics": { "type": "string" },
         "narrative": { "type": "string" }
-      }
+      },
+      "additionalProperties": false
     },
     "pattern": {
       "type": ["string", "array"],
@@ -30,7 +31,10 @@
       "items": { "type": "string" }
     },
     "detect_class": { "type": "string" },
-    "activation": { "type": "object" },
+    "activation": {
+      "type": "string",
+      "pattern": "^(ANY|AT_LEAST|SUM\\(weight\\)>=)\\s*\\d+(?:\\.\\d+)?(?:\\s+WITHIN\\s+\\d+[hsm]|\\s+IN\\s+\\d+\\s+messages)?$"
+    },
     "scoring": { "type": "object" },
     "tags": {
       "type": "array",
@@ -42,6 +46,7 @@
       "minItems": 5
     }
   },
+  "additionalProperties": false,
   "oneOf": [
     { "required": ["pattern"] },
     { "required": ["composed_of"] },

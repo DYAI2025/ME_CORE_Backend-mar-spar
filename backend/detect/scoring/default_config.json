@@ -1,0 +1,12 @@
+{
+  "k": 1.0,
+  "decay": 0.0,
+  "formula": "linear",
+  "max_score": 1.0,
+  "windows": {
+    "ATO": {"messages": 20, "seconds": 3600},
+    "SEM": {"messages": 20, "seconds": 3600},
+    "CLU": {"messages": 20, "seconds": 3600},
+    "MEMA": {"messages": 20, "seconds": 3600}
+  }
+}

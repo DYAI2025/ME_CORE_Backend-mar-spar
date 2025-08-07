@@ -51,6 +51,8 @@ files_review:
       - "Grundlage Plugin »Semantic Grabber Suggest«"
     required_fixes: []
 
+additionalProperties: false
+
 required_templates:
   - "schemas/marker.schema.v2.json"          # Vollschema – Draft-07
   - "schemas/fraud-markers.schema.json"      # Tag-Subset
