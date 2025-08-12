@@ -4,8 +4,8 @@ Analyze API v2 with OrchestrationService for 3-phase NLP-enhanced analysis.
 from fastapi import APIRouter, Body, HTTPException
 from pydantic import BaseModel, Field
 from typing import List, Dict, Any, Optional
-from services.orchestration_service import get_orchestration_service
-from services.llm_bridge import llm_bridge, MarkerInterpretation
+from ..services.orchestration_service import get_orchestration_service
+from ..services.llm_bridge import llm_bridge, MarkerInterpretation
 import time
 import logging
 

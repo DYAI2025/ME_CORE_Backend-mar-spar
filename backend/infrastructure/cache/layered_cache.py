@@ -3,8 +3,8 @@ Layered cache implementation with L1 and L2 caching.
 Provides fast local cache with distributed cache fallback.
 """
 from typing import Any, Optional
-from app.core.interfaces import ICacheProvider
-from app.core.logging import get_logger
+from ...core.interfaces import ICacheProvider
+from ...core.logging import get_logger
 
 logger = get_logger(__name__)
 

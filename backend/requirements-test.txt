@@ -10,7 +10,7 @@ pytest-timeout==2.2.0
 pytest-xdist==3.5.0
 
 # Test utilities
-httpx==0.26.0
+httpx==0.25.2
 faker==22.1.0
 factory-boy==3.3.0
 
@@ -21,3 +21,7 @@ pytest-benchmark==4.0.0
 # Security testing
 safety==3.0.1
 bandit==1.7.6
+
+# Database testing
+sqlalchemy==2.0.23
+aiosqlite==0.19.0

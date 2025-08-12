@@ -8,14 +8,14 @@ import json
 import asyncio
 from pydantic import BaseModel
 
-from core.container import get_container
-from core.interfaces import IMarkerService, ICacheService
-from database import get_database
-from config import get_settings
-from detect.detector_registry import load_registry, persist_registry, validate_registry
+from ..core.container import get_container
+from ..core.interfaces import ICacheProvider
+from ..database import get_database
+from ..config import settings as app_settings
+from ..detect.detector_registry import load_registry, persist_registry, validate_registry
 
 router = APIRouter(prefix="/api/dashboard", tags=["dashboard"])
-settings = get_settings()
+settings = app_settings
 
 # WebSocket connection manager
 class ConnectionManager:
@@ -173,7 +173,7 @@ async def update_detect_registry(
         persist_registry(request.registry)
         
         # Clear cache to force reload
-        cache_service = container.get(ICacheService)
+        cache_service = container.get(ICacheProvider)
         await cache_service.clear()
         
         # Log activity
@@ -380,7 +380,7 @@ def get_disk_usage():
 async def get_cache_hit_rate(container):
     """Get cache hit rate"""
     try:
-        cache_service = container.get(ICacheService)
+        cache_service = container.get(ICacheProvider)
         # In real implementation, track actual hit rate
         return 0.85  # 85% hit rate for demo
     except:

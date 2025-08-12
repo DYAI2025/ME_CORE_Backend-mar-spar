@@ -29,7 +29,7 @@ def get_database() -> AsyncIOMotorDatabase:
     if _database is None:
         # Try to initialize with settings
         try:
-            from config import settings
+            from .config import settings
             return initialize_database(settings.DATABASE_URL, settings.MONGO_DB_NAME)
         except ImportError:
             raise RuntimeError("Database not initialized and settings not available")
@@ -44,7 +44,7 @@ async def close_database():
 
 # For backward compatibility, create db instance
 try:
-    from config import settings
+    from .config import settings
     db = initialize_database(settings.DATABASE_URL, settings.MONGO_DB_NAME)
 except Exception as e:
     logger.error(f"Failed to initialize database: {e}")

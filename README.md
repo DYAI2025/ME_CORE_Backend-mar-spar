@@ -1,6 +1,20 @@
 # ME_CORE_Backend-mar-spar
 
-**MarkerEngine Core Backend Monorepo** - Ein schlankes Monorepo für Backend-, Spark- und Frontend-Komponenten mit einheitlichem Release- und Testprozess.
+**MarkerEngine Core Backend Monorepo** – Dieses Repository bündelt sämtliche Kernkomponenten der MarkerEngine.
+Es vereint den Python/FastAPI‑Backend‑Dienst, ein Next.js/Node.js‑Frontend sowie eine Spark‑NLP‑Anbindung
+für skalierbare Sprachverarbeitung. Das Monorepo stellt einen einheitlichen Build‑, Test‑ und
+Deployment‑Prozess bereit und dient als zentrale Codebasis für das Gesamtsystem.
+
+## 🧠 Wofür ist dieses Repository gedacht?
+
+Die MarkerEngine übersetzt natürliche Sprache in strukturierte *Marker* und bietet damit die Grundlage für
+intelligente Analysen. Dieses Repo enthält:
+
+- **Backend** – FastAPI‑Service mit modularer Architektur (API‑Router, Service‑Layer, Repositories und Infrastruktur).
+- **Frontend** – Next.js‑Dashboard zur Steuerung und Visualisierung der Analyse.
+- **Spark‑NLP** – Python‑Module für rechenintensive NLP‑Jobs auf Apache Spark.
+
+Alle Teile sind so aufgebaut, dass sie getrennt entwickelt werden können, aber nahtlos zusammenarbeiten.
 
 ## 🏗️ Monorepo-Struktur
 
@@ -30,6 +44,19 @@
     ├─ public/             # Statische Assets
     └─ tests/              # UI- und API-Stubs-Tests
 ```
+
+## 🧩 Funktionsüberblick
+
+- **API & Services**: FastAPI-Router im Verzeichnis `backend/api/` liefern Endpunkte zur
+  Analyse von Texten, zur Verwaltung von Markern und zum Monitoring. Die zugehörigen
+  Services kapseln Geschäftslogik und greifen über Repositories auf MongoDB oder
+  andere Infrastrukturkomponenten zu.
+- **Frontend**: Das Next.js-Dashboard unter `frontend/` kommuniziert über die REST‑API
+  mit dem Backend und bietet eine Benutzeroberfläche für Konfiguration und Monitoring.
+- **Spark‑NLP**: Der Ordner `spark-nlp/` enthält verteilte NLP‑Jobs (z. B. Marker‑Erkennung),
+  die bei Bedarf separat oder im Docker‑Verbund gestartet werden können.
+- **End-to-End-Tests**: Unter `tests/e2e` liegt eine Playwright‑basierte Testumgebung, die
+  Backend und Frontend gemeinsam in Docker startet.
 
 ## 🚀 Quick Start
 

@@ -3,7 +3,7 @@ from pathlib import Path
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from pydantic import Field, validator
 from typing import Optional
-from core.exceptions import ConfigurationError
+from .core.exceptions import ConfigurationError
 
 class Settings(BaseSettings):
     # Database configuration
