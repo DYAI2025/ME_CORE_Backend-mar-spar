@@ -1,11 +1,11 @@
 from fastapi import FastAPI, Request, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from api import health, markers, analyze, analyze_v2, metrics, dashboard
-from core.logging import configure_logging, get_logger
-from core.container import get_container
-from core.exceptions import ConfigurationError, handle_markerengine_error, MarkerEngineError
-from infrastructure.metrics import metrics as prom_metrics
+from .api import health, markers, analyze, analyze_v2, metrics, dashboard
+from .core.logging import configure_logging, get_logger
+from .core.container import get_container
+from .core.exceptions import ConfigurationError, handle_markerengine_error, MarkerEngineError
+from .infrastructure.metrics import metrics as prom_metrics
 import time
 import sys
 
@@ -15,7 +15,7 @@ logger = get_logger(__name__)
 
 # Try to load configuration and initialize container
 try:
-    from config import settings
+    from .config import settings
     
     # Initialize dependency injection container
     container = get_container()

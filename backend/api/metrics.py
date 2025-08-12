@@ -3,8 +3,8 @@ Metrics endpoints for MarkerEngine.
 Provides Prometheus metrics and health checks.
 """
 from fastapi import APIRouter, Response
-from app.infrastructure.metrics import metrics
-from app.core.logging import get_logger
+from ..infrastructure.metrics import metrics
+from ..core.logging import get_logger
 
 logger = get_logger(__name__)
 router = APIRouter(prefix="/metrics", tags=["metrics"])
@@ -43,7 +43,7 @@ async def health_check():
     import psutil
     import asyncio
     from datetime import datetime
-    from app.services.orchestration_service_di import create_orchestration_service
+    from ..services.orchestration_service_di import create_orchestration_service
     
     try:
         # Get service status
@@ -57,7 +57,7 @@ async def health_check():
         # Test database connection
         db_healthy = True
         try:
-            from app.repositories.marker_repository import marker_repository
+            from ..repositories.marker_repository import marker_repository
             await asyncio.wait_for(
                 marker_repository.db.list_collection_names(), 
                 timeout=2.0
@@ -107,7 +107,7 @@ async def readiness_check():
     Returns:
         dict: Readiness status
     """
-    from app.services.orchestration_service_di import create_orchestration_service
+    from ..services.orchestration_service_di import create_orchestration_service
     
     try:
         # Check if all services are initialized

@@ -11,7 +11,7 @@ from prometheus_client import (
     generate_latest, CONTENT_TYPE_LATEST,
     CollectorRegistry
 )
-from app.core.logging import get_logger
+from ...core.logging import get_logger
 
 logger = get_logger(__name__)
 

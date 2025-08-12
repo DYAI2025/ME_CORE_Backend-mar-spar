@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, HTTPException
-from services.health_service import check_health, HealthStatus
+from ..services.health_service import check_health, HealthStatus
 
 router = APIRouter()
 

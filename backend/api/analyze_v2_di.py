@@ -5,9 +5,9 @@ Enhanced version using modular architecture.
 from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel, Field
 from typing import List, Optional, Dict, Any
-from app.services.orchestration_service_di import create_orchestration_service
-from app.core.logging import get_logger
-from app.config import settings
+from ..services.orchestration_service_di import create_orchestration_service
+from ..core.logging import get_logger
+from ..config import settings
 
 logger = get_logger(__name__)
 router = APIRouter()

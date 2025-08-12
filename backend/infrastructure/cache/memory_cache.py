@@ -5,8 +5,8 @@ Simple cache for development and small deployments.
 import asyncio
 from typing import Any, Optional, Dict
 from datetime import datetime, timedelta
-from ..core.interfaces import ICacheProvider
-from ..core.logging import get_logger
+from ...core.interfaces import ICacheProvider
+from ...core.logging import get_logger
 
 logger = get_logger(__name__)
 
