@@ -33,11 +33,12 @@ jobs:
         
     - name: Run E2E tests
       env:
-        BASE_URL: ${{ secrets.RAILWAY_BACKEND_URL }}
-        API_URL: ${{ secrets.RAILWAY_API_URL }}
+        BASE_URL: ${{ secrets.RAILWAY_BACKEND_URL || 'http://localhost:8000' }}
+        API_URL: ${{ secrets.RAILWAY_API_URL || 'http://localhost:8000/api' }}
+        DASHBOARD_URL: ${{ secrets.DASHBOARD_URL || 'http://localhost:3001' }}
       run: |
         cd tests/e2e
-        npm run test
+        npm run test:ci
         
     - name: Upload test results
       if: always()
