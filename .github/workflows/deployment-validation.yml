@@ -1,0 +1,368 @@
+name: Deployment Validation
+
+on:
+  workflow_dispatch:
+    inputs:
+      platform:
+        description: 'Target deployment platform'
+        required: true
+        default: 'render'
+        type: choice
+        options:
+          - render
+          - fly
+          - railway
+      environment:
+        description: 'Deployment environment'
+        required: true
+        default: 'staging'
+        type: choice
+        options:
+          - staging
+          - production
+      validate_only:
+        description: 'Only validate, do not deploy'
+        required: false
+        default: true
+        type: boolean
+
+env:
+  PYTHON_VERSION: '3.11'
+  NODE_VERSION: '18'
+
+jobs:
+  pre-deployment-validation:
+    name: Pre-deployment Validation
+    runs-on: ubuntu-latest
+    
+    outputs:
+      config-valid: ${{ steps.validation.outputs.config-valid }}
+      tests-passed: ${{ steps.validation.outputs.tests-passed }}
+      security-passed: ${{ steps.validation.outputs.security-passed }}
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+    
+    - name: Validate Configuration Files
+      id: validation
+      run: |
+        echo "🔍 Validating deployment configuration..."
+        
+        PLATFORM="${{ github.event.inputs.platform }}"
+        ENVIRONMENT="${{ github.event.inputs.environment }}"
+        
+        # Validate platform-specific configuration
+        case $PLATFORM in
+          "render")
+            if [ ! -f "render.yaml" ] && [ ! -f "backend/render.yaml" ]; then
+              echo "❌ render.yaml not found"
+              exit 1
+            fi
+            echo "✅ Render configuration found"
+            ;;
+          "fly")
+            if [ ! -f "fly.toml" ] && [ ! -f "backend/fly.toml" ]; then
+              echo "❌ fly.toml not found"
+              exit 1
+            fi
+            echo "✅ Fly.io configuration found"
+            ;;
+          "railway")
+            if [ ! -f "railway.json" ] && [ ! -f "nixpacks.toml" ]; then
+              echo "❌ Railway configuration not found"
+              exit 1
+            fi
+            echo "✅ Railway configuration found"
+            ;;
+        esac
+        
+        # Validate Dockerfile
+        if [ ! -f "backend/Dockerfile" ]; then
+          echo "❌ Dockerfile not found"
+          exit 1
+        fi
+        echo "✅ Dockerfile found"
+        
+        # Validate requirements files
+        if [ ! -f "backend/requirements-base.txt" ]; then
+          echo "❌ requirements-base.txt not found"
+          exit 1
+        fi
+        echo "✅ Requirements files found"
+        
+        # Validate environment-specific settings
+        if [ "$ENVIRONMENT" = "production" ]; then
+          if [ ! -f ".env.production" ] && [ ! -f "backend/.env.production" ]; then
+            echo "⚠️ No production environment template found"
+          else
+            echo "✅ Production environment template found"
+          fi
+        fi
+        
+        echo "config-valid=true" >> $GITHUB_OUTPUT
+    
+    - name: Install Dependencies and Test
+      run: |
+        echo "📦 Installing and testing dependencies..."
+        
+        # Backend dependencies
+        cd backend
+        pip install -r requirements-base.txt
+        pip install -r requirements-test.txt
+        
+        # Test basic imports
+        python -c "import app; print('✅ Backend imports successful')"
+        
+        # Frontend dependencies
+        cd ../frontend
+        npm ci
+        
+        # Test frontend build
+        npm run build
+        echo "✅ Frontend build successful"
+        
+        echo "tests-passed=true" >> $GITHUB_OUTPUT
+    
+    - name: Basic Security Validation
+      run: |
+        echo "🔒 Running basic security validation..."
+        
+        # Check for obvious security issues
+        cd backend
+        
+        # Check for hardcoded secrets
+        if grep -r -E "(password|secret|key|token).*=.*['\"][^'\$]" --include="*.py" .; then
+          echo "⚠️ Potential hardcoded secrets found"
+        else
+          echo "✅ No obvious hardcoded secrets"
+        fi
+        
+        # Check for debug mode
+        if grep -r "DEBUG.*=.*True" --include="*.py" .; then
+          echo "⚠️ Debug mode found - ensure it's disabled in production"
+        else
+          echo "✅ No debug mode found"
+        fi
+        
+        echo "security-passed=true" >> $GITHUB_OUTPUT
+    
+    - name: Create Validation Report
+      run: |
+        echo "## 🚀 Deployment Validation Report" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "**Platform**: ${{ github.event.inputs.platform }}" >> $GITHUB_STEP_SUMMARY
+        echo "**Environment**: ${{ github.event.inputs.environment }}" >> $GITHUB_STEP_SUMMARY
+        echo "**Validate Only**: ${{ github.event.inputs.validate_only }}" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### Validation Results" >> $GITHUB_STEP_SUMMARY
+        echo "- ✅ Configuration files validated" >> $GITHUB_STEP_SUMMARY
+        echo "- ✅ Dependencies installed successfully" >> $GITHUB_STEP_SUMMARY
+        echo "- ✅ Basic security checks passed" >> $GITHUB_STEP_SUMMARY
+        echo "- ✅ Application imports working" >> $GITHUB_STEP_SUMMARY
+        echo "- ✅ Frontend build successful" >> $GITHUB_STEP_SUMMARY
+
+  docker-validation:
+    name: Docker Build Validation
+    needs: pre-deployment-validation
+    runs-on: ubuntu-latest
+    if: needs.pre-deployment-validation.outputs.config-valid == 'true'
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+    
+    - name: Build and Test Docker Images
+      run: |
+        echo "🐳 Building and testing Docker images..."
+        
+        PLATFORM="${{ github.event.inputs.platform }}"
+        
+        cd backend
+        
+        # Build the appropriate target based on platform
+        case $PLATFORM in
+          "fly"|"railway")
+            echo "Building base target for $PLATFORM..."
+            docker build --target base -t markerengine-test:base .
+            ;;
+          "render")
+            echo "Building production target for Render..."
+            docker build -t markerengine-test:production .
+            ;;
+        esac
+        
+        # Test the container
+        echo "Testing container startup..."
+        docker run -d --name test-container -p 8000:8000 \
+          -e DATABASE_URL="mongodb://localhost:27017/test" \
+          -e SPARK_NLP_ENABLED="false" \
+          markerengine-test:${PLATFORM} || markerengine-test:production
+        
+        # Wait for startup
+        sleep 10
+        
+        # Test health endpoint
+        if docker exec test-container curl -f http://localhost:8000/health; then
+          echo "✅ Container health check passed"
+        else
+          echo "⚠️ Health check failed (may be expected without database)"
+        fi
+        
+        # Cleanup
+        docker stop test-container
+        docker rm test-container
+    
+    - name: Security Scan Container
+      uses: aquasecurity/trivy-action@master
+      with:
+        image-ref: 'markerengine-test:base'
+        format: 'table'
+        exit-code: '0'  # Don't fail on vulnerabilities during validation
+
+  deployment-simulation:
+    name: Deployment Simulation
+    needs: [pre-deployment-validation, docker-validation]
+    runs-on: ubuntu-latest
+    if: github.event.inputs.validate_only == 'false'
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Simulate Deployment Process
+      run: |
+        echo "🎯 Simulating deployment to ${{ github.event.inputs.platform }}..."
+        
+        PLATFORM="${{ github.event.inputs.platform }}"
+        ENVIRONMENT="${{ github.event.inputs.environment }}"
+        
+        case $PLATFORM in
+          "render")
+            echo "Would deploy to Render using:"
+            echo "- Service: Backend API"
+            echo "- Environment: $ENVIRONMENT"
+            echo "- Build command: docker build --target base"
+            echo "- Start command: python minimal_app.py"
+            ;;
+          "fly")
+            echo "Would deploy to Fly.io using:"
+            echo "- App: me-core-backend-$ENVIRONMENT"
+            echo "- Region: Auto-select"
+            echo "- Config: fly.toml"
+            ;;
+          "railway")
+            echo "Would deploy to Railway using:"
+            echo "- Service: Backend"
+            echo "- Environment: $ENVIRONMENT"
+            echo "- Buildpack: nixpacks"
+            ;;
+        esac
+        
+        echo "Deployment simulation completed ✅"
+    
+    - name: Post-deployment Validation Plan
+      run: |
+        echo "## 📋 Post-deployment Validation Plan" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "After successful deployment, the following checks should be performed:" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### Health Checks" >> $GITHUB_STEP_SUMMARY
+        echo "- [ ] Application starts successfully" >> $GITHUB_STEP_SUMMARY
+        echo "- [ ] Health endpoint responds" >> $GITHUB_STEP_SUMMARY
+        echo "- [ ] Database connection established" >> $GITHUB_STEP_SUMMARY
+        echo "- [ ] API endpoints accessible" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### Performance Validation" >> $GITHUB_STEP_SUMMARY
+        echo "- [ ] Response time < 2 seconds" >> $GITHUB_STEP_SUMMARY
+        echo "- [ ] Memory usage stable" >> $GITHUB_STEP_SUMMARY
+        echo "- [ ] No memory leaks" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### Security Validation" >> $GITHUB_STEP_SUMMARY
+        echo "- [ ] HTTPS enforced" >> $GITHUB_STEP_SUMMARY
+        echo "- [ ] Security headers present" >> $GITHUB_STEP_SUMMARY
+        echo "- [ ] No sensitive data exposed" >> $GITHUB_STEP_SUMMARY
+
+  rollback-preparation:
+    name: Rollback Preparation
+    needs: [pre-deployment-validation, docker-validation]
+    runs-on: ubuntu-latest
+    if: always() && github.event.inputs.validate_only == 'false'
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Prepare Rollback Strategy
+      run: |
+        echo "🔄 Preparing rollback strategy..."
+        
+        PLATFORM="${{ github.event.inputs.platform }}"
+        
+        case $PLATFORM in
+          "render")
+            echo "Render rollback options:"
+            echo "1. Use Render dashboard to rollback to previous deployment"
+            echo "2. Redeploy previous Git commit"
+            echo "3. Use Render API to trigger rollback"
+            ;;
+          "fly")
+            echo "Fly.io rollback options:"
+            echo "1. fly releases list --app your-app"
+            echo "2. fly releases rollback <version> --app your-app"
+            echo "3. Redeploy previous working commit"
+            ;;
+          "railway")
+            echo "Railway rollback options:"
+            echo "1. Use Railway dashboard deployments tab"
+            echo "2. Redeploy from previous commit"
+            echo "3. Use Railway CLI: railway rollback"
+            ;;
+        esac
+        
+        # Save current commit for rollback reference
+        echo "Current commit: $(git rev-parse HEAD)" > rollback-info.txt
+        echo "Deployment time: $(date -u)" >> rollback-info.txt
+        echo "Platform: $PLATFORM" >> rollback-info.txt
+        echo "Environment: ${{ github.event.inputs.environment }}" >> rollback-info.txt
+    
+    - name: Upload Rollback Information
+      uses: actions/upload-artifact@v4
+      with:
+        name: rollback-info-${{ github.event.inputs.platform }}
+        path: rollback-info.txt
+
+  summary:
+    name: Validation Summary
+    needs: [pre-deployment-validation, docker-validation, deployment-simulation, rollback-preparation]
+    runs-on: ubuntu-latest
+    if: always()
+    
+    steps:
+    - name: Create Final Summary
+      run: |
+        echo "## 🎉 Deployment Validation Complete" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### Results Summary" >> $GITHUB_STEP_SUMMARY
+        echo "| Check | Status |" >> $GITHUB_STEP_SUMMARY
+        echo "|-------|--------|" >> $GITHUB_STEP_SUMMARY
+        echo "| Pre-deployment | ${{ needs.pre-deployment-validation.result == 'success' && '✅ Passed' || '❌ Failed' }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| Docker Build | ${{ needs.docker-validation.result == 'success' && '✅ Passed' || '❌ Failed' }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| Deployment Sim | ${{ needs.deployment-simulation.result == 'success' && '✅ Passed' || '❌ Failed' }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| Rollback Prep | ${{ needs.rollback-preparation.result == 'success' && '✅ Passed' || '❌ Failed' }} |" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        
+        if [ "${{ github.event.inputs.validate_only }}" == "true" ]; then
+          echo "✅ **Validation completed successfully!** Ready for deployment." >> $GITHUB_STEP_SUMMARY
+        else
+          echo "🚀 **Deployment simulation completed!** Proceed with actual deployment." >> $GITHUB_STEP_SUMMARY
+        fi

@@ -1,0 +1,239 @@
+name: Security Scanning
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # Run security scans daily at 3 AM UTC
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+env:
+  PYTHON_VERSION: '3.11'
+  NODE_VERSION: '18'
+
+jobs:
+  code-analysis:
+    name: Static Code Analysis
+    runs-on: ubuntu-latest
+    permissions:
+      security-events: write
+      actions: read
+      contents: read
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v3
+      with:
+        languages: 'python,javascript'
+        config-file: ./.github/codeql/codeql-config.yml
+    
+    - name: Autobuild
+      uses: github/codeql-action/autobuild@v3
+    
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v3
+      with:
+        category: "/language:${{matrix.language}}"
+
+  dependency-scan:
+    name: Dependency Vulnerability Scan
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+    
+    - name: Advanced Python Security Scan
+      run: |
+        cd backend
+        pip install safety bandit pip-audit
+        
+        # Safety check with detailed output
+        safety check -r requirements-base.txt --json --output safety-report.json || true
+        
+        # Bandit static analysis
+        bandit -r . -f json -o bandit-report.json --exclude ./tests
+        
+        # pip-audit for comprehensive dependency analysis
+        pip-audit -r requirements-base.txt --format=json --output=audit-report.json || true
+    
+    - name: License Compliance Check
+      run: |
+        cd backend
+        pip install pip-licenses
+        pip-licenses --format=json --with-urls --with-description --output-file=licenses.json
+        
+        # Check for GPL/AGPL licenses that might cause issues
+        pip-licenses --format=csv | grep -E "(GPL|AGPL)" > gpl-licenses.txt || echo "No GPL licenses found" > gpl-licenses.txt
+    
+    - name: NPM Security Audit
+      run: |
+        cd frontend
+        npm ci
+        
+        # NPM audit with detailed output
+        npm audit --audit-level=moderate --json > npm-audit.json || true
+        
+        # Check for high/critical vulnerabilities
+        npm audit --audit-level=high --json > npm-critical.json || true
+    
+    - name: Upload Security Reports
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: security-reports
+        path: |
+          backend/safety-report.json
+          backend/bandit-report.json
+          backend/audit-report.json
+          backend/licenses.json
+          backend/gpl-licenses.txt
+          frontend/npm-audit.json
+          frontend/npm-critical.json
+
+  container-scan:
+    name: Container Security Scan
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Build Docker Image
+      run: |
+        cd backend
+        docker build --target base -t markerengine-security-test:latest .
+    
+    - name: Run Trivy vulnerability scanner
+      uses: aquasecurity/trivy-action@master
+      with:
+        image-ref: 'markerengine-security-test:latest'
+        format: 'sarif'
+        output: 'trivy-results.sarif'
+    
+    - name: Upload Trivy scan results to GitHub Security tab
+      uses: github/codeql-action/upload-sarif@v3
+      if: always()
+      with:
+        sarif_file: 'trivy-results.sarif'
+    
+    - name: Detailed Container Analysis
+      uses: aquasecurity/trivy-action@master
+      with:
+        image-ref: 'markerengine-security-test:latest'
+        format: 'json'
+        output: 'trivy-detailed.json'
+    
+    - name: Check for Critical Vulnerabilities
+      run: |
+        # Parse Trivy results and fail if critical vulnerabilities found
+        if command -v jq > /dev/null; then
+          critical_count=$(jq '.Results[]?.Vulnerabilities[]? | select(.Severity=="CRITICAL") | length' trivy-detailed.json | wc -l)
+          high_count=$(jq '.Results[]?.Vulnerabilities[]? | select(.Severity=="HIGH") | length' trivy-detailed.json | wc -l)
+          
+          echo "Critical vulnerabilities: $critical_count"
+          echo "High vulnerabilities: $high_count"
+          
+          if [ "$critical_count" -gt 0 ]; then
+            echo "❌ Critical vulnerabilities found in container image!"
+            exit 1
+          fi
+        fi
+    
+    - name: Upload Container Scan Results
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: container-security-scan
+        path: trivy-detailed.json
+
+  security-policy-check:
+    name: Security Policy Validation
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Check Security Documentation
+      run: |
+        # Verify security documentation exists
+        if [ ! -f "SECURITY.md" ]; then
+          echo "⚠️ SECURITY.md file missing"
+          echo "Creating basic security policy..."
+          cat > SECURITY.md << 'EOF'
+        # Security Policy
+        
+        ## Supported Versions
+        
+        | Version | Supported          |
+        | ------- | ------------------ |
+        | 1.x.x   | :white_check_mark: |
+        
+        ## Reporting a Vulnerability
+        
+        Please report vulnerabilities to: security@dyai2025.com
+        
+        Expected response time: 48 hours
+        EOF
+        fi
+        
+        # Check for environment variable validation
+        if ! grep -r "SECRET_KEY" backend/ > /dev/null; then
+          echo "⚠️ No SECRET_KEY environment variable validation found"
+        fi
+        
+        # Check for HTTPS enforcement
+        if ! grep -r "FORCE_HTTPS\|SECURE_SSL" backend/ > /dev/null; then
+          echo "⚠️ No HTTPS enforcement found in configuration"
+        fi
+    
+    - name: Environment Security Check
+      run: |
+        cd backend
+        
+        # Check for hardcoded secrets
+        echo "Scanning for potential hardcoded secrets..."
+        grep -r -E "(password|secret|key|token)" --include="*.py" --include="*.yml" --include="*.yaml" . || echo "No obvious secrets found"
+        
+        # Check for debug mode in production files
+        if grep -r "DEBUG.*=.*True" --include="*.py" .; then
+          echo "⚠️ Debug mode found in code - ensure it's disabled in production"
+        fi
+        
+        # Check for insecure random usage
+        if grep -r "random\.choice\|random\.randint" --include="*.py" .; then
+          echo "⚠️ Potentially insecure random number generation found"
+        fi
+
+  summary:
+    name: Security Summary
+    needs: [code-analysis, dependency-scan, container-scan, security-policy-check]
+    runs-on: ubuntu-latest
+    if: always()
+    
+    steps:
+    - name: Create Security Summary
+      run: |
+        echo "## 🔒 Security Scan Summary" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "| Check | Status |" >> $GITHUB_STEP_SUMMARY
+        echo "|-------|--------|" >> $GITHUB_STEP_SUMMARY
+        echo "| CodeQL Analysis | ${{ needs.code-analysis.result == 'success' && '✅ Passed' || '❌ Failed' }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| Dependency Scan | ${{ needs.dependency-scan.result == 'success' && '✅ Passed' || '❌ Failed' }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| Container Scan | ${{ needs.container-scan.result == 'success' && '✅ Passed' || '❌ Failed' }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| Security Policy | ${{ needs.security-policy-check.result == 'success' && '✅ Passed' || '❌ Failed' }} |" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "For detailed results, check the individual job outputs and uploaded artifacts." >> $GITHUB_STEP_SUMMARY

@@ -1,0 +1,26 @@
+name: "Enhanced Security Analysis"
+
+disable-default-queries: false
+
+queries:
+  - uses: security-and-quality
+  - uses: security-extended
+
+paths:
+  - backend
+  - frontend/src
+  - tests
+
+paths-ignore:
+  - "**/*.test.*"
+  - "**/*.spec.*"
+  - "**/node_modules"
+  - "**/dist"
+  - "**/build"
+  - "**/__pycache__"
+  - "**/coverage"
+
+query-filters:
+  - exclude:
+      id: py/weak-crypto-algorithm
+      reason: "Some test files may use weak crypto for testing purposes"
