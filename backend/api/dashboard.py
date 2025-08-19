@@ -191,10 +191,10 @@ async def update_detect_registry(
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-# Schema management
-@router.get("/schemas")
-async def get_schemas(db = Depends(get_database)):
-    """Get all active schemas"""
+# Schema management - Dashboard summary
+@router.get("/schemas/summary")
+async def get_schemas_summary(db = Depends(get_database)):
+    """Get summary of all active schemas for dashboard display"""
     schemas_collection = db.schemas
     schemas = []
     
