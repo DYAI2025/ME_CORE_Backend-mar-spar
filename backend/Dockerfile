@@ -1,7 +1,7 @@
 # Multi-stage Dockerfile for MarkerEngine with optional Spark NLP support
 
 # Base stage with core dependencies only (Production default)
-FROM python:3.10-slim as base
+FROM python:3.11-slim as base
 
 WORKDIR /app/backend
 
@@ -54,7 +54,7 @@ CMD ["pytest", "tests/", "-v", "--cov=.", "--cov-report=xml"]
 
 
 # Spark stage with full NLP support (optional - not used by default)
-FROM python:3.10-slim as spark
+FROM python:3.11-slim as spark
 
 WORKDIR /app/backend
 
@@ -89,7 +89,7 @@ ENV PYTHONPATH=/app/backend
 ENV SPARK_NLP_ENABLED=true
 
 # Spark configuration
-ENV SPARK_HOME=/usr/local/lib/python3.10/dist-packages/pyspark
+ENV SPARK_HOME=/usr/local/lib/python3.11/dist-packages/pyspark
 ENV PYSPARK_PYTHON=python3
 ENV PYSPARK_DRIVER_PYTHON=python3
 

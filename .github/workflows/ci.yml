@@ -155,7 +155,7 @@ jobs:
     - name: Test
       run: |
         cd frontend
-        npm test -- --coverage --watchAll=false
+        npm run test:ci  # Use the CI-specific test command
     
     - name: Build
       run: |
