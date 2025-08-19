@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Request, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from .api import health, markers, analyze, analyze_v2, metrics, dashboard
+from .api import health, markers, analyze, analyze_v2, metrics, dashboard, api_schemas_routes
 from .core.logging import configure_logging, get_logger
 from .core.container import get_container
 from .core.exceptions import ConfigurationError, handle_markerengine_error, MarkerEngineError
@@ -132,6 +132,7 @@ app.include_router(markers.router, prefix="/markers", tags=["Markers"])
 app.include_router(analyze.router, prefix="/analyze", tags=["Analysis"])
 app.include_router(analyze_v2.router, prefix="/analyze/v2", tags=["Analysis v2"])
 app.include_router(dashboard.router, tags=["Dashboard"])
+app.include_router(api_schemas_routes.router, tags=["Schemas"])
 
 # Include metrics router if enabled
 if settings.ENABLE_METRICS:
