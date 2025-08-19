@@ -19,8 +19,8 @@ locust==2.20.0
 pytest-benchmark==4.0.0
 
 # Security testing
-safety==3.0.1
-bandit==1.7.6
+safety==3.2.12  # Latest version with pydantic 2.x support
+bandit[toml]==1.7.10
 
 # Database testing
 sqlalchemy==2.0.23
