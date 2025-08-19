@@ -33,6 +33,6 @@
 - **Caching** – Marker/Detector-Module im Prozess cachen; Cache-Bust via Change Stream.
 - **NLP-Aktivierung** – Spark-NLP oder produktives NLP-Backend einschalten; Token/Offsets zurückgeben für exaktes Highlighting.
 - **Scoring-Pfad** – Aggregat-Score („Resonanz“) berechnen und transportieren; Frontend-Gauge anbinden.
-- **Tests grün kriegen** – fehlende Pakete nachziehen (z. B. sqlalchemy), CI-Matrix bauen (unit/integration/load/security).
+- **Fix failing tests** – fehlende Pakete nachziehen (z. B. sqlalchemy), CI-Matrix bauen (unit/integration/load/security).
 - **Observability** – Prometheus-Metriken (Latenz, Fehlerquote, LLM-Quota), strukturierte Logs, Alerts.
 - **Deploy-Konfig** – Env-Variablen (LLM-Keys, DETECTOR_PATH, Mongo-URL) dokumentieren, Secrets trennen, Smoke-Test-Route.
