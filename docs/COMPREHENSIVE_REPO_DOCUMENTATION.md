@@ -52,7 +52,7 @@ Key routers (mounted in `main.py`):
 - `api/health.py` – Health endpoints
 - `api/markers.py` – Marker CRUD (subset)
 - `api/analyze.py` – Basic analysis with LLM interpretation
-- `api/analyze_v2.py` – 3‑phase analysis with orchestration + metrics + LLM
+- `api/analyze_v2.py` – 3-phase analysis with orchestration + metrics + LLM
 - `api/analyze_v2_di.py` – DI-based v2 (enhanced, parallel batch, cache hooks)
 - `api/metrics.py` – Prometheus metrics (if enabled)
 - `api/dashboard.py` – Stats, registry management, websocket live updates
