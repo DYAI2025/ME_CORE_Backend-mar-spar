@@ -2,7 +2,7 @@
 
 ## Overview
 
-MarkerEngine Core is a monorepo combining a FastAPI backend, a Next.js frontend, and a Spark NLP service. It provides a multi‑phase text analysis pipeline that detects semantic markers, enriches context with NLP, and generates human‑readable interpretations via an LLM bridge. The repository also includes deployment configurations (Docker, Render, Railway, Fly.io), monitoring, and CI/CD scaffolding.
+MarkerEngine Core is a monorepo combining a FastAPI backend, a Next.js frontend, and a Spark NLP service. It provides a multi-phase text analysis pipeline that detects semantic markers, enriches context with NLP, and generates human-readable interpretations via an LLM bridge. The repository also includes deployment configurations (Docker, Render, Railway, Fly.io), monitoring, and CI/CD scaffolding.
 
 Primary components:
 - Backend (FastAPI): API endpoints, orchestration pipeline, detection and scoring engines, data models, metrics, health checks
