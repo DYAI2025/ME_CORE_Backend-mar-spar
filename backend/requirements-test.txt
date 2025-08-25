@@ -10,7 +10,7 @@ pytest-timeout==2.2.0
 pytest-xdist==3.5.0
 
 # Test utilities
-httpx==0.25.2
+httpx==0.26.0
 faker==22.1.0
 factory-boy==3.3.0
 
