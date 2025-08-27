@@ -53,6 +53,8 @@ logs/
 htmlcov/
 .tox/
 .nox/
+test-results/
+playwright-report/
 
 # MongoDB
 dump/
