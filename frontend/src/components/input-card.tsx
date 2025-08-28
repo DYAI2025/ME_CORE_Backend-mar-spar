@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Alert, AlertDescription } from '@/components/ui/alert';
-import { AnalysisRequest, AnalysisSchema } from '@/types/analysis';
+import { AnalysisRequest, AnalysisSchema } from '@/types';
 import { Upload, FileText, AlertCircle, Sparkles, Trash2 } from 'lucide-react';
 import { DemoMode } from './demo-mode';
 
@@ -35,7 +35,7 @@ export function InputCard({ onAnalyze, schemas, isLoading = false, maxCharacters
 
     onAnalyze({
       text: text.trim(),
-      schema_id: selectedSchema,
+      schemaId: selectedSchema,
     });
   };
 

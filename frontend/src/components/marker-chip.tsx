@@ -1,6 +1,6 @@
 "use client";
 
-import { DetectedMarker } from '@/types/analysis';
+import { DetectedMarker } from '@/types';
 import { Badge } from '@/components/ui/badge';
 import { cn } from '@/lib/utils';
 
@@ -33,7 +33,7 @@ const conceptColors: Record<string, string> = {
 };
 
 export function MarkerChip({ marker, onClick, size = 'md', showScore = true }: MarkerChipProps) {
-  const concept = marker.frame.concept.toLowerCase();
+  const concept = marker.category.toLowerCase();
   const colorClass = conceptColors[concept] || conceptColors.default;
   
   const sizeClasses = {
@@ -42,9 +42,7 @@ export function MarkerChip({ marker, onClick, size = 'md', showScore = true }: M
     lg: 'text-base px-4 py-2',
   };
 
-  const score = marker.scoring 
-    ? (marker.scoring.base * marker.scoring.weight).toFixed(2)
-    : '1.00';
+  const score = (marker.confidence * marker.weight).toFixed(2);
 
   return (
     <div
@@ -63,7 +61,7 @@ export function MarkerChip({ marker, onClick, size = 'md', showScore = true }: M
         </Badge>
       )}
       <span className="text-xs opacity-75">
-        {marker.frame.pragmatics}
+        {marker.name}
       </span>
     </div>
   );

@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { InputCard } from '@/components/input-card';
 import { ResultDisplay } from '@/components/result-display';
-import { AnalysisRequest, AnalysisResponse } from '@/types/analysis';
+import { AnalysisRequest, AnalysisResponse } from '@/types';
 import { analyzeText, analyzeChat } from '@/lib/api';
 import { useToast } from '@/hooks/use-toast';
 
@@ -15,7 +15,7 @@ export default function AnalysisPage() {
   const handleAnalysis = async (request: AnalysisRequest) => {
     setIsLoading(true);
     try {
-      const response = await analyzeText(request.text, request.schema_id);
+      const response = await analyzeText(request);
       setResult(response);
       toast({
         title: "Analyse erfolgreich",
@@ -49,11 +49,15 @@ export default function AnalysisPage() {
               id: 'SCH_relation_analyse_schema',
               name: 'Chat Analyse',
               description: 'Analyse von Beziehungsdynamiken in Chat-Verläufen',
+              version: '1.0.0',
+              markers: [],
             },
             {
               id: 'SCH_meta_text_analyse',
               name: 'Meta-Text-Analyse',
               description: 'Übergeordnete Textmuster und Strukturen',
+              version: '1.0.0',
+              markers: [],
             },
           ]}
           isLoading={isLoading}

@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Progress } from '@/components/ui/progress';
-import { AnalysisResponse, DetectedMarker } from '@/types/analysis';
+import { AnalysisResponse, DetectedMarker } from '@/types';
 import { Brain, Zap, MessageSquare, Activity } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import { MarkerHighlight } from './marker-highlight';
@@ -108,16 +108,33 @@ export function ResultDisplay({ result, isLoading = false }: ResultDisplayProps)
             </CardHeader>
             <CardContent>
               <div className="space-y-3">
-                {result.markers.map((marker, index) => (
-                  <MarkerChip
-                    key={`${marker.id}-${index}`}
-                    marker={marker}
-                    onClick={() => {
-                      // TODO: Show detailed marker info
-                      console.log('Marker clicked:', marker);
-                    }}
-                  />
-                ))}
+                {result.markers.map((marker: any, index: number) => {
+                  // Convert raw marker to DetectedMarker format for display
+                  const displayMarker: DetectedMarker = {
+                    id: marker.id || `marker-${index}`,
+                    name: marker.frame?.concept || 'Unknown Marker',
+                    category: marker.frame?.concept || 'unknown',
+                    confidence: marker.scoring?.weight || 1.0,
+                    positions: marker.position ? [{
+                      start: marker.position.start,
+                      end: marker.position.end,
+                      text: marker.context || ''
+                    }] : [],
+                    weight: marker.scoring?.weight || 1.0,
+                    color: '#3b82f6' // Default blue color
+                  };
+                  
+                  return (
+                    <MarkerChip
+                      key={`${marker.id || index}-${index}`}
+                      marker={displayMarker}
+                      onClick={() => {
+                        // TODO: Show detailed marker info
+                        console.log('Marker clicked:', marker);
+                      }}
+                    />
+                  );
+                })}
               </div>
             </CardContent>
           </Card>
@@ -138,8 +155,8 @@ export function ResultDisplay({ result, isLoading = false }: ResultDisplayProps)
                 <div className="space-y-2">
                   <h4 className="text-sm font-medium">Kategorien</h4>
                   {Object.entries(
-                    result.markers.reduce((acc, marker) => {
-                      const concept = marker.frame.concept;
+                    result.markers.reduce((acc: Record<string, number>, marker: any) => {
+                      const concept = marker.frame?.concept || 'Unknown';
                       acc[concept] = (acc[concept] || 0) + 1;
                       return acc;
                     }, {} as Record<string, number>)
@@ -149,7 +166,7 @@ export function ResultDisplay({ result, isLoading = false }: ResultDisplayProps)
                         <span>{concept}</span>
                         <span className="text-gray-500">{count}</span>
                       </div>
-                      <Progress value={(count / result.marker_count) * 100} className="h-2" />
+                      <Progress value={((count as number) / result.marker_count) * 100} className="h-2" />
                     </div>
                   ))}
                 </div>
