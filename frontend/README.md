@@ -106,8 +106,8 @@ yarn install
 ### **2. Environment Variables**
 ```bash
 # .env.local erstellen
-NEXT_PUBLIC_API_URL=http://localhost:3001
-NEXT_PUBLIC_WS_URL=ws://localhost:3001
+NEXT_PUBLIC_API_URL=http://localhost:8000
+NEXT_PUBLIC_WS_URL=ws://localhost:8000
 NEXT_PUBLIC_APP_NAME=Markerengine Frontend
 ```
 
