@@ -42,13 +42,32 @@ check_file "requirements-base.txt"
 check_file "minimal_app.py"
 check_file "simple_health.py"
 check_file ".dockerignore"
-check_file "fly.toml"
+# Check for fly.toml in parent directory (root)
+if [ -f "../fly.toml" ]; then
+    print_status "File exists: ../fly.toml" 0
+else
+    print_status "File missing: ../fly.toml" 1
+fi
 
 echo
 echo -e "${BLUE}Validating Dockerfile configuration...${NC}"
 
-# Check if Dockerfile uses base stage by default
-if grep -q "FROM python:3.10-slim as base" Dockerfile; then
+# Check if Dockerfile.fly exists and is properly configured for fly.io
+if [ -f "Dockerfile.fly" ]; then
+    print_status "Dockerfile.fly exists" 0
+    
+    # Check if it uses Python 3.10 slim (as specified in Dockerfile.fly)
+    if grep -q "FROM python:3.10-slim" Dockerfile.fly; then
+        print_status "Dockerfile.fly uses Python 3.10-slim" 0
+    else
+        print_status "Dockerfile.fly should use Python 3.10-slim" 1
+    fi
+else
+    print_status "Dockerfile.fly missing for fly.io deployment" 1
+fi
+
+# Also check regular Dockerfile for base stage (for other deployments)
+if grep -q "FROM python:3.11-slim as base" Dockerfile; then
     print_status "Dockerfile has base stage" 0
 else
     print_status "Dockerfile missing base stage" 1
@@ -138,15 +157,15 @@ fi
 echo
 echo -e "${BLUE}Checking Fly.io configuration...${NC}"
 
-# Check fly.toml target
-if grep -q 'target = "base"' fly.toml; then
-    print_status "Fly.io uses base stage" 0
+# Check fly.toml dockerfile
+if grep -q 'dockerfile = "backend/Dockerfile.fly"' ../fly.toml; then
+    print_status "Fly.io uses Dockerfile.fly" 0
 else
-    print_status "Fly.io target not set to base" 1
+    print_status "Fly.io dockerfile path incorrect" 1
 fi
 
 # Check environment variables
-if grep -q 'SPARK_NLP_ENABLED = "false"' fly.toml; then
+if grep -q 'SPARK_NLP_ENABLED = "false"' ../fly.toml; then
     print_status "Fly.io disables Spark NLP" 0
 else
     print_status "Fly.io Spark NLP setting incorrect" 1

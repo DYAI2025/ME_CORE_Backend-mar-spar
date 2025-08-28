@@ -1,6 +1,6 @@
 # Fly.io configuration for ME_CORE Backend
 app = "me-core-backend"
-primary_region = "sin"  # Singapore (optimal for Asia-Pacific)
+primary_region = "fra"  # Frankfurt (optimal for Europe)
 kill_signal = "SIGINT"
 kill_timeout = "5s"
 
@@ -26,48 +26,39 @@ kill_timeout = "5s"
   
   # API configuration
   API_HOST = "0.0.0.0"
+  API_PORT = "8000"
   
   # Resources path
   DETECTOR_PATH = "/app/resources"
+  
+  # Fallback database URL for basic deployment (will show warning)
+  DATABASE_URL = "mongodb://localhost:27017/test"
 
 [experimental]
   auto_rollback = true
 
-[[services]]
-  protocol = "tcp"
+[http_service]
   internal_port = 8000
-  processes = ["app"]
-
-  [[services.ports]]
-    port = 80
-    handlers = ["http"]
-    force_https = true
-
-  [[services.ports]]
-    port = 443
-    handlers = ["tls", "http"]
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
   
-  [services.concurrency]
-    type = "connections"
-    hard_limit = 25
-    soft_limit = 20
-
-  [[services.tcp_checks]]
-    interval = "15s"
-    timeout = "2s"
+  [[http_service.checks]]
     grace_period = "30s"
-
-  [[services.http_checks]]
     interval = "30s"
-    timeout = "3s"
-    grace_period = "60s"
-    method = "get"
+    method = "GET"
+    timeout = "5s"
     path = "/api/health/live"
-    protocol = "http"
 
 # Resource constraints for better stability
-[metrics]
-  port = 9091
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = 512
+
+# Optional: Add secrets for database connections
+# Use: fly secrets set DATABASE_URL="mongodb://..."
+# secrets = ["DATABASE_URL"]
 
 # Optional: persistent storage if needed later
 # [mounts]
