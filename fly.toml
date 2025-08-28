@@ -31,8 +31,6 @@ kill_timeout = "5s"
   # Resources path
   DETECTOR_PATH = "/app/resources"
   
-  # Fallback database URL for basic deployment (will show warning)
-  DATABASE_URL = "mongodb://localhost:27017/test"
 
 [experimental]
   auto_rollback = true
