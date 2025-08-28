@@ -67,7 +67,7 @@ else
 fi
 
 # Also check regular Dockerfile for base stage (for other deployments)
-if grep -q "FROM python:3.11-slim as base" Dockerfile; then
+if grep -q "FROM python:3.10-slim as base" Dockerfile; then
     print_status "Dockerfile has base stage" 0
 else
     print_status "Dockerfile missing base stage" 1
