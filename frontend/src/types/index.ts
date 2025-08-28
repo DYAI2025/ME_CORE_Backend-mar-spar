@@ -47,6 +47,23 @@ export interface AnalysisResult {
   }
 }
 
+// Backend API Response Types (matches FastAPI responses)
+export interface AnalysisResponse {
+  markers: any[] // Raw marker objects from backend
+  detection: DetectionEntry[]
+  interpretation: string
+  model_used?: string
+  processing_time?: number
+  marker_count: number
+  total_score: number
+}
+
+export interface DetectionEntry {
+  marker: string
+  count: number
+  score: number
+}
+
 export interface DetectedMarker {
   id: string
   name: string

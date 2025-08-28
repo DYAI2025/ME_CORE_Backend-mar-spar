@@ -2,7 +2,7 @@
 
 import { useState, useCallback } from 'react';
 import { api } from '@/lib/api';
-import { AnalysisRequest, AnalysisResponse, AnalysisSchema } from '@/types/analysis';
+import { AnalysisRequest, AnalysisResponse, AnalysisSchema } from '@/types';
 import { InputCard } from '@/components/input-card';
 import { ResultDisplay } from '@/components/result-display';
 import { toast } from 'sonner';
@@ -15,11 +15,15 @@ export default function HomePage() {
       id: 'SCH_relation_analyse_schema',
       name: 'Chat Analyse',
       description: 'Analyse von Beziehungsdynamiken in Chat-Verläufen',
+      version: '1.0.0',
+      markers: [],
     },
     {
       id: 'SCH_meta_text_analyse',
       name: 'Meta-Text-Analyse',
       description: 'Übergeordnete Textmuster und Strukturen',
+      version: '1.0.0',
+      markers: [],
     },
   ]);
 

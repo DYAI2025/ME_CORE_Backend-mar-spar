@@ -1,6 +1,6 @@
 "use client";
 
-import { DetectedMarker } from '@/types/analysis';
+import { DetectedMarker } from '@/types';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { cn } from '@/lib/utils';
 
@@ -19,20 +19,23 @@ const markerColors = [
 ];
 
 export function MarkerHighlight({ text, markers }: MarkerHighlightProps) {
-  // Sort markers by position to handle overlaps
-  const sortedMarkers = [...markers]
-    .filter(m => m.position)
-    .sort((a, b) => a.position!.start - b.position!.start);
+  // Extract all position segments from markers and sort them
+  const positionSegments = markers
+    .filter(m => m.positions && m.positions.length > 0)
+    .flatMap(marker => 
+      marker.positions.map(pos => ({ ...pos, marker }))
+    )
+    .sort((a, b) => a.start - b.start);
 
-  if (sortedMarkers.length === 0) {
+  if (positionSegments.length === 0) {
     return <p className="whitespace-pre-wrap">{text}</p>;
   }
 
   const segments: JSX.Element[] = [];
   let lastEnd = 0;
 
-  sortedMarkers.forEach((marker, index) => {
-    const { start, end } = marker.position!;
+  positionSegments.forEach((segment, index) => {
+    const { start, end, marker } = segment;
     
     // Add text before marker
     if (start > lastEnd) {
@@ -60,9 +63,9 @@ export function MarkerHighlight({ text, markers }: MarkerHighlightProps) {
           </TooltipTrigger>
           <TooltipContent>
             <div className="space-y-1">
-              <p className="font-semibold">{marker.id}</p>
-              <p className="text-sm">{marker.frame.concept}</p>
-              <p className="text-xs text-gray-500">{marker.frame.pragmatics}</p>
+              <p className="font-semibold">{marker.name}</p>
+              <p className="text-sm">{marker.category}</p>
+              <p className="text-xs text-gray-500">Confidence: {(marker.confidence * 100).toFixed(1)}%</p>
             </div>
           </TooltipContent>
         </Tooltip>

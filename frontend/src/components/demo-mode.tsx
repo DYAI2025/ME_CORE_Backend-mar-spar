@@ -18,7 +18,9 @@ export function DemoMode({ onSelectDemo }: DemoModeProps) {
   const handleDemoSelect = (demoId: string) => {
     const demo = demoTexts.find(d => d.id === demoId);
     if (demo) {
-      onSelectDemo(demo.text, demo.schemaId);
+      // Default to chat schema for demos
+      const schemaId = demoId === 'chat' ? 'SCH_relation_analyse_schema' : 'SCH_meta_text_analyse';
+      onSelectDemo(demo.text, schemaId);
       setOpen(false);
     }
   };
@@ -63,7 +65,7 @@ export function DemoMode({ onSelectDemo }: DemoModeProps) {
                   {getIcon(demo.id)}
                   {demo.title}
                 </CardTitle>
-                <CardDescription>{demo.description}</CardDescription>
+                <CardDescription>Demo für {demo.title}</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
@@ -72,9 +74,9 @@ export function DemoMode({ onSelectDemo }: DemoModeProps) {
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="secondary" className="text-xs">
-                      {demo.schemaId === 'SCH_relation_analyse_schema' ? 'Chat Analyse' : 'Meta-Text-Analyse'}
+                      {demo.id === 'chat' ? 'Chat Analyse' : 'Meta-Text-Analyse'}
                     </Badge>
-                    {demo.expectedMarkers.slice(0, 3).map((marker) => (
+                    {demo.expectedMarkers && demo.expectedMarkers.slice(0, 3).map((marker) => (
                       <Badge key={marker} variant="outline" className="text-xs">
                         {marker}
                       </Badge>
