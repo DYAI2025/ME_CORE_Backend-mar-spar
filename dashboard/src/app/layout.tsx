@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import Script from 'next/script'
 import { Providers } from '@/components/Providers'
 import { Navigation } from '@/components/Navigation'
 import { Toaster } from 'react-hot-toast'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = { className: "" };
 
 export const metadata: Metadata = {
   title: 'MarkerEngine Core Dashboard',
@@ -29,6 +29,23 @@ export default function RootLayout({
           </div>
           <Toaster position="top-right" />
         </Providers>
+        <div id="dock"></div>
+        <Script 
+          src="https://b0bfe21bd-8080.preview.abacusai.app/sdk/inputdock.js" 
+          strategy="afterInteractive"
+        />
+        <Script id="inputdock-init" strategy="afterInteractive">
+          {`
+            (async () => {
+              const dock = await InputDock.attach({
+                api: 'https://b0bfe21bd-8080.preview.abacusai.app',
+                target: '#dock',
+                ui: true
+              });
+              dock.on(ev => console.log('InputDock', ev));
+            })();
+          `}
+        </Script>
       </body>
     </html>
   )

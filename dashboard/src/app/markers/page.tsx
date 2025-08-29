@@ -29,7 +29,7 @@ export default function MarkersPage() {
     queryFn: fetchSchemas,
   })
 
-  const filteredMarkers = markers?.filter(marker => 
+  const filteredMarkers = markers?.filter((marker: any) => 
     marker.id.toLowerCase().includes(searchTerm.toLowerCase()) ||
     marker.description?.toLowerCase().includes(searchTerm.toLowerCase())
   )
