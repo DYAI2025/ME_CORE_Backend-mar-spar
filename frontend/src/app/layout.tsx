@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = { className: "" };
 
 export const metadata: Metadata = {
   title: "MarkerEngine",
@@ -20,6 +20,23 @@ export default function RootLayout({
       <body className={inter.className}>
         {children}
         <Toaster />
+        <div id="dock"></div>
+        <Script 
+          src="https://b0bfe21bd-8080.preview.abacusai.app/sdk/inputdock.js" 
+          strategy="afterInteractive"
+        />
+        <Script id="inputdock-init" strategy="afterInteractive">
+          {`
+            (async () => {
+              const dock = await InputDock.attach({
+                api: 'https://b0bfe21bd-8080.preview.abacusai.app',
+                target: '#dock',
+                ui: true
+              });
+              dock.on(ev => console.log('InputDock', ev));
+            })();
+          `}
+        </Script>
       </body>
     </html>
   );

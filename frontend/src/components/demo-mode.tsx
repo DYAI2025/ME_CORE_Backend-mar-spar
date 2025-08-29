@@ -20,7 +20,7 @@ export function DemoMode({ onSelectDemo }: DemoModeProps) {
     if (demo) {
       // Default to chat schema for demos
       const schemaId = demoId === 'chat' ? 'SCH_relation_analyse_schema' : 'SCH_meta_text_analyse';
-      onSelectDemo(demo.text, schemaId);
+      onSelectDemo(demo.content, schemaId);
       setOpen(false);
     }
   };
@@ -70,7 +70,7 @@ export function DemoMode({ onSelectDemo }: DemoModeProps) {
               <CardContent>
                 <div className="space-y-3">
                   <p className="text-sm text-muted-foreground line-clamp-3">
-                    {demo.text.substring(0, 150)}...
+                    {demo.content.substring(0, 150)}...
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="secondary" className="text-xs">
