@@ -25,18 +25,10 @@ export default function RootLayout({
           src="https://b0bfe21bd-8080.preview.abacusai.app/sdk/inputdock.js" 
           strategy="afterInteractive"
         />
-        <Script id="inputdock-init" strategy="afterInteractive">
-          {`
-            (async () => {
-              const dock = await InputDock.attach({
-                api: 'https://b0bfe21bd-8080.preview.abacusai.app',
-                target: '#dock',
-                ui: true
-              });
-              dock.on(ev => console.log('InputDock', ev));
-            })();
-          `}
-        </Script>
+        <Script 
+          src="/inputdock-init.js" 
+          strategy="afterInteractive" 
+        />
       </body>
     </html>
   );
