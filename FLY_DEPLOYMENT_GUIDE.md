@@ -119,6 +119,40 @@ flyctl dashboard
 flyctl scale vm shared-cpu-1x --memory 512
 ```
 
+## 🚨 Troubleshooting
+
+### App hat keine IP-Adresse / App not running
+
+**Problem**: Extension zeigt "keine IP-Adresse" oder App ist gestoppt.
+
+**Lösungen**:
+```bash
+# 1. Status prüfen
+flyctl status
+
+# 2. App starten falls gestoppt
+flyctl machines start
+
+# 3. Logs prüfen für Fehler
+flyctl logs
+
+# 4. Health Check testen
+curl https://me-core-backend.fly.dev/api/health/live
+
+# 5. Machine scaling prüfen
+flyctl scale show
+
+# 6. Falls nötig: Neu deployen
+flyctl deploy
+```
+
+**Ursachen**:
+- `min_machines_running = 0` kann dazu führen, dass alle Maschinen gestoppt werden
+- Health Check Failures können Maschinen als unhealthy markieren
+- Deployment-Fehler können die App stoppen
+
+**Fix**: Die fly.toml wurde aktualisiert mit `min_machines_running = 1` um sicherzustellen, dass immer mindestens eine Maschine läuft.
+
 ## 🎯 Nächste Schritte
 
 1. **MongoDB Atlas Account** erstellen
