@@ -165,6 +165,29 @@ cd spark-nlp && pytest tests/
 npm run test:e2e
 ```
 
+## 🚨 Troubleshooting
+
+### Fly.io Deployment Issues
+
+**Problem**: App läuft nicht / keine IP-Adresse
+
+**Schnelle Lösung**:
+```bash
+# Automatischer Fix-Script
+./fix-fly-deployment.sh
+
+# Oder manuell:
+flyctl status                    # Status prüfen
+flyctl machines start           # Maschinen starten
+flyctl scale count 1           # Mindestens 1 Maschine
+flyctl deploy                   # Neu deployen falls nötig
+```
+
+**Weitere Deployment Guides**:
+- [Fly.io Deployment Guide](FLY_DEPLOYMENT_GUIDE.md)
+- [Deployment Fixes](FLY_DEPLOYMENT_FIXES.md)
+- [Reliability Report](backend/DEPLOYMENT_RELIABILITY_REPORT.md)
+
 ## 📚 Dokumentation
 
 - [Architektur-Übersicht](docs/ARCHITECTURE.md)
