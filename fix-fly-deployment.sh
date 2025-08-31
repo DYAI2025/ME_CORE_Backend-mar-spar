@@ -64,10 +64,10 @@ echo "3. Testing health endpoints..."
 APP_URL=$(flyctl info --json 2>/dev/null | grep -o '"hostname":"[^"]*' | cut -d'"' -f4 || echo "")
 if [ -n "$APP_URL" ]; then
     echo "   Testing https://$APP_URL/health"
-    curl -f "https://$APP_URL/health" || echo "   ⚠️  Health check failed"
+    curl --max-time 10 --connect-timeout 5 -f "https://$APP_URL/health" || echo "   ⚠️  Health check failed"
     echo ""
     echo "   Testing https://$APP_URL/api/health/live"
-    curl -f "https://$APP_URL/api/health/live" || echo "   ⚠️  Live health check failed" 
+    curl --max-time 10 --connect-timeout 5 -f "https://$APP_URL/api/health/live" || echo "   ⚠️  Live health check failed" 
     echo ""
 else
     echo "   ⚠️  Could not determine app URL"
