@@ -368,31 +368,52 @@ class AudioConnectionManager:
         """Process incoming audio data and trigger marker analysis"""
         if data.get("type") == "audio_config":
             self.audio_config = data.get("config")
+            logger.info(f"Audio config updated: {self.audio_config}")
             
         elif data.get("type") == "audio_chunk":
             # Process audio chunk for real-time marker detection
-            # This would integrate with the marker engine
-            audio_data = data.get("data")
-            timestamp = data.get("timestamp")
+            audio_data_hex = data.get("data")
+            timestamp = data.get("timestamp", time.time())
             
-            # Simulate marker detection event
-            # In real implementation, this would call the marker engine
-            marker_event = {
-                "type": "marker_detected",
-                "marker_id": "ato_sample",
-                "category": "ATO",
-                "confidence": 0.85,
-                "timestamp": timestamp,
-                "audio_chunk_id": hash(audio_data[:100]) if audio_data else None,
-                "prosody_features": {
-                    "f0": 150.0,
-                    "rms": 0.02,
-                    "zcr": 0.15
-                }
-            }
-            
-            # Broadcast to events WebSocket
-            await events_manager.broadcast_event(marker_event)
+            if audio_data_hex:
+                try:
+                    # Convert hex string back to bytes
+                    audio_data = bytes.fromhex(audio_data_hex)
+                    
+                    # Get sample rate from config
+                    sample_rate = 16000
+                    if self.audio_config:
+                        sample_rate = self.audio_config.get("sample_rate", 16000)
+                    
+                    # Import and use real-time marker engine
+                    try:
+                        from backend.realtime_marker_engine import marker_engine
+                    except ImportError:
+                        # Try alternative import path
+                        import sys
+                        sys.path.insert(0, '.')
+                        from realtime_marker_engine import marker_engine
+                    
+                    # Process audio chunk
+                    detected_events = await marker_engine.process_audio_chunk(
+                        audio_data, timestamp, sample_rate
+                    )
+                    
+                    # Broadcast all detected events
+                    for event in detected_events:
+                        await events_manager.broadcast_event(event.to_dict())
+                    
+                    logger.debug(f"Processed audio chunk: {len(audio_data)} bytes, "
+                               f"detected {len(detected_events)} events")
+                    
+                except Exception as e:
+                    logger.error(f"Error processing audio chunk: {e}")
+                    await websocket.send_text(json.dumps({
+                        "type": "error",
+                        "message": f"Audio processing error: {str(e)}"
+                    }))
+            else:
+                logger.warning("Received audio chunk without data")
 
 audio_manager = AudioConnectionManager()
 

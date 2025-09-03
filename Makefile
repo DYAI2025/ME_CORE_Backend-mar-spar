@@ -13,10 +13,13 @@ help:
 	@echo "  make dev           - Start in development mode with auto-reload"
 	@echo "  make audio-capture - Start audio capture tool"
 	@echo "  make list-devices  - List available audio devices"
+	@echo "  make demo          - Run interactive demonstration"
+	@echo "  make test-websockets - Test WebSocket connections"
 	@echo "  make test          - Run tests"
 	@echo "  make install       - Install dependencies"
 	@echo "  make deps          - Install Python dependencies"
 	@echo "  make clean         - Clean up generated files"
+	@echo "  make docs          - Show documentation"
 	@echo ""
 
 # Main run command - starts server on port 8710
@@ -50,11 +53,10 @@ install: deps
 # Install Python dependencies
 deps:
 	@echo "Installing Python dependencies..."
-	@pip install --user fastapi uvicorn pydantic python-dotenv pyyaml httpx aiofiles websockets
+	@pip install --user fastapi uvicorn pydantic python-dotenv pyyaml httpx aiofiles websockets numpy
 	@echo "Installing optional audio dependencies..."
 	@pip install --user sounddevice || echo "sounddevice installation failed - will try pyaudio as fallback"
 	@pip install --user pyaudio || echo "pyaudio installation failed - will use available audio library"
-	@pip install --user numpy || echo "numpy installation failed"
 
 # Run tests
 test:
@@ -85,6 +87,15 @@ run-minimal:
 run-full:
 	@echo "Starting with full configuration..."
 	@cd backend && python main.py
+
+# Demo and testing commands
+demo:
+	@echo "Running TransRapport Desktop MVP demo..."
+	@python demo_transrapport.py
+
+test-websockets:
+	@echo "Testing WebSocket connections..."
+	@python test_websockets.py
 
 # Development utilities
 setup-dirs:
