@@ -141,25 +141,99 @@ if settings.ENABLE_METRICS:
 
 @app.get("/", tags=["Root"])
 async def read_root():
-    return {"message": "Welcome to the MarkerEngine Core API"}
+    # Try to get TransRapport config
+    try:
+        from .app_config import app_config
+        title = app_config.get('server.title', 'TransRapport Desktop MVP')
+        environment = app_config.get('server.environment', 'desktop')
+        return {
+            "message": f"Welcome to {title}",
+            "environment": environment,
+            "version": "1.0.0",
+            "endpoints": {
+                "health": "/health",
+                "docs": "/docs",
+                "dashboard": "/api/dashboard",
+                "markers": "/markers",
+                "analyze": "/analyze",
+                "websockets": {
+                    "events": "/api/dashboard/ws/events",
+                    "audio": "/api/dashboard/ws/audio",
+                    "dashboard": "/api/dashboard/ws"
+                }
+            }
+        }
+    except:
+        return {"message": "Welcome to the MarkerEngine Core API"}
 
 
 # Add startup message
 @app.on_event("startup")
 async def startup_event():
     """Log startup information."""
-    logger.info(f"Starting MarkerEngine API on {settings.API_HOST}:{settings.API_PORT}")
-    logger.info(f"Environment: {settings.ENVIRONMENT}")
-    logger.info(f"Database URL: {settings.DATABASE_URL[:20]}...")  # Log partial URL for security
-    logger.info(f"Metrics enabled: {settings.ENABLE_METRICS}")
-    logger.info(f"Spark NLP enabled: {settings.SPARK_NLP_ENABLED}")
+    try:
+        from .app_config import app_config
+        server_config = app_config.get_server_config()
+        host = server_config.get("host", "127.0.0.1")
+        port = server_config.get("port", 8710)
+        title = server_config.get("title", "TransRapport Desktop MVP")
+        
+        logger.info(f"Starting {title}")
+        logger.info(f"Server: {host}:{port}")
+        logger.info(f"Environment: {server_config.get('environment', 'desktop')}")
+        logger.info(f"UI available at: http://{host}:{port}/")
+        logger.info(f"API docs: http://{host}:{port}/docs")
+        logger.info(f"WebSocket events: ws://{host}:{port}/api/dashboard/ws/events")
+        logger.info(f"WebSocket audio: ws://{host}:{port}/api/dashboard/ws/audio")
+        
+        # Log marker configuration
+        marker_config = app_config.get_marker_config()
+        logger.info(f"Marker directories: {marker_config.get('directories', [])}")
+        logger.info(f"Real-time processing: {marker_config.get('realtime', {}).get('enabled', False)}")
+        
+        # Log offline mode
+        if app_config.is_offline_mode():
+            logger.info("Running in OFFLINE mode - no external API calls")
+            
+    except Exception as e:
+        logger.warning(f"Could not load TransRapport config: {e}")
+        logger.info(f"Starting MarkerEngine API on {settings.API_HOST}:{settings.API_PORT}")
+        logger.info(f"Environment: {settings.ENVIRONMENT}")
+        
+    if 'settings' in locals():
+        logger.info(f"Database URL: {settings.DATABASE_URL[:20] if hasattr(settings, 'DATABASE_URL') else 'N/A'}...")
+        logger.info(f"Metrics enabled: {getattr(settings, 'ENABLE_METRICS', False)}")
+        logger.info(f"Spark NLP enabled: {getattr(settings, 'SPARK_NLP_ENABLED', False)}")
 
 
 if __name__ == "__main__":
     import uvicorn
+    
+    # Try to load TransRapport Desktop configuration
+    try:
+        from .app_config import app_config
+        server_config = app_config.get_server_config()
+        host = server_config.get("host", "127.0.0.1")
+        port = server_config.get("port", 8710)
+        title = server_config.get("title", "TransRapport Desktop MVP")
+        
+        print(f"Starting {title}")
+        print(f"Server configuration: {host}:{port}")
+        print(f"Environment: {server_config.get('environment', 'desktop')}")
+        print(f"UI available at: http://{host}:{port}/")
+        print("Use 'make run' to start with configuration")
+        
+    except Exception as e:
+        print(f"Could not load app config: {e}")
+        host = getattr(settings, 'API_HOST', '127.0.0.1') if 'settings' in locals() else "127.0.0.1"
+        port = getattr(settings, 'API_PORT', 8710) if 'settings' in locals() else 8710
+        title = "TransRapport Desktop MVP"
+    
+    print(f"Config loaded: {config_loaded if 'config_loaded' in locals() else False}")
+    
     uvicorn.run(
         "main:app",
-        host=settings.API_HOST,
-        port=settings.API_PORT,
-        reload=settings.ENVIRONMENT == "development"
+        host=host,
+        port=port,
+        reload=False
     )

@@ -267,6 +267,157 @@ async def websocket_endpoint(websocket: WebSocket):
     except WebSocketDisconnect:
         manager.disconnect(websocket)
 
+# Real-time Events WebSocket Manager for marker events
+class EventsConnectionManager:
+    def __init__(self):
+        self.active_connections: List[WebSocket] = []
+        self.event_buffer: List[Dict[str, Any]] = []
+        self.max_buffer_size = 100
+        
+    async def connect(self, websocket: WebSocket):
+        await websocket.accept()
+        self.active_connections.append(websocket)
+        
+        # Send recent events to new connection
+        if self.event_buffer:
+            for event in self.event_buffer[-10:]:  # Send last 10 events
+                try:
+                    await websocket.send_text(json.dumps(event))
+                except:
+                    break
+    
+    def disconnect(self, websocket: WebSocket):
+        if websocket in self.active_connections:
+            self.active_connections.remove(websocket)
+    
+    async def broadcast_event(self, event: Dict[str, Any]):
+        """Broadcast marker events to all connected clients"""
+        # Add timestamp if not present
+        if "timestamp" not in event:
+            event["timestamp"] = datetime.utcnow().isoformat()
+        
+        # Add to buffer
+        self.event_buffer.append(event)
+        if len(self.event_buffer) > self.max_buffer_size:
+            self.event_buffer = self.event_buffer[-self.max_buffer_size:]
+        
+        # Broadcast to all connections
+        disconnected = []
+        for connection in self.active_connections:
+            try:
+                await connection.send_text(json.dumps(event))
+            except:
+                disconnected.append(connection)
+        
+        # Remove disconnected clients
+        for conn in disconnected:
+            self.disconnect(conn)
+
+events_manager = EventsConnectionManager()
+
+@router.websocket("/ws/events")
+async def events_websocket_endpoint(websocket: WebSocket):
+    """WebSocket endpoint for real-time ATO/SEM/CLU/INTUITION marker events"""
+    await events_manager.connect(websocket)
+    try:
+        while True:
+            # Keep connection alive and handle incoming messages
+            data = await websocket.receive_text()
+            
+            # Handle different message types
+            message = json.loads(data)
+            if message.get("type") == "ping":
+                await websocket.send_text(json.dumps({
+                    "type": "pong",
+                    "timestamp": datetime.utcnow().isoformat()
+                }))
+            elif message.get("type") == "subscribe":
+                # Handle subscription to specific event types
+                event_types = message.get("event_types", [])
+                await websocket.send_text(json.dumps({
+                    "type": "subscription_confirmed",
+                    "event_types": event_types,
+                    "timestamp": datetime.utcnow().isoformat()
+                }))
+            
+    except WebSocketDisconnect:
+        events_manager.disconnect(websocket)
+
+# Audio WebSocket Manager for audio streaming
+class AudioConnectionManager:
+    def __init__(self):
+        self.active_connections: List[WebSocket] = []
+        self.audio_config: Optional[Dict[str, Any]] = None
+        
+    async def connect(self, websocket: WebSocket):
+        await websocket.accept()
+        self.active_connections.append(websocket)
+        
+        # Send current audio config if available
+        if self.audio_config:
+            await websocket.send_text(json.dumps({
+                "type": "audio_config_current",
+                "config": self.audio_config
+            }))
+    
+    def disconnect(self, websocket: WebSocket):
+        if websocket in self.active_connections:
+            self.active_connections.remove(websocket)
+    
+    async def handle_audio_data(self, websocket: WebSocket, data: Dict[str, Any]):
+        """Process incoming audio data and trigger marker analysis"""
+        if data.get("type") == "audio_config":
+            self.audio_config = data.get("config")
+            
+        elif data.get("type") == "audio_chunk":
+            # Process audio chunk for real-time marker detection
+            # This would integrate with the marker engine
+            audio_data = data.get("data")
+            timestamp = data.get("timestamp")
+            
+            # Simulate marker detection event
+            # In real implementation, this would call the marker engine
+            marker_event = {
+                "type": "marker_detected",
+                "marker_id": "ato_sample",
+                "category": "ATO",
+                "confidence": 0.85,
+                "timestamp": timestamp,
+                "audio_chunk_id": hash(audio_data[:100]) if audio_data else None,
+                "prosody_features": {
+                    "f0": 150.0,
+                    "rms": 0.02,
+                    "zcr": 0.15
+                }
+            }
+            
+            # Broadcast to events WebSocket
+            await events_manager.broadcast_event(marker_event)
+
+audio_manager = AudioConnectionManager()
+
+@router.websocket("/ws/audio")
+async def audio_websocket_endpoint(websocket: WebSocket):
+    """WebSocket endpoint for audio streaming and real-time processing"""
+    await audio_manager.connect(websocket)
+    try:
+        while True:
+            # Receive audio data
+            data = await websocket.receive_text()
+            
+            # Parse and handle audio data
+            try:
+                message = json.loads(data)
+                await audio_manager.handle_audio_data(websocket, message)
+            except json.JSONDecodeError:
+                await websocket.send_text(json.dumps({
+                    "type": "error",
+                    "message": "Invalid JSON format"
+                }))
+            
+    except WebSocketDisconnect:
+        audio_manager.disconnect(websocket)
+
 # Deployment management
 @router.post("/deploy/{environment}")
 async def trigger_deployment(

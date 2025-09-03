@@ -1,0 +1,207 @@
+# SerapiCore 1.0 Marker Bundle Configuration
+# Core marker definitions for TransRapport Desktop MVP
+
+version: "1.0"
+name: "SerapiCore"
+description: "Core marker bundle for real-time analysis in TransRapport Desktop"
+
+# Marker Categories and Processing Rules
+categories:
+  ATO:
+    name: "Attachment Theory Markers"
+    description: "Markers based on attachment theory patterns"
+    enabled: true
+    real_time: true
+    prosody_enabled: true
+    heuristics:
+      - "anxious_attachment_speech"
+      - "avoidant_attachment_speech" 
+      - "secure_attachment_speech"
+      - "ambivalent_attachment_speech"
+
+  SEM:
+    name: "Semantic Markers"
+    description: "Semantic and linguistic pattern markers"
+    enabled: true
+    real_time: true
+    gating: true  # SEM-Gating as mentioned in requirements
+    patterns:
+      - "emotional_valence"
+      - "relationship_dynamics"
+      - "communication_patterns"
+
+  CLU:
+    name: "Clustering Markers"
+    description: "Clustering and grouping pattern markers"
+    enabled: true
+    real_time: true
+    windowing: true  # CLU-Fensterlogik as mentioned
+    window_size: 5000  # ms
+    overlap: 0.5
+
+  INTUITION:
+    name: "Intuition Markers"
+    description: "Intuitive and subtle pattern recognition"
+    enabled: true
+    real_time: true
+    telemetry: true  # Intuition-Telemetry for therapists
+
+# Real-time Processing Configuration
+processing:
+  # ATO Heuristics (as mentioned in requirements)
+  ato_heuristics:
+    enabled: true
+    confidence_threshold: 0.6
+    features:
+      - "f0_variance"      # Prosody feature
+      - "rms_energy"       # Prosody feature  
+      - "zcr_pattern"      # Prosody feature
+      - "voicing_stability" # Prosody feature
+      - "flatness_score"   # Prosody feature
+
+  # SEM Gating (as mentioned in requirements)
+  sem_gating:
+    enabled: true
+    gate_threshold: 0.7
+    semantic_filters:
+      - "emotional_content"
+      - "relational_indicators"
+      - "conflict_patterns"
+
+  # CLU Window Logic (as mentioned in requirements)
+  clu_windowing:
+    enabled: true
+    window_strategy: "sliding"
+    buffer_management: "overlap"
+    clustering_algorithm: "temporal"
+
+# Marker Definitions
+markers:
+  # Sample ATO markers
+  - id: "ato_anxious_speech"
+    category: "ATO"
+    name: "Anxious Attachment Speech Pattern"
+    description: "Speech patterns indicating anxious attachment style"
+    confidence_threshold: 0.7
+    prosody_features: ["f0", "rms", "zcr"]
+    real_time: true
+    
+  - id: "ato_avoidant_speech"
+    category: "ATO"
+    name: "Avoidant Attachment Speech Pattern"
+    description: "Speech patterns indicating avoidant attachment style"
+    confidence_threshold: 0.6
+    prosody_features: ["flatness", "voicing"]
+    real_time: true
+
+  # Sample SEM markers
+  - id: "sem_emotional_valence"
+    category: "SEM"
+    name: "Emotional Valence Marker"
+    description: "Semantic marker for emotional content analysis"
+    confidence_threshold: 0.8
+    gating: true
+    real_time: true
+
+  - id: "sem_relationship_dynamics"
+    category: "SEM"
+    name: "Relationship Dynamics Marker"
+    description: "Semantic patterns in relationship descriptions"
+    confidence_threshold: 0.7
+    gating: true
+    real_time: true
+
+  # Sample CLU markers
+  - id: "clu_temporal_cluster"
+    category: "CLU"
+    name: "Temporal Clustering Marker"
+    description: "Clustering of temporal speech patterns"
+    confidence_threshold: 0.6
+    windowing: true
+    real_time: true
+
+  - id: "clu_topic_cluster"
+    category: "CLU"
+    name: "Topic Clustering Marker"
+    description: "Clustering of topical content"
+    confidence_threshold: 0.7
+    windowing: true
+    real_time: true
+
+  # Sample INTUITION markers
+  - id: "intuition_subtle_conflict"
+    category: "INTUITION"
+    name: "Subtle Conflict Indicator"
+    description: "Intuitive detection of underlying conflict"
+    confidence_threshold: 0.5
+    telemetry: true
+    real_time: true
+
+  - id: "intuition_emotional_state"
+    category: "INTUITION"
+    name: "Emotional State Intuition"
+    description: "Intuitive assessment of emotional state"
+    confidence_threshold: 0.6
+    telemetry: true
+    real_time: true
+
+# Event Configuration for Real-time Streaming
+events:
+  # Event types that will be streamed via /ws/events
+  stream_types:
+    - "marker_detected"
+    - "category_analysis"
+    - "prosody_update"
+    - "clustering_update"
+    - "intuition_signal"
+
+  # Event format
+  format:
+    timestamp: true
+    confidence: true
+    category: true
+    marker_id: true
+    metadata: true
+    prosody_data: true  # Include prosody features
+
+# Integration Settings
+integration:
+  # Marker engine integration
+  marker_engine:
+    load_priority: 1
+    auto_reload: true
+    cache_enabled: true
+
+  # LLM integration (optional)
+  llm:
+    enabled: false  # Can be enabled when local LLM is available
+    interpretation_mode: "context_aware"
+    combine_with_markers: true
+
+# Output Configuration
+output:
+  # Real-time event streaming
+  websocket:
+    enabled: true
+    endpoint: "/ws/events"
+    buffer_size: 50
+    compression: false
+
+  # Logging and persistence
+  logging:
+    enabled: true
+    level: "INFO"
+    include_prosody: true
+    include_metadata: true
+
+# Performance Settings
+performance:
+  # Real-time processing limits
+  max_concurrent_markers: 20
+  processing_timeout: 5000  # ms
+  memory_limit: 512  # MB
+  
+  # Optimization flags
+  optimize_for_realtime: true
+  enable_parallel_processing: true
+  cache_compiled_patterns: true
