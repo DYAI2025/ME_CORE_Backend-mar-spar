@@ -1,0 +1,141 @@
+# TransRapport Desktop MVP Configuration
+# Configuration for CT2 weights, marker bundles, and offline processing
+
+server:
+  host: "127.0.0.1"
+  port: 8710
+  title: "TransRapport Desktop MVP"
+  environment: "desktop"
+
+# CT2 Model Weights (faster-whisper integration)
+models:
+  whisper:
+    path: "./models/whisper"
+    model_size: "base"  # tiny, base, small, medium, large
+    device: "cpu"  # cpu, cuda
+    compute_type: "int8"  # int8, float16, float32
+  
+  # Local LLM configuration for summarizer
+  llm:
+    enabled: false
+    base_url: "http://127.0.0.1:1234/v1"  # LM Studio default
+    model: "local-model"
+    api_key: "not-needed"  # Local models don't need API keys
+    mode: "llm"  # llm mode for summarizer
+
+# Marker Bundles Configuration
+markers:
+  # Main marker directories
+  directories:
+    - "./backend/markers/markers_yaml"
+    - "./backend/markers/markers_json"
+    - "./bundles"
+  
+  # Primary bundle configuration
+  bundles:
+    - path: "./bundles/SerapiCore_1.0.yaml"
+      enabled: true
+      categories: ["ATO", "SEM", "CLU", "INTUITION"]
+    
+    - path: "./backend/markers/markers_yaml"
+      enabled: true
+      auto_load: true
+  
+  # Allowed marker types for real-time processing
+  allowed_types:
+    - "ATO"     # Attachment Theory Markers
+    - "SEM"     # Semantic Markers  
+    - "CLU"     # Clustering Markers
+    - "INTUITION"  # Intuition markers
+  
+  # Real-time processing settings
+  realtime:
+    enabled: true
+    buffer_size: 1024
+    chunk_duration: 0.5  # seconds
+    confidence_threshold: 0.7
+
+# Audio Processing Configuration
+audio:
+  # Audio capture settings
+  capture:
+    sample_rate: 16000
+    channels: 1
+    chunk_size: 1024
+    format: "int16"
+    device: null  # null for default device
+  
+  # WebSocket streaming
+  websocket:
+    endpoint: "/ws/audio"
+    buffer_size: 4096
+    compression: true
+  
+  # Supported audio libraries (priority order)
+  libraries:
+    - "sounddevice"  # Preferred for cross-platform
+    - "pyaudio"      # Fallback
+
+# Prosody Features Configuration (F0, RMS, ZCR, Flatness, Voicing)
+prosody:
+  enabled: true
+  features:
+    - "f0"        # Fundamental frequency
+    - "rms"       # Root mean square energy
+    - "zcr"       # Zero crossing rate
+    - "flatness"  # Spectral flatness
+    - "voicing"   # Voicing detection
+  
+  # Feature extraction settings
+  frame_length: 1024
+  hop_length: 512
+  window: "hann"
+
+# Real-time Events Configuration
+events:
+  # WebSocket events endpoint
+  websocket:
+    endpoint: "/ws/events"
+    heartbeat_interval: 30  # seconds
+    max_connections: 10
+  
+  # Event types to broadcast
+  types:
+    - "marker_detected"
+    - "audio_chunk_processed" 
+    - "prosody_features"
+    - "transcription_result"
+    - "llm_interpretation"
+  
+  # Event buffering
+  buffer:
+    size: 100
+    persist: false
+
+# Session Management
+sessions:
+  storage: "./sessions"
+  auto_cleanup: true
+  max_duration: 3600  # 1 hour max session
+  save_audio: false   # Don't save audio for privacy
+
+# Offline Processing (no cloud calls)
+offline:
+  enforce: true
+  block_external: true
+  local_only: true
+
+# Logging Configuration  
+logging:
+  level: "INFO"
+  file: "./logs/transrapport.log"
+  max_size: "10MB"
+  backup_count: 5
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# UI Configuration
+ui:
+  path: "./frontend/dist"
+  serve_static: true
+  enable_dashboard: true
+  theme: "dark"
