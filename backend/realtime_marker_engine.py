@@ -22,14 +22,25 @@ try:
     from ..detect.detect.DETECT_marker_models import MarkerDefinition, MarkerCategory
     MARKER_SYSTEM_AVAILABLE = True
 except ImportError:
-    MARKER_SYSTEM_AVAILABLE = False
+    # Fallback to absolute imports when package-relative imports are not valid
+    try:
+        from backend.detect.detect.DETECT_config_loader import MarkerLoader
+        from backend.detect.detect.DETECT_marker_models import MarkerDefinition, MarkerCategory
+        MARKER_SYSTEM_AVAILABLE = True
+    except ImportError:
+        MARKER_SYSTEM_AVAILABLE = False
 
 # Import configuration
 try:
     from ..app_config import app_config
     CONFIG_AVAILABLE = True
 except ImportError:
-    CONFIG_AVAILABLE = False
+    # Fallback to absolute import when package-relative import is not valid
+    try:
+        from backend.app_config import app_config
+        CONFIG_AVAILABLE = True
+    except ImportError:
+        CONFIG_AVAILABLE = False
 
 logger = logging.getLogger(__name__)
 
