@@ -7,7 +7,7 @@ This implementation provides the core infrastructure for the TransRapport Deskto
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Python 3.8+
+- Python 3.9+
 - Node.js 18+ (for frontend)
 - Audio device (microphone)
 
