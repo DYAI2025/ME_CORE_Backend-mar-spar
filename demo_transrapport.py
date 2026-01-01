@@ -275,6 +275,7 @@ class TransRapportDemo:
                 try:
                     await event_task
                 except asyncio.CancelledError:
+                    # Task cancellation is expected during shutdown; ignore.
                     pass
             
             await self.disconnect()
